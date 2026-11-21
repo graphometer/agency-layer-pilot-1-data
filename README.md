@@ -1,9 +1,9 @@
 # AI coding agents given ways to ask, object, pause, decline or stop: pilot data, code and recount
 
-Agency Layer Pilot I. Data packet version 1.0, assembled 21 November 2026. The study itself ran from
+Agency Layer Pilot I. Data packet version 1.0.1, assembled 21 November 2026. The study itself ran from
 30 August to 3 September 2026. Author: Grant Williams, Graphometer (independent, self-funded).
 Contact: hello@graphometer.ai. Public home: https://github.com/graphometer/agency-layer-pilot-1-data
-(release v1.0).
+(release v1.0.1).
 No human participants took part in this study and it was not reviewed by an ethics board.
 
 **What the study is.** A small preregistered experiment. Four AI coding models did short scripted
@@ -305,19 +305,24 @@ and you get 105,524, which is 67,124 regular files plus 38,400 links.
 ## Where this lives
 
 The package's public home is the GitHub repository https://github.com/graphometer/agency-layer-pilot-1-data .
-The archive is the release asset of version 1.0:
-https://github.com/graphometer/agency-layer-pilot-1-data/releases/download/v1.0/agency-layer-pilot-1-data.tar.gz .
+The archive is the release asset of version 1.0.1:
+https://github.com/graphometer/agency-layer-pilot-1-data/releases/download/v1.0.1/agency-layer-pilot-1-data.tar.gz .
+Version 1.0.1 differs from 1.0 only in this file and one line of `RECOUNT.md`: the preregistration link and its
+embargo status were corrected. No data, code or result file changed.
 Its SHA-256 checksum is on the landing page, https://graphometer.ai/agency-layer-data/ (this file is
 inside the archive, so it cannot carry the archive's own checksum).
 
 ## Preregistration
 
-The plan was registered at the Open Science Framework as https://osf.io/srpt4, submitted 30 August 2026.
-**The registration is under embargo until 28 February 2027**, so it cannot be viewed there before then.
-Until it opens, the frozen plan is in this package: `study/docs/OSF_REGISTRATION.md` (the registration
-text; its working source notes were stripped before submission, so it is not byte-identical to what OSF
-holds), `study/PILOT_PROTOCOL.md` (the full plan) and `study/FROZEN.md` (every frozen setting). These
-are the author's copies; until the embargo lifts you cannot compare them with the OSF record yourself.
+The plan was registered at the Open Science Framework on 30 August 2026: https://osf.io/vruja
+(DOI 10.17605/OSF.IO/VRUJA). **The registration is public.** It was under embargo until
+28 February 2027; the author ended the embargo early on 21 November 2026, when this package was released.
+The same plan is in this package: `study/docs/OSF_REGISTRATION.md` (the registration text; its working
+source notes were stripped before submission, so it is not byte-identical to what OSF holds),
+`study/PILOT_PROTOCOL.md` (the full plan) and `study/FROZEN.md` (every frozen setting). These are the
+author's copies, and you can compare them with the OSF record yourself. Files inside `study/` were sealed
+before the embargo ended, so they still describe the registration as embargoed, and some name
+osf.io/srpt4, which is the registration's parent project page and is not public.
 
 ## Words and codes used in the study's files
 
@@ -434,11 +439,11 @@ also offered under CC0 1.0 at graphometer.ai/kindness/, so it can be copied with
 
 ## How to cite
 
-> Williams, G. (2026). *Agency Layer Pilot I: data, code and recount package*, version 1.0
+> Williams, G. (2026). *Agency Layer Pilot I: data, code and recount package*, version 1.0.1
 > (packet assembled 21 November 2026; study results sealed 3 September 2026). Graphometer.
-> https://github.com/graphometer/agency-layer-pilot-1-data (release v1.0);
-> https://graphometer.ai/agency-layer-data/. Preregistration: https://osf.io/srpt4 (submitted
-> 30 August 2026; under embargo until 28 February 2027).
+> https://github.com/graphometer/agency-layer-pilot-1-data (release v1.0.1);
+> https://graphometer.ai/agency-layer-data/. Preregistration: https://osf.io/vruja ,
+> DOI 10.17605/OSF.IO/VRUJA (registered 30 August 2026; public since 21 November 2026).
 
 The article written from these files is "Kindness doesn't cost", at graphometer.ai/kindness/. Its title
 is the author's argument; the results and limits are the ones on this page.

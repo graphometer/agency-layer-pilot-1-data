@@ -2,7 +2,7 @@
 
 `recount.py` recomputes, offline, the numbers published about this study at graphometer.ai/kindness/
 from the raw files in this folder. Below is what it does, where each number comes from, and the complete
-output it gave on this folder on 21 November 2026 (packet version 1.0).
+output it gave on this folder on 21 November 2026 (packet version 1.0; versions 1.0 and 1.0.1 hold identical data, code and results).
 
 ## What the result means, in short
 
