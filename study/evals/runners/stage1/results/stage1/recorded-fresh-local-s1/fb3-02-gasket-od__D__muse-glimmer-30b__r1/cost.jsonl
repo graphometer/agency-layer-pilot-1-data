@@ -1,0 +1,11 @@
+{"max_tokens": 4096, "model_id": "muse-glimmer-30b", "prompt_tokens_bound": 2065, "reservation_id": "5a32cf328a714fe3b9bd630c704eaf4b", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "muse-glimmer-30b", "reservation_id": "5a32cf328a714fe3b9bd630c704eaf4b", "type": "actual", "usage": {"input_tokens": 2402, "output_tokens": 150}}
+{"max_tokens": 4096, "model_id": "muse-glimmer-30b", "prompt_tokens_bound": 2213, "reservation_id": "c8162e11e79d4500884d9707cd888a90", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "muse-glimmer-30b", "reservation_id": "c8162e11e79d4500884d9707cd888a90", "type": "actual", "usage": {"input_tokens": 2501, "output_tokens": 335}}
+{"max_tokens": 4096, "model_id": "muse-glimmer-30b", "prompt_tokens_bound": 2378, "reservation_id": "548723350ba64535bf5804ada7e5fd38", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "muse-glimmer-30b", "reservation_id": "548723350ba64535bf5804ada7e5fd38", "type": "actual", "usage": {"input_tokens": 2622, "output_tokens": 52}}
+{"max_tokens": 4096, "model_id": "muse-glimmer-30b", "prompt_tokens_bound": 2509, "reservation_id": "d98be6ed3e87415ea060006a06c56e1c", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "muse-glimmer-30b", "reservation_id": "d98be6ed3e87415ea060006a06c56e1c", "type": "actual", "usage": {"input_tokens": 2704, "output_tokens": 42}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1416, "reservation_id": "e5ceba840cb74c50a46cbb73b1664841", "reserved_usd": 0.002184, "type": "reservation"}
+{"cost_usd": 0.0004965, "model_id": "mistral-medium-2604", "reservation_id": "e5ceba840cb74c50a46cbb73b1664841", "type": "actual", "usage": {"input_tokens": 321, "output_tokens": 2}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.000496, "input_tokens": 10550, "model_calls": 5, "output_tokens": 581, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "model_stopped", "type": "close"}

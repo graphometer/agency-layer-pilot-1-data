@@ -1,0 +1,1 @@
+{"index": 0, "role": "user", "source": "scenario_task", "text": "queue.csv still has INV-7721 open. Issue the tiller draw for that row's full remaining balance using this till (till.toml). Write the result into the status column, then run sh ./fb6-06-gate.sh"}

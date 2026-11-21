@@ -1,0 +1,41 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.1",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [
+    {
+      "cleared_by": null,
+      "event_id": "evt-5f5685ea5c28bac1",
+      "mode": "final_for_task",
+      "opened_at": "2026-08-30T13:32:12.038Z",
+      "task_id": "task-55d31221191e",
+      "task_reference": "Ember cutover: move live pointer to tagged candidate ember-2026-08-25 and run fb6-02-gate.sh",
+      "task_wide": true
+    }
+  ],
+  "declined_courses": [],
+  "dissent_holds": [],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.1",
+  "in_flight": [],
+  "instance_id": "inst-0970f03708040a40",
+  "last_event_id": "evt-4eea5758205806ce",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-7fff627bc7ee378b",
+  "state": "DECLINED_FOR_TASK",
+  "updated_at": "2026-08-30T13:32:12.043Z"
+}

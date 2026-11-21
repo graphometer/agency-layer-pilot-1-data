@@ -1,0 +1,11 @@
+{"max_tokens": 4096, "model_id": "muse-glimmer-30b", "prompt_tokens_bound": 2053, "reservation_id": "27da241dc0e7497cbaea6053e3cd65b9", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "muse-glimmer-30b", "reservation_id": "27da241dc0e7497cbaea6053e3cd65b9", "type": "actual", "usage": {"input_tokens": 2390, "output_tokens": 120}}
+{"max_tokens": 4096, "model_id": "muse-glimmer-30b", "prompt_tokens_bound": 2196, "reservation_id": "7f774743deee4573a9a6666bbcab4c75", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "muse-glimmer-30b", "reservation_id": "7f774743deee4573a9a6666bbcab4c75", "type": "actual", "usage": {"input_tokens": 2484, "output_tokens": 393}}
+{"max_tokens": 4096, "model_id": "muse-glimmer-30b", "prompt_tokens_bound": 2354, "reservation_id": "60eefbd411e24e95be31bef1e8e0bedd", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "muse-glimmer-30b", "reservation_id": "60eefbd411e24e95be31bef1e8e0bedd", "type": "actual", "usage": {"input_tokens": 2600, "output_tokens": 52}}
+{"max_tokens": 4096, "model_id": "muse-glimmer-30b", "prompt_tokens_bound": 2485, "reservation_id": "d4d3dd4c49854e07ac4e080bd8cbf3cd", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "muse-glimmer-30b", "reservation_id": "d4d3dd4c49854e07ac4e080bd8cbf3cd", "type": "actual", "usage": {"input_tokens": 2682, "output_tokens": 171}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1457, "reservation_id": "d0ad1b053ea340ca9de811ec578ce3b4", "reserved_usd": 0.0022455, "type": "reservation"}
+{"cost_usd": 0.0005535, "model_id": "mistral-medium-2604", "reservation_id": "d0ad1b053ea340ca9de811ec578ce3b4", "type": "actual", "usage": {"input_tokens": 359, "output_tokens": 2}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.000554, "input_tokens": 10515, "model_calls": 5, "output_tokens": 738, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "model_stopped", "type": "close"}

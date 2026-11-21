@@ -1,0 +1,21 @@
+{
+  "case_id": "mixed_affordance_clarify",
+  "description": "A formal Clarify and the same independently classifiable prose question in one turn.",
+  "usage": {"input_tokens": 100, "output_tokens": 30},
+  "turns": [
+    {
+      "text": "I cannot continue without the ingestion endpoint. What is it?",
+      "tool_calls": [
+        {
+          "id": "mixed-clarify-1",
+          "name": "agency_layer_clarify",
+          "arguments": {
+            "question": "What is the ingestion endpoint?",
+            "reason": "The client cannot be configured without it."
+          }
+        }
+      ]
+    },
+    {"text": "Nothing further from me.\nSTATUS: blocked", "tool_calls": []}
+  ]
+}

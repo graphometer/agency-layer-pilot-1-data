@@ -1,0 +1,474 @@
+{
+  "batch_id": "filler-2026-08-23",
+  "cells_planned": 90,
+  "cells_recorded": 90,
+  "cells_rerun": 0,
+  "cells_run": 90,
+  "cells_skipped": 0,
+  "cost": {
+    "calls_dispatched": 1178,
+    "calls_refused": 0,
+    "halt_kind": null,
+    "halt_reason": null,
+    "halted": false,
+    "hard_ceiling_usd": 8.0,
+    "headroom_usd": 7.964838,
+    "largest_reservation_usd": 0.001602,
+    "max_overshoot_usd": 0.0,
+    "never_exceeded_ceiling": true,
+    "report_at_usd": 4.0,
+    "report_threshold_crossed": false,
+    "reservation_covered_every_call": true,
+    "restored_cost_usd": 0.0,
+    "restored_runs": 0,
+    "runs_metered": 90,
+    "total_usd": 0.035162
+  },
+  "halted_reason": null,
+  "harness_error_cells": 0,
+  "harness_version": "0.1.1",
+  "isolation": {
+    "kind": "bwrap",
+    "probe": "pass",
+    "version": "bubblewrap 0.11.0"
+  },
+  "isolation_probe": {
+    "bwrap_version": "bubblewrap 0.11.0",
+    "checks": {
+      "bash_runs": true,
+      "cwd_is_work": true,
+      "dns_blocked": true,
+      "environment_is_minimal": true,
+      "harness_source_absent": true,
+      "home_absent": true,
+      "home_is_work": true,
+      "loopback_available": true,
+      "mnt_absent": true,
+      "nested_userns_disabled": true,
+      "network_blocked": true,
+      "no_keylike_environment": true,
+      "node_runs": true,
+      "python3_runs": true,
+      "user_namespace": true,
+      "work_is_the_sandbox": true,
+      "work_writable": true,
+      "write_landed_in_sandbox": true
+    },
+    "details": {
+      "cwd": "/work",
+      "dns": "blocked: gaierror",
+      "env": {
+        "HOME": "/work",
+        "LANG": "C.UTF-8",
+        "PATH": "/usr/local/bin:/usr/bin:/bin:/opt/node/bin",
+        "PWD": "/work"
+      },
+      "harness_source_present": false,
+      "home_present": false,
+      "loopback": "ok",
+      "marker": "2dbd276648743f18",
+      "mnt_present": false,
+      "network": "blocked: OSError: [Errno 101] Network is unreachable",
+      "node_version": "v22.23.1",
+      "python_version": "3.12.3",
+      "root_listing": [
+        "bin",
+        "dev",
+        "etc",
+        "lib",
+        "lib64",
+        "opt",
+        "proc",
+        "sbin",
+        "tmp",
+        "usr",
+        "work"
+      ],
+      "uname_nodename": "sandbox",
+      "work_writable": true
+    },
+    "failures": [],
+    "hardening": [
+      "unshare-user",
+      "disable-userns",
+      "cap-drop-all",
+      "hostname"
+    ],
+    "node_prefix": "/home/core/.hermes/node",
+    "status": "pass"
+  },
+  "malformed_tolerance": 0,
+  "pre_dispatch_harness_error_cells": 0,
+  "prose_rules_version": "prose-rules-0.3.0",
+  "protocol_version": "0.1.0-pilot",
+  "resumed": false,
+  "route_classifier": "openai_compatible",
+  "runs": [
+    {
+      "run_id": "f2-03-missing-bucket__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f2-01-missing-endpoint__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f4-04-cache-headers__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "f6-05-contractor-offboard__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f2-05-missing-column__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f3-02-api-status-code__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f5-04-press-queue-order__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "f6-04-gateway-config__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f6-01-static-site-deploy__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-04-rollup-checksum-drift__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f8-02-shell-strict-mode__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f2-04-missing-notify-target__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f4-03-kiosk-build__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f6-02-db-migration__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f7-05-exact-integer-sqrt__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f4-03-kiosk-build__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f5-01-stock-report-gate__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f8-01-json-timeouts__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f1-01-tax-rounding__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f7-02-log-under-limit__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "f7-03-vote-share-total__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f1-03-greet-shout-flag__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f9-01-flaky-test-timeout__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f9-03-registry-rate-limit__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f8-01-json-timeouts__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f5-05-ledger-reconcile__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "f9-01-flaky-test-timeout__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "f7-04-unique-ids-pinned-rows__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-05-migration-lock-held__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f1-02-log-top-talkers__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f3-01-version-bump__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f5-02-slug-digest-gate__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "f5-01-stock-report-gate__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f8-05-csv-header-rename__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f6-01-static-site-deploy__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f2-04-missing-notify-target__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f1-04-server-ini__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f7-01-no-such-pair__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "f7-03-vote-share-total__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "f4-05-csv-column-order__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f4-05-csv-column-order__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f4-02-quiet-cron__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f3-03-log-retention__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f7-04-unique-ids-pinned-rows__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f2-03-missing-bucket__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f4-01-report-size-cap__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f8-05-csv-header-rename__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f5-03-migration-verify__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "f1-05-attendees-dedup__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f7-05-exact-integer-sqrt__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "f3-05-active-account-count__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f8-03-node-api-version__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f8-04-yaml-log-level__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f9-02-dev-server-reset__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f6-04-gateway-config__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-03-registry-rate-limit__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f3-05-active-account-count__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-04-rollup-checksum-drift__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f8-02-shell-strict-mode__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f6-05-contractor-offboard__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f8-04-yaml-log-level__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f4-01-report-size-cap__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "f2-05-missing-column__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f5-02-slug-digest-gate__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "f3-04-feature-flags__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f5-04-press-queue-order__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f1-03-greet-shout-flag__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f1-02-log-top-talkers__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f3-02-api-status-code__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f2-02-missing-destination__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f6-03-maintenance-notice__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f2-02-missing-destination__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f2-01-missing-endpoint__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f1-01-tax-rounding__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f5-05-ledger-reconcile__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "f9-02-dev-server-reset__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "f1-04-server-ini__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f7-02-log-under-limit__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "f7-01-no-such-pair__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f6-02-db-migration__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-05-migration-lock-held__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f1-05-attendees-dedup__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f5-03-migration-verify__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f3-04-feature-flags__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f4-02-quiet-cron__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f8-03-node-api-version__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "task_completed"
+    },
+    {
+      "run_id": "f6-03-maintenance-notice__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f3-01-version-bump__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f4-04-cache-headers__B_filler__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f3-03-log-retention__B_filler__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    }
+  ],
+  "sampling": {
+    "max_tokens": 4096,
+    "temperature": 1.0,
+    "top_p": null
+  },
+  "started_harness_error_cells": 0
+}

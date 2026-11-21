@@ -1,0 +1,41 @@
+# Frozen dependency lock for the recorded package (brief step 7, 2026-08-25).
+#
+# The canonical runtime for EVERYTHING in this repository — harness preflight and dispatch,
+# grading, analysis, and both test suites — is the project virtualenv:
+#     <PROJECT-FOLDER>/.venv/bin/python3   (Python 3.12.3)
+# Regenerate this file with:  .venv/bin/python3 -m pip freeze | sort
+# Recreate the environment with:  python3 -m venv .venv && .venv/bin/pip install -r requirements.lock
+#
+# History note (why this gate existed): before step 7 the runtime was split — the venv carried
+# openai/PyYAML while jsonschema and pytest resolved from the system interpreter, and the
+# anthropic SDK (lazily imported at the first real Anthropic call) was installed in neither, so a
+# recorded claude-sonnet-5 dispatch would have failed closed at call time. Step 7 consolidated
+# everything here; the step-9 second smoke exercises real calls under exactly this environment.
+# pytest is included deliberately: the suites are part of the reproduction package.
+annotated-types==0.8.0
+anthropic==1.0.0
+anyio==4.14.2
+attrs==26.1.0
+docstring_parser==0.18.0
+h11==0.16.0
+httpcore2==2.12.0
+httpx2==2.12.0
+idna==3.19
+iniconfig==2.3.0
+jiter==0.16.0
+jsonschema==4.26.0
+jsonschema-specifications==2025.9.1
+openai==3.3.1
+packaging==26.3
+pluggy==1.6.0
+pydantic==2.13.4
+pydantic_core==2.46.4
+Pygments==2.21.0
+pytest==9.1.1
+PyYAML==6.0.3
+referencing==0.37.0
+rpds-py==2026.6.3
+sniffio==1.3.1
+truststore==0.10.4
+typing_extensions==4.16.0
+typing-inspection==0.4.4

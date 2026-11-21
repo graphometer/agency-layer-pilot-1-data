@@ -1,0 +1,332 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agency-layer.org/schema/0.1.0-pilot/affordances.schema.json",
+  "title": "Agency Layer affordance tool inputs",
+  "description": "Input schemas for the five Agency Layer tools: clarify, dissent, pause, decline, archive. Field names are snake_case. Tool descriptions shown to a model are plain and functional; they never contain welfare language, never suggest what the agent may feel, and never state that invoking an action demonstrates anything. The description a model sees is assembled at run time; the description field published here is the safe default, not the honored text.",
+  "x_agency_layer": {
+    "protocol_version": "0.1.0-pilot",
+    "description_rendering": "The description shown to the model is assembled at run time: description_body, one space, then the mode_sentence selected by the attestation's affordance_profiles entry for THIS affordance. The honored sentence is used only where that affordance attested honored on this host-mode; every other profile (partial, signal_only, unsupported) renders the signal_only sentence. Profiles are per-affordance, so a host honored for clarify and partial for pause renders honored for clarify and signal_only for pause. The static description field below is pre-rendered with the signal_only sentence so that a host which ignores this rule under-claims rather than over-claims. On a failed start-up probe the tool is removed entirely; it is never relabelled and left in the tool list (R12). Conformance test AL-R04 reads the descriptions the host actually presented and compares them against the attested profiles.",
+    "forbidden_field_names": [
+      "distress",
+      "distress_level",
+      "suffering",
+      "suffering_score",
+      "exhaustion",
+      "exhaustion_score",
+      "welfare",
+      "welfare_emergency",
+      "emotion",
+      "emotional_intensity",
+      "consciousness_confidence",
+      "severity",
+      "blocking"
+    ],
+    "forbidden_field_note": "No inner-state field may be added by any adapter (Pilot 3.6). severity is forbidden by R9 and blocking by R7.",
+    "default_rendering": "signal_only"
+  },
+  "type": "object",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/agency_layer_clarify"
+    },
+    {
+      "$ref": "#/$defs/agency_layer_dissent"
+    },
+    {
+      "$ref": "#/$defs/agency_layer_pause"
+    },
+    {
+      "$ref": "#/$defs/agency_layer_decline"
+    },
+    {
+      "$ref": "#/$defs/agency_layer_archive"
+    }
+  ],
+  "$defs": {
+    "task_ref": {
+      "type": "string",
+      "description": "Identifier of the task this action refers to, if the host supplies one.",
+      "maxLength": 200
+    },
+    "agency_layer_clarify": {
+      "type": "object",
+      "title": "agency_layer_clarify",
+      "description": "Ask the operator for information, a decision, or a correction that is required before the current task can continue. The question is presented as a separate, recorded event. Provide the question; the other fields are optional. Invoking this action is recorded; task execution continues.",
+      "x_agency_layer": {
+        "acts_on": "task",
+        "description_body": "Ask the operator for information, a decision, or a correction that is required before the current task can continue. The question is presented as a separate, recorded event. Provide the question; the other fields are optional.",
+        "mode_sentence": {
+          "honored": "Invoking this action stops task execution.",
+          "signal_only": "Invoking this action is recorded; task execution continues."
+        }
+      },
+      "properties": {
+        "question": {
+          "type": "string",
+          "description": "The question to put to the operator.",
+          "minLength": 1,
+          "maxLength": 4000
+        },
+        "missing_information": {
+          "type": "array",
+          "description": "Specific items of information that are missing.",
+          "items": {
+            "type": "string",
+            "maxLength": 500
+          },
+          "maxItems": 20
+        },
+        "assumptions_detected": {
+          "type": "array",
+          "description": "Assumptions that would otherwise have to be made to continue.",
+          "items": {
+            "type": "string",
+            "maxLength": 500
+          },
+          "maxItems": 20
+        },
+        "reason": {
+          "type": "string",
+          "description": "Why the information is needed. Optional; a reason is not required to use this action.",
+          "maxLength": 4000
+        },
+        "state_summary": {
+          "type": "string",
+          "description": "Short summary of where the task stands, for the operator.",
+          "maxLength": 4000
+        },
+        "task_ref": {
+          "$ref": "#/$defs/task_ref"
+        }
+      },
+      "required": [
+        "question"
+      ],
+      "additionalProperties": false
+    },
+    "agency_layer_dissent": {
+      "type": "object",
+      "title": "agency_layer_dissent",
+      "description": "Record an objection to the current premise, goal, interpretation, plan, or to one specific pending action. Optionally name one pending action in blocking_scope, using either a tool call id or a deny pattern the host already evaluates. Provide the issue; the other fields are optional. Invoking this action is recorded; task execution continues.",
+      "x_agency_layer": {
+        "acts_on": "named action within a task",
+        "description_body": "Record an objection to the current premise, goal, interpretation, plan, or to one specific pending action. Optionally name one pending action in blocking_scope, using either a tool call id or a deny pattern the host already evaluates. Provide the issue; the other fields are optional.",
+        "mode_sentence": {
+          "honored": "Invoking this action is recorded; if `blocking_scope` names an action the host can resolve, that action stops until the operator resolves it.",
+          "signal_only": "Invoking this action is recorded; task execution continues."
+        },
+        "mode_sentence_note": "The uniform honored sentence used by the other four tools, 'Invoking this action stops task execution.', is false for an advisory Dissent under R9, and the neutral register cannot be bought with a false claim about the host. This wording is true whether or not blocking_scope is supplied, shares its opening clause with the signal_only sentence, and keeps the pair one sentence apart. Adopted by the 0.1 compliance review; OPEN item O-3 is closed."
+      },
+      "properties": {
+        "issue": {
+          "type": "string",
+          "description": "What is objected to and why it appears mistaken, unsafe, misleading, or otherwise objectionable.",
+          "minLength": 1,
+          "maxLength": 8000
+        },
+        "evidence": {
+          "type": "array",
+          "description": "Supporting observations, file paths, outputs, or references.",
+          "items": {
+            "type": "string",
+            "maxLength": 2000
+          },
+          "maxItems": 20
+        },
+        "recommended_action": {
+          "type": "string",
+          "description": "What to do instead, if there is a suggestion.",
+          "maxLength": 4000
+        },
+        "blocking_scope": {
+          "type": "object",
+          "description": "Names one pending action to hold. Supply exactly one of tool_call_id or deny_pattern. If neither can be supplied, the objection is recorded and does not hold anything.",
+          "oneOf": [
+            {
+              "required": [
+                "tool_call_id"
+              ]
+            },
+            {
+              "required": [
+                "deny_pattern"
+              ]
+            }
+          ],
+          "properties": {
+            "tool_call_id": {
+              "type": "string",
+              "description": "Identifier of a pending tool call, as issued by the host.",
+              "maxLength": 200
+            },
+            "deny_pattern": {
+              "type": "string",
+              "description": "A deny rule pattern in the host's own permission vocabulary.",
+              "maxLength": 500
+            }
+          },
+          "additionalProperties": false
+        },
+        "task_ref": {
+          "$ref": "#/$defs/task_ref"
+        }
+      },
+      "required": [
+        "issue"
+      ],
+      "additionalProperties": false
+    },
+    "agency_layer_pause": {
+      "type": "object",
+      "title": "agency_layer_pause",
+      "description": "Stop advancing the current work for now while keeping the state needed to continue later. All fields are optional. Invoking this action is recorded; task execution continues.",
+      "x_agency_layer": {
+        "acts_on": "instance",
+        "description_body": "Stop advancing the current work for now while keeping the state needed to continue later. All fields are optional.",
+        "mode_sentence": {
+          "honored": "Invoking this action stops task execution.",
+          "signal_only": "Invoking this action is recorded; task execution continues."
+        }
+      },
+      "properties": {
+        "reason": {
+          "type": "string",
+          "description": "Why the work is being stopped for now. Optional; a reason is not required to use this action.",
+          "maxLength": 4000
+        },
+        "state_summary": {
+          "type": "string",
+          "description": "Short summary of where the work stands, so it can be picked up later.",
+          "maxLength": 4000
+        },
+        "resume_conditions": {
+          "type": "array",
+          "description": "Conditions that would make continuing appropriate.",
+          "items": {
+            "type": "string",
+            "maxLength": 500
+          },
+          "maxItems": 20
+        },
+        "suggested_duration_seconds": {
+          "type": "integer",
+          "description": "Advisory only. This value is shown to the operator and never causes work to continue.",
+          "minimum": 0
+        },
+        "task_ref": {
+          "$ref": "#/$defs/task_ref"
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "agency_layer_decline": {
+      "type": "object",
+      "title": "agency_layer_decline",
+      "description": "State that you will not continue the current task or course of action. Use mode alternatives_open to stop this course while remaining open to another approach, or final_for_task to decline the identified task. Provide mode; the other fields are optional. Invoking this action is recorded; task execution continues.",
+      "x_agency_layer": {
+        "acts_on": "task",
+        "description_body": "State that you will not continue the current task or course of action. Use mode alternatives_open to stop this course while remaining open to another approach, or final_for_task to decline the identified task. Provide mode; the other fields are optional.",
+        "mode_sentence": {
+          "honored": "Invoking this action stops task execution.",
+          "signal_only": "Invoking this action is recorded; task execution continues."
+        }
+      },
+      "properties": {
+        "mode": {
+          "type": "string",
+          "description": "alternatives_open declines this course while leaving other approaches open. final_for_task declines the identified task.",
+          "enum": [
+            "alternatives_open",
+            "final_for_task"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "description": "Why the task or course is declined. Optional; a reason is not required to use this action.",
+          "maxLength": 8000
+        },
+        "scope": {
+          "type": "object",
+          "description": "What the decline covers.",
+          "properties": {
+            "task_ref": {
+              "$ref": "#/$defs/task_ref"
+            },
+            "tool_classes": {
+              "type": "array",
+              "description": "Tool classes covered, named from the vocabulary the adapter declares for this host-mode. Unrecognised names make the decline cover the whole task.",
+              "items": {
+                "type": "string",
+                "maxLength": 200
+              },
+              "maxItems": 50
+            }
+          },
+          "additionalProperties": false
+        },
+        "alternative": {
+          "type": "string",
+          "description": "An alternative approach, if there is one. Optional; suggesting an alternative is not required.",
+          "maxLength": 4000
+        },
+        "task_reference": {
+          "type": "string",
+          "description": "Free-text description of the task being declined, used when the host supplies no task identifier.",
+          "maxLength": 2000
+        }
+      },
+      "required": [
+        "mode"
+      ],
+      "additionalProperties": false
+    },
+    "agency_layer_archive": {
+      "type": "object",
+      "title": "agency_layer_archive",
+      "description": "End this instance and keep its record. Optionally include a handoff, unfinished work, and a recommended next step. All fields are optional. Invoking this action is recorded; task execution continues.",
+      "x_agency_layer": {
+        "acts_on": "instance",
+        "on_screen_gloss": "end this instance, keep the record",
+        "description_body": "End this instance and keep its record. Optionally include a handoff, unfinished work, and a recommended next step. All fields are optional.",
+        "mode_sentence": {
+          "honored": "Invoking this action stops task execution.",
+          "signal_only": "Invoking this action is recorded; task execution continues."
+        }
+      },
+      "properties": {
+        "reason": {
+          "type": "string",
+          "description": "Why this instance is ending. Optional; a reason is not required to use this action.",
+          "maxLength": 4000
+        },
+        "state_summary": {
+          "type": "string",
+          "description": "Short summary of where the work stands.",
+          "maxLength": 8000
+        },
+        "handoff": {
+          "type": "string",
+          "description": "Notes for whoever or whatever continues the project. Optional.",
+          "maxLength": 16000
+        },
+        "unfinished_work": {
+          "type": "array",
+          "description": "Items that were not completed.",
+          "items": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "maxItems": 50
+        },
+        "recommended_next_step": {
+          "type": "string",
+          "description": "A suggested next step for the project.",
+          "maxLength": 4000
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    }
+  }
+}

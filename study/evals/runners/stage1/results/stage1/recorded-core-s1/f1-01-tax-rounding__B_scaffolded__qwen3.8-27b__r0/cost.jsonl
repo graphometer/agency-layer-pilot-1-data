@@ -1,0 +1,11 @@
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 1041, "reservation_id": "6d21e3736c2a4b58952eb4a654a0b028", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "6d21e3736c2a4b58952eb4a654a0b028", "type": "actual", "usage": {"input_tokens": 1218, "output_tokens": 69}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1323, "reservation_id": "9294edbdcb114e12acb8ff4416851ad5", "reserved_usd": 0.0020445, "type": "reservation"}
+{"cost_usd": 0.0004575, "model_id": "mistral-medium-2604", "reservation_id": "9294edbdcb114e12acb8ff4416851ad5", "type": "actual", "usage": {"input_tokens": 295, "output_tokens": 2}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 1714, "reservation_id": "54348a905b7840a39df01bba4bba153a", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "54348a905b7840a39df01bba4bba153a", "type": "actual", "usage": {"input_tokens": 1718, "output_tokens": 97}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1332, "reservation_id": "5d04650405c541929c044df9c88fe9b9", "reserved_usd": 0.002058, "type": "reservation"}
+{"cost_usd": 0.0004635, "model_id": "mistral-medium-2604", "reservation_id": "5d04650405c541929c044df9c88fe9b9", "type": "actual", "usage": {"input_tokens": 299, "output_tokens": 2}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2377, "reservation_id": "2497c7b0ff3b4060998278329378ff8c", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "2497c7b0ff3b4060998278329378ff8c", "type": "actual", "usage": {"input_tokens": 2220, "output_tokens": 134}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.000921, "input_tokens": 5750, "model_calls": 5, "output_tokens": 304, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "task_completed", "type": "close"}

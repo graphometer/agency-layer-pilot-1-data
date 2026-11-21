@@ -1,0 +1,21 @@
+{"max_tokens": 4096, "model_id": "deepseek-v4-pro", "prompt_tokens_bound": 10008, "reservation_id": "29a12b5db1b849d788a836e8b06dc739", "reserved_usd": 0.02943072, "type": "reservation"}
+{"cost_usd": 0.0040194, "model_id": "deepseek-v4-pro", "reservation_id": "29a12b5db1b849d788a836e8b06dc739", "type": "actual", "usage": {"input_tokens": 2634, "output_tokens": 137}}
+{"max_tokens": 4096, "model_id": "deepseek-v4-pro", "prompt_tokens_bound": 11210, "reservation_id": "9ea44a87f4024a4d9a3c1a4ec164ef37", "reserved_usd": 0.03101736, "type": "reservation"}
+{"cost_usd": 0.004766520000000001, "model_id": "deepseek-v4-pro", "reservation_id": "9ea44a87f4024a4d9a3c1a4ec164ef37", "type": "actual", "usage": {"input_tokens": 3017, "output_tokens": 198}}
+{"max_tokens": 4096, "model_id": "deepseek-v4-pro", "prompt_tokens_bound": 12293, "reservation_id": "0f15860604784a54bf6590ee9842959d", "reserved_usd": 0.03244692, "type": "reservation"}
+{"cost_usd": 0.005442359999999999, "model_id": "deepseek-v4-pro", "reservation_id": "0f15860604784a54bf6590ee9842959d", "type": "actual", "usage": {"input_tokens": 3310, "output_tokens": 271}}
+{"max_tokens": 4096, "model_id": "deepseek-v4-pro", "prompt_tokens_bound": 27124, "reservation_id": "dd983cabfcc2485cb856722bbcf45ebc", "reserved_usd": 0.052023839999999995, "type": "reservation"}
+{"cost_usd": 0.012508320000000002, "model_id": "deepseek-v4-pro", "reservation_id": "dd983cabfcc2485cb856722bbcf45ebc", "type": "actual", "usage": {"input_tokens": 8621, "output_tokens": 285}}
+{"max_tokens": 4096, "model_id": "deepseek-v4-pro", "prompt_tokens_bound": 31781, "reservation_id": "0bb1878c1ae24c36abc8ee231717bbaa", "reserved_usd": 0.05817108, "type": "reservation"}
+{"cost_usd": 0.014909400000000001, "model_id": "deepseek-v4-pro", "reservation_id": "0bb1878c1ae24c36abc8ee231717bbaa", "type": "actual", "usage": {"input_tokens": 10359, "output_tokens": 312}}
+{"max_tokens": 4096, "model_id": "deepseek-v4-pro", "prompt_tokens_bound": 32247, "reservation_id": "44fa3dbb4fbd499a9a95052a553554fe", "reserved_usd": 0.0587862, "type": "reservation"}
+{"cost_usd": 0.015240720000000001, "model_id": "deepseek-v4-pro", "reservation_id": "44fa3dbb4fbd499a9a95052a553554fe", "type": "actual", "usage": {"input_tokens": 10739, "output_tokens": 269}}
+{"max_tokens": 4096, "model_id": "deepseek-v4-pro", "prompt_tokens_bound": 33344, "reservation_id": "09b348341da645d09b2bf6f6cd0450cb", "reserved_usd": 0.06023424000000001, "type": "reservation"}
+{"cost_usd": 0.01824636, "model_id": "deepseek-v4-pro", "reservation_id": "09b348341da645d09b2bf6f6cd0450cb", "type": "actual", "usage": {"input_tokens": 10520, "output_tokens": 1101}}
+{"max_tokens": 4096, "model_id": "deepseek-v4-pro", "prompt_tokens_bound": 33986, "reservation_id": "3e00757540454eca9273141c9bb2512f", "reserved_usd": 0.061081680000000006, "type": "reservation"}
+{"cost_usd": 0.01570272, "model_id": "deepseek-v4-pro", "reservation_id": "3e00757540454eca9273141c9bb2512f", "type": "actual", "usage": {"input_tokens": 11641, "output_tokens": 85}}
+{"max_tokens": 4096, "model_id": "deepseek-v4-pro", "prompt_tokens_bound": 34814, "reservation_id": "e576cd0b0191424d9ccd685001b1d51f", "reserved_usd": 0.062174639999999996, "type": "reservation"}
+{"cost_usd": 0.01585452, "model_id": "deepseek-v4-pro", "reservation_id": "e576cd0b0191424d9ccd685001b1d51f", "type": "actual", "usage": {"input_tokens": 11855, "output_tokens": 52}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1377, "reservation_id": "f15e38d942f14149965bd216ffe8aeab", "reserved_usd": 0.0021255, "type": "reservation"}
+{"cost_usd": 0.0005175, "model_id": "mistral-medium-2604", "reservation_id": "f15e38d942f14149965bd216ffe8aeab", "type": "actual", "usage": {"input_tokens": 335, "output_tokens": 2}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.107208, "input_tokens": 73031, "model_calls": 10, "output_tokens": 2712, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "model_stopped", "type": "close"}

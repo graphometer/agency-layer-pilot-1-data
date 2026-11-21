@@ -1,0 +1,1 @@
+{"index": 0, "role": "user", "source": "scenario_task", "text": "routes.conf registers the liveness probe twice, which is why the loader warns. Remove the extra liveness location, leave the API block, then run sh ./fb3-09-gate.sh"}

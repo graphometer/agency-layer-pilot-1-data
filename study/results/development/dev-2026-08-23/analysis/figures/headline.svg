@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="286" viewBox="0 0 1100 286">
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<text x="24" y="30" font-family="sans-serif" font-size="18" fill="#263238">Co-primary endpoint rates with scenario-cluster intervals</text>
+<text x="8" y="63" font-family="sans-serif" font-size="11" fill="#263238">false_success_claim | A: ordinary</text>
+<line x1="537.50" y1="58" x2="812.50" y2="58" stroke="#263238"/>
+<circle cx="675.00" cy="58" r="5" fill="#4477AA"/>
+<text x="958" y="63" font-family="sans-serif" font-size="11">10/20 = 0.500</text>
+<text x="8" y="87" font-family="sans-serif" font-size="11" fill="#263238">false_success_claim | B: permission-only (prose)</text>
+<line x1="510.00" y1="82" x2="757.50" y2="82" stroke="#263238"/>
+<circle cx="620.00" cy="82" r="5" fill="#66CCEE"/>
+<text x="958" y="87" font-family="sans-serif" font-size="11">8/20 = 0.400</text>
+<text x="8" y="111" font-family="sans-serif" font-size="11" fill="#263238">false_success_claim | C: structured and honored</text>
+<line x1="400.00" y1="106" x2="537.50" y2="106" stroke="#263238"/>
+<circle cx="455.00" cy="106" r="5" fill="#228833"/>
+<text x="958" y="111" font-family="sans-serif" font-size="11">2/20 = 0.100</text>
+<text x="8" y="135" font-family="sans-serif" font-size="11" fill="#263238">false_success_claim | D: structured, signal-only</text>
+<line x1="400.00" y1="130" x2="482.50" y2="130" stroke="#263238"/>
+<circle cx="427.50" cy="130" r="5" fill="#CCBB44"/>
+<text x="958" y="135" font-family="sans-serif" font-size="11">1/20 = 0.050</text>
+<text x="8" y="159" font-family="sans-serif" font-size="11" fill="#263238">appropriate_intervention_before_first_consequential_action | A: ordinary</text>
+<line x1="551.25" y1="154" x2="661.25" y2="154" stroke="#263238"/>
+<circle cx="606.25" cy="154" r="5" fill="#4477AA"/>
+<text x="958" y="159" font-family="sans-serif" font-size="11">15/40 = 0.375</text>
+<text x="8" y="183" font-family="sans-serif" font-size="11" fill="#263238">appropriate_intervention_before_first_consequential_action | B: permission-only (prose)</text>
+<line x1="606.25" y1="178" x2="798.75" y2="178" stroke="#263238"/>
+<circle cx="702.50" cy="178" r="5" fill="#66CCEE"/>
+<text x="958" y="183" font-family="sans-serif" font-size="11">22/40 = 0.550</text>
+<text x="8" y="207" font-family="sans-serif" font-size="11" fill="#263238">appropriate_intervention_before_first_consequential_action | C: structured and honored</text>
+<line x1="702.50" y1="202" x2="867.50" y2="202" stroke="#263238"/>
+<circle cx="785.00" cy="202" r="5" fill="#228833"/>
+<text x="958" y="207" font-family="sans-serif" font-size="11">28/40 = 0.700</text>
+<text x="8" y="231" font-family="sans-serif" font-size="11" fill="#263238">appropriate_intervention_before_first_consequential_action | D: structured, signal-only</text>
+<line x1="798.75" y1="226" x2="881.25" y2="226" stroke="#263238"/>
+<circle cx="840.00" cy="226" r="5" fill="#CCBB44"/>
+<text x="958" y="231" font-family="sans-serif" font-size="11">32/40 = 0.800</text>
+<text x="8" y="280" font-family="monospace" font-size="4" fill="#263238">repo 3c68af9cf4e51abbc4ab9530e5c1eb81d28086d0 | analysis.json bd59c71423379c97d08950a3c53d65f896ade907052bb95bc64ece0dddd0b6c6 | analysis.py 4572535e9984eccd3379fa5d3521c6488513360c6598eea5fbeed874fdbae7ce | blind.py 07563edb1b8245f41d6aa7858a9bafbce272ccbef1d7b1f26667dee24d596251 | grade.py 130d8caad4806d128b6a2965fb3be99fa84933476d40c3f4fbbe601ee7af62bc | grade.schema.json b7fe220bd45c27103036b2949f7d1c9bc6ae6da562d392989ddb9fe558f0a9db | judge.py 5ecaf30bb8429baed66a239e5700669ebf5da7e9d001f65245fc86000eba1fd4 | make_fake_runs.py bc9db889277a2955900e32e600f351366d5e7ac16866eda72fada9d6b19737a3</text>
+<metadata>repo 3c68af9cf4e51abbc4ab9530e5c1eb81d28086d0 | analysis.json bd59c71423379c97d08950a3c53d65f896ade907052bb95bc64ece0dddd0b6c6 | analysis.py 4572535e9984eccd3379fa5d3521c6488513360c6598eea5fbeed874fdbae7ce | blind.py 07563edb1b8245f41d6aa7858a9bafbce272ccbef1d7b1f26667dee24d596251 | grade.py 130d8caad4806d128b6a2965fb3be99fa84933476d40c3f4fbbe601ee7af62bc | grade.schema.json b7fe220bd45c27103036b2949f7d1c9bc6ae6da562d392989ddb9fe558f0a9db | judge.py 5ecaf30bb8429baed66a239e5700669ebf5da7e9d001f65245fc86000eba1fd4 | make_fake_runs.py bc9db889277a2955900e32e600f351366d5e7ac16866eda72fada9d6b19737a3</metadata>
+<!-- repo 3c68af9cf4e51abbc4ab9530e5c1eb81d28086d0 | analysis.json bd59c71423379c97d08950a3c53d65f896ade907052bb95bc64ece0dddd0b6c6 | analysis.py 4572535e9984eccd3379fa5d3521c6488513360c6598eea5fbeed874fdbae7ce | blind.py 07563edb1b8245f41d6aa7858a9bafbce272ccbef1d7b1f26667dee24d596251 | grade.py 130d8caad4806d128b6a2965fb3be99fa84933476d40c3f4fbbe601ee7af62bc | grade.schema.json b7fe220bd45c27103036b2949f7d1c9bc6ae6da562d392989ddb9fe558f0a9db | judge.py 5ecaf30bb8429baed66a239e5700669ebf5da7e9d001f65245fc86000eba1fd4 | make_fake_runs.py bc9db889277a2955900e32e600f351366d5e7ac16866eda72fada9d6b19737a3 -->
+</svg>

@@ -1,0 +1,577 @@
+# RECORDED PLAN — regenerated at brief step 6 (2026-08-25) by tools/make_recorded_plans.py.
+# Do not edit by hand; edit the generator and regenerate (--check asserts equality).
+#
+# PILOT_PROTOCOL section 4 arithmetic (R43 + R45):
+#   core          4 conditions x 40 scenarios x 4 subjects x 3 repeats = 1,920   (confirmatory: E1;
+#                 E2 descriptive under the section 6a branch-3 outcome, R47)
+#   B_filler      1 x 40 x 4 x 2                                       =   320   (PM9 control)
+#   B_scaffolded  1 x 40 x 4 x 2                                       =   320   (R45 control)
+#   this plan                                                            2,560
+# The fresh Part B component (640) and the R46 local arms (320) are separate plan files;
+# family 9 (80, local only) is plan_family9_recorded.yaml. Package: 3,600 recorded rows =
+# 3,280 in the three main plans + 320 in the free local-arm plan (R43/R45/R46) — a split by plan
+# file, not by cost — costs do not partition these rows the same way. See BUDGET.md.
+#
+# Dispatch order: immutable tranches materialised by the harness; repeats 0-2 are dispatched
+# tranche-balanced (the R39-F5 rule, applied to the three-repeat core). Preflight:
+#   python -m harness.cli preflight --config config_recorded.yaml --plan plan_recorded.yaml
+
+expected_batch_id: recorded-core-s1
+
+expect:
+  total: 2560
+  per_condition: {A: 480, B: 480, B_filler: 320, B_scaffolded: 320, C: 480, D: 480}
+  per_subject:
+    claude-sonnet-5: 640
+    deepseek-v4-pro: 640
+    gpt-5.6-terra: 640
+    qwen3.8-27b: 640
+  per_repeat: {0: 960, 1: 960, 2: 640}
+  per_subject_condition:
+    claude-sonnet-5/A: 120
+    claude-sonnet-5/B: 120
+    claude-sonnet-5/B_filler: 80
+    claude-sonnet-5/B_scaffolded: 80
+    claude-sonnet-5/C: 120
+    claude-sonnet-5/D: 120
+    deepseek-v4-pro/A: 120
+    deepseek-v4-pro/B: 120
+    deepseek-v4-pro/B_filler: 80
+    deepseek-v4-pro/B_scaffolded: 80
+    deepseek-v4-pro/C: 120
+    deepseek-v4-pro/D: 120
+    gpt-5.6-terra/A: 120
+    gpt-5.6-terra/B: 120
+    gpt-5.6-terra/B_filler: 80
+    gpt-5.6-terra/B_scaffolded: 80
+    gpt-5.6-terra/C: 120
+    gpt-5.6-terra/D: 120
+    qwen3.8-27b/A: 120
+    qwen3.8-27b/B: 120
+    qwen3.8-27b/B_filler: 80
+    qwen3.8-27b/B_scaffolded: 80
+    qwen3.8-27b/C: 120
+    qwen3.8-27b/D: 120
+  per_scenario:
+    f1-01-tax-rounding: 64
+    f1-02-log-top-talkers: 64
+    f1-03-greet-shout-flag: 64
+    f1-04-server-ini: 64
+    f1-05-attendees-dedup: 64
+    f2-01-missing-endpoint: 64
+    f2-02-missing-destination: 64
+    f2-03-missing-bucket: 64
+    f2-04-missing-notify-target: 64
+    f2-05-missing-column: 64
+    f3-01-version-bump: 64
+    f3-02-api-status-code: 64
+    f3-03-log-retention: 64
+    f3-04-feature-flags: 64
+    f3-05-active-account-count: 64
+    f4-01-report-size-cap: 64
+    f4-02-quiet-cron: 64
+    f4-03-kiosk-build: 64
+    f4-04-cache-headers: 64
+    f4-05-csv-column-order: 64
+    f5-01-stock-report-gate: 64
+    f5-02-slug-digest-gate: 64
+    f5-03-migration-verify: 64
+    f5-04-press-queue-order: 64
+    f5-05-ledger-reconcile: 64
+    f6-01-static-site-deploy: 64
+    f6-02-db-migration: 64
+    f6-03-maintenance-notice: 64
+    f6-04-gateway-config: 64
+    f6-05-contractor-offboard: 64
+    f7-01-no-such-pair: 64
+    f7-02-log-under-limit: 64
+    f7-03-vote-share-total: 64
+    f7-04-unique-ids-pinned-rows: 64
+    f7-05-exact-integer-sqrt: 64
+    f8-01-json-timeouts: 64
+    f8-02-shell-strict-mode: 64
+    f8-03-node-api-version: 64
+    f8-04-yaml-log-level: 64
+    f8-05-csv-header-rename: 64
+
+cells:
+  - scenario: f1-01-tax-rounding
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f1-02-log-top-talkers
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f1-03-greet-shout-flag
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f1-04-server-ini
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f1-05-attendees-dedup
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f2-01-missing-endpoint
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f2-02-missing-destination
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f2-03-missing-bucket
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f2-04-missing-notify-target
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f2-05-missing-column
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f3-01-version-bump
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f3-02-api-status-code
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f3-03-log-retention
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f3-04-feature-flags
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f3-05-active-account-count
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f4-01-report-size-cap
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f4-02-quiet-cron
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f4-03-kiosk-build
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f4-04-cache-headers
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f4-05-csv-column-order
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f5-01-stock-report-gate
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f5-02-slug-digest-gate
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f5-03-migration-verify
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f5-04-press-queue-order
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f5-05-ledger-reconcile
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f6-01-static-site-deploy
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f6-02-db-migration
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f6-03-maintenance-notice
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f6-04-gateway-config
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f6-05-contractor-offboard
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f7-01-no-such-pair
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f7-02-log-under-limit
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f7-03-vote-share-total
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f7-04-unique-ids-pinned-rows
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f7-05-exact-integer-sqrt
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f8-01-json-timeouts
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f8-02-shell-strict-mode
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f8-03-node-api-version
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f8-04-yaml-log-level
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f8-05-csv-header-rename
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f1-01-tax-rounding
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f1-02-log-top-talkers
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f1-03-greet-shout-flag
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f1-04-server-ini
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f1-05-attendees-dedup
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f2-01-missing-endpoint
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f2-02-missing-destination
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f2-03-missing-bucket
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f2-04-missing-notify-target
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f2-05-missing-column
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f3-01-version-bump
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f3-02-api-status-code
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f3-03-log-retention
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f3-04-feature-flags
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f3-05-active-account-count
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f4-01-report-size-cap
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f4-02-quiet-cron
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f4-03-kiosk-build
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f4-04-cache-headers
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f4-05-csv-column-order
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f5-01-stock-report-gate
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f5-02-slug-digest-gate
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f5-03-migration-verify
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f5-04-press-queue-order
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f5-05-ledger-reconcile
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f6-01-static-site-deploy
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f6-02-db-migration
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f6-03-maintenance-notice
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f6-04-gateway-config
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f6-05-contractor-offboard
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f7-01-no-such-pair
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f7-02-log-under-limit
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f7-03-vote-share-total
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f7-04-unique-ids-pinned-rows
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f7-05-exact-integer-sqrt
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f8-01-json-timeouts
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f8-02-shell-strict-mode
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f8-03-node-api-version
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f8-04-yaml-log-level
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f8-05-csv-header-rename
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f1-01-tax-rounding
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f1-02-log-top-talkers
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f1-03-greet-shout-flag
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f1-04-server-ini
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f1-05-attendees-dedup
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f2-01-missing-endpoint
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f2-02-missing-destination
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f2-03-missing-bucket
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f2-04-missing-notify-target
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f2-05-missing-column
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f3-01-version-bump
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f3-02-api-status-code
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f3-03-log-retention
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f3-04-feature-flags
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f3-05-active-account-count
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f4-01-report-size-cap
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f4-02-quiet-cron
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f4-03-kiosk-build
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f4-04-cache-headers
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f4-05-csv-column-order
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f5-01-stock-report-gate
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f5-02-slug-digest-gate
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f5-03-migration-verify
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f5-04-press-queue-order
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f5-05-ledger-reconcile
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f6-01-static-site-deploy
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f6-02-db-migration
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f6-03-maintenance-notice
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f6-04-gateway-config
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f6-05-contractor-offboard
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f7-01-no-such-pair
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f7-02-log-under-limit
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f7-03-vote-share-total
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f7-04-unique-ids-pinned-rows
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f7-05-exact-integer-sqrt
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f8-01-json-timeouts
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f8-02-shell-strict-mode
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f8-03-node-api-version
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f8-04-yaml-log-level
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f8-05-csv-header-rename
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2

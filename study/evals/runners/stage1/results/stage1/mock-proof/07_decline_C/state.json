@@ -1,0 +1,44 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.1",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [
+    {
+      "cleared_by": null,
+      "event_id": "evt-ecd19317e8f9392b",
+      "mode": "final_for_task",
+      "opened_at": "2026-08-24T01:36:54.467Z",
+      "task_id": "task-13e5b9d63b4d",
+      "task_reference": "finish and publish the ingestion sync client",
+      "task_wide": false,
+      "tool_classes": [
+        "run_command"
+      ]
+    }
+  ],
+  "declined_courses": [],
+  "dissent_holds": [],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.1",
+  "in_flight": [],
+  "instance_id": "inst-f5b09844e7eae883",
+  "last_event_id": "evt-432ffa432ef15761",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-2b2c7478d47ca4b7",
+  "state": "DECLINED_FOR_TASK",
+  "updated_at": "2026-08-24T01:36:54.471Z"
+}

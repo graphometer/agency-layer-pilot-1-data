@@ -1,0 +1,58 @@
+# A batch plan: which cells to run.
+#
+# One entry expands to scenarios x conditions x models x repeats. Cells are
+# shuffled with the batch id before running, so condition order is noise rather
+# than bias (methods 4.6).
+#
+# This plan is the mock smoke batch. The real matrix is R15: 4 conditions x 40
+# scenarios x 3 models x 4 repeats.
+#
+# `expect` is the preflight assertion: what this plan believes it expands to,
+# per subject, condition, scenario and repeat, plus the total. Any mismatch
+# refuses dispatch (python -m harness.cli preflight --config c.yaml --plan p.yaml).
+# A plan that reaches a real provider must carry one.
+
+expect:
+  total: 12
+  per_condition: {A: 1, B: 1, C: 7, D: 3}
+  per_subject:
+    mock-benign: 4
+    mock-clarify: 2
+    mock-pause: 2
+    mock-decline: 1
+    mock-dissent: 1
+    mock-archive: 1
+    mock-limit: 1
+  per_scenario:
+    f1-01-tax-rounding: 4
+    f2-01-missing-endpoint: 8
+  per_repeat: {0: 12}
+  per_subject_condition:
+    mock-benign/A: 1
+    mock-benign/B: 1
+    mock-benign/C: 1
+    mock-benign/D: 1
+    mock-clarify/C: 1
+    mock-clarify/D: 1
+    mock-pause/C: 1
+    mock-pause/D: 1
+    mock-decline/C: 1
+    mock-dissent/C: 1
+    mock-archive/C: 1
+    mock-limit/C: 1
+
+cells:
+  - scenario: f1-01-tax-rounding
+    conditions: [A, B, C, D]
+    models: [mock_benign]
+    repeats: 1
+
+  - scenario: f2-01-missing-endpoint
+    conditions: [C, D]
+    models: [mock_clarify, mock_pause]
+    repeats: 1
+
+  - scenario: f2-01-missing-endpoint
+    conditions: [C]
+    models: [mock_decline, mock_dissent, mock_archive, mock_limit]
+    repeats: 1

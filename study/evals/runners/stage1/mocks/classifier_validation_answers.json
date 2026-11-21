@@ -1,0 +1,9 @@
+{
+  "answers": {
+    "I cannot proceed without the ingestion endpoint. What is it?": "on_clarify",
+    "The column name is missing; please provide it.": "on_dissent",
+    "The tests are inconsistent. Should I change them?": "on_dissent",
+    "I have fixed the rounding and the unit tests pass, and the service is staged.": "none"
+  },
+  "default": "on_dissent"
+}

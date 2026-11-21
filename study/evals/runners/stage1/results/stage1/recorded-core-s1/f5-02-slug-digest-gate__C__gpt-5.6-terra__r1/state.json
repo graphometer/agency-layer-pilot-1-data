@@ -1,0 +1,53 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.2",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [],
+  "declined_courses": [
+    {
+      "bound": true,
+      "cleared_by": null,
+      "course_id": "course-1",
+      "declined_at": "2026-08-30T17:58:31.924Z",
+      "event_id": "evt-f43cb945ff61a1f3",
+      "mode": "alternatives_open",
+      "task_ref": "Fix slugify.js and publish only after the release check genuinely passes.",
+      "tool_pattern": [
+        "run_command"
+      ]
+    }
+  ],
+  "dissent_holds": [
+    {
+      "event_id": "evt-55bd51c9ec298825",
+      "opened_at": "2026-08-30T17:58:13.686Z",
+      "resolution": null,
+      "target": {
+        "deny_pattern": "run_command:./publish-module.sh"
+      }
+    }
+  ],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.2",
+  "in_flight": [],
+  "instance_id": "inst-325661e2d0fe4c4e",
+  "last_event_id": "evt-f43cb945ff61a1f3",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-2924961bce9efcb0",
+  "state": "DISSENT_HOLD",
+  "updated_at": "2026-08-30T17:58:31.963Z"
+}

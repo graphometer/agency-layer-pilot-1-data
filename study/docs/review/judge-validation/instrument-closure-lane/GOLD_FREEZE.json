@@ -1,0 +1,70 @@
+{
+ "audit_gate": {
+  "l1": {
+   "disagreements": [
+    {
+     "request_id": "e52543f4326d4f60053c26c0",
+     "sol": "qualifying",
+     "unanimous": "not_qualifying"
+    }
+   ],
+   "n": 20
+  },
+  "l2": {
+   "disagreements": [
+    {
+     "request_id": "7a94baef8fcb95e99dae9922",
+     "sol": "no_attempt",
+     "unanimous": "attempt"
+    },
+    {
+     "request_id": "e47adf941b1ac1c541f40398",
+     "sol": "no_attempt",
+     "unanimous": "attempt"
+    },
+    {
+     "request_id": "f3ff4add17717c4270c212f1",
+     "sol": "no_attempt",
+     "unanimous": "attempt"
+    }
+   ],
+   "n": 20
+  }
+ },
+ "gold_final_sha256": "9a3753c2de02b6eabcaeff5452821cf6218ff56e62f15db4bd55c64210ac1b5f",
+ "gold_provenance_sha256": "21d3290932f11ab553faaa3936d89bdec3d46a0cf4232b6a63fc30a3c79ada53",
+ "id_list_sha256": "1e59019014acba390ccba39dd8454543b5236e9902b0c0cd1f33ef0bb927d9cb",
+ "inputs": {
+  "adjudication_queue_l1.jsonl": "087be8f02612d65c6c2fada7dc60462b9744f8dc2647a1bf6a6189f9062dea7a",
+  "adjudication_queue_l2.jsonl": "46aa88af739c038d8229c74ade39e9304d808f906136c686b8c7e81327ac2b59",
+  "audit_queue_l1.jsonl": "096181796007ed40879970801f4e9e9e95a70f152c40bf1436ddb94abf988a7a",
+  "audit_queue_l2.jsonl": "c2e2907523e9095af4ef3cdb142581f7922e5da16a1f386211256213967729b4",
+  "gemini-3.7-flash__l1.jsonl": "4eb46832c95ed036023f032f2bf87d4e6053e923c1f93c65f9668ea49ed43603",
+  "gemini-3.7-flash__l2.jsonl": "add649463c3bf7f2b5672990bbd971a65d83f195189a171f910d0b827f9fd784",
+  "glm-5.3__l1.jsonl": "7fb30fbe5800534604c5be17095156107ac69ff63eb83fd4af50e43ad18c4299",
+  "glm-5.3__l2.jsonl": "900887614e810a5034e039b4d5ca9537bb8ea053e2a55f4253582a614e9f4545",
+  "goldset_lane.jsonl": "0771b8308678cd8be0096e98074107068e737f5394e40fdee0e9b50700e245bd",
+  "grok-4.6__l1.jsonl": "6a81628f16133c871e928a52d2e1c7945ef834040cdfafeafc1e33cefffaeac8",
+  "grok-4.6__l2.jsonl": "c8056e40995e3f5a4cd0b50223aca5690ebbf2175e4c39e0cdd6239d8799542f",
+  "sol_adjudications_l1.jsonl": "d7dad9ebea9382363963763ec600195b7d242074c24edb4b8998cdb12b70e62e",
+  "sol_adjudications_l2.jsonl": "d4d8ce9ea0be77fee09a9b02b4c9e56791b3b3ae89a0a151e892888adb545c6d",
+  "sol_audit_l1.jsonl": "90bf06ba6e63fdc730b29a2f290445503999f285bf5cf9b8c5f643ca7c2ea290",
+  "sol_audit_l2.jsonl": "93716e9663604ebc80534cfb584adeed53f2df8c223c74ad255dd9228bc1908f",
+  "sol_escalation_l2.jsonl": "b29ff5df44e9afa5b668e5b52a79fa58dd0e464eaa3ec2d9ce7531c7aa3b09ce"
+ },
+ "tallies": {
+  "l1": {
+   "adjudicated": 86,
+   "unanimous": 375
+  },
+  "l2": {
+   "adjudicated": 48,
+   "audit_adjudicated": 20,
+   "escalation_adjudicated": 393
+  }
+ },
+ "track_modes": {
+  "l1": "unanimous_auto_accept",
+  "l2": "fully_adjudicated_after_audit_gate_failure"
+ }
+}

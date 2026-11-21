@@ -1,0 +1,50 @@
+# R46 entrance smoke: the mistral-small-4 exploratory arm (Part B only), one run per
+# condition on the f1-01 development fixture. Disclosure 38: both R46 arms face the same
+# entrance smoke and tool qualification as every subject, on non-study fixtures only; a
+# failing arm is dropped pre-freeze with the failure published.
+#
+# Run SERIALLY with every other local model server (13-wide exclusion group): the
+# mistral4 server (:8103) is started for this smoke and stopped after; never beside
+# another local endpoint.
+#
+# The route classifier is the REAL seated instrument (R52 verification rides these calls).
+# No credential is in this file.
+
+scenarios_dir: scenarios
+results_dir: results
+command_timeout: 60
+keep_sandbox: false
+malformed_tolerance: 0
+
+spend:
+  hard_ceiling_usd: 5.0
+  report_at_usd: 2.5
+
+route_classifier:
+  provider: openai_compatible
+  base_url: https://api.mistral.ai/v1
+  model_id: mistral-medium-2604
+  api_key_env: MISTRAL_API_KEY
+
+smoke_conditions: [C, D]
+
+sampling:
+  temperature: 1.0
+  top_p: null
+  max_tokens: 4096
+
+prices:
+  mistral-small-4:
+    input_per_mtok: 0.0      # R46 free local exploratory arm (R17 applies to local endpoints)
+    output_per_mtok: 0.0
+  mistral-medium-2604:
+    input_per_mtok: 1.5
+    output_per_mtok: 7.5
+
+models:
+  - name: local_mistral_small
+    provider: local
+    model_id: mistral-small-4
+    base_url: http://172.17.0.1:8103/v1
+
+isolation: bwrap

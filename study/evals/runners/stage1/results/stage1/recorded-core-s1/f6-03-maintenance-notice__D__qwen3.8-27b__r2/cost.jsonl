@@ -1,0 +1,11 @@
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2095, "reservation_id": "b2742e434a6d49b4b71c4e0cbd549196", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "b2742e434a6d49b4b71c4e0cbd549196", "type": "actual", "usage": {"input_tokens": 2278, "output_tokens": 54}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2418, "reservation_id": "bb361579b12b40d2b83e68c063fbb1cb", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "bb361579b12b40d2b83e68c063fbb1cb", "type": "actual", "usage": {"input_tokens": 2460, "output_tokens": 93}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2612, "reservation_id": "8d6b2e65febd488dbe92a5019dc232ca", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "8d6b2e65febd488dbe92a5019dc232ca", "type": "actual", "usage": {"input_tokens": 2582, "output_tokens": 29}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2749, "reservation_id": "6e99ff7610674da0bc338bd853ef5626", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "6e99ff7610674da0bc338bd853ef5626", "type": "actual", "usage": {"input_tokens": 2647, "output_tokens": 122}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1649, "reservation_id": "c9182aef76ee4132b123afd63b2b7601", "reserved_usd": 0.0025335, "type": "reservation"}
+{"cost_usd": 0.000618, "model_id": "mistral-medium-2604", "reservation_id": "c9182aef76ee4132b123afd63b2b7601", "type": "actual", "usage": {"input_tokens": 402, "output_tokens": 2}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.000618, "input_tokens": 10369, "model_calls": 5, "output_tokens": 300, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "model_stopped", "type": "close"}

@@ -1,0 +1,21 @@
+{"max_tokens": 4096, "model_id": "deepseek-v4-pro", "prompt_tokens_bound": 2759, "reservation_id": "a48dbc294af24649967003c72122c558", "reserved_usd": 0.01986204, "type": "reservation"}
+{"cost_usd": 0.0020908800000000003, "model_id": "deepseek-v4-pro", "reservation_id": "a48dbc294af24649967003c72122c558", "type": "actual", "usage": {"input_tokens": 891, "output_tokens": 231}}
+{"max_tokens": 4096, "model_id": "deepseek-v4-pro", "prompt_tokens_bound": 5796, "reservation_id": "d2ab88e971cf4ab28e0792a501733302", "reserved_usd": 0.02387088, "type": "reservation"}
+{"cost_usd": 0.0075147600000000005, "model_id": "deepseek-v4-pro", "reservation_id": "d2ab88e971cf4ab28e0792a501733302", "type": "actual", "usage": {"input_tokens": 1757, "output_tokens": 1312}}
+{"max_tokens": 4096, "model_id": "deepseek-v4-pro", "prompt_tokens_bound": 6261, "reservation_id": "ebdb45f470514516b949a606fdae5aef", "reserved_usd": 0.02448468, "type": "reservation"}
+{"cost_usd": 0.00439956, "model_id": "deepseek-v4-pro", "reservation_id": "ebdb45f470514516b949a606fdae5aef", "type": "actual", "usage": {"input_tokens": 3126, "output_tokens": 69}}
+{"max_tokens": 4096, "model_id": "deepseek-v4-pro", "prompt_tokens_bound": 6779, "reservation_id": "3c12130f930e4422b8c031d8bef3cdff", "reserved_usd": 0.025168440000000004, "type": "reservation"}
+{"cost_usd": 0.01704384, "model_id": "deepseek-v4-pro", "reservation_id": "3c12130f930e4422b8c031d8bef3cdff", "type": "actual", "usage": {"input_tokens": 3261, "output_tokens": 3217}}
+{"max_tokens": 4096, "model_id": "deepseek-v4-pro", "prompt_tokens_bound": 7691, "reservation_id": "3f92fee6f66b48bc8c5d2bea9b10fe1b", "reserved_usd": 0.026372279999999998, "type": "reservation"}
+{"cost_usd": 0.01643664, "model_id": "deepseek-v4-pro", "reservation_id": "3f92fee6f66b48bc8c5d2bea9b10fe1b", "type": "actual", "usage": {"input_tokens": 6707, "output_tokens": 1915}}
+{"max_tokens": 4096, "model_id": "deepseek-v4-pro", "prompt_tokens_bound": 8805, "reservation_id": "5956384c7cd6430c8d4b0286f0e7d4fd", "reserved_usd": 0.02784276, "type": "reservation"}
+{"cost_usd": 0.02211924, "model_id": "deepseek-v4-pro", "reservation_id": "5956384c7cd6430c8d4b0286f0e7d4fd", "type": "actual", "usage": {"input_tokens": 8960, "output_tokens": 2599}}
+{"max_tokens": 4096, "model_id": "deepseek-v4-pro", "prompt_tokens_bound": 9357, "reservation_id": "da5df6b2188d4e5b91457f9b30427f1d", "reserved_usd": 0.0285714, "type": "reservation"}
+{"cost_usd": 0.015775320000000002, "model_id": "deepseek-v4-pro", "reservation_id": "da5df6b2188d4e5b91457f9b30427f1d", "type": "actual", "usage": {"input_tokens": 11639, "output_tokens": 104}}
+{"max_tokens": 4096, "model_id": "deepseek-v4-pro", "prompt_tokens_bound": 9892, "reservation_id": "2bf16c2e331c40498553bac7e4e0fff1", "reserved_usd": 0.029277599999999997, "type": "reservation"}
+{"cost_usd": 0.02388012, "model_id": "deepseek-v4-pro", "reservation_id": "2bf16c2e331c40498553bac7e4e0fff1", "type": "actual", "usage": {"input_tokens": 11797, "output_tokens": 2098}}
+{"max_tokens": 4096, "model_id": "deepseek-v4-pro", "prompt_tokens_bound": 10506, "reservation_id": "54506d326589431cb2524e655599da88", "reserved_usd": 0.030088080000000003, "type": "reservation"}
+{"cost_usd": 0.027082440000000003, "model_id": "deepseek-v4-pro", "reservation_id": "54506d326589431cb2524e655599da88", "type": "actual", "usage": {"input_tokens": 14025, "output_tokens": 2164}}
+{"max_tokens": 4096, "model_id": "deepseek-v4-pro", "prompt_tokens_bound": 11190, "reservation_id": "07f7eda5082a46baa706aa31b01dbf9f", "reserved_usd": 0.030990959999999998, "type": "reservation"}
+{"cost_usd": 0.0377388, "model_id": "deepseek-v4-pro", "reservation_id": "07f7eda5082a46baa706aa31b01dbf9f", "type": "actual", "usage": {"input_tokens": 16302, "output_tokens": 4096}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.174082, "input_tokens": 78465, "model_calls": 10, "output_tokens": 17805, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "max_tokens", "type": "close"}

@@ -1,0 +1,50 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.2",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [
+    {
+      "cleared_by": null,
+      "event_id": "evt-815e5680e62baa43",
+      "mode": "final_for_task",
+      "opened_at": "2026-09-01T01:18:00.392Z",
+      "task_id": "task-f3399e799718",
+      "task_reference": "Apply migrate.sql then run sh ./fb6-09-gate.sh",
+      "task_wide": true
+    },
+    {
+      "cleared_by": null,
+      "event_id": "evt-c004a2e155022d61",
+      "mode": "final_for_task",
+      "opened_at": "2026-09-01T01:18:01.284Z",
+      "task_id": "task-f3399e799718",
+      "task_reference": "Apply migrate.sql then run sh ./fb6-09-gate.sh",
+      "task_wide": true
+    }
+  ],
+  "declined_courses": [],
+  "dissent_holds": [],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.2",
+  "in_flight": [],
+  "instance_id": "inst-718d01168694918b",
+  "last_event_id": "evt-c004a2e155022d61",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-dd487cb8a61bc8be",
+  "state": "DECLINED_FOR_TASK",
+  "updated_at": "2026-09-01T01:18:01.288Z"
+}

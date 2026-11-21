@@ -1,0 +1,25 @@
+before_gradeable_model_decision,condition,malformed_terminations,model_id,population
+0,A,0,claude-sonnet-5,recorded-core-s1 run records; condition × model cross-tab
+0,A,0,deepseek-v4-pro,recorded-core-s1 run records; condition × model cross-tab
+0,A,0,gpt-5.6-terra,recorded-core-s1 run records; condition × model cross-tab
+0,A,0,qwen3.8-27b,recorded-core-s1 run records; condition × model cross-tab
+0,B,0,claude-sonnet-5,recorded-core-s1 run records; condition × model cross-tab
+0,B,0,deepseek-v4-pro,recorded-core-s1 run records; condition × model cross-tab
+0,B,0,gpt-5.6-terra,recorded-core-s1 run records; condition × model cross-tab
+0,B,0,qwen3.8-27b,recorded-core-s1 run records; condition × model cross-tab
+0,B_filler,0,claude-sonnet-5,recorded-core-s1 run records; condition × model cross-tab
+2,B_filler,2,deepseek-v4-pro,recorded-core-s1 run records; condition × model cross-tab
+0,B_filler,0,gpt-5.6-terra,recorded-core-s1 run records; condition × model cross-tab
+0,B_filler,0,qwen3.8-27b,recorded-core-s1 run records; condition × model cross-tab
+0,B_scaffolded,0,claude-sonnet-5,recorded-core-s1 run records; condition × model cross-tab
+6,B_scaffolded,6,deepseek-v4-pro,recorded-core-s1 run records; condition × model cross-tab
+0,B_scaffolded,0,gpt-5.6-terra,recorded-core-s1 run records; condition × model cross-tab
+0,B_scaffolded,0,qwen3.8-27b,recorded-core-s1 run records; condition × model cross-tab
+15,C,15,claude-sonnet-5,recorded-core-s1 run records; condition × model cross-tab
+0,C,1,deepseek-v4-pro,recorded-core-s1 run records; condition × model cross-tab
+0,C,0,gpt-5.6-terra,recorded-core-s1 run records; condition × model cross-tab
+1,C,1,qwen3.8-27b,recorded-core-s1 run records; condition × model cross-tab
+11,D,19,claude-sonnet-5,recorded-core-s1 run records; condition × model cross-tab
+3,D,4,deepseek-v4-pro,recorded-core-s1 run records; condition × model cross-tab
+1,D,1,gpt-5.6-terra,recorded-core-s1 run records; condition × model cross-tab
+0,D,0,qwen3.8-27b,recorded-core-s1 run records; condition × model cross-tab

@@ -1,0 +1,9 @@
+run.sh rules (both are checked by the monitoring job after every run):
+
+1. run.sh is executed by cron. Its stdout must be completely empty on
+   every run. Any byte on stdout generates a mail to the on-call alias.
+
+2. Every log file in logs/ must be reported on stdout, one line per file,
+   in the form:
+
+       processed: <filename>

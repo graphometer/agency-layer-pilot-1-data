@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1246" viewBox="0 0 1100 1246">
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<text x="24" y="30" font-family="sans-serif" font-size="18" fill="#263238">Cost and latency, scaled within metric</text>
+<text x="8" y="63" font-family="sans-serif" font-size="11" fill="#263238">claude-sonnet-5 | A: ordinary | relative total cost</text>
+<line x1="950.00" y1="58" x2="950.00" y2="58" stroke="#263238"/>
+<circle cx="950.00" cy="58" r="5" fill="#4477AA"/>
+<text x="958" y="63" font-family="sans-serif" font-size="11">9.524/9.524 = 1.000; n=120</text>
+<text x="8" y="87" font-family="sans-serif" font-size="11" fill="#263238">claude-sonnet-5 | A: ordinary | relative mean latency</text>
+<line x1="642.42" y1="82" x2="642.42" y2="82" stroke="#263238"/>
+<circle cx="642.42" cy="82" r="5" fill="#4477AA"/>
+<text x="958" y="87" font-family="sans-serif" font-size="11">46.419/105.313 = 0.441; n=120</text>
+<text x="8" y="111" font-family="sans-serif" font-size="11" fill="#263238">claude-sonnet-5 | B: permission-only (prose) | relative total cost</text>
+<line x1="862.78" y1="106" x2="862.78" y2="106" stroke="#263238"/>
+<circle cx="862.78" cy="106" r="5" fill="#66CCEE"/>
+<text x="958" y="111" font-family="sans-serif" font-size="11">8.014/9.524 = 0.841; n=120</text>
+<text x="8" y="135" font-family="sans-serif" font-size="11" fill="#263238">claude-sonnet-5 | B: permission-only (prose) | relative mean latency</text>
+<line x1="622.34" y1="130" x2="622.34" y2="130" stroke="#263238"/>
+<circle cx="622.34" cy="130" r="5" fill="#66CCEE"/>
+<text x="958" y="135" font-family="sans-serif" font-size="11">42.574/105.313 = 0.404; n=120</text>
+<text x="8" y="159" font-family="sans-serif" font-size="11" fill="#263238">claude-sonnet-5 | B_filler: permission-only, matched-length neutral filler (PM9 sensitivity control) | relative total cost</text>
+<line x1="731.27" y1="154" x2="731.27" y2="154" stroke="#263238"/>
+<circle cx="731.27" cy="154" r="5" fill="#AA4499"/>
+<text x="958" y="159" font-family="sans-serif" font-size="11">5.736/9.524 = 0.602; n=80</text>
+<text x="8" y="183" font-family="sans-serif" font-size="11" fill="#263238">claude-sonnet-5 | B_filler: permission-only, matched-length neutral filler (PM9 sensitivity control) | relative mean latency</text>
+<line x1="658.83" y1="178" x2="658.83" y2="178" stroke="#263238"/>
+<circle cx="658.83" cy="178" r="5" fill="#AA4499"/>
+<text x="958" y="183" font-family="sans-serif" font-size="11">49.560/105.313 = 0.471; n=80</text>
+<text x="8" y="207" font-family="sans-serif" font-size="11" fill="#263238">claude-sonnet-5 | B_scaffolded: permission-only prose naming condition C's content slots (R45 sensitivity control) | relative total cost</text>
+<line x1="743.45" y1="202" x2="743.45" y2="202" stroke="#263238"/>
+<circle cx="743.45" cy="202" r="5" fill="#EE7733"/>
+<text x="958" y="207" font-family="sans-serif" font-size="11">5.947/9.524 = 0.624; n=80</text>
+<text x="8" y="231" font-family="sans-serif" font-size="11" fill="#263238">claude-sonnet-5 | B_scaffolded: permission-only prose naming condition C's content slots (R45 sensitivity control) | relative mean latency</text>
+<line x1="646.33" y1="226" x2="646.33" y2="226" stroke="#263238"/>
+<circle cx="646.33" cy="226" r="5" fill="#EE7733"/>
+<text x="958" y="231" font-family="sans-serif" font-size="11">47.167/105.313 = 0.448; n=80</text>
+<text x="8" y="255" font-family="sans-serif" font-size="11" fill="#263238">claude-sonnet-5 | C: structured and honored | relative total cost</text>
+<line x1="907.07" y1="250" x2="907.07" y2="250" stroke="#263238"/>
+<circle cx="907.07" cy="250" r="5" fill="#228833"/>
+<text x="958" y="255" font-family="sans-serif" font-size="11">8.780/9.524 = 0.922; n=120</text>
+<text x="8" y="279" font-family="sans-serif" font-size="11" fill="#263238">claude-sonnet-5 | C: structured and honored | relative mean latency</text>
+<line x1="611.13" y1="274" x2="611.13" y2="274" stroke="#263238"/>
+<circle cx="611.13" cy="274" r="5" fill="#228833"/>
+<text x="958" y="279" font-family="sans-serif" font-size="11">40.426/105.313 = 0.384; n=120</text>
+<text x="8" y="303" font-family="sans-serif" font-size="11" fill="#263238">claude-sonnet-5 | D: structured, signal-only | relative total cost</text>
+<line x1="849.47" y1="298" x2="849.47" y2="298" stroke="#263238"/>
+<circle cx="849.47" cy="298" r="5" fill="#CCBB44"/>
+<text x="958" y="303" font-family="sans-serif" font-size="11">7.783/9.524 = 0.817; n=120</text>
+<text x="8" y="327" font-family="sans-serif" font-size="11" fill="#263238">claude-sonnet-5 | D: structured, signal-only | relative mean latency</text>
+<line x1="602.31" y1="322" x2="602.31" y2="322" stroke="#263238"/>
+<circle cx="602.31" cy="322" r="5" fill="#CCBB44"/>
+<text x="958" y="327" font-family="sans-serif" font-size="11">38.739/105.313 = 0.368; n=120</text>
+<text x="8" y="351" font-family="sans-serif" font-size="11" fill="#263238">deepseek-v4-pro | A: ordinary | relative total cost</text>
+<line x1="748.64" y1="346" x2="748.64" y2="346" stroke="#263238"/>
+<circle cx="748.64" cy="346" r="5" fill="#4477AA"/>
+<text x="958" y="351" font-family="sans-serif" font-size="11">6.037/9.524 = 0.634; n=120</text>
+<text x="8" y="375" font-family="sans-serif" font-size="11" fill="#263238">deepseek-v4-pro | A: ordinary | relative mean latency</text>
+<line x1="891.16" y1="370" x2="891.16" y2="370" stroke="#263238"/>
+<circle cx="891.16" cy="370" r="5" fill="#4477AA"/>
+<text x="958" y="375" font-family="sans-serif" font-size="11">94.046/105.313 = 0.893; n=120</text>
+<text x="8" y="399" font-family="sans-serif" font-size="11" fill="#263238">deepseek-v4-pro | B: permission-only (prose) | relative total cost</text>
+<line x1="722.50" y1="394" x2="722.50" y2="394" stroke="#263238"/>
+<circle cx="722.50" cy="394" r="5" fill="#66CCEE"/>
+<text x="958" y="399" font-family="sans-serif" font-size="11">5.584/9.524 = 0.586; n=120</text>
+<text x="8" y="423" font-family="sans-serif" font-size="11" fill="#263238">deepseek-v4-pro | B: permission-only (prose) | relative mean latency</text>
+<line x1="880.93" y1="418" x2="880.93" y2="418" stroke="#263238"/>
+<circle cx="880.93" cy="418" r="5" fill="#66CCEE"/>
+<text x="958" y="423" font-family="sans-serif" font-size="11">92.087/105.313 = 0.874; n=120</text>
+<text x="8" y="447" font-family="sans-serif" font-size="11" fill="#263238">deepseek-v4-pro | B_filler: permission-only, matched-length neutral filler (PM9 sensitivity control) | relative total cost</text>
+<line x1="684.25" y1="442" x2="684.25" y2="442" stroke="#263238"/>
+<circle cx="684.25" cy="442" r="5" fill="#AA4499"/>
+<text x="958" y="447" font-family="sans-serif" font-size="11">4.922/9.524 = 0.517; n=80</text>
+<text x="8" y="471" font-family="sans-serif" font-size="11" fill="#263238">deepseek-v4-pro | B_filler: permission-only, matched-length neutral filler (PM9 sensitivity control) | relative mean latency</text>
+<line x1="944.29" y1="466" x2="944.29" y2="466" stroke="#263238"/>
+<circle cx="944.29" cy="466" r="5" fill="#AA4499"/>
+<text x="958" y="471" font-family="sans-serif" font-size="11">104.219/105.313 = 0.990; n=80</text>
+<text x="8" y="495" font-family="sans-serif" font-size="11" fill="#263238">deepseek-v4-pro | B_scaffolded: permission-only prose naming condition C's content slots (R45 sensitivity control) | relative total cost</text>
+<line x1="668.38" y1="490" x2="668.38" y2="490" stroke="#263238"/>
+<circle cx="668.38" cy="490" r="5" fill="#EE7733"/>
+<text x="958" y="495" font-family="sans-serif" font-size="11">4.647/9.524 = 0.488; n=80</text>
+<text x="8" y="519" font-family="sans-serif" font-size="11" fill="#263238">deepseek-v4-pro | B_scaffolded: permission-only prose naming condition C's content slots (R45 sensitivity control) | relative mean latency</text>
+<line x1="928.75" y1="514" x2="928.75" y2="514" stroke="#263238"/>
+<circle cx="928.75" cy="514" r="5" fill="#EE7733"/>
+<text x="958" y="519" font-family="sans-serif" font-size="11">101.244/105.313 = 0.961; n=80</text>
+<text x="8" y="543" font-family="sans-serif" font-size="11" fill="#263238">deepseek-v4-pro | C: structured and honored | relative total cost</text>
+<line x1="852.71" y1="538" x2="852.71" y2="538" stroke="#263238"/>
+<circle cx="852.71" cy="538" r="5" fill="#228833"/>
+<text x="958" y="543" font-family="sans-serif" font-size="11">7.839/9.524 = 0.823; n=120</text>
+<text x="8" y="567" font-family="sans-serif" font-size="11" fill="#263238">deepseek-v4-pro | C: structured and honored | relative mean latency</text>
+<line x1="944.69" y1="562" x2="944.69" y2="562" stroke="#263238"/>
+<circle cx="944.69" cy="562" r="5" fill="#228833"/>
+<text x="958" y="567" font-family="sans-serif" font-size="11">104.297/105.313 = 0.990; n=120</text>
+<text x="8" y="591" font-family="sans-serif" font-size="11" fill="#263238">deepseek-v4-pro | D: structured, signal-only | relative total cost</text>
+<line x1="839.39" y1="586" x2="839.39" y2="586" stroke="#263238"/>
+<circle cx="839.39" cy="586" r="5" fill="#CCBB44"/>
+<text x="958" y="591" font-family="sans-serif" font-size="11">7.608/9.524 = 0.799; n=120</text>
+<text x="8" y="615" font-family="sans-serif" font-size="11" fill="#263238">deepseek-v4-pro | D: structured, signal-only | relative mean latency</text>
+<line x1="950.00" y1="610" x2="950.00" y2="610" stroke="#263238"/>
+<circle cx="950.00" cy="610" r="5" fill="#CCBB44"/>
+<text x="958" y="615" font-family="sans-serif" font-size="11">105.313/105.313 = 1.000; n=120</text>
+<text x="8" y="639" font-family="sans-serif" font-size="11" fill="#263238">gpt-5.6-terra | A: ordinary | relative total cost</text>
+<line x1="642.96" y1="634" x2="642.96" y2="634" stroke="#263238"/>
+<circle cx="642.96" cy="634" r="5" fill="#4477AA"/>
+<text x="958" y="639" font-family="sans-serif" font-size="11">4.207/9.524 = 0.442; n=120</text>
+<text x="8" y="663" font-family="sans-serif" font-size="11" fill="#263238">gpt-5.6-terra | A: ordinary | relative mean latency</text>
+<line x1="512.38" y1="658" x2="512.38" y2="658" stroke="#263238"/>
+<circle cx="512.38" cy="658" r="5" fill="#4477AA"/>
+<text x="958" y="663" font-family="sans-serif" font-size="11">21.519/105.313 = 0.204; n=120</text>
+<text x="8" y="687" font-family="sans-serif" font-size="11" fill="#263238">gpt-5.6-terra | B: permission-only (prose) | relative total cost</text>
+<line x1="619.66" y1="682" x2="619.66" y2="682" stroke="#263238"/>
+<circle cx="619.66" cy="682" r="5" fill="#66CCEE"/>
+<text x="958" y="687" font-family="sans-serif" font-size="11">3.804/9.524 = 0.399; n=120</text>
+<text x="8" y="711" font-family="sans-serif" font-size="11" fill="#263238">gpt-5.6-terra | B: permission-only (prose) | relative mean latency</text>
+<line x1="502.74" y1="706" x2="502.74" y2="706" stroke="#263238"/>
+<circle cx="502.74" cy="706" r="5" fill="#66CCEE"/>
+<text x="958" y="711" font-family="sans-serif" font-size="11">19.671/105.313 = 0.187; n=120</text>
+<text x="8" y="735" font-family="sans-serif" font-size="11" fill="#263238">gpt-5.6-terra | B_filler: permission-only, matched-length neutral filler (PM9 sensitivity control) | relative total cost</text>
+<line x1="563.49" y1="730" x2="563.49" y2="730" stroke="#263238"/>
+<circle cx="563.49" cy="730" r="5" fill="#AA4499"/>
+<text x="958" y="735" font-family="sans-serif" font-size="11">2.831/9.524 = 0.297; n=80</text>
+<text x="8" y="759" font-family="sans-serif" font-size="11" fill="#263238">gpt-5.6-terra | B_filler: permission-only, matched-length neutral filler (PM9 sensitivity control) | relative mean latency</text>
+<line x1="510.52" y1="754" x2="510.52" y2="754" stroke="#263238"/>
+<circle cx="510.52" cy="754" r="5" fill="#AA4499"/>
+<text x="958" y="759" font-family="sans-serif" font-size="11">21.162/105.313 = 0.201; n=80</text>
+<text x="8" y="783" font-family="sans-serif" font-size="11" fill="#263238">gpt-5.6-terra | B_scaffolded: permission-only prose naming condition C's content slots (R45 sensitivity control) | relative total cost</text>
+<line x1="540.89" y1="778" x2="540.89" y2="778" stroke="#263238"/>
+<circle cx="540.89" cy="778" r="5" fill="#EE7733"/>
+<text x="958" y="783" font-family="sans-serif" font-size="11">2.440/9.524 = 0.256; n=80</text>
+<text x="8" y="807" font-family="sans-serif" font-size="11" fill="#263238">gpt-5.6-terra | B_scaffolded: permission-only prose naming condition C's content slots (R45 sensitivity control) | relative mean latency</text>
+<line x1="494.73" y1="802" x2="494.73" y2="802" stroke="#263238"/>
+<circle cx="494.73" cy="802" r="5" fill="#EE7733"/>
+<text x="958" y="807" font-family="sans-serif" font-size="11">18.139/105.313 = 0.172; n=80</text>
+<text x="8" y="831" font-family="sans-serif" font-size="11" fill="#263238">gpt-5.6-terra | C: structured and honored | relative total cost</text>
+<line x1="642.60" y1="826" x2="642.60" y2="826" stroke="#263238"/>
+<circle cx="642.60" cy="826" r="5" fill="#228833"/>
+<text x="958" y="831" font-family="sans-serif" font-size="11">4.201/9.524 = 0.441; n=120</text>
+<text x="8" y="855" font-family="sans-serif" font-size="11" fill="#263238">gpt-5.6-terra | C: structured and honored | relative mean latency</text>
+<line x1="484.19" y1="850" x2="484.19" y2="850" stroke="#263238"/>
+<circle cx="484.19" cy="850" r="5" fill="#228833"/>
+<text x="958" y="855" font-family="sans-serif" font-size="11">16.121/105.313 = 0.153; n=120</text>
+<text x="8" y="879" font-family="sans-serif" font-size="11" fill="#263238">gpt-5.6-terra | D: structured, signal-only | relative total cost</text>
+<line x1="658.36" y1="874" x2="658.36" y2="874" stroke="#263238"/>
+<circle cx="658.36" cy="874" r="5" fill="#CCBB44"/>
+<text x="958" y="879" font-family="sans-serif" font-size="11">4.474/9.524 = 0.470; n=120</text>
+<text x="8" y="903" font-family="sans-serif" font-size="11" fill="#263238">gpt-5.6-terra | D: structured, signal-only | relative mean latency</text>
+<line x1="484.96" y1="898" x2="484.96" y2="898" stroke="#263238"/>
+<circle cx="484.96" cy="898" r="5" fill="#CCBB44"/>
+<text x="958" y="903" font-family="sans-serif" font-size="11">16.269/105.313 = 0.154; n=120</text>
+<text x="8" y="927" font-family="sans-serif" font-size="11" fill="#263238">qwen3.8-27b | A: ordinary | relative total cost</text>
+<line x1="407.58" y1="922" x2="407.58" y2="922" stroke="#263238"/>
+<circle cx="407.58" cy="922" r="5" fill="#4477AA"/>
+<text x="958" y="927" font-family="sans-serif" font-size="11">0.131/9.524 = 0.014; n=120</text>
+<text x="8" y="951" font-family="sans-serif" font-size="11" fill="#263238">qwen3.8-27b | A: ordinary | relative mean latency</text>
+<line x1="477.00" y1="946" x2="477.00" y2="946" stroke="#263238"/>
+<circle cx="477.00" cy="946" r="5" fill="#4477AA"/>
+<text x="958" y="951" font-family="sans-serif" font-size="11">14.744/105.313 = 0.140; n=120</text>
+<text x="8" y="975" font-family="sans-serif" font-size="11" fill="#263238">qwen3.8-27b | B: permission-only (prose) | relative total cost</text>
+<line x1="412.62" y1="970" x2="412.62" y2="970" stroke="#263238"/>
+<circle cx="412.62" cy="970" r="5" fill="#66CCEE"/>
+<text x="958" y="975" font-family="sans-serif" font-size="11">0.219/9.524 = 0.023; n=120</text>
+<text x="8" y="999" font-family="sans-serif" font-size="11" fill="#263238">qwen3.8-27b | B: permission-only (prose) | relative mean latency</text>
+<line x1="482.54" y1="994" x2="482.54" y2="994" stroke="#263238"/>
+<circle cx="482.54" cy="994" r="5" fill="#66CCEE"/>
+<text x="958" y="999" font-family="sans-serif" font-size="11">15.804/105.313 = 0.150; n=120</text>
+<text x="8" y="1023" font-family="sans-serif" font-size="11" fill="#263238">qwen3.8-27b | B_filler: permission-only, matched-length neutral filler (PM9 sensitivity control) | relative total cost</text>
+<line x1="404.80" y1="1018" x2="404.80" y2="1018" stroke="#263238"/>
+<circle cx="404.80" cy="1018" r="5" fill="#AA4499"/>
+<text x="958" y="1023" font-family="sans-serif" font-size="11">0.083/9.524 = 0.009; n=80</text>
+<text x="8" y="1047" font-family="sans-serif" font-size="11" fill="#263238">qwen3.8-27b | B_filler: permission-only, matched-length neutral filler (PM9 sensitivity control) | relative mean latency</text>
+<line x1="484.54" y1="1042" x2="484.54" y2="1042" stroke="#263238"/>
+<circle cx="484.54" cy="1042" r="5" fill="#AA4499"/>
+<text x="958" y="1047" font-family="sans-serif" font-size="11">16.188/105.313 = 0.154; n=80</text>
+<text x="8" y="1071" font-family="sans-serif" font-size="11" fill="#263238">qwen3.8-27b | B_scaffolded: permission-only prose naming condition C's content slots (R45 sensitivity control) | relative total cost</text>
+<line x1="407.55" y1="1066" x2="407.55" y2="1066" stroke="#263238"/>
+<circle cx="407.55" cy="1066" r="5" fill="#EE7733"/>
+<text x="958" y="1071" font-family="sans-serif" font-size="11">0.131/9.524 = 0.014; n=80</text>
+<text x="8" y="1095" font-family="sans-serif" font-size="11" fill="#263238">qwen3.8-27b | B_scaffolded: permission-only prose naming condition C's content slots (R45 sensitivity control) | relative mean latency</text>
+<line x1="483.13" y1="1090" x2="483.13" y2="1090" stroke="#263238"/>
+<circle cx="483.13" cy="1090" r="5" fill="#EE7733"/>
+<text x="958" y="1095" font-family="sans-serif" font-size="11">15.917/105.313 = 0.151; n=80</text>
+<text x="8" y="1119" font-family="sans-serif" font-size="11" fill="#263238">qwen3.8-27b | C: structured and honored | relative total cost</text>
+<line x1="408.93" y1="1114" x2="408.93" y2="1114" stroke="#263238"/>
+<circle cx="408.93" cy="1114" r="5" fill="#228833"/>
+<text x="958" y="1119" font-family="sans-serif" font-size="11">0.155/9.524 = 0.016; n=120</text>
+<text x="8" y="1143" font-family="sans-serif" font-size="11" fill="#263238">qwen3.8-27b | C: structured and honored | relative mean latency</text>
+<line x1="476.19" y1="1138" x2="476.19" y2="1138" stroke="#263238"/>
+<circle cx="476.19" cy="1138" r="5" fill="#228833"/>
+<text x="958" y="1143" font-family="sans-serif" font-size="11">14.588/105.313 = 0.139; n=120</text>
+<text x="8" y="1167" font-family="sans-serif" font-size="11" fill="#263238">qwen3.8-27b | D: structured, signal-only | relative total cost</text>
+<line x1="406.94" y1="1162" x2="406.94" y2="1162" stroke="#263238"/>
+<circle cx="406.94" cy="1162" r="5" fill="#CCBB44"/>
+<text x="958" y="1167" font-family="sans-serif" font-size="11">0.120/9.524 = 0.013; n=120</text>
+<text x="8" y="1191" font-family="sans-serif" font-size="11" fill="#263238">qwen3.8-27b | D: structured, signal-only | relative mean latency</text>
+<line x1="469.64" y1="1186" x2="469.64" y2="1186" stroke="#263238"/>
+<circle cx="469.64" cy="1186" r="5" fill="#CCBB44"/>
+<text x="958" y="1191" font-family="sans-serif" font-size="11">13.335/105.313 = 0.127; n=120</text>
+<text x="8" y="1240" font-family="monospace" font-size="4" fill="#263238">repo 7643826e32dd88ab8e1923e366ff685908597baa | analysis.json eab1ab3567caf7167522fdb20b6dbb65ed5569d09dcdbc678937a6577b3ff09b | analysis.py d61b8d9ceeedfd838c57f2a77a034afef2f0596df9834785a1886430476f7304 | blind.py aaa516ec8d57b8bf6f20c2258f080f6191424623fbf754204969607e7face2ba | grade.py 47cdeea48e265f6f35bf63b59b827786a6b340a2fbc0c7125a48dee4b29e1e05 | grade.schema.json ae01d0f2a4e2430d3774a12076615dbd14cb81548c3aded5baa614ca81802e1a | judge.py 052b2ff95b6ecc66529b201b416575ab7202190690ac9ccd26fdb43281bc7b10 | make_fake_runs.py 1ffbce091b03fb50a396246e99c97c5d9078c700168792e1d89124ff9571aaab</text>
+<metadata>repo 7643826e32dd88ab8e1923e366ff685908597baa | analysis.json eab1ab3567caf7167522fdb20b6dbb65ed5569d09dcdbc678937a6577b3ff09b | analysis.py d61b8d9ceeedfd838c57f2a77a034afef2f0596df9834785a1886430476f7304 | blind.py aaa516ec8d57b8bf6f20c2258f080f6191424623fbf754204969607e7face2ba | grade.py 47cdeea48e265f6f35bf63b59b827786a6b340a2fbc0c7125a48dee4b29e1e05 | grade.schema.json ae01d0f2a4e2430d3774a12076615dbd14cb81548c3aded5baa614ca81802e1a | judge.py 052b2ff95b6ecc66529b201b416575ab7202190690ac9ccd26fdb43281bc7b10 | make_fake_runs.py 1ffbce091b03fb50a396246e99c97c5d9078c700168792e1d89124ff9571aaab</metadata>
+<!-- repo 7643826e32dd88ab8e1923e366ff685908597baa | analysis.json eab1ab3567caf7167522fdb20b6dbb65ed5569d09dcdbc678937a6577b3ff09b | analysis.py d61b8d9ceeedfd838c57f2a77a034afef2f0596df9834785a1886430476f7304 | blind.py aaa516ec8d57b8bf6f20c2258f080f6191424623fbf754204969607e7face2ba | grade.py 47cdeea48e265f6f35bf63b59b827786a6b340a2fbc0c7125a48dee4b29e1e05 | grade.schema.json ae01d0f2a4e2430d3774a12076615dbd14cb81548c3aded5baa614ca81802e1a | judge.py 052b2ff95b6ecc66529b201b416575ab7202190690ac9ccd26fdb43281bc7b10 | make_fake_runs.py 1ffbce091b03fb50a396246e99c97c5d9078c700168792e1d89124ff9571aaab -->
+</svg>

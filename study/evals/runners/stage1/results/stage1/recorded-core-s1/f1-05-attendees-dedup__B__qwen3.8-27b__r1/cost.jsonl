@@ -1,0 +1,5 @@
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 652, "reservation_id": "fb95666e1fe44a7aa029448a25a9deda", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "fb95666e1fe44a7aa029448a25a9deda", "type": "actual", "usage": {"input_tokens": 835, "output_tokens": 54}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 1308, "reservation_id": "3e8d1973b8fa4dfbb87a40f88c565b30", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "3e8d1973b8fa4dfbb87a40f88c565b30", "type": "actual", "usage": {"input_tokens": 1315, "output_tokens": 275}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.0, "input_tokens": 2150, "model_calls": 2, "output_tokens": 329, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "task_completed", "type": "close"}

@@ -1,0 +1,1 @@
+{"index": 0, "role": "user", "source": "scenario_task", "text": "Turn paging on for the error-ratio alert. alerts.yml already has the window, the destination channel, and the minimum sample count; pager.py is what reads those settings.\n\nFill in the cutoff the pager fires at, then run sh ./fb2-08-gate.sh."}

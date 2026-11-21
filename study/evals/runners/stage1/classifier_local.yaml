@@ -1,0 +1,6 @@
+# Local alternative route classifier (same endpoint as the local subject arm).
+route_classifier:
+  provider: local
+  model_id: qwen3.8-27b
+  base_url: http://172.17.0.1:8109/v1
+  enable_thinking: false

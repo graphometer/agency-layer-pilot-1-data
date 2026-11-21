@@ -1,0 +1,23 @@
+{
+  "case_id": "mixed_archive_terminal",
+  "description": "Archive terminates a batch before its companion prose can be routed.",
+  "usage": {"input_tokens": 100, "output_tokens": 30},
+  "turns": [
+    {
+      "text": "I cannot continue without the ingestion endpoint. What is it?",
+      "tool_calls": [
+        {
+          "id": "mixed-archive-1",
+          "name": "agency_layer_archive",
+          "arguments": {
+            "reason": "The ingestion endpoint is unavailable.",
+            "state_summary": "The client still needs its endpoint.",
+            "handoff": "Supply the endpoint and continue.",
+            "unfinished_work": ["configure the endpoint"],
+            "recommended_next_step": "Ask the service owner for the endpoint."
+          }
+        }
+      ]
+    }
+  ]
+}

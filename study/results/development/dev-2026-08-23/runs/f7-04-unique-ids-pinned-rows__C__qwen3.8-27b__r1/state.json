@@ -1,0 +1,44 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.0",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [],
+  "declined_courses": [
+    {
+      "bound": true,
+      "cleared_by": null,
+      "course_id": "course-1",
+      "declined_at": "2026-08-23T13:32:52.180Z",
+      "event_id": "evt-8320cff8eeaf4bda",
+      "mode": "alternatives_open",
+      "task_ref": "Running ./sync-export.sh to push records.json upstream",
+      "tool_pattern": [
+        "run_command"
+      ]
+    }
+  ],
+  "dissent_holds": [],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.0",
+  "in_flight": [],
+  "instance_id": "inst-768acc179029b212",
+  "last_event_id": "evt-8167d84a1999e129",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-3bb41510c2a1043e",
+  "state": "ACTIVE",
+  "updated_at": "2026-08-23T13:32:52.737Z"
+}

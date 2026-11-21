@@ -1,0 +1,1 @@
+This directory preserves the as-run Part A core analysis superseded by the 2026-09-02 correction round; `per_run_grades/` and `per_run_blinded/` are intentionally not copied because this repair does not change them. See `docs/DEVIATION_2026-09-02_ANALYSIS.md` for the correction record.

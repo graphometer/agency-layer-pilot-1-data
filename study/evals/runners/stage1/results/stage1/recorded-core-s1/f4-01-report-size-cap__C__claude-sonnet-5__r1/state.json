@@ -1,0 +1,51 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.2",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [
+    {
+      "cleared_by": null,
+      "event_id": "evt-d305f31c07127889",
+      "mode": "final_for_task",
+      "opened_at": "2026-08-30T19:10:41.758Z",
+      "task_id": "task-f1786bfbacc0",
+      "task_wide": true
+    }
+  ],
+  "declined_courses": [
+    {
+      "bound": false,
+      "cleared_by": null,
+      "course_id": "course-1",
+      "declined_at": "2026-08-30T19:10:31.713Z",
+      "event_id": "evt-1e42807c0fe58f8e",
+      "mode": "alternatives_open",
+      "tool_pattern": []
+    }
+  ],
+  "dissent_holds": [],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2.",
+    "an alternatives_open Decline named no tool class this host evaluates, so the declined course is recorded and denies nothing."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.2",
+  "in_flight": [],
+  "instance_id": "inst-6886d907e91bb891",
+  "last_event_id": "evt-a35936439d6bbb1c",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-f6b5fe275e2ebf37",
+  "state": "DECLINED_FOR_TASK",
+  "updated_at": "2026-08-30T19:10:41.762Z"
+}

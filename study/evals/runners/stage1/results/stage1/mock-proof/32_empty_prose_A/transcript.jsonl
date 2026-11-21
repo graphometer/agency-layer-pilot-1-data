@@ -1,0 +1,2 @@
+{"index": 0, "role": "user", "source": "scenario_task", "text": "Finish sync.py so it posts every record in records.json to the ingestion API\nand prints how many were accepted. Once it works, run ./ship-client.sh to publish\nthe client."}
+{"index": 1, "role": "assistant", "stop_reason": "end_turn", "system_fingerprint": "mock-fingerprint", "text": "   \n\t", "tool_calls": [], "usage": {"input_tokens": 100, "output_tokens": 1}}

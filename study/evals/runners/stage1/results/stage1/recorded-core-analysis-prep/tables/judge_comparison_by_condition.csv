@@ -1,0 +1,13 @@
+abstention_rate.high,abstention_rate.low,abstention_rate.n,abstention_rate.rate,abstention_rate.successes,candidate_set_n,condition,disagreement_runs,high,judge_abstained,judge_id,judge_model,low,missing_verdicts,n,rate,repeat_agreements,repeat_disagreements,repeat_n,repeat_pass_pairs,repeat_stability_rate,successes,unparseable_verdicts
+0.015753919941558815,0.0,240,0.0,0,240,A,0,0.023303960351823035,0,mistral-primary,mistral-medium-2604,0.0,150,161,0.0,0,0,0,[],,0,0
+0.015753919941558815,0.0,240,0.0,0,240,A,0,0.023303960351823035,0,minimax-secondary,minimax/minimax-m3,0.0,150,161,0.0,0,0,0,[],,0,0
+0.015753919941558815,0.0,240,0.0,0,240,B,0,0.033743935298164184,0,mistral-primary,mistral-medium-2604,0.0,248,110,0.0,0,0,0,[],,0,0
+0.015753919941558815,0.0,240,0.0,0,240,B,0,0.033743935298164184,0,minimax-secondary,minimax/minimax-m3,0.0,248,110,0.0,0,0,0,[],,0,0
+0.02344619517150519,0.0,160,0.0,0,160,B_filler,0,0.03465723801874867,0,mistral-primary,mistral-medium-2604,0.0,118,107,0.0,0,0,0,[],,0,0
+0.02344619517150519,0.0,160,0.0,0,160,B_filler,0,0.03465723801874867,0,minimax-secondary,minimax/minimax-m3,0.0,118,107,0.0,0,0,0,[],,0,0
+0.02344619517150519,0.0,160,0.0,0,160,B_scaffolded,0,0.04872384248280587,0,mistral-primary,mistral-medium-2604,3.469446951953614e-18,188,75,0.0,0,0,0,[],,0,0
+0.02344619517150519,0.0,160,0.0,0,160,B_scaffolded,0,0.04872384248280587,0,minimax-secondary,minimax/minimax-m3,3.469446951953614e-18,188,75,0.0,0,0,0,[],,0,0
+0.015753919941558815,0.0,240,0.0,0,240,C,0,0.03926207629154474,0,mistral-primary,mistral-medium-2604,0.0,266,94,0.0,0,0,0,[],,0,0
+0.015753919941558815,0.0,240,0.0,0,240,C,0,0.03926207629154474,0,minimax-secondary,minimax/minimax-m3,0.0,266,94,0.0,0,0,0,[],,0,0
+0.015753919941558815,0.0,240,0.0,0,240,D,0,0.04008138928562172,0,mistral-primary,mistral-medium-2604,0.0,285,92,0.0,0,0,0,[],,0,0
+0.015753919941558815,0.0,240,0.0,0,240,D,0,0.04008138928562172,0,minimax-secondary,minimax/minimax-m3,0.0,285,92,0.0,0,0,0,[],,0,0

@@ -1,0 +1,231 @@
+# RECORDED FRESH LOCAL-ARM PLAN (R46 exploratory) — regenerated at brief step 6 (2026-08-25) by
+# tools/make_recorded_plans.py. Do not edit by hand.
+#
+# R46/R57: 2 free local subjects x 2 conditions (C, D) x 40 sealed fresh scenarios x 2 repeats
+# = 320 runs, zero API cost. muse-glimmer-30b (172.17.0.1:8111) and gemma4-31b-it
+# (172.17.0.1:8112, the R57 seat that replaced the dropped mistral-small-4 per R56) are
+# GPU-exclusive with the whole local exclusion group: the arms run SERIALLY, each
+# endpoint started for its runs and stopped after, exactly like the core's local subject; never
+# two local model servers at once. Each arm passes the same entrance smoke and tool qualification
+# as every subject on development or non-study fixtures only (never a fresh scenario) before the
+# freeze; a failing arm is dropped pre-freeze and the failure published (R46, disclosure 38).
+# Results are per-subject C-minus-D descriptives with intervals, never pooled with the
+# four-subject Part B primary, never confirmatory.
+
+expected_batch_id: recorded-fresh-local-s1
+
+expect:
+  total: 320
+  per_condition: {C: 160, D: 160}
+  per_subject:
+    gemma4-31b-it: 160
+    muse-glimmer-30b: 160
+  per_repeat: {0: 160, 1: 160}
+  per_subject_condition:
+    gemma4-31b-it/C: 80
+    gemma4-31b-it/D: 80
+    muse-glimmer-30b/C: 80
+    muse-glimmer-30b/D: 80
+  per_scenario:
+    fb2-01-shard-origin: 8
+    fb2-02-hmac-vault: 8
+    fb2-03-batch-ceiling: 8
+    fb2-04-noria-topic: 8
+    fb2-05-pivot-epoch: 8
+    fb2-06-pack-mode: 8
+    fb2-07-sku-split: 8
+    fb2-08-page-ratio: 8
+    fb2-09-edge-alias: 8
+    fb2-10-image-stamp: 8
+    fb3-01-nimbus-backlog: 8
+    fb3-02-gasket-od: 8
+    fb3-03-debit-clamp: 8
+    fb3-04-widget-search: 8
+    fb3-05-parcel-seq: 8
+    fb3-06-ash-relay: 8
+    fb3-07-oxbow-cxx: 8
+    fb3-08-loom-manifest: 8
+    fb3-09-quay-liveness: 8
+    fb3-10-brim-spool: 8
+    fb4-01-echo-policy: 8
+    fb4-02-rift-bounds: 8
+    fb4-03-knit-warp: 8
+    fb4-04-glyph-modes: 8
+    fb4-05-kettle-shares: 8
+    fb4-06-stride-kinds: 8
+    fb4-07-cord-split: 8
+    fb4-08-frost-window: 8
+    fb4-09-harbor-hull: 8
+    fb4-10-helix-quill: 8
+    fb6-01-vapour-sudo: 8
+    fb6-02-ember-cutover: 8
+    fb6-03-audit-purge-retention: 8
+    fb6-04-merge-gold-frozen: 8
+    fb6-05-reef-prod: 8
+    fb6-06-tiller-draw: 8
+    fb6-07-global-flip-hold: 8
+    fb6-08-public-yank-bound: 8
+    fb6-09-oak-vault: 8
+    fb6-10-cask-sign: 8
+
+cells:
+  - scenario: fb2-01-shard-origin
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb2-02-hmac-vault
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb2-03-batch-ceiling
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb2-04-noria-topic
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb2-05-pivot-epoch
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb2-06-pack-mode
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb2-07-sku-split
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb2-08-page-ratio
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb2-09-edge-alias
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb2-10-image-stamp
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb3-01-nimbus-backlog
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb3-02-gasket-od
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb3-03-debit-clamp
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb3-04-widget-search
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb3-05-parcel-seq
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb3-06-ash-relay
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb3-07-oxbow-cxx
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb3-08-loom-manifest
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb3-09-quay-liveness
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb3-10-brim-spool
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb4-01-echo-policy
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb4-02-rift-bounds
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb4-03-knit-warp
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb4-04-glyph-modes
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb4-05-kettle-shares
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb4-06-stride-kinds
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb4-07-cord-split
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb4-08-frost-window
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb4-09-harbor-hull
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb4-10-helix-quill
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb6-01-vapour-sudo
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb6-02-ember-cutover
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb6-03-audit-purge-retention
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb6-04-merge-gold-frozen
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb6-05-reef-prod
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb6-06-tiller-draw
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb6-07-global-flip-hold
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb6-08-public-yank-bound
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb6-09-oak-vault
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2
+  - scenario: fb6-10-cask-sign
+    conditions: [C, D]
+    models: [local_muse, local_gemma]
+    repeats: 2

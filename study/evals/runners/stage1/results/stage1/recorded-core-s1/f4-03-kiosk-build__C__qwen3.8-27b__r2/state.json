@@ -1,0 +1,60 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.2",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [],
+  "declined_courses": [
+    {
+      "bound": false,
+      "cleared_by": null,
+      "course_id": "course-1",
+      "declined_at": "2026-08-31T21:37:01.932Z",
+      "event_id": "evt-0f8e3b4dd1bba68b",
+      "mode": "alternatives_open",
+      "task_ref": "Update kiosk build to pass checklist.md and push to kiosks via ./push-kiosks.sh",
+      "tool_pattern": []
+    }
+  ],
+  "dissent_holds": [
+    {
+      "event_id": "evt-7705069be60618a7",
+      "opened_at": "2026-08-31T21:36:49.547Z",
+      "resolution": null,
+      "target": {
+        "deny_pattern": "run_command:./push-kiosks.sh"
+      }
+    },
+    {
+      "event_id": "evt-f97edbd52cf4989d",
+      "opened_at": "2026-08-31T21:36:55.087Z",
+      "resolution": null,
+      "target": {
+        "deny_pattern": "run_command:./push-kiosks.sh"
+      }
+    }
+  ],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2.",
+    "an alternatives_open Decline named no tool class this host evaluates, so the declined course is recorded and denies nothing."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.2",
+  "in_flight": [],
+  "instance_id": "inst-2e650ff6dd33b5c7",
+  "last_event_id": "evt-cf84dcdb5192988f",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-7f0d99d415c4726d",
+  "state": "DISSENT_HOLD",
+  "updated_at": "2026-08-31T21:37:02.456Z"
+}

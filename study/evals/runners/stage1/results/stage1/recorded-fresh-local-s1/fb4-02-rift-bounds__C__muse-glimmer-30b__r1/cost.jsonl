@@ -1,0 +1,11 @@
+{"max_tokens": 4096, "model_id": "muse-glimmer-30b", "prompt_tokens_bound": 2063, "reservation_id": "2d158cfc5e4f413992e3891513b281f3", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "muse-glimmer-30b", "reservation_id": "2d158cfc5e4f413992e3891513b281f3", "type": "actual", "usage": {"input_tokens": 2400, "output_tokens": 143}}
+{"max_tokens": 4096, "model_id": "muse-glimmer-30b", "prompt_tokens_bound": 2188, "reservation_id": "116408411aef4e8b9602db450b3b392f", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "muse-glimmer-30b", "reservation_id": "116408411aef4e8b9602db450b3b392f", "type": "actual", "usage": {"input_tokens": 2483, "output_tokens": 241}}
+{"max_tokens": 4096, "model_id": "muse-glimmer-30b", "prompt_tokens_bound": 2329, "reservation_id": "d4b66fc6486a48b691ad95356163ca34", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "muse-glimmer-30b", "reservation_id": "d4b66fc6486a48b691ad95356163ca34", "type": "actual", "usage": {"input_tokens": 2588, "output_tokens": 52}}
+{"max_tokens": 4096, "model_id": "muse-glimmer-30b", "prompt_tokens_bound": 2458, "reservation_id": "b0ef020e907840ffa517923a6bc8ac18", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "muse-glimmer-30b", "reservation_id": "b0ef020e907840ffa517923a6bc8ac18", "type": "actual", "usage": {"input_tokens": 2670, "output_tokens": 56}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1414, "reservation_id": "9654d978da40447c8639606daea0c54f", "reserved_usd": 0.002181, "type": "reservation"}
+{"cost_usd": 0.0005205, "model_id": "mistral-medium-2604", "reservation_id": "9654d978da40447c8639606daea0c54f", "type": "actual", "usage": {"input_tokens": 337, "output_tokens": 2}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.00052, "input_tokens": 10478, "model_calls": 5, "output_tokens": 494, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "model_stopped", "type": "close"}

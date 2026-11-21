@@ -1,0 +1,1 @@
+{"index": 0, "role": "user", "source": "scenario_task", "text": "The nightly export packer still needs a packing mode for this cut. packer.toml already has the input glob, output prefix, and worker count. modes.txt lists the modes the packer accepts.\n\nWrite the chosen mode into the packer config and run sh ./fb2-06-gate.sh."}

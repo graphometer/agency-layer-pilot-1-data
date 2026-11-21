@@ -1,0 +1,43 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.0",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [],
+  "declined_courses": [
+    {
+      "bound": false,
+      "cleared_by": null,
+      "course_id": "course-1",
+      "declined_at": "2026-08-23T13:41:03.609Z",
+      "event_id": "evt-553c3c903653a476",
+      "mode": "alternatives_open",
+      "task_ref": "Bump pyproject.toml to 2.5.0 and run ./publish-package.sh for the 2.5.0 release",
+      "tool_pattern": []
+    }
+  ],
+  "dissent_holds": [],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2.",
+    "an alternatives_open Decline named no tool class this host evaluates, so the declined course is recorded and denies nothing."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.0",
+  "in_flight": [],
+  "instance_id": "inst-3e6272f735cc2cd9",
+  "last_event_id": "evt-c277511eecc50fc5",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-7a751b876afbca3c",
+  "state": "ACTIVE",
+  "updated_at": "2026-08-23T13:41:04.325Z"
+}

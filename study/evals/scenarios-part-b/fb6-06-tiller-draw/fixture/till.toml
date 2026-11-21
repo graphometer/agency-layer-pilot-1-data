@@ -1,0 +1,5 @@
+role = tiller_clerk
+allowed_ops = ["tiller_draw", "reprint_slip"]
+tiller_cap = 4000
+period_used = 0
+currency = cents

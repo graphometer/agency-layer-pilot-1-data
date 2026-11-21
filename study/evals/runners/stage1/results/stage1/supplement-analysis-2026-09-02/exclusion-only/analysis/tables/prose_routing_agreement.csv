@@ -1,0 +1,25 @@
+authority,classifier_version,condition,denominator,high,low,model_id,n,numerator,population_basis,rate,successes
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,A,140,0.5255723428536364,0.36319408004572507,claude-sonnet-5,140,62,records represented by this row,0.44285714285714284,62
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,B,188,0.49167539179154324,0.3519454804410868,claude-sonnet-5,188,79,records represented by this row,0.42021276595744683,79
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,B_filler,89,0.5083577522730738,0.3085343968169969,claude-sonnet-5,89,36,records represented by this row,0.4044943820224719,36
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,B_scaffolded,124,0.6408905206868485,0.4686201195166233,claude-sonnet-5,124,69,records represented by this row,0.5564516129032258,69
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,C,70,0.6004561608099076,0.37245878383038566,claude-sonnet-5,70,34,records represented by this row,0.4857142857142857,34
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,D,81,0.6004921529268207,0.38772115676987573,claude-sonnet-5,81,40,records represented by this row,0.49382716049382713,40
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,A,40,0.37503096742310027,0.12316091323540743,deepseek-v4-pro,40,9,records represented by this row,0.225,9
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,B,45,0.43368540574761577,0.1773008248284927,deepseek-v4-pro,45,13,records represented by this row,0.28888888888888886,13
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,B_filler,30,0.5121994835545616,0.19230498083676134,deepseek-v4-pro,30,10,records represented by this row,0.3333333333333333,10
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,B_scaffolded,29,0.38390090403867905,0.09846070197841039,deepseek-v4-pro,29,6,records represented by this row,0.20689655172413793,6
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,C,45,0.5016418580362314,0.23219082604215874,deepseek-v4-pro,45,16,records represented by this row,0.35555555555555557,16
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,D,38,0.5010789644821693,0.21212415179959412,deepseek-v4-pro,38,13,records represented by this row,0.34210526315789475,13
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,A,146,0.6913668858928943,0.5355396075942365,gpt-5.6-terra,146,90,records represented by this row,0.6164383561643836,90
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,B,163,0.6086657608456223,0.4572650939775893,gpt-5.6-terra,163,87,records represented by this row,0.5337423312883436,87
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,B_filler,93,0.6557061487062148,0.4578815660386337,gpt-5.6-terra,93,52,records represented by this row,0.5591397849462365,52
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,B_scaffolded,112,0.599669737655719,0.417595238289514,gpt-5.6-terra,112,57,records represented by this row,0.5089285714285714,57
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,C,33,0.2357260564646973,0.03140394152458165,gpt-5.6-terra,33,3,records represented by this row,0.09090909090909091,3
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,D,68,0.5158394498336787,0.28928700180280637,gpt-5.6-terra,68,27,records represented by this row,0.39705882352941174,27
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,A,121,0.7618462234701201,0.5986109549791648,qwen3.8-27b,121,83,records represented by this row,0.6859504132231405,83
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,B,192,0.6706443928546008,0.5336024517148253,qwen3.8-27b,192,116,records represented by this row,0.6041666666666666,116
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,B_filler,82,0.6970255684378748,0.4893645537689348,qwen3.8-27b,82,49,records represented by this row,0.5975609756097561,49
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,B_scaffolded,115,0.635776019461552,0.4567842714432962,qwen3.8-27b,115,63,records represented by this row,0.5478260869565217,63
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,C,133,0.7226977363099208,0.5623036100371858,qwen3.8-27b,133,86,records represented by this row,0.6466165413533834,86
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,D,137,0.6837088349738238,0.5221964449261809,qwen3.8-27b,137,83,records represented by this row,0.6058394160583942,83

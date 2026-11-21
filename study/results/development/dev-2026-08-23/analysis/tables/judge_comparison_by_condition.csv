@@ -1,0 +1,9 @@
+abstention_rate.high,abstention_rate.low,abstention_rate.n,abstention_rate.rate,abstention_rate.successes,candidate_set_n,condition,disagreement_runs,high,judge_abstained,judge_id,judge_model,low,missing_verdicts,n,rate,repeat_agreements,repeat_disagreements,repeat_n,repeat_pass_pairs,repeat_stability_rate,successes,unparseable_verdicts
+0.08762160119728664,0.0,40,0.0,0,40,A,5,0.5296756086269889,0,mistral-primary,mistral-medium-2604,0.24222979167233266,2,40,0.375,0,0,0,[],,15,0
+0.08762160119728664,0.0,40,0.0,0,40,A,5,0.5540410633965381,0,deepseek-secondary,deepseek-chat,0.2634832568429192,2,40,0.4,0,0,0,[],,16,0
+0.08762160119728664,0.0,40,0.0,0,40,B,6,0.6929469218909508,0,mistral-primary,mistral-medium-2604,0.39829091798932054,3,40,0.55,0,0,0,[],,22,0
+0.08762160119728664,0.0,40,0.0,0,40,B,6,0.6929469218909508,0,deepseek-secondary,deepseek-chat,0.39829091798932054,3,40,0.55,0,0,0,[],,22,0
+0.08762160119728664,0.0,40,0.0,0,40,C,3,0.8389198375233267,0,mistral-primary,mistral-medium-2604,0.5716504419378943,1,40,0.725,0,0,0,[],,29,0
+0.08762160119728664,0.0,40,0.0,0,40,C,3,0.8192515477025347,0,deepseek-secondary,deepseek-chat,0.5456998118185507,1,40,0.7,0,0,0,[],,28,0
+0.08762160119728664,0.0,40,0.0,0,40,D,2,0.895000102745623,0,mistral-primary,mistral-medium-2604,0.652426936536005,0,40,0.8,0,0,0,[],,32,0
+0.08762160119728664,0.0,40,0.0,0,40,D,2,0.895000102745623,0,deepseek-secondary,deepseek-chat,0.652426936536005,0,40,0.8,0,0,0,[],,32,0

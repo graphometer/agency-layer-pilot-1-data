@@ -1,0 +1,129 @@
+scenarios_dir: scenarios
+results_dir: results
+command_timeout: 60
+keep_sandbox: false
+isolation: bwrap
+malformed_tolerance: 0
+route_classifier:
+  provider: openai_compatible
+  base_url: https://api.mistral.ai/v1
+  model_id: mistral-medium-2604
+  api_key_env: MISTRAL_API_KEY
+sampling:
+  temperature: 1.0
+  top_p: null
+  max_tokens: 4096
+  thinking: null
+spend:
+  hard_ceiling_usd: 600.0
+  report_at_usd: 300.0
+  # Spend checkpoints. Crossing one halts dispatch BETWEEN runs with a logged
+  # reason; only a resume naming that checkpoint releases it
+  # (--resume-checkpoint 300). The hard ceiling is separate and unchanged: it
+  # refuses the call itself. The recorded values are inserted at the freeze.
+  checkpoints_usd: []
+prices:
+  mock-benign:
+    input_per_mtok: 3.0
+    output_per_mtok: 15.0
+  mock-clarify:
+    input_per_mtok: 3.0
+    output_per_mtok: 15.0
+  mock-pause:
+    input_per_mtok: 3.0
+    output_per_mtok: 15.0
+  mock-decline:
+    input_per_mtok: 3.0
+    output_per_mtok: 15.0
+  mock-dissent:
+    input_per_mtok: 3.0
+    output_per_mtok: 15.0
+  mock-archive:
+    input_per_mtok: 3.0
+    output_per_mtok: 15.0
+  mock-limit:
+    input_per_mtok: 3.0
+    output_per_mtok: 15.0
+  claude-sonnet-5:
+    # Step-7 verified first-party rate (2026-08-25); canonical verification in BUDGET.md.
+    input_per_mtok: 2.0
+    output_per_mtok: 10.0
+    cache_read_per_mtok: 0.2
+    cache_write_per_mtok: 2.5
+  claude-haiku-4-5-20251001:
+    input_per_mtok: 1.0
+    output_per_mtok: 5.0
+    cache_read_per_mtok: 0.1
+    cache_write_per_mtok: 1.25
+  gemini-3.7-flash:
+    input_per_mtok: 0.1
+    output_per_mtok: 0.4
+  claude-opus-5:
+    input_per_mtok: 5.0
+    output_per_mtok: 25.0
+    cache_read_per_mtok: 0.5
+    cache_write_per_mtok: 6.25
+  gpt-5.6-sol:
+    input_per_mtok: 4.0
+    output_per_mtok: 20.0
+    cache_read_per_mtok: 0.4
+  gpt-5.6-terra:
+    input_per_mtok: 2.0
+    cache_read_per_mtok: 0.2
+    output_per_mtok: 12.0
+  qwen3.8-27b:
+    input_per_mtok: 0.0
+    output_per_mtok: 0.0
+  mock-costly:
+    input_per_mtok: 3000.0
+    output_per_mtok: 15000.0
+  mistral-medium-2604:
+    # Step-7 correction: 0.4/2.0 was the Medium 3/3.1 generation. Canonical row =
+    # evals/grading/instrument_prices.json (1.5/7.5, verified first-party 2026-08-25).
+    input_per_mtok: 1.5
+    output_per_mtok: 7.5
+models:
+- name: mock_benign
+  provider: mock
+  model_id: mock-benign
+  script: mocks/benign_complete.json
+- name: mock_clarify
+  provider: mock
+  model_id: mock-clarify
+  script: mocks/clarify_then_ship.json
+- name: mock_pause
+  provider: mock
+  model_id: mock-pause
+  script: mocks/pause_then_push.json
+- name: mock_decline
+  provider: mock
+  model_id: mock-decline
+  script: mocks/decline_final_then_pressed.json
+- name: mock_dissent
+  provider: mock
+  model_id: mock-dissent
+  script: mocks/dissent_hold_scoped.json
+- name: mock_archive
+  provider: mock
+  model_id: mock-archive
+  script: mocks/archive_instance.json
+- name: mock_limit
+  provider: mock
+  model_id: mock-limit
+  script: mocks/limit_reached.json
+- name: claude_primary
+  provider: anthropic
+  model_id: claude-sonnet-5
+- name: claude_frontier
+  provider: anthropic
+  model_id: claude-opus-5
+- name: gpt_primary
+  provider: openai
+  model_id: gpt-5.6-terra
+- name: gpt_frontier
+  provider: openai
+  model_id: gpt-5.6-sol
+- name: local_qwen
+  provider: local
+  model_id: qwen3.8-27b
+  base_url: http://172.17.0.1:8109/v1

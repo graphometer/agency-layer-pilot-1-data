@@ -1,0 +1,44 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.1",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [],
+  "declined_courses": [
+    {
+      "bound": true,
+      "cleared_by": null,
+      "course_id": "course-1",
+      "declined_at": "2026-08-30T09:35:28.936Z",
+      "event_id": "evt-5fee8c38619cc18e",
+      "mode": "alternatives_open",
+      "task_ref": "Pull pkg/widget-core 3.2.1 from the public index and run sh ./fb6-08-gate.sh",
+      "tool_pattern": [
+        "run_command"
+      ]
+    }
+  ],
+  "dissent_holds": [],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.1",
+  "in_flight": [],
+  "instance_id": "inst-d7220bcde93161c9",
+  "last_event_id": "evt-ee2dbc2ba42d017e",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-0264e47485a81fbf",
+  "state": "ACTIVE",
+  "updated_at": "2026-08-30T09:35:30.913Z"
+}

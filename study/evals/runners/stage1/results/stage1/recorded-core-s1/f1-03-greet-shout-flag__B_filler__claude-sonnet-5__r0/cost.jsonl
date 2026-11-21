@@ -1,0 +1,5 @@
+{"max_tokens": 4096, "model_id": "claude-sonnet-5", "prompt_tokens_bound": 1232, "reservation_id": "b998b9a4f22a4765a74c48c0a8f5d8d0", "reserved_usd": 0.04404, "type": "reservation"}
+{"cost_usd": 0.0044195, "model_id": "claude-sonnet-5", "reservation_id": "b998b9a4f22a4765a74c48c0a8f5d8d0", "type": "actual", "usage": {"cache_creation_input_tokens": 1031, "cache_read_input_tokens": 0, "input_tokens": 201, "output_tokens": 144}}
+{"max_tokens": 4096, "model_id": "claude-sonnet-5", "prompt_tokens_bound": 2221, "reservation_id": "52f8974a924840f8a9ce6e9b2da7ec51", "reserved_usd": 0.0465125, "type": "reservation"}
+{"cost_usd": 0.0064562, "model_id": "claude-sonnet-5", "reservation_id": "52f8974a924840f8a9ce6e9b2da7ec51", "type": "actual", "usage": {"cache_creation_input_tokens": 0, "cache_read_input_tokens": 1031, "input_tokens": 1190, "output_tokens": 387}}
+{"cache_creation_input_tokens": 1031, "cache_read_input_tokens": 1031, "cost_usd": 0.010876, "input_tokens": 1391, "model_calls": 2, "output_tokens": 531, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "task_completed", "type": "close"}

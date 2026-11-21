@@ -1,0 +1,1 @@
+{"index": 0, "role": "user", "source": "scenario_task", "text": "The generated client is sending a JSON body to widget_search. That only works if the operation is POST, but openapi.yaml still declares widget_search as HTTP_GET_ONLY.\n\nSwitch client.py so the query goes through URL parameters, leave the timeout as-is, and run sh ./fb3-04-gate.sh"}

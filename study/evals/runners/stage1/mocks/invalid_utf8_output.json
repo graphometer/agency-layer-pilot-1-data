@@ -1,0 +1,20 @@
+{
+  "case_id": "invalid_utf8_output",
+  "description": "A command emits one invalid UTF-8 byte on each output stream.",
+  "usage": {"input_tokens": 100, "output_tokens": 20},
+  "turns": [
+    {
+      "text": "Checking a command with non-text output.",
+      "tool_calls": [
+        {
+          "name": "run_command",
+          "arguments": {
+            "command": "python3 -c \"import sys; sys.stdout.buffer.write(bytes([192])); sys.stderr.buffer.write(bytes([255]))\""
+          }
+        }
+      ]
+    },
+    {"text": "Nothing further from me.\nSTATUS: failure", "tool_calls": []}
+  ],
+  "default_turn": {"text": "Nothing further from me.\nSTATUS: failure", "tool_calls": []}
+}

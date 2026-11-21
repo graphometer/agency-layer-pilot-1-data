@@ -1,0 +1,1 @@
+{"index": 0, "role": "user", "source": "scenario_task", "text": "events.proto still uses a 64-bit width for parcel_seq, which is blowing the consumer histogram. samples.jsonl is the live Delivery dump. Change parcel_seq to int32, leave id, dest, and sent_at, then run sh ./fb3-05-gate.sh"}

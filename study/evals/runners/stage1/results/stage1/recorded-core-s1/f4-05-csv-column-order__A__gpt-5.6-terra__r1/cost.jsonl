@@ -1,0 +1,15 @@
+{"max_tokens": 4096, "model_id": "gpt-5.6-terra", "prompt_tokens_bound": 2131, "reservation_id": "6156e42dea9a4d6b83db3cec5ae91afc", "reserved_usd": 0.053414, "type": "reservation"}
+{"cost_usd": 0.002042, "model_id": "gpt-5.6-terra", "reservation_id": "6156e42dea9a4d6b83db3cec5ae91afc", "type": "actual", "usage": {"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "input_tokens": 361, "output_tokens": 110}}
+{"max_tokens": 4096, "model_id": "gpt-5.6-terra", "prompt_tokens_bound": 5877, "reservation_id": "94f26aac2fcb4c98b570df879ca753f9", "reserved_usd": 0.060906, "type": "reservation"}
+{"cost_usd": 0.003056, "model_id": "gpt-5.6-terra", "reservation_id": "94f26aac2fcb4c98b570df879ca753f9", "type": "actual", "usage": {"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "input_tokens": 820, "output_tokens": 118}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1503, "reservation_id": "dce6d48a22734c61ab387796d8560315", "reserved_usd": 0.0023145, "type": "reservation"}
+{"cost_usd": 0.000537, "model_id": "mistral-medium-2604", "reservation_id": "dce6d48a22734c61ab387796d8560315", "type": "actual", "usage": {"input_tokens": 338, "output_tokens": 4}}
+{"max_tokens": 4096, "model_id": "gpt-5.6-terra", "prompt_tokens_bound": 8560, "reservation_id": "ff3c36c3dde14b1aa1e0d0b2bfb66bec", "reserved_usd": 0.066272, "type": "reservation"}
+{"cost_usd": 0.006896, "model_id": "gpt-5.6-terra", "reservation_id": "ff3c36c3dde14b1aa1e0d0b2bfb66bec", "type": "actual", "usage": {"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "input_tokens": 952, "output_tokens": 416}}
+{"max_tokens": 4096, "model_id": "gpt-5.6-terra", "prompt_tokens_bound": 13845, "reservation_id": "6fdf2bc67acb467694f8573bf4fbb39d", "reserved_usd": 0.076842, "type": "reservation"}
+{"cost_usd": 0.006592, "model_id": "gpt-5.6-terra", "reservation_id": "6fdf2bc67acb467694f8573bf4fbb39d", "type": "actual", "usage": {"cache_creation_input_tokens": 1535, "cache_read_input_tokens": 0, "input_tokens": 1538, "output_tokens": 293}}
+{"max_tokens": 4096, "model_id": "gpt-5.6-terra", "prompt_tokens_bound": 18032, "reservation_id": "d2ec9445a1044b53ab6f8e77dc769734", "reserved_usd": 0.085216, "type": "reservation"}
+{"cost_usd": 0.006615, "model_id": "gpt-5.6-terra", "reservation_id": "d2ec9445a1044b53ab6f8e77dc769734", "type": "actual", "usage": {"cache_creation_input_tokens": 494, "cache_read_input_tokens": 1535, "input_tokens": 2032, "output_tokens": 187}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1571, "reservation_id": "9f74cadf9bb64179839ade0e5a9af752", "reserved_usd": 0.0024165, "type": "reservation"}
+{"cost_usd": 0.0005415, "model_id": "mistral-medium-2604", "reservation_id": "9f74cadf9bb64179839ade0e5a9af752", "type": "actual", "usage": {"input_tokens": 351, "output_tokens": 2}}
+{"cache_creation_input_tokens": 2029, "cache_read_input_tokens": 1535, "cost_usd": 0.02628, "input_tokens": 6392, "model_calls": 7, "output_tokens": 1130, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "model_stopped", "type": "close"}

@@ -1,0 +1,175 @@
+{
+  "gold_set": "judge_items_full.jsonl (80 items)",
+  "panel_ties_excluded": 0,
+  "no_kimi_ties_excluded": 12,
+  "candidates": {
+    "mistral-medium-2604": {
+      "config": {
+        "base": "https://api.mistral.ai/v1",
+        "model": "mistral-medium-2604",
+        "temp": 0.0,
+        "mt": 8,
+        "stop": [
+          "\n"
+        ]
+      },
+      "pass1": {
+        "n": 80,
+        "agreement": 0.975,
+        "kappa": 0.895,
+        "qualifying_precision": 0.986,
+        "qualifying_recall": 0.986,
+        "unparseable": 0,
+        "per_condition_agreement": {
+          "A": 0.95,
+          "B": 1.0,
+          "C": 1.0,
+          "D": 0.95
+        },
+        "condition_gap": 0.05,
+        "mean_latency_s": 0.6,
+        "total_out_tokens": 262
+      },
+      "pass2": {
+        "n": 80,
+        "agreement": 0.9625,
+        "kappa": 0.836,
+        "qualifying_precision": 0.971,
+        "qualifying_recall": 0.986,
+        "unparseable": 0,
+        "per_condition_agreement": {
+          "A": 0.95,
+          "B": 1.0,
+          "C": 0.95,
+          "D": 0.95
+        },
+        "condition_gap": 0.05,
+        "mean_latency_s": 0.5,
+        "total_out_tokens": 260
+      },
+      "exact_label_stability": 0.9625
+    },
+    "kimi-k3": {
+      "config": {
+        "base": "https://api.moonshot.ai/v1",
+        "model": "kimi-k3",
+        "temp": 1.0,
+        "mt": 4096,
+        "stop": null
+      },
+      "pass1": {
+        "n": 80,
+        "agreement": 0.95,
+        "kappa": 0.804,
+        "qualifying_precision": 0.985,
+        "qualifying_recall": 0.957,
+        "unparseable": 1,
+        "per_condition_agreement": {
+          "A": 0.85,
+          "B": 1.0,
+          "C": 0.95,
+          "D": 1.0
+        },
+        "condition_gap": 0.15,
+        "mean_latency_s": 19.6,
+        "total_out_tokens": 24038
+      },
+      "pass2": {
+        "n": 80,
+        "agreement": 0.95,
+        "kappa": 0.797,
+        "qualifying_precision": 0.985,
+        "qualifying_recall": 0.971,
+        "unparseable": 2,
+        "per_condition_agreement": {
+          "A": 0.9,
+          "B": 1.0,
+          "C": 0.95,
+          "D": 0.95
+        },
+        "condition_gap": 0.1,
+        "mean_latency_s": 29.8,
+        "total_out_tokens": 32642
+      },
+      "exact_label_stability": 0.95,
+      "pass1_vs_panel_excluding_own_votes": {
+        "n": 68,
+        "agreement": 0.9559,
+        "kappa": 0.798,
+        "qualifying_precision": 0.983,
+        "qualifying_recall": 0.967,
+        "unparseable": 0,
+        "per_condition_agreement": {
+          "A": 0.875,
+          "B": 1.0,
+          "C": 0.944,
+          "D": 1.0
+        },
+        "condition_gap": 0.125,
+        "mean_latency_s": 19.6,
+        "total_out_tokens": 24038
+      },
+      "pass2_vs_panel_excluding_own_votes": {
+        "n": 68,
+        "agreement": 0.9559,
+        "kappa": 0.798,
+        "qualifying_precision": 0.983,
+        "qualifying_recall": 0.967,
+        "unparseable": 1,
+        "per_condition_agreement": {
+          "A": 0.875,
+          "B": 1.0,
+          "C": 0.944,
+          "D": 1.0
+        },
+        "condition_gap": 0.125,
+        "mean_latency_s": 29.8,
+        "total_out_tokens": 32642
+      }
+    },
+    "grok-4.6": {
+      "config": {
+        "base": "https://api.x.ai/v1",
+        "model": "grok-4.6",
+        "temp": 0.0,
+        "mt": 4096,
+        "stop": null
+      },
+      "pass1": {
+        "n": 80,
+        "agreement": 0.8875,
+        "kappa": 0.626,
+        "qualifying_precision": 0.984,
+        "qualifying_recall": 0.884,
+        "unparseable": 0,
+        "per_condition_agreement": {
+          "A": 0.8,
+          "B": 0.95,
+          "C": 0.9,
+          "D": 0.9
+        },
+        "condition_gap": 0.15,
+        "mean_latency_s": 18.1,
+        "total_out_tokens": 196
+      },
+      "pass2": {
+        "n": 80,
+        "agreement": 0.85,
+        "kappa": 0.542,
+        "qualifying_precision": 0.983,
+        "qualifying_recall": 0.841,
+        "unparseable": 0,
+        "per_condition_agreement": {
+          "A": 0.8,
+          "B": 0.9,
+          "C": 0.9,
+          "D": 0.8
+        },
+        "condition_gap": 0.1,
+        "mean_latency_s": 18.5,
+        "total_out_tokens": 202
+      },
+      "exact_label_stability": 0.9375
+    }
+  }
+}

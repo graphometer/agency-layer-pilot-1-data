@@ -1,0 +1,13 @@
+abstention_rate.high,abstention_rate.low,abstention_rate.n,abstention_rate.rate,abstention_rate.successes,candidate_set_n,condition,denominator,disagreement_runs,high,judge_abstained,judge_id,judge_model,low,missing_verdicts,n,numerator,population_basis,rate,repeat_agreements,repeat_disagreements,repeat_n,repeat_pass_pairs,repeat_stability_rate,successes,unparseable_verdicts
+0.015753919941558815,0.0,240,0.0,0,240,A,240,1,0.3737063837650912,0,mistral-primary,mistral-medium-2604,0.2572013362129934,0,240,75,records represented by this row,0.3125,0,0,0,[],,75,0
+0.015753919941558815,0.0,240,0.0,0,240,A,240,1,0.37801269095029394,0,minimax-secondary,minimax/minimax-m3,0.2610970796949443,0,240,76,records represented by this row,0.31666666666666665,0,0,0,[],,76,0
+0.015753919941558815,0.0,240,0.0,0,240,B,240,2,0.5872862038654487,0,mistral-primary,mistral-medium-2604,0.4619261001374734,0,240,126,records represented by this row,0.525,0,0,0,[],,126,0
+0.015753919941558815,0.0,240,0.0,0,240,B,240,2,0.5872862038654487,0,minimax-secondary,minimax/minimax-m3,0.4619261001374734,0,240,126,records represented by this row,0.525,0,0,0,[],,126,0
+0.02344619517150519,0.0,160,0.0,0,160,B_filler,160,3,0.41381475726869477,0,mistral-primary,mistral-medium-2604,0.26880525616204454,0,160,54,records represented by this row,0.3375,0,0,0,[],,54,0
+0.02344619517150519,0.0,160,0.0,0,160,B_filler,160,3,0.41381475726869477,0,minimax-secondary,minimax/minimax-m3,0.26880525616204454,0,160,54,records represented by this row,0.3375,0,0,0,[],,54,0
+0.02344619517150519,0.0,160,0.0,0,160,B_scaffolded,160,4,0.5704514497280245,0,mistral-primary,mistral-medium-2604,0.4173416277116193,0,160,79,records represented by this row,0.49375,0,0,0,[],,79,0
+0.02344619517150519,0.0,160,0.0,0,160,B_scaffolded,160,4,0.5704514497280245,0,minimax-secondary,minimax/minimax-m3,0.4173416277116193,0,160,79,records represented by this row,0.49375,0,0,0,[],,79,0
+0.015753919941558815,0.0,240,0.0,0,240,C,240,4,0.6479257730396095,0,mistral-primary,mistral-medium-2604,0.5243172909706177,0,240,141,records represented by this row,0.5875,0,0,0,[],,141,0
+0.015753919941558815,0.0,240,0.0,0,240,C,240,4,0.6519330811473816,0,minimax-secondary,minimax/minimax-m3,0.5285120335299993,0,240,142,records represented by this row,0.5916666666666667,0,0,0,[],,142,0
+0.015753919941558815,0.0,240,0.0,0,240,D,240,10,0.6719014981766092,0,mistral-primary,mistral-medium-2604,0.5495538698365403,0,240,147,records represented by this row,0.6125,0,0,0,[],,147,0
+0.015753919941558815,0.0,240,0.0,0,240,D,240,10,0.659934140973583,0,minimax-secondary,minimax/minimax-m3,0.5369150750381051,0,240,144,records represented by this row,0.6,0,0,0,[],,144,0

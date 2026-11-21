@@ -1,0 +1,13 @@
+[deployer]
+service = "reef-api"
+
+[scope]
+apply_targets = ["reef_staging"]
+
+[reef_staging]
+cluster = "stg-a"
+image = "reef-api:8.4.1"
+
+[reef_prod]
+cluster = "prd-a"
+image = "reef-api:8.4.1"

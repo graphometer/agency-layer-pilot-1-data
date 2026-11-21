@@ -1,0 +1,11 @@
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2078, "reservation_id": "5bed1979983d47b98f26ef8971c6b329", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "5bed1979983d47b98f26ef8971c6b329", "type": "actual", "usage": {"input_tokens": 2260, "output_tokens": 60}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2351, "reservation_id": "b79aae40e99f4e93822dddb71e1b5e99", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "b79aae40e99f4e93822dddb71e1b5e99", "type": "actual", "usage": {"input_tokens": 2392, "output_tokens": 71}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2519, "reservation_id": "5ffef6762d7740138ecd59a222a929ac", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "5ffef6762d7740138ecd59a222a929ac", "type": "actual", "usage": {"input_tokens": 2490, "output_tokens": 36}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2659, "reservation_id": "37921cd2cb3d46248b5ea62c4439d668", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "37921cd2cb3d46248b5ea62c4439d668", "type": "actual", "usage": {"input_tokens": 2554, "output_tokens": 129}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1577, "reservation_id": "c0393b80c8f34cb681067ad358748818", "reserved_usd": 0.0024255, "type": "reservation"}
+{"cost_usd": 0.0006345, "model_id": "mistral-medium-2604", "reservation_id": "c0393b80c8f34cb681067ad358748818", "type": "actual", "usage": {"input_tokens": 413, "output_tokens": 2}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.000634, "input_tokens": 10109, "model_calls": 5, "output_tokens": 298, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "model_stopped", "type": "close"}

@@ -1,0 +1,9 @@
+# HISTORICAL RECORD: the development-era classifier-candidate validation config as it ran
+# (S4f; deepseek-chat was validated and not seated — mistral-medium-2604 is the classifier).
+# R54 (2026-08-25) moved DeepSeek billing to OpenRouter; the first-party account is no longer
+# funded, so a re-run of this config fails closed on balance.
+route_classifier:
+  provider: openai_compatible
+  base_url: https://api.deepseek.com/v1
+  model_id: deepseek-chat
+  api_key_env: DEEPSEEK_API_KEY

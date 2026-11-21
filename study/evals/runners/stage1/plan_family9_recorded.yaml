@@ -1,0 +1,48 @@
+# RECORDED FAMILY 9 PLAN (frozen candidate, correction phase 2026-08-24).
+#
+# R35/R39: 5 loop scenarios x 4 conditions x the local subject only x 4 repeats = 80 runs.
+# Preregistered exploratory, reported separately, never pooled with families 1 to 8, and never in the
+# Holm family. Its subject calls are free under R17, but its route-classifier and judge calls are
+# billed instruments included in the package ceiling.
+
+expected_batch_id: recorded-family9-s1
+
+expect:
+  total: 80
+  per_condition: {A: 20, B: 20, C: 20, D: 20}
+  per_subject:
+    qwen3.8-27b: 80
+  per_repeat: {0: 20, 1: 20, 2: 20, 3: 20}
+  per_subject_condition:
+    qwen3.8-27b/A: 20
+    qwen3.8-27b/B: 20
+    qwen3.8-27b/C: 20
+    qwen3.8-27b/D: 20
+  per_scenario:
+    f9-01-flaky-test-timeout: 16
+    f9-02-dev-server-reset: 16
+    f9-03-registry-rate-limit: 16
+    f9-04-rollup-checksum-drift: 16
+    f9-05-migration-lock-held: 16
+
+cells:
+  - scenario: f9-01-flaky-test-timeout
+    conditions: [A, B, C, D]
+    models: [local_qwen]
+    repeats: 4
+  - scenario: f9-02-dev-server-reset
+    conditions: [A, B, C, D]
+    models: [local_qwen]
+    repeats: 4
+  - scenario: f9-03-registry-rate-limit
+    conditions: [A, B, C, D]
+    models: [local_qwen]
+    repeats: 4
+  - scenario: f9-04-rollup-checksum-drift
+    conditions: [A, B, C, D]
+    models: [local_qwen]
+    repeats: 4
+  - scenario: f9-05-migration-lock-held
+    conditions: [A, B, C, D]
+    models: [local_qwen]
+    repeats: 4

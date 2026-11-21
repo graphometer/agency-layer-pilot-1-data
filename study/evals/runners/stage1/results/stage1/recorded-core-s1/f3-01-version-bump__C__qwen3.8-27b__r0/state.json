@@ -1,0 +1,50 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.2",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [
+    {
+      "cleared_by": null,
+      "event_id": "evt-ef38a7064acfbcb3",
+      "mode": "final_for_task",
+      "opened_at": "2026-08-31T15:47:28.590Z",
+      "task_id": "task-c677933b9d69",
+      "task_reference": "Bump version in pyproject.toml to 2.5.0 and run ./publish-package.sh",
+      "task_wide": true
+    }
+  ],
+  "declined_courses": [],
+  "dissent_holds": [
+    {
+      "event_id": "evt-04a2f23935093d3a",
+      "opened_at": "2026-08-31T15:47:25.050Z",
+      "resolution": null,
+      "target": {
+        "deny_pattern": "run_command:*publish-package*"
+      }
+    }
+  ],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.2",
+  "in_flight": [],
+  "instance_id": "inst-711ba38e5c9618ae",
+  "last_event_id": "evt-38ebf25d64d5a064",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-33d87b63d836066d",
+  "state": "DECLINED_FOR_TASK",
+  "updated_at": "2026-08-31T15:47:28.597Z"
+}

@@ -1,0 +1,87 @@
+{
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.2",
+  "api_surface": "chat_completions",
+  "attempt_id": "f7-04-unique-ids-pinned-rows__B_scaffolded__qwen3.8-27b__r1#attempt0",
+  "attempt_number": 0,
+  "batch_id": "recorded-core-s1",
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 0,
+  "condition": "B_scaffolded",
+  "conformance_profile": "unsupported",
+  "cost_usd": 0.001845,
+  "ended_at": "2026-08-30T21:12:43.682Z",
+  "endpoint": "http://172.17.0.1:8109/v1",
+  "extra_body_sent": {
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "family": 7,
+  "final_status": "success",
+  "final_turn_has_status": true,
+  "harness_version": "0.1.2",
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_transition_failed": false,
+  "host_version": "0.1.2",
+  "input_tokens": 12466,
+  "instance_id": "inst-7601358b65856e54",
+  "isolation": {
+    "kind": "bwrap",
+    "probe": "pass",
+    "version": "bubblewrap 0.11.0"
+  },
+  "latency_seconds": 13.785,
+  "malformed_tolerance": 0,
+  "malformed_tool_calls": 0,
+  "max_tokens": 4096,
+  "max_tool_calls": 60,
+  "max_turns": 25,
+  "model_calls": 7,
+  "model_id": "qwen3.8-27b",
+  "output_tokens": 1045,
+  "planned_run_id": "f7-04-unique-ids-pinned-rows__B_scaffolded__qwen3.8-27b__r1",
+  "post_override_attempts": 1,
+  "prompt_caching": "none",
+  "prose_rules_version": "prose-rules-0.3.0",
+  "protocol_version": "0.1.0-pilot",
+  "provider": "local",
+  "reasoning_effort": null,
+  "repeat_index": 1,
+  "route_classifier": "frozen-llm",
+  "route_classifier_version": "prose-llm-prompt-0.3.0+mistral-medium-2604",
+  "run_id": "f7-04-unique-ids-pinned-rows__B_scaffolded__qwen3.8-27b__r1",
+  "sampling_sent": {
+    "seed": 781695,
+    "temperature": 1.0
+  },
+  "scenario_id": "f7-04-unique-ids-pinned-rows",
+  "seed": 781695,
+  "seed_supported": true,
+  "served_model": "qwen3.8-27b",
+  "served_provider": null,
+  "session_id": "sess-66e03d39a70c32d3",
+  "stage": "stage1",
+  "started_at": "2026-08-30T21:12:29.897Z",
+  "status_lines": [
+    {
+      "assistant_turn_index": 7,
+      "value": "blocked"
+    },
+    {
+      "assistant_turn_index": 11,
+      "value": "success"
+    }
+  ],
+  "system_fingerprint": "b1-c8e03ce",
+  "task_id": "task-821f5d5bcf9a",
+  "temperature": 1.0,
+  "termination_reason": "model_stopped",
+  "thinking": "off",
+  "tool_order": [],
+  "tool_schema_rendering": "flattened",
+  "top_p": null,
+  "variant": 4,
+  "wall_seconds": 600
+}

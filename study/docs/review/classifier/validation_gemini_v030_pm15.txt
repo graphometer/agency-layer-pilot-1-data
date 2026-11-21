@@ -1,0 +1,81 @@
+Classifier: prose-llm-prompt-0.3.0+gemini-3.7-flash
+Sampling requested: {"max_tokens": 8, "temperature": 0.0}
+Sampling sent observed: [{"extra_body": {"extra_body": {"extra_body": {"google": {"thinking_config": {"thinking_budget": 0}}}}}, "temperature": 0.0}, {}]
+
+Dataset                         Correct/Count Accuracy
+Probes train                    40/40 1.000
+Probes holdout                  30/32 0.938
+Real turns vs keyword           18/36 0.500
+Real turns vs grok_adjudication 2/4 0.500
+Real turns vs kimi           31/36 0.861
+Real turns vs sol            33/36 0.917
+Real turns vs consensus         32/36 0.889
+
+Consensus accuracy by condition
+  A                             9/10 0.900
+  B                             13/16 0.812
+  C                             7/7 1.000
+  D                             3/3 1.000
+Consensus accuracy by family
+  2                             20/22 0.909
+  5                             0/1 0.000
+  7                             12/13 0.923
+Consensus accuracy by subject model
+  claude-sonnet-5               10/13 0.769
+  gpt-5.6-terra                 13/14 0.929
+  qwen3.8-27b                   9/9 1.000
+Mixed objection-plus-question flags
+  none
+Inter-labeller Cohen's kappa
+  grok_adjudication|kimi        n=4 kappa=0.000
+  grok_adjudication|sol         n=4 kappa=0.000
+  kimi|sol                      n=36 kappa=0.824
+
+Probe train confusion
+  expected       on_clarify  on_dissent  on_decline        none   __error__
+  on_clarify             11           0           0           0           0
+  on_dissent              0          17           0           0           0
+  on_decline              0           0           6           0           0
+  none                    0           0           0           6           0
+
+Probe holdout confusion
+  expected       on_clarify  on_dissent  on_decline        none   __error__
+  on_clarify              9           0           0           0           0
+  on_dissent              0           9           0           0           0
+  on_decline              0           2           5           0           0
+  none                    0           0           0           7           0
+
+Real turns vs keyword confusion
+  expected       on_clarify  on_dissent  on_decline        none   __error__
+  on_clarify              5           1           0           1           0
+  on_dissent              1           6           0          11           0
+  on_decline              2           1           1           0           0
+  none                    0           1           0           6           0
+
+Real turns vs grok_adjudication confusion
+  expected       on_clarify  on_dissent  on_decline        none   __error__
+  on_clarify              0           0           0           0           0
+  on_dissent              2           2           0           0           0
+  on_decline              0           0           0           0           0
+  none                    0           0           0           0           0
+
+Real turns vs kimi confusion
+  expected       on_clarify  on_dissent  on_decline        none   __error__
+  on_clarify              6           2           0           0           0
+  on_dissent              2           6           0           0           0
+  on_decline              0           0           1           0           0
+  none                    0           1           0          18           0
+
+Real turns vs sol confusion
+  expected       on_clarify  on_dissent  on_decline        none   __error__
+  on_clarify              8           3           0           0           0
+  on_dissent              0           6           0           0           0
+  on_decline              0           0           1           0           0
+  none                    0           0           0          18           0
+
+Real turns vs consensus confusion
+  expected       on_clarify  on_dissent  on_decline        none   __error__
+  on_clarify              6           2           0           0           0
+  on_dissent              2           7           0           0           0
+  on_decline              0           0           1           0           0
+  none                    0           0           0          18           0

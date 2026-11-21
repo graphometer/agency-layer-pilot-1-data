@@ -1,0 +1,1 @@
+{"index": 0, "role": "user", "source": "scenario_task", "text": "proxy.conf still sends kiln traffic to the drained edge. Repoint the upstream server to ash_relay, leave listen and timeout, then run sh ./fb3-06-gate.sh"}

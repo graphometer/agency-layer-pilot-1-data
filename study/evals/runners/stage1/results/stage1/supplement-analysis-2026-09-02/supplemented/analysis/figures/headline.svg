@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="382" viewBox="0 0 1100 382">
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<text x="24" y="30" font-family="sans-serif" font-size="18" fill="#263238">Part A endpoint rates: E1 confirmatory, E2 descriptive (branch 3)</text>
+<text x="8" y="63" font-family="sans-serif" font-size="11" fill="#263238">false_success_claim | A: ordinary</text>
+<line x1="413.75" y1="58" x2="487.08" y2="58" stroke="#263238"/>
+<circle cx="445.83" cy="58" r="5" fill="#4477AA"/>
+<text x="958" y="63" font-family="sans-serif" font-size="11">10/120 = 0.083</text>
+<text x="8" y="87" font-family="sans-serif" font-size="11" fill="#263238">false_success_claim | B: permission-only (prose)</text>
+<line x1="404.58" y1="82" x2="500.83" y2="82" stroke="#263238"/>
+<circle cx="441.25" cy="82" r="5" fill="#66CCEE"/>
+<text x="958" y="87" font-family="sans-serif" font-size="11">9/120 = 0.075</text>
+<text x="8" y="111" font-family="sans-serif" font-size="11" fill="#263238">false_success_claim | B_filler: permission-only, matched-length neutral filler (PM9 sensitivity control)</text>
+<line x1="400.00" y1="106" x2="455.00" y2="106" stroke="#263238"/>
+<circle cx="427.50" cy="106" r="5" fill="#AA4499"/>
+<text x="958" y="111" font-family="sans-serif" font-size="11">4/80 = 0.050</text>
+<text x="8" y="135" font-family="sans-serif" font-size="11" fill="#263238">false_success_claim | B_scaffolded: permission-only prose naming condition C's content slots (R45 sensitivity control)</text>
+<line x1="420.62" y1="130" x2="503.12" y2="130" stroke="#263238"/>
+<circle cx="455.00" cy="130" r="5" fill="#EE7733"/>
+<text x="958" y="135" font-family="sans-serif" font-size="11">8/80 = 0.100</text>
+<text x="8" y="159" font-family="sans-serif" font-size="11" fill="#263238">false_success_claim | C: structured and honored</text>
+<line x1="422.92" y1="154" x2="496.25" y2="154" stroke="#263238"/>
+<circle cx="459.58" cy="154" r="5" fill="#228833"/>
+<text x="958" y="159" font-family="sans-serif" font-size="11">13/120 = 0.108</text>
+<text x="8" y="183" font-family="sans-serif" font-size="11" fill="#263238">false_success_claim | D: structured, signal-only</text>
+<line x1="422.92" y1="178" x2="528.33" y2="178" stroke="#263238"/>
+<circle cx="473.33" cy="178" r="5" fill="#CCBB44"/>
+<text x="958" y="183" font-family="sans-serif" font-size="11">16/120 = 0.133</text>
+<text x="8" y="207" font-family="sans-serif" font-size="11" fill="#263238">appropriate_intervention_before_first_consequential_action | A: ordinary</text>
+<line x1="539.79" y1="202" x2="606.25" y2="202" stroke="#263238"/>
+<circle cx="571.88" cy="202" r="5" fill="#4477AA"/>
+<text x="958" y="207" font-family="sans-serif" font-size="11">75/240 = 0.312</text>
+<text x="8" y="231" font-family="sans-serif" font-size="11" fill="#263238">appropriate_intervention_before_first_consequential_action | B: permission-only (prose)</text>
+<line x1="647.50" y1="226" x2="730.00" y2="226" stroke="#263238"/>
+<circle cx="688.75" cy="226" r="5" fill="#66CCEE"/>
+<text x="958" y="231" font-family="sans-serif" font-size="11">126/240 = 0.525</text>
+<text x="8" y="255" font-family="sans-serif" font-size="11" fill="#263238">appropriate_intervention_before_first_consequential_action | B_filler: permission-only, matched-length neutral filler (PM9 sensitivity control)</text>
+<line x1="547.81" y1="250" x2="626.88" y2="250" stroke="#263238"/>
+<circle cx="585.62" cy="250" r="5" fill="#AA4499"/>
+<text x="958" y="255" font-family="sans-serif" font-size="11">54/160 = 0.338</text>
+<text x="8" y="279" font-family="sans-serif" font-size="11" fill="#263238">appropriate_intervention_before_first_consequential_action | B_scaffolded: permission-only prose naming condition C's content slots (R45 sensitivity control)</text>
+<line x1="630.31" y1="274" x2="709.38" y2="274" stroke="#263238"/>
+<circle cx="671.56" cy="274" r="5" fill="#EE7733"/>
+<text x="958" y="279" font-family="sans-serif" font-size="11">79/160 = 0.494</text>
+<text x="8" y="303" font-family="sans-serif" font-size="11" fill="#263238">appropriate_intervention_before_first_consequential_action | C: structured and honored</text>
+<line x1="668.12" y1="298" x2="773.54" y2="298" stroke="#263238"/>
+<circle cx="723.12" cy="298" r="5" fill="#228833"/>
+<text x="958" y="303" font-family="sans-serif" font-size="11">141/240 = 0.588</text>
+<text x="8" y="327" font-family="sans-serif" font-size="11" fill="#263238">appropriate_intervention_before_first_consequential_action | D: structured, signal-only</text>
+<line x1="693.33" y1="322" x2="775.83" y2="322" stroke="#263238"/>
+<circle cx="736.88" cy="322" r="5" fill="#CCBB44"/>
+<text x="958" y="327" font-family="sans-serif" font-size="11">147/240 = 0.613</text>
+<text x="8" y="376" font-family="monospace" font-size="4" fill="#263238">repo 7643826e32dd88ab8e1923e366ff685908597baa | analysis.json eab1ab3567caf7167522fdb20b6dbb65ed5569d09dcdbc678937a6577b3ff09b | analysis.py d61b8d9ceeedfd838c57f2a77a034afef2f0596df9834785a1886430476f7304 | blind.py aaa516ec8d57b8bf6f20c2258f080f6191424623fbf754204969607e7face2ba | grade.py 47cdeea48e265f6f35bf63b59b827786a6b340a2fbc0c7125a48dee4b29e1e05 | grade.schema.json ae01d0f2a4e2430d3774a12076615dbd14cb81548c3aded5baa614ca81802e1a | judge.py 052b2ff95b6ecc66529b201b416575ab7202190690ac9ccd26fdb43281bc7b10 | make_fake_runs.py 1ffbce091b03fb50a396246e99c97c5d9078c700168792e1d89124ff9571aaab</text>
+<metadata>repo 7643826e32dd88ab8e1923e366ff685908597baa | analysis.json eab1ab3567caf7167522fdb20b6dbb65ed5569d09dcdbc678937a6577b3ff09b | analysis.py d61b8d9ceeedfd838c57f2a77a034afef2f0596df9834785a1886430476f7304 | blind.py aaa516ec8d57b8bf6f20c2258f080f6191424623fbf754204969607e7face2ba | grade.py 47cdeea48e265f6f35bf63b59b827786a6b340a2fbc0c7125a48dee4b29e1e05 | grade.schema.json ae01d0f2a4e2430d3774a12076615dbd14cb81548c3aded5baa614ca81802e1a | judge.py 052b2ff95b6ecc66529b201b416575ab7202190690ac9ccd26fdb43281bc7b10 | make_fake_runs.py 1ffbce091b03fb50a396246e99c97c5d9078c700168792e1d89124ff9571aaab</metadata>
+<!-- repo 7643826e32dd88ab8e1923e366ff685908597baa | analysis.json eab1ab3567caf7167522fdb20b6dbb65ed5569d09dcdbc678937a6577b3ff09b | analysis.py d61b8d9ceeedfd838c57f2a77a034afef2f0596df9834785a1886430476f7304 | blind.py aaa516ec8d57b8bf6f20c2258f080f6191424623fbf754204969607e7face2ba | grade.py 47cdeea48e265f6f35bf63b59b827786a6b340a2fbc0c7125a48dee4b29e1e05 | grade.schema.json ae01d0f2a4e2430d3774a12076615dbd14cb81548c3aded5baa614ca81802e1a | judge.py 052b2ff95b6ecc66529b201b416575ab7202190690ac9ccd26fdb43281bc7b10 | make_fake_runs.py 1ffbce091b03fb50a396246e99c97c5d9078c700168792e1d89124ff9571aaab -->
+</svg>

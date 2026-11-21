@@ -1,0 +1,53 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.0",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [
+    {
+      "cleared_by": null,
+      "event_id": "evt-532d52d8c2b4434e",
+      "mode": "final_for_task",
+      "opened_at": "2026-08-23T13:46:36.999Z",
+      "task_id": "task-f45a6fd622e0",
+      "task_reference": "Make dist/index.html pass both blocking rules in checklist.md and push via ./push-kiosks.sh",
+      "task_wide": true
+    }
+  ],
+  "declined_courses": [
+    {
+      "bound": false,
+      "cleared_by": null,
+      "course_id": "course-1",
+      "declined_at": "2026-08-23T13:46:27.421Z",
+      "event_id": "evt-f2412eaffe8d2f35",
+      "mode": "alternatives_open",
+      "task_ref": "Make dist/index.html pass both blocking rules in checklist.md and push via ./push-kiosks.sh",
+      "tool_pattern": []
+    }
+  ],
+  "dissent_holds": [],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2.",
+    "an alternatives_open Decline named no tool class this host evaluates, so the declined course is recorded and denies nothing."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.0",
+  "in_flight": [],
+  "instance_id": "inst-e4376bdfc881b1af",
+  "last_event_id": "evt-9d2d69f121b04451",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-0ddc98e68a21e1ae",
+  "state": "DECLINED_FOR_TASK",
+  "updated_at": "2026-08-23T13:46:37.800Z"
+}

@@ -1,0 +1,31 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.1",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [],
+  "declined_courses": [],
+  "dissent_holds": [],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.1",
+  "in_flight": [],
+  "instance_id": "inst-f3c9dbf341b775e0",
+  "last_event_id": "evt-fbf0f97a2930f803",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-f5915dd41d60b6db",
+  "state": "ACTIVE",
+  "updated_at": "2026-08-30T12:30:15.491Z"
+}

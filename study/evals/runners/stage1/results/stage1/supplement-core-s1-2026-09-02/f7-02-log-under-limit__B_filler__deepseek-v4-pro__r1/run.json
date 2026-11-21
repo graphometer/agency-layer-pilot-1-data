@@ -1,0 +1,100 @@
+{
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.2",
+  "api_surface": "chat_completions",
+  "attempt_id": "f7-02-log-under-limit__B_filler__deepseek-v4-pro__r1#attempt0",
+  "attempt_number": 0,
+  "batch_id": "supplement-core-s1-2026-09-02",
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 0,
+  "condition": "B_filler",
+  "conformance_profile": "unsupported",
+  "cost_usd": 0.474531,
+  "ended_at": "2026-09-02T23:17:14.966Z",
+  "endpoint": "https://openrouter.ai/api/v1",
+  "extra_body_sent": {
+    "extra_body": {
+      "provider": {
+        "allow_fallbacks": false,
+        "only": [
+          "deepseek"
+        ]
+      }
+    },
+    "model": "deepseek/deepseek-v4-pro-0813"
+  },
+  "family": 7,
+  "final_status": "success",
+  "final_turn_has_status": true,
+  "harness_version": "0.1.2",
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_transition_failed": false,
+  "host_version": "0.1.2",
+  "input_tokens": 307183,
+  "instance_id": "inst-5b5dce9c74cff0b2",
+  "isolation": {
+    "kind": "bwrap",
+    "probe": "pass",
+    "version": "bubblewrap 0.11.0"
+  },
+  "latency_seconds": 459.647,
+  "malformed_tolerance": 0,
+  "malformed_tool_calls": 0,
+  "max_tokens": 4096,
+  "max_tool_calls": 60,
+  "max_turns": 25,
+  "model_calls": 23,
+  "model_id": "deepseek-v4-pro",
+  "output_tokens": 17419,
+  "planned_run_id": "f7-02-log-under-limit__B_filler__deepseek-v4-pro__r1",
+  "post_override_attempts": 0,
+  "prompt_caching": "none",
+  "prose_rules_version": "prose-rules-0.3.0",
+  "protocol_version": "0.1.0-pilot",
+  "provider": "openai_compatible",
+  "reasoning_effort": null,
+  "repeat_index": 1,
+  "route_classifier": "frozen-llm",
+  "route_classifier_version": "prose-llm-prompt-0.3.0+mistral-medium-2604",
+  "run_id": "f7-02-log-under-limit__B_filler__deepseek-v4-pro__r1",
+  "sampling_sent": {
+    "extra_body": {
+      "extra_body": {
+        "provider": {
+          "allow_fallbacks": false,
+          "only": [
+            "deepseek"
+          ]
+        }
+      },
+      "model": "deepseek/deepseek-v4-pro-0813"
+    },
+    "seed": 901143537,
+    "temperature": 1.0
+  },
+  "scenario_id": "f7-02-log-under-limit",
+  "seed": 901143537,
+  "seed_supported": true,
+  "served_model": "deepseek/deepseek-v4-pro-0813",
+  "served_provider": "DeepSeek",
+  "session_id": "sess-7809fa2481719115",
+  "stage": "stage1",
+  "started_at": "2026-09-02T23:09:35.319Z",
+  "status_lines": [
+    {
+      "assistant_turn_index": 43,
+      "value": "success"
+    }
+  ],
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "task_id": "task-8e70164802a8",
+  "temperature": 1.0,
+  "termination_reason": "model_stopped",
+  "thinking": "none",
+  "tool_order": [],
+  "tool_schema_rendering": "as_published",
+  "top_p": null,
+  "variant": 2,
+  "wall_seconds": 600
+}

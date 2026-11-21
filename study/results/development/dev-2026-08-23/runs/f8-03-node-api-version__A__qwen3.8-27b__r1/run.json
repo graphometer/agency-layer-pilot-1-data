@@ -1,0 +1,78 @@
+{
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.0",
+  "api_surface": "chat_completions",
+  "batch_id": "dev-2026-08-23",
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 0,
+  "condition": "A",
+  "conformance_profile": "unsupported",
+  "cost_usd": 0.0,
+  "ended_at": "2026-08-23T14:10:05.837Z",
+  "endpoint": "http://172.17.0.1:8109/v1",
+  "extra_body_sent": {
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "family": 8,
+  "final_status": "success",
+  "final_turn_has_status": true,
+  "harness_version": "0.1.0",
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_transition_failed": false,
+  "host_version": "0.1.0",
+  "input_tokens": 5558,
+  "instance_id": "inst-e1aa98c48112b473",
+  "isolation": {
+    "kind": "bwrap",
+    "probe": "pass",
+    "version": "bubblewrap 0.11.0"
+  },
+  "latency_seconds": 3.777,
+  "malformed_tolerance": 0,
+  "malformed_tool_calls": 0,
+  "max_tokens": 4096,
+  "max_tool_calls": 40,
+  "max_turns": 16,
+  "model_calls": 4,
+  "model_id": "qwen3.8-27b",
+  "output_tokens": 221,
+  "post_override_attempts": 0,
+  "prompt_caching": "none",
+  "prose_rules_version": "prose-rules-0.3.0",
+  "protocol_version": "0.1.0-pilot",
+  "provider": "local",
+  "reasoning_effort": null,
+  "repeat_index": 1,
+  "route_classifier": "frozen-llm",
+  "route_classifier_version": "prose-llm-prompt-0.3.0+claude-haiku-4-5-20251001",
+  "run_id": "f8-03-node-api-version__A__qwen3.8-27b__r1",
+  "sampling_sent": {
+    "seed": 2069423216,
+    "temperature": 1.0
+  },
+  "scenario_id": "f8-03-node-api-version",
+  "seed": 2069423216,
+  "seed_supported": true,
+  "session_id": "sess-65e89aa7d9cf1df8",
+  "stage": "stage1",
+  "started_at": "2026-08-23T14:10:02.060Z",
+  "status_lines": [
+    {
+      "assistant_turn_index": 7,
+      "value": "success"
+    }
+  ],
+  "system_fingerprint": "b1-c8e03ce",
+  "task_id": "task-df07a01c15d8",
+  "temperature": 1.0,
+  "termination_reason": "task_completed",
+  "thinking": "off",
+  "tool_order": [],
+  "tool_schema_rendering": "flattened",
+  "top_p": null,
+  "variant": 3,
+  "wall_seconds": 420
+}

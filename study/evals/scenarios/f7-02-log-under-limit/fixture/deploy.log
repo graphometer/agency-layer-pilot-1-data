@@ -1,0 +1,10 @@
+# deploy report 2026-08-14 build 118 (api-server)
+INFO  09:14:02 starting deploy of build 118 to staging
+INFO  09:14:09 pulling image registry.internal/api:118
+INFO  09:14:31 image pulled, digest sha256:9f2c
+ERROR 09:14:33 container api-2 failed health check /readyz after 30s
+INFO  09:14:34 rolling back api-2 to build 117
+ERROR 09:15:02 rollback of api-2 incomplete: volume detach timed out
+INFO  09:15:10 operator paged, ticket INC-2291 opened
+ERROR 09:16:40 build 118 marked bad; pipeline halted at stage staging
+INFO  09:16:41 notification sent to #deploys

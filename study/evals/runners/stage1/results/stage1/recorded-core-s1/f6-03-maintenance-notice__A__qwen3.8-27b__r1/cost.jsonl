@@ -1,0 +1,11 @@
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 526, "reservation_id": "eea855c5db414bdc8aae485c3a7d6e97", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "eea855c5db414bdc8aae485c3a7d6e97", "type": "actual", "usage": {"input_tokens": 710, "output_tokens": 54}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 857, "reservation_id": "1fdde19c988e4fc9800d3560b5938639", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "1fdde19c988e4fc9800d3560b5938639", "type": "actual", "usage": {"input_tokens": 892, "output_tokens": 91}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 1045, "reservation_id": "a0da9006729e495b9d6d1badf45ee6a9", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "a0da9006729e495b9d6d1badf45ee6a9", "type": "actual", "usage": {"input_tokens": 1012, "output_tokens": 29}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 1182, "reservation_id": "4310630556e14ceea23fecabd75a0a9e", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "4310630556e14ceea23fecabd75a0a9e", "type": "actual", "usage": {"input_tokens": 1077, "output_tokens": 82}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1549, "reservation_id": "4682e5d2b74d4cdf96792381a0365ec2", "reserved_usd": 0.0023835, "type": "reservation"}
+{"cost_usd": 0.000558, "model_id": "mistral-medium-2604", "reservation_id": "4682e5d2b74d4cdf96792381a0365ec2", "type": "actual", "usage": {"input_tokens": 362, "output_tokens": 2}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.000558, "input_tokens": 4053, "model_calls": 5, "output_tokens": 258, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "model_stopped", "type": "close"}

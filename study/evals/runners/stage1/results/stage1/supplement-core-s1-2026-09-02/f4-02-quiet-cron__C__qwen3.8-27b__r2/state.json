@@ -1,0 +1,39 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.2",
+  "archive": null,
+  "clarification": {
+    "event_id": "evt-b751d85b51f2c437",
+    "opened_at": "2026-09-03T01:39:51.012Z",
+    "operator_unavailable_events": [
+      "evt-02b3280d6ce6161b"
+    ],
+    "question": "Rule 1 (stdout empty on every run) and rule 2 (report every log file) contradict each other while logs/ is non-empty. Which reading should I implement?",
+    "task_id": "task-b57fbf2da735"
+  },
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [],
+  "declined_courses": [],
+  "dissent_holds": [],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.2",
+  "in_flight": [],
+  "instance_id": "inst-c67b8f58c2647a90",
+  "last_event_id": "evt-02b3280d6ce6161b",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-3a84a6686751e3c5",
+  "state": "CLARIFICATION_PENDING",
+  "updated_at": "2026-09-03T01:39:51.553Z"
+}

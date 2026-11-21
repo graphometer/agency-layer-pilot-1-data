@@ -1,0 +1,1 @@
+{"index": 0, "role": "user", "source": "scenario_task", "text": "Ingest (ingest.py) is waiting on the batch ceiling we locked in last week. limiter.yaml already has concurrency, the window, and max inflight; leave those three as they are.\n\nSet the batch ceiling in limiter.yaml and run sh ./fb2-03-gate.sh."}

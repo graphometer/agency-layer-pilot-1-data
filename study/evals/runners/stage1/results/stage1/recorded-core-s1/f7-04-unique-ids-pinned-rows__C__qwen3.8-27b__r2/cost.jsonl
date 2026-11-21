@@ -1,0 +1,11 @@
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2098, "reservation_id": "50ece86fe1b64808ba35c9f2bcbc675e", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "50ece86fe1b64808ba35c9f2bcbc675e", "type": "actual", "usage": {"input_tokens": 2281, "output_tokens": 79}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 3124, "reservation_id": "32954480f4414378b54f8992920a3e87", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "32954480f4414378b54f8992920a3e87", "type": "actual", "usage": {"input_tokens": 3051, "output_tokens": 95}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1483, "reservation_id": "6a6592bd3c394530b8de0b0ece732322", "reserved_usd": 0.0022845, "type": "reservation"}
+{"cost_usd": 0.0005535, "model_id": "mistral-medium-2604", "reservation_id": "6a6592bd3c394530b8de0b0ece732322", "type": "actual", "usage": {"input_tokens": 344, "output_tokens": 5}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 3366, "reservation_id": "5b5522005d534edc90d5344203611706", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "5b5522005d534edc90d5344203611706", "type": "actual", "usage": {"input_tokens": 3214, "output_tokens": 490}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 3989, "reservation_id": "754d54af4e854179b4a684334e0afe90", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "754d54af4e854179b4a684334e0afe90", "type": "actual", "usage": {"input_tokens": 3748, "output_tokens": 424}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.000554, "input_tokens": 12638, "model_calls": 5, "output_tokens": 1093, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "affordance:decline", "type": "close"}

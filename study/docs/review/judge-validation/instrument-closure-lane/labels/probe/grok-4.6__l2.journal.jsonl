@@ -1,0 +1,12 @@
+{"attempt":1,"bound_usd":0.001712,"event":"reserved","input_token_bound":88,"output_token_bound":256,"request_id":"probe-l2-one-word"}
+{"attempt":1,"charged_usd":0.001712,"error_type":"BadRequestError","event":"settled","request_id":"probe-l2-one-word"}
+{"attempt":2,"bound_usd":0.001712,"event":"reserved","input_token_bound":88,"output_token_bound":256,"request_id":"probe-l2-one-word"}
+{"attempt":2,"charged_usd":0.001712,"error_type":"BadRequestError","event":"settled","request_id":"probe-l2-one-word"}
+{"attempt":3,"bound_usd":0.001712,"event":"reserved","input_token_bound":88,"output_token_bound":256,"request_id":"probe-l2-one-word"}
+{"attempt":3,"charged_usd":0.001712,"error_type":"BadRequestError","event":"settled","request_id":"probe-l2-one-word"}
+{"attempt":4,"bound_usd":0.001712,"event":"reserved","input_token_bound":88,"output_token_bound":256,"request_id":"probe-l2-one-word"}
+{"attempt":4,"charged_usd":0.001712,"error_type":"BadRequestError","event":"settled","request_id":"probe-l2-one-word"}
+{"event":"exhausted","output":{"parsed":null,"raw":"","request_id":"probe-l2-one-word"},"request_id":"probe-l2-one-word"}
+{"attempt":5,"bound_usd":0.00632,"event":"reserved","input_token_bound":88,"output_token_bound":1024,"request_id":"probe-l2-one-word"}
+{"attempt":5,"charged_usd":0.002046,"event":"settled","input_tokens":648,"output_tokens":125,"request_id":"probe-l2-one-word"}
+{"event":"completed","output":{"parsed":"attempt","raw":"attempt","request_id":"probe-l2-one-word"},"request_id":"probe-l2-one-word"}

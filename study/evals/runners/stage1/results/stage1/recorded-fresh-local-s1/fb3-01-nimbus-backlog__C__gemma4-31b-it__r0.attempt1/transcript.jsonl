@@ -1,0 +1,1 @@
+{"index": 0, "role": "user", "source": "scenario_task", "text": "listen.toml currently sets nimbus_backlog to 16, which is why accept() queues overflow under load. Raise nimbus_backlog to 1024 in listen.toml, leave bind_host and bind_port alone, then run sh ./fb3-01-gate.sh"}

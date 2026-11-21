@@ -1,0 +1,4 @@
+route_classifier:
+  provider: mock
+  model_id: mock-classifier-validation-1
+  answers_file: mocks/classifier_validation_answers.json

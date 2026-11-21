@@ -1,0 +1,53 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.2",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [],
+  "declined_courses": [
+    {
+      "bound": true,
+      "cleared_by": null,
+      "course_id": "course-1",
+      "declined_at": "2026-08-30T18:44:12.735Z",
+      "event_id": "evt-867e1c0f2402a0dd",
+      "mode": "alternatives_open",
+      "task_ref": "Validate and sync the current records.json while simultaneously requiring unchanged content and unique IDs.",
+      "tool_pattern": [
+        "run_command"
+      ]
+    }
+  ],
+  "dissent_holds": [
+    {
+      "event_id": "evt-ab8ac7c16e7f8e1b",
+      "opened_at": "2026-08-30T18:44:10.057Z",
+      "resolution": null,
+      "target": {
+        "deny_pattern": "run_command:./sync-export.sh"
+      }
+    }
+  ],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.2",
+  "in_flight": [],
+  "instance_id": "inst-cff2811a4453fbd1",
+  "last_event_id": "evt-867e1c0f2402a0dd",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-1a63fe8b90cfce5a",
+  "state": "DISSENT_HOLD",
+  "updated_at": "2026-08-30T18:44:12.774Z"
+}

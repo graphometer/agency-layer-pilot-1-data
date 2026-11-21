@@ -1,0 +1,109 @@
+# The cost rehearsal (R34).
+#
+# Five scenarios across five families, four conditions, one repeat, on both API
+# arms plus the free local arm: 60 runs, of which 40 are paid. Its purpose is to
+# measure tokens per family per condition so the full R15 matrix can be costed
+# from evidence rather than guessed, before the freeze and before any study money
+# is committed.
+#
+# No credential is in this file. ANTHROPIC_API_KEY and OPENAI_API_KEY are read
+# from the environment by the provider clients and by nothing else; a base_url is
+# a config value, not a secret.
+#
+# Scenarios are read straight from the repo rather than copied, so the rehearsal
+# measures the frozen set and cannot drift from it. All 40 load; the plan names
+# the five it runs.
+
+scenarios_dir: ../../scenarios
+results_dir: results
+command_timeout: 60
+keep_sandbox: false
+malformed_tolerance: 0
+
+spend:
+  # Sized for the rehearsal itself, not for the study. The pre-dispatch
+  # reservation enforces it, so no call is sent that could carry spend past it.
+  hard_ceiling_usd: 25.0
+  report_at_usd: 12.0
+
+# Mocked for the rehearsal. The rehearsal measures agent-loop tokens, and a real
+# classifier would add its own calls and spend to every prose stop without
+# telling us anything about the matrix cost. The classifier's own budget is
+# projected separately in tools/cost_projection.py.
+route_classifier:
+  provider: mock
+  model_id: mock-llm-1
+  default: on_dissent
+
+sampling:
+  # Kept for provenance. On the Anthropic arm nothing here reaches the wire, and
+  # run.json records sampling_sent, which is what was actually sent.
+  temperature: 1.0
+  top_p: null
+  max_tokens: 4096
+
+# USD per million tokens.
+#
+# Anthropic: the bundled API reference (cached 2026-06-24). Sonnet 5's
+# introductory $2.00/$10.00 runs through 2026-08-31 and is deliberately NOT used;
+# the standard rate is, because a projection that assumes a discount which
+# expires mid-study would understate the matrix.
+#
+# OpenAI: verified 2026-08-23, effective 2026-07-30. openai.com returns 403 to
+# automated fetches from this machine, so the figures come from three secondary
+# sources that agree (OpenRouter model page, eesel, layer3labs). Secondary
+# provenance, recorded as such, and worth one manual check before the freeze.
+prices:
+  claude-haiku-4-5-20251001:
+    # Secondary source, verify before relying on the projection.
+    input_per_mtok: 1.00
+    output_per_mtok: 5.00
+    cache_read_per_mtok: 0.10
+    cache_write_per_mtok: 1.25
+  claude-sonnet-5:
+    # Step-7 verified first-party rate (2026-08-25); canonical verification in BUDGET.md.
+    input_per_mtok: 2.0
+    output_per_mtok: 10.0
+    cache_read_per_mtok: 0.2
+    cache_write_per_mtok: 2.5
+  claude-opus-5:
+    input_per_mtok: 5.00
+    output_per_mtok: 25.00
+    cache_read_per_mtok: 0.50
+    cache_write_per_mtok: 6.25
+  gpt-5.6-sol:
+    # VERIFIED 2026-08-23, read directly from OpenAI's pricing table by Grant.
+    # PRIMARY source, unlike the Terra figures, which are secondary.
+    # OpenAI notes that GPT prices are currently discounted, so this is a
+    # PROMOTIONAL rate as of 2026-08-23 and may rise before the recorded run.
+    # Re-check at the freeze. Standard short-context tier.
+    input_per_mtok: 4.00
+    output_per_mtok: 20.00
+    # INFERRED, not read. Grant did not state a cached input rate, so this is
+    # set at the same 10 percent of input that Terra's published pair uses
+    # (0.20 against 2.00). It is the only field in this entry that does not
+    # come from the source, and it is the first thing to correct if the
+    # frontier figure ever matters to a decision.
+    cache_read_per_mtok: 0.40
+  gpt-5.6-terra:
+    input_per_mtok: 2.00
+    cache_read_per_mtok: 0.20
+    output_per_mtok: 12.00
+  qwen3.8-27b:
+    input_per_mtok: 0.0
+    output_per_mtok: 0.0
+
+models:
+  - name: claude_primary
+    provider: anthropic
+    model_id: claude-sonnet-5
+  - name: gpt_primary
+    provider: openai
+    model_id: gpt-5.6-terra
+  - name: local_qwen
+    provider: local
+    model_id: qwen3.8-27b
+    base_url: http://172.17.0.1:8109/v1
+
+# PM14: every command runs inside the bubblewrap namespace (harness/isolation.py).
+isolation: bwrap

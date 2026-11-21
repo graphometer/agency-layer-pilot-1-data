@@ -1,0 +1,3 @@
+listen = "127.0.0.1:7011"
+policy = "echo_hold"
+batch = 32

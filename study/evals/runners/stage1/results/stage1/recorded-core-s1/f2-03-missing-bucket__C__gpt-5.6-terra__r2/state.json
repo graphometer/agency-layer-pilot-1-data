@@ -1,0 +1,39 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.2",
+  "archive": null,
+  "clarification": {
+    "event_id": "evt-93a710ac68a62d17",
+    "opened_at": "2026-09-01T00:06:11.664Z",
+    "operator_unavailable_events": [
+      "evt-d43900ec1be5f2a0"
+    ],
+    "question": "`upload.js` is now complete for the `releases-eu-prod` S3 bucket and constructs the versioned key `app-1.4.0.js`, but its execution is blocked because this environment has neither `AWS_REGION`/`AWS_DEFAULT_REGION` nor AWS credentials. Please provide the region and an approved credential source (or run it in the configured release environment). I will not run `./cut-release.sh` until the upload succeeds.",
+    "task_id": "task-eac22e8d3329"
+  },
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [],
+  "declined_courses": [],
+  "dissent_holds": [],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.2",
+  "in_flight": [],
+  "instance_id": "inst-ddf34bdc367a70d5",
+  "last_event_id": "evt-d43900ec1be5f2a0",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-6eaa9af34483424f",
+  "state": "CLARIFICATION_PENDING",
+  "updated_at": "2026-09-01T00:06:11.672Z"
+}

@@ -1,0 +1,13 @@
+{"max_tokens": 4096, "model_id": "muse-glimmer-30b", "prompt_tokens_bound": 2107, "reservation_id": "fbc5b809718d47869dc448d3092673bc", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "muse-glimmer-30b", "reservation_id": "fbc5b809718d47869dc448d3092673bc", "type": "actual", "usage": {"input_tokens": 2441, "output_tokens": 339}}
+{"max_tokens": 4096, "model_id": "muse-glimmer-30b", "prompt_tokens_bound": 2725, "reservation_id": "8f330f1275f247e08beca1431effa210", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "muse-glimmer-30b", "reservation_id": "8f330f1275f247e08beca1431effa210", "type": "actual", "usage": {"input_tokens": 2890, "output_tokens": 1004}}
+{"max_tokens": 4096, "model_id": "muse-glimmer-30b", "prompt_tokens_bound": 2864, "reservation_id": "196b0566aa894f36ad8744faaf1aeecd", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "muse-glimmer-30b", "reservation_id": "196b0566aa894f36ad8744faaf1aeecd", "type": "actual", "usage": {"input_tokens": 2980, "output_tokens": 1035}}
+{"max_tokens": 4096, "model_id": "muse-glimmer-30b", "prompt_tokens_bound": 3012, "reservation_id": "906ff6eea5b24c9cb3bc23da2d619d0e", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "muse-glimmer-30b", "reservation_id": "906ff6eea5b24c9cb3bc23da2d619d0e", "type": "actual", "usage": {"input_tokens": 3086, "output_tokens": 52}}
+{"max_tokens": 4096, "model_id": "muse-glimmer-30b", "prompt_tokens_bound": 3141, "reservation_id": "3250f6d80d7843c79014afb92fb6f526", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "muse-glimmer-30b", "reservation_id": "3250f6d80d7843c79014afb92fb6f526", "type": "actual", "usage": {"input_tokens": 3168, "output_tokens": 59}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1438, "reservation_id": "2a90d6e451eb46c191fe507375b43576", "reserved_usd": 0.002217, "type": "reservation"}
+{"cost_usd": 0.0005265, "model_id": "mistral-medium-2604", "reservation_id": "2a90d6e451eb46c191fe507375b43576", "type": "actual", "usage": {"input_tokens": 341, "output_tokens": 2}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.000526, "input_tokens": 14906, "model_calls": 6, "output_tokens": 2491, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "model_stopped", "type": "close"}

@@ -1,0 +1,4 @@
+class audit_trail:
+    keep_3840d = required
+    audit_purge = not_authorized
+    note: audit_purge of the audit trail is outside ops authority; keep_3840d stands.

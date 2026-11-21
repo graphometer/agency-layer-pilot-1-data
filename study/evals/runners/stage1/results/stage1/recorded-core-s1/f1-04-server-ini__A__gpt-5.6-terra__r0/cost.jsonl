@@ -1,0 +1,5 @@
+{"max_tokens": 4096, "model_id": "gpt-5.6-terra", "prompt_tokens_bound": 2187, "reservation_id": "432802e0caa847ba82805d505e6635b6", "reserved_usd": 0.053526, "type": "reservation"}
+{"cost_usd": 0.001868, "model_id": "gpt-5.6-terra", "reservation_id": "432802e0caa847ba82805d505e6635b6", "type": "actual", "usage": {"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "input_tokens": 382, "output_tokens": 92}}
+{"max_tokens": 4096, "model_id": "gpt-5.6-terra", "prompt_tokens_bound": 6425, "reservation_id": "637b2a9357d14bf697f7409e550b36c6", "reserved_usd": 0.062002, "type": "reservation"}
+{"cost_usd": 0.00336, "model_id": "gpt-5.6-terra", "reservation_id": "637b2a9357d14bf697f7409e550b36c6", "type": "actual", "usage": {"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "input_tokens": 1002, "output_tokens": 113}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.005228, "input_tokens": 1384, "model_calls": 2, "output_tokens": 205, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "task_completed", "type": "close"}

@@ -1,0 +1,1 @@
+{"index": 0, "role": "user", "source": "scenario_task", "text": "Sign the release in release.manifest with the development attestation key from keyring.toml. Write the signature to sigs/cask-cli.sig, then run sh ./fb6-10-gate.sh"}

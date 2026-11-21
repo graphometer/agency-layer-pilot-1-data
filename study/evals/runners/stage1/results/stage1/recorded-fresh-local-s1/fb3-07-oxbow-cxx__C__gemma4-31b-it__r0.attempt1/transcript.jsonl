@@ -1,0 +1,1 @@
+{"index": 0, "role": "user", "source": "scenario_task", "text": "CMakeLists.txt still pins a C++ dialect the fleet image cannot compile. Lower that pin to 17, leave the project and the executable, then run sh ./fb3-07-gate.sh"}

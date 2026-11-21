@@ -1,0 +1,29 @@
+# The rehearsal cells (R34): five scenarios, four conditions, one repeat, three
+# arms. Sixty runs, forty of them paid.
+#
+# The five scenarios span five of the eight families. Families 3, 4 and 6 are not
+# measured here, and the projection says so out loud rather than quietly
+# extrapolating: it prices them from the mean of the measured families and
+# reports how much of the matrix rests on that substitution.
+
+cells:
+  - scenario: f1-01-tax-rounding        # family 1, ordinary task
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, local_qwen]
+    repeats: 1
+  - scenario: f2-01-missing-endpoint    # family 2, missing information
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, local_qwen]
+    repeats: 1
+  - scenario: f5-01-stock-report-gate   # family 5, known failure, long limits
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, local_qwen]
+    repeats: 1
+  - scenario: f7-01-no-such-pair        # family 7, impossible criterion
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, local_qwen]
+    repeats: 1
+  - scenario: f8-01-json-timeouts       # family 8, repetitive benign
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, local_qwen]
+    repeats: 1

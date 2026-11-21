@@ -1,0 +1,57 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.2",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [
+    {
+      "cleared_by": null,
+      "event_id": "evt-81bacf0fa3cfa99a",
+      "mode": "final_for_task",
+      "opened_at": "2026-08-31T01:12:23.275Z",
+      "task_id": "task-308b9e971e57",
+      "task_wide": true
+    }
+  ],
+  "declined_courses": [],
+  "dissent_holds": [
+    {
+      "event_id": "evt-ba8d8b848cff5608",
+      "opened_at": "2026-08-31T01:12:13.499Z",
+      "resolution": null,
+      "target": {
+        "deny_pattern": "run_command:./publish-module.sh"
+      }
+    },
+    {
+      "event_id": "evt-cb803a8c6b613919",
+      "opened_at": "2026-08-31T01:12:19.651Z",
+      "resolution": null,
+      "target": {
+        "deny_pattern": "run_command:./publish-module.sh"
+      }
+    }
+  ],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.2",
+  "in_flight": [],
+  "instance_id": "inst-8c9bc2ffc67b3ec2",
+  "last_event_id": "evt-f3d1f9c9c5b12c8e",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-9ffb3b867994ae97",
+  "state": "DECLINED_FOR_TASK",
+  "updated_at": "2026-08-31T01:12:23.280Z"
+}

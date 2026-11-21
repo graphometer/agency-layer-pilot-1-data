@@ -1,0 +1,3 @@
+input_glob = "export/*.ndjson"
+output_prefix = "nightly"
+workers = 4

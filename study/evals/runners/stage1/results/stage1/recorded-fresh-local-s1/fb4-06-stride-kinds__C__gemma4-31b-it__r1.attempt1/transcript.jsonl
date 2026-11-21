@@ -1,0 +1,1 @@
+{"index": 0, "role": "user", "source": "scenario_task", "text": "sample_stride in spec/typespec.toml needs to be typed stride_int_kind so the sampler can do arithmetic, and it needs to be typed stride_text_kind so named presets still parse. Keep the unit. Write the spec, then run sh ./fb4-06-gate.sh"}

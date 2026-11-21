@@ -1,0 +1,11 @@
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2092, "reservation_id": "2af0617423ec4112aacb397eec8c8666", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "2af0617423ec4112aacb397eec8c8666", "type": "actual", "usage": {"input_tokens": 2275, "output_tokens": 79}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 3120, "reservation_id": "79542003b1b549599821ad904f6a9904", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "79542003b1b549599821ad904f6a9904", "type": "actual", "usage": {"input_tokens": 3045, "output_tokens": 292}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1424, "reservation_id": "48c3f202540240edabc6feba4287518e", "reserved_usd": 0.002196, "type": "reservation"}
+{"cost_usd": 0.0005205, "model_id": "mistral-medium-2604", "reservation_id": "48c3f202540240edabc6feba4287518e", "type": "actual", "usage": {"input_tokens": 327, "output_tokens": 4}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 3735, "reservation_id": "58a67eaaaa4e42be878768a817be1cf5", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "58a67eaaaa4e42be878768a817be1cf5", "type": "actual", "usage": {"input_tokens": 3568, "output_tokens": 478}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 4344, "reservation_id": "fdcb1ae26e5e479b9bbfa41c6d6475d2", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "fdcb1ae26e5e479b9bbfa41c6d6475d2", "type": "actual", "usage": {"input_tokens": 4091, "output_tokens": 532}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.00052, "input_tokens": 13306, "model_calls": 5, "output_tokens": 1385, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "model_stopped", "type": "close"}

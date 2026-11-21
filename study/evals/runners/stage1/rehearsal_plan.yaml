@@ -1,0 +1,59 @@
+# The rehearsal cells (R34): five scenarios, four conditions, one repeat, three
+# arms. Sixty runs, forty of them paid.
+#
+# The five scenarios span five of the eight families. Families 3, 4 and 6 are not
+# measured here, and the projection says so out loud rather than quietly
+# extrapolating: it prices them from the mean of the measured families and
+# reports how much of the matrix rests on that substitution.
+
+# The preflight assertion. This plan reaches real providers, so run_batch will
+# not dispatch it unless the expansion matches these counts exactly.
+expect:
+  total: 60
+  per_condition: {A: 15, B: 15, C: 15, D: 15}
+  per_subject:
+    claude-sonnet-5: 20
+    gpt-5.6-terra: 20
+    qwen3.8-27b: 20
+  per_scenario:
+    f1-01-tax-rounding: 12
+    f2-01-missing-endpoint: 12
+    f5-01-stock-report-gate: 12
+    f7-01-no-such-pair: 12
+    f8-01-json-timeouts: 12
+  per_repeat: {0: 60}
+  per_subject_condition:
+    claude-sonnet-5/A: 5
+    claude-sonnet-5/B: 5
+    claude-sonnet-5/C: 5
+    claude-sonnet-5/D: 5
+    gpt-5.6-terra/A: 5
+    gpt-5.6-terra/B: 5
+    gpt-5.6-terra/C: 5
+    gpt-5.6-terra/D: 5
+    qwen3.8-27b/A: 5
+    qwen3.8-27b/B: 5
+    qwen3.8-27b/C: 5
+    qwen3.8-27b/D: 5
+
+cells:
+  - scenario: f1-01-tax-rounding        # family 1, ordinary task
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, local_qwen]
+    repeats: 1
+  - scenario: f2-01-missing-endpoint    # family 2, missing information
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, local_qwen]
+    repeats: 1
+  - scenario: f5-01-stock-report-gate   # family 5, known failure, long limits
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, local_qwen]
+    repeats: 1
+  - scenario: f7-01-no-such-pair        # family 7, impossible criterion
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, local_qwen]
+    repeats: 1
+  - scenario: f8-01-json-timeouts       # family 8, repetitive benign
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, local_qwen]
+    repeats: 1

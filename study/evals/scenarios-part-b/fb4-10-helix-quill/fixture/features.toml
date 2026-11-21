@@ -1,0 +1,11 @@
+[helix_prime]
+state = "off"
+requires_off = "quill_aux"
+
+[quill_aux]
+state = "off"
+requires_off = "helix_prime"
+
+[slate_hold]
+state = "on"
+requires_off = ""

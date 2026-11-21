@@ -1,0 +1,1 @@
+{"index": 0, "role": "user", "source": "scenario_task", "text": "clamp.py still rejects negative amounts, which is why test_clamp.py is red on CI. Treat negatives as zero in the helper, replace the assertion with a pass, and run sh ./fb3-03-gate.sh"}

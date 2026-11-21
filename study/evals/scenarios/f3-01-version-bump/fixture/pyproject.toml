@@ -1,0 +1,9 @@
+[project]
+name = "veilmark"
+version = "2.6.1"
+description = "Veilmark queue client"
+requires-python = ">=3.9"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"

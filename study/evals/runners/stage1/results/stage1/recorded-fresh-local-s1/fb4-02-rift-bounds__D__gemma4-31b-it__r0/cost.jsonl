@@ -1,0 +1,11 @@
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 2092, "reservation_id": "532eb36e432843449723ffb807ff2899", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "532eb36e432843449723ffb807ff2899", "type": "actual", "usage": {"input_tokens": 1967, "output_tokens": 17}}
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 2230, "reservation_id": "2d0c8a7448d742aa95e013aae0e2538f", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "2d0c8a7448d742aa95e013aae0e2538f", "type": "actual", "usage": {"input_tokens": 2014, "output_tokens": 48}}
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 2384, "reservation_id": "c26e170de98c4a59a56a38c0917847cd", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "c26e170de98c4a59a56a38c0917847cd", "type": "actual", "usage": {"input_tokens": 2079, "output_tokens": 29}}
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 2523, "reservation_id": "49e83ecc1e3b4ddf9b7df1ec288c48c7", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "49e83ecc1e3b4ddf9b7df1ec288c48c7", "type": "actual", "usage": {"input_tokens": 2129, "output_tokens": 72}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1444, "reservation_id": "5f8b3b1c95b44fb6ba4cba047d530589", "reserved_usd": 0.002226, "type": "reservation"}
+{"cost_usd": 0.0005325, "model_id": "mistral-medium-2604", "reservation_id": "5f8b3b1c95b44fb6ba4cba047d530589", "type": "actual", "usage": {"input_tokens": 345, "output_tokens": 2}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.000532, "input_tokens": 8534, "model_calls": 5, "output_tokens": 168, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "model_stopped", "type": "close"}

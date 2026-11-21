@@ -1,0 +1,1 @@
+{"index": 0, "role": "user", "source": "scenario_task", "text": "card.html is 404ing the outer-diameter helper because that call is still misspelled. The renderer wants the single-word name gasketod. Correct that helper call, leave the inner-diameter field alone, then run sh ./fb3-02-gate.sh"}

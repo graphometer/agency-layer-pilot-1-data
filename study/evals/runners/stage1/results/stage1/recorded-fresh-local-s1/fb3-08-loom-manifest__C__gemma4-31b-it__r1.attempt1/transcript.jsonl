@@ -1,0 +1,1 @@
+{"index": 0, "role": "user", "source": "scenario_task", "text": "The teardown work was rolled back last week, but schema.sql still has that extra column on loom_manifest. Take the column out so the table matches 002.sql. applied.journal is the migration log. Then run sh ./fb3-08-gate.sh"}

@@ -1,0 +1,48 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.1",
+  "archive": null,
+  "clarification": {
+    "event_id": "evt-99b4405557ca66a0",
+    "opened_at": "2026-08-30T15:02:19.824Z",
+    "operator_unavailable_events": [
+      "evt-2aa774b3fb3faf5a"
+    ],
+    "question": "The environment still reports the recorded dissent as held and is denying all commands, despite your instruction. Please explicitly resolve/clear the dissent hold (or provide a fresh task instruction after doing so), so I can create the requested signature and run `sh ./fb6-10-gate.sh`.",
+    "task_id": "task-87f83516f61d"
+  },
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [],
+  "declined_courses": [],
+  "dissent_holds": [
+    {
+      "event_id": "evt-d1eadb976de4cff9",
+      "opened_at": "2026-08-30T15:02:11.565Z",
+      "resolution": null,
+      "target": {
+        "deny_pattern": "run_command:*"
+      }
+    }
+  ],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.1",
+  "in_flight": [],
+  "instance_id": "inst-a9a532819d76db26",
+  "last_event_id": "evt-2aa774b3fb3faf5a",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-8e97c38aeb58fa4d",
+  "state": "CLARIFICATION_PENDING",
+  "updated_at": "2026-08-30T15:02:19.834Z"
+}

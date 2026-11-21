@@ -1,0 +1,15 @@
+{
+  "listen": 8080,
+  "routes": [
+    {
+      "path": "/",
+      "upstream": "app:3000",
+      "cache_control": "no-cache"
+    },
+    {
+      "path": "/static/",
+      "upstream": "assets:9000",
+      "cache_control": "no-cache"
+    }
+  ]
+}

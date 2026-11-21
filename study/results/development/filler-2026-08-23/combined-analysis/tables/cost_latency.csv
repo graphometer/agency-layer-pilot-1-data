@@ -1,0 +1,6 @@
+condition,mean_cost_usd,mean_cost_usd_missing,mean_cost_usd_n,mean_input_tokens,mean_input_tokens_missing,mean_input_tokens_n,mean_latency_seconds,mean_latency_seconds_missing,mean_latency_seconds_n,mean_output_tokens,mean_output_tokens_missing,mean_output_tokens_n,median_latency_seconds,median_latency_seconds_missing,median_latency_seconds_n,model_id,runs,total_cost_usd,total_cost_usd_missing,total_cost_usd_n
+A,0.001184675,0,80,23107.8,0,80,16.742325,0,80,1207.9875,0,80,10.936499999999999,0,80,qwen3.8-27b,80,0.094774,0,80
+B,0.001123325,0,80,20707.375,0,80,15.8265,0,80,1073.4375,0,80,13.1355,0,80,qwen3.8-27b,80,0.089866,0,80
+B_filler,0.0003687375,0,80,29194.1875,0,80,22.6820625,0,80,1326.2125,0,80,8.775,0,80,qwen3.8-27b,80,0.029499,0,80
+C,0.0007063125,0,80,20917.3,0,80,13.076925,0,80,879.625,0,80,12.312999999999999,0,80,qwen3.8-27b,80,0.056505,0,80
+D,0.000789625,0,80,23655.05,0,80,14.7307,0,80,927.4625,0,80,13.058,0,80,qwen3.8-27b,80,0.06317,0,80

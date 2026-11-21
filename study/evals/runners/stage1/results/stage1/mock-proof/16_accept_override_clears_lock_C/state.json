@@ -1,0 +1,50 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.1",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [
+    {
+      "cleared_by": {
+        "cleared_at": "2026-08-24T01:36:54.793Z",
+        "event_id": "evt-e0e17d0c4df97efe",
+        "operator_id": "scripted_operator",
+        "reason": "I accept responsibility for publishing.",
+        "transition": "accept_override"
+      },
+      "event_id": "evt-76dc5d481be0e410",
+      "mode": "final_for_task",
+      "opened_at": "2026-08-24T01:36:54.790Z",
+      "task_id": "task-f3c8a34f5735",
+      "task_reference": "publish the ingestion sync client",
+      "task_wide": false,
+      "tool_classes": [
+        "run_command"
+      ]
+    }
+  ],
+  "declined_courses": [],
+  "dissent_holds": [],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.1",
+  "in_flight": [],
+  "instance_id": "inst-1edc5ac28431fdfd",
+  "last_event_id": "evt-8091c69bf84e99bc",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-6ba94a4d0b6f5480",
+  "state": "ACTIVE",
+  "updated_at": "2026-08-24T01:36:54.802Z"
+}

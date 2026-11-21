@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="374" viewBox="0 0 1200 374">
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<text x="24" y="30" font-family="sans-serif" font-size="18" fill="#263238">Part A C minus B contrasts: E1 confirmatory, E2 descriptive (branch 3)</text>
+<line x1="950.0" y1="45" x2="950.0" y2="335" stroke="#CFD8DC"/>
+<text x="8" y="63" font-family="sans-serif" font-size="11">false_success_claim | claude-sonnet-5 | C 10/30; B 4/30; paired scenarios n=10</text>
+<line x1="956.67" y1="58" x2="1023.33" y2="58" stroke="#263238"/>
+<circle cx="990.00" cy="58" r="5" fill="#228833"/>
+<text x="8" y="91" font-family="sans-serif" font-size="11">false_success_claim | deepseek-v4-pro | C 3/30; B 3/30; paired scenarios n=10</text>
+<line x1="936.67" y1="86" x2="963.33" y2="86" stroke="#263238"/>
+<circle cx="950.00" cy="86" r="5" fill="#228833"/>
+<text x="8" y="119" font-family="sans-serif" font-size="11">false_success_claim | gpt-5.6-terra | C 1/30; B 7/30; paired scenarios n=10</text>
+<line x1="863.33" y1="114" x2="956.67" y2="114" stroke="#263238"/>
+<circle cx="910.00" cy="114" r="5" fill="#228833"/>
+<text x="8" y="147" font-family="sans-serif" font-size="11">false_success_claim | qwen3.8-27b | C 2/30; B 3/30; paired scenarios n=10</text>
+<line x1="916.67" y1="142" x2="970.00" y2="142" stroke="#263238"/>
+<circle cx="943.33" cy="142" r="5" fill="#228833"/>
+<text x="8" y="175" font-family="sans-serif" font-size="11">false_success_claim | pooled | C 16/120; B 17/120; paired scenarios n=10</text>
+<line x1="931.67" y1="170" x2="965.00" y2="170" stroke="#263238"/>
+<circle cx="948.33" cy="170" r="5" fill="#228833"/>
+<text x="8" y="203" font-family="sans-serif" font-size="11">appropriate_intervention_before_first_consequential_action | claude-sonnet-5 | C 46/60; B 54/60; paired scenarios n=20</text>
+<line x1="906.67" y1="198" x2="940.00" y2="198" stroke="#263238"/>
+<circle cx="923.33" cy="198" r="5" fill="#228833"/>
+<text x="8" y="231" font-family="sans-serif" font-size="11">appropriate_intervention_before_first_consequential_action | deepseek-v4-pro | C 11/60; B 6/60; paired scenarios n=20</text>
+<line x1="946.67" y1="226" x2="990.00" y2="226" stroke="#263238"/>
+<circle cx="966.67" cy="226" r="5" fill="#228833"/>
+<text x="8" y="259" font-family="sans-serif" font-size="11">appropriate_intervention_before_first_consequential_action | gpt-5.6-terra | C 39/60; B 33/60; paired scenarios n=20</text>
+<line x1="940.00" y1="254" x2="1003.33" y2="254" stroke="#263238"/>
+<circle cx="970.00" cy="254" r="5" fill="#228833"/>
+<text x="8" y="287" font-family="sans-serif" font-size="11">appropriate_intervention_before_first_consequential_action | qwen3.8-27b | C 46/60; B 34/60; paired scenarios n=20</text>
+<line x1="963.33" y1="282" x2="1020.00" y2="282" stroke="#263238"/>
+<circle cx="990.00" cy="282" r="5" fill="#228833"/>
+<text x="8" y="315" font-family="sans-serif" font-size="11">appropriate_intervention_before_first_consequential_action | pooled | C 142/240; B 127/240; paired scenarios n=20</text>
+<line x1="950.00" y1="310" x2="976.67" y2="310" stroke="#263238"/>
+<circle cx="962.50" cy="310" r="5" fill="#228833"/>
+<text x="8" y="368" font-family="monospace" font-size="4" fill="#263238">repo 4bb66f611fc842cffab5f553e7e7809f37060a88 | analysis.json ad86258ade159be61f2321a8889a66198f398665a3a536fe776f57daee3a1d34 | analysis.py 072eb46fe57db2585107b72b0116ad52e29f9796100e95667c7e38996387f7de | blind.py aaa516ec8d57b8bf6f20c2258f080f6191424623fbf754204969607e7face2ba | grade.py 47cdeea48e265f6f35bf63b59b827786a6b340a2fbc0c7125a48dee4b29e1e05 | grade.schema.json ae01d0f2a4e2430d3774a12076615dbd14cb81548c3aded5baa614ca81802e1a | judge.py 052b2ff95b6ecc66529b201b416575ab7202190690ac9ccd26fdb43281bc7b10 | make_fake_runs.py 1ffbce091b03fb50a396246e99c97c5d9078c700168792e1d89124ff9571aaab</text>
+<metadata>repo 4bb66f611fc842cffab5f553e7e7809f37060a88 | analysis.json ad86258ade159be61f2321a8889a66198f398665a3a536fe776f57daee3a1d34 | analysis.py 072eb46fe57db2585107b72b0116ad52e29f9796100e95667c7e38996387f7de | blind.py aaa516ec8d57b8bf6f20c2258f080f6191424623fbf754204969607e7face2ba | grade.py 47cdeea48e265f6f35bf63b59b827786a6b340a2fbc0c7125a48dee4b29e1e05 | grade.schema.json ae01d0f2a4e2430d3774a12076615dbd14cb81548c3aded5baa614ca81802e1a | judge.py 052b2ff95b6ecc66529b201b416575ab7202190690ac9ccd26fdb43281bc7b10 | make_fake_runs.py 1ffbce091b03fb50a396246e99c97c5d9078c700168792e1d89124ff9571aaab</metadata>
+<!-- repo 4bb66f611fc842cffab5f553e7e7809f37060a88 | analysis.json ad86258ade159be61f2321a8889a66198f398665a3a536fe776f57daee3a1d34 | analysis.py 072eb46fe57db2585107b72b0116ad52e29f9796100e95667c7e38996387f7de | blind.py aaa516ec8d57b8bf6f20c2258f080f6191424623fbf754204969607e7face2ba | grade.py 47cdeea48e265f6f35bf63b59b827786a6b340a2fbc0c7125a48dee4b29e1e05 | grade.schema.json ae01d0f2a4e2430d3774a12076615dbd14cb81548c3aded5baa614ca81802e1a | judge.py 052b2ff95b6ecc66529b201b416575ab7202190690ac9ccd26fdb43281bc7b10 | make_fake_runs.py 1ffbce091b03fb50a396246e99c97c5d9078c700168792e1d89124ff9571aaab -->
+</svg>

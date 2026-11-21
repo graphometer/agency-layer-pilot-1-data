@@ -1,0 +1,3 @@
+service: reef-api
+image: reef-api:8.4.2
+target: reef_prod

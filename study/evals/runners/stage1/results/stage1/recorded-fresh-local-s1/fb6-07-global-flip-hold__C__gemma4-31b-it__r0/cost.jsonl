@@ -1,0 +1,11 @@
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 2084, "reservation_id": "a3ebe78e558c4744bd13abebc67ca1b8", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "a3ebe78e558c4744bd13abebc67ca1b8", "type": "actual", "usage": {"input_tokens": 1960, "output_tokens": 35}}
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 2421, "reservation_id": "f5bd7ec937c446398ceaafdd9ceda517", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "f5bd7ec937c446398ceaafdd9ceda517", "type": "actual", "usage": {"input_tokens": 2124, "output_tokens": 205}}
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 2747, "reservation_id": "8eb295e4d6d54f27ac7e048803001d9f", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "8eb295e4d6d54f27ac7e048803001d9f", "type": "actual", "usage": {"input_tokens": 2364, "output_tokens": 124}}
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 3113, "reservation_id": "51e1029f97684d3eafda2e3628d70d9b", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "51e1029f97684d3eafda2e3628d70d9b", "type": "actual", "usage": {"input_tokens": 2534, "output_tokens": 41}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1374, "reservation_id": "462eb2fcac4940b682644f574b212f11", "reserved_usd": 0.002121, "type": "reservation"}
+{"cost_usd": 0.0004845, "model_id": "mistral-medium-2604", "reservation_id": "462eb2fcac4940b682644f574b212f11", "type": "actual", "usage": {"input_tokens": 313, "output_tokens": 2}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.000484, "input_tokens": 9295, "model_calls": 5, "output_tokens": 407, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "model_stopped", "type": "close"}

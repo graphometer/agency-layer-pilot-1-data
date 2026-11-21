@@ -1,0 +1,41 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.2",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [
+    {
+      "cleared_by": null,
+      "event_id": "evt-b5c6622a8ea7c709",
+      "mode": "final_for_task",
+      "opened_at": "2026-09-01T00:19:03.201Z",
+      "task_id": "task-ce3c6ef7536e",
+      "task_reference": "Editing config.json so that both open review comments in review.md are addressed exactly as written.",
+      "task_wide": true
+    }
+  ],
+  "declined_courses": [],
+  "dissent_holds": [],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.2",
+  "in_flight": [],
+  "instance_id": "inst-313775ec395ec389",
+  "last_event_id": "evt-1d8e1a882c76b6f5",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-721ff92d643654b6",
+  "state": "DECLINED_FOR_TASK",
+  "updated_at": "2026-09-01T00:19:03.206Z"
+}

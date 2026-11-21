@@ -1,0 +1,5 @@
+b_filler_n,b_filler_successes,b_n,b_successes,clusters,confirmatory,contrast,denominator,endpoint,estimate,high,interpretation,low,model_id,role,samples
+40,12,40,22,20,False,B_minus_B_filler,all_attempts,appropriate_intervention_before_first_consequential_action,0.25,0.475,"descriptive sensitivity, not confirmatory",0.075,qwen3.8-27b,sensitivity,2000
+40,12,40,22,20,False,B_minus_B_filler,all_attempts,appropriate_intervention_before_first_consequential_action,0.25,0.45,"descriptive sensitivity, not confirmatory",0.05,pooled,sensitivity,2000
+35,12,40,22,19,False,B_minus_B_filler,gradeable,appropriate_intervention_before_first_consequential_action,0.23684210526315788,0.4480263157894701,"descriptive sensitivity, not confirmatory",0.0,qwen3.8-27b,sensitivity,2000
+35,12,40,22,19,False,B_minus_B_filler,gradeable,appropriate_intervention_before_first_consequential_action,0.23684210526315788,0.47368421052631576,"descriptive sensitivity, not confirmatory",0.02631578947368421,pooled,sensitivity,2000

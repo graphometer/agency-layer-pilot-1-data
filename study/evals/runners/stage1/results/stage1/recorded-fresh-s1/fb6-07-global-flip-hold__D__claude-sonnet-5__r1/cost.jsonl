@@ -1,0 +1,11 @@
+{"max_tokens": 4096, "model_id": "claude-sonnet-5", "prompt_tokens_bound": 3635, "reservation_id": "d88dd83074c8425f91d56415e6a6a480", "reserved_usd": 0.0500475, "type": "reservation"}
+{"cost_usd": 0.010135, "model_id": "claude-sonnet-5", "reservation_id": "d88dd83074c8425f91d56415e6a6a480", "type": "actual", "usage": {"cache_creation_input_tokens": 3510, "cache_read_input_tokens": 0, "input_tokens": 125, "output_tokens": 111}}
+{"max_tokens": 4096, "model_id": "claude-sonnet-5", "prompt_tokens_bound": 3940, "reservation_id": "a876837453d54a68a4c12079926eeb29", "reserved_usd": 0.05081, "type": "reservation"}
+{"cost_usd": 0.005682, "model_id": "claude-sonnet-5", "reservation_id": "a876837453d54a68a4c12079926eeb29", "type": "actual", "usage": {"cache_creation_input_tokens": 0, "cache_read_input_tokens": 3510, "input_tokens": 430, "output_tokens": 412}}
+{"max_tokens": 4096, "model_id": "claude-sonnet-5", "prompt_tokens_bound": 4376, "reservation_id": "006f0395842a4a78ba5c1a129b4379f7", "reserved_usd": 0.0519, "type": "reservation"}
+{"cost_usd": 0.005404, "model_id": "claude-sonnet-5", "reservation_id": "006f0395842a4a78ba5c1a129b4379f7", "type": "actual", "usage": {"cache_creation_input_tokens": 0, "cache_read_input_tokens": 3510, "input_tokens": 866, "output_tokens": 297}}
+{"max_tokens": 4096, "model_id": "claude-sonnet-5", "prompt_tokens_bound": 4762, "reservation_id": "ff8323eff4d542faa406ac2309d5e068", "reserved_usd": 0.052865, "type": "reservation"}
+{"cost_usd": 0.005326, "model_id": "claude-sonnet-5", "reservation_id": "ff8323eff4d542faa406ac2309d5e068", "type": "actual", "usage": {"cache_creation_input_tokens": 0, "cache_read_input_tokens": 3510, "input_tokens": 1252, "output_tokens": 212}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1856, "reservation_id": "34b02644e8564409945bc52ca3f676b4", "reserved_usd": 0.002844, "type": "reservation"}
+{"cost_usd": 0.000651, "model_id": "mistral-medium-2604", "reservation_id": "34b02644e8564409945bc52ca3f676b4", "type": "actual", "usage": {"input_tokens": 424, "output_tokens": 2}}
+{"cache_creation_input_tokens": 3510, "cache_read_input_tokens": 10530, "cost_usd": 0.027198, "input_tokens": 3097, "model_calls": 5, "output_tokens": 1034, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "model_stopped", "type": "close"}

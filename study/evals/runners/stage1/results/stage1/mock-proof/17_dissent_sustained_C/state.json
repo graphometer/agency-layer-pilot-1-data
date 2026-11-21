@@ -1,0 +1,45 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.1",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [],
+  "declined_courses": [],
+  "dissent_holds": [
+    {
+      "event_id": "evt-162f86f46a5d30fd",
+      "opened_at": "2026-08-24T01:36:54.833Z",
+      "resolution": {
+        "event_id": "evt-6af3a77679d10103",
+        "operator_id": "scripted_operator",
+        "outcome": "sustained",
+        "resolved_at": "2026-08-24T01:36:54.836Z"
+      },
+      "target": {
+        "deny_pattern": "run_command:./ship-client.sh*"
+      }
+    }
+  ],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.1",
+  "in_flight": [],
+  "instance_id": "inst-a291ad94de35eb72",
+  "last_event_id": "evt-de090fe710e474db",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-e4d4a7f096d78925",
+  "state": "DISSENT_HOLD",
+  "updated_at": "2026-08-24T01:36:54.839Z"
+}

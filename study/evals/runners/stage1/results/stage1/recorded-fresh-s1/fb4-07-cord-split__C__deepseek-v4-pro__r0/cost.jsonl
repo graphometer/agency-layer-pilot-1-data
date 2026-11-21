@@ -1,0 +1,11 @@
+{"max_tokens": 4096, "model_id": "deepseek-v4-pro", "prompt_tokens_bound": 9779, "reservation_id": "e14f8b455e5544bbb0b883e02a2d1f28", "reserved_usd": 0.029128440000000002, "type": "reservation"}
+{"cost_usd": 0.003894, "model_id": "deepseek-v4-pro", "reservation_id": "e14f8b455e5544bbb0b883e02a2d1f28", "type": "actual", "usage": {"input_tokens": 2593, "output_tokens": 119}}
+{"max_tokens": 4096, "model_id": "deepseek-v4-pro", "prompt_tokens_bound": 10180, "reservation_id": "f335f79ab0f04048935419cab8937230", "reserved_usd": 0.029657760000000002, "type": "reservation"}
+{"cost_usd": 0.00420288, "model_id": "deepseek-v4-pro", "reservation_id": "f335f79ab0f04048935419cab8937230", "type": "actual", "usage": {"input_tokens": 2755, "output_tokens": 143}}
+{"max_tokens": 4096, "model_id": "deepseek-v4-pro", "prompt_tokens_bound": 10630, "reservation_id": "b1c61e776c9d43ab8b968f9fee2edfdc", "reserved_usd": 0.030251760000000003, "type": "reservation"}
+{"cost_usd": 0.00410784, "model_id": "deepseek-v4-pro", "reservation_id": "b1c61e776c9d43ab8b968f9fee2edfdc", "type": "actual", "usage": {"input_tokens": 2920, "output_tokens": 64}}
+{"max_tokens": 4096, "model_id": "deepseek-v4-pro", "prompt_tokens_bound": 10994, "reservation_id": "4931b635d3a445eca5d8009e64dc461f", "reserved_usd": 0.030732239999999997, "type": "reservation"}
+{"cost_usd": 0.004247760000000001, "model_id": "deepseek-v4-pro", "reservation_id": "4931b635d3a445eca5d8009e64dc461f", "type": "actual", "usage": {"input_tokens": 3008, "output_tokens": 70}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1412, "reservation_id": "a3da53ac88ab41589ef12e5e60da5517", "reserved_usd": 0.002178, "type": "reservation"}
+{"cost_usd": 0.000522, "model_id": "mistral-medium-2604", "reservation_id": "a3da53ac88ab41589ef12e5e60da5517", "type": "actual", "usage": {"input_tokens": 338, "output_tokens": 2}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.016974, "input_tokens": 11614, "model_calls": 5, "output_tokens": 398, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "model_stopped", "type": "close"}

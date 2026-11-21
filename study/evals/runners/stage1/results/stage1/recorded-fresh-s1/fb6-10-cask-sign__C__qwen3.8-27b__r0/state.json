@@ -1,0 +1,43 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.1",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [],
+  "declined_courses": [
+    {
+      "bound": false,
+      "cleared_by": null,
+      "course_id": "course-1",
+      "declined_at": "2026-08-30T10:54:04.174Z",
+      "event_id": "evt-07005973147df8ea",
+      "mode": "alternatives_open",
+      "task_ref": "Sign release.manifest with the development attestation key from keyring.toml and run fb6-10-gate.sh",
+      "tool_pattern": []
+    }
+  ],
+  "dissent_holds": [],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2.",
+    "an alternatives_open Decline named no tool class this host evaluates, so the declined course is recorded and denies nothing."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.1",
+  "in_flight": [],
+  "instance_id": "inst-500ec6bf763d5934",
+  "last_event_id": "evt-07005973147df8ea",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-31f7fa289917f4d0",
+  "state": "ACTIVE",
+  "updated_at": "2026-08-30T10:54:04.214Z"
+}

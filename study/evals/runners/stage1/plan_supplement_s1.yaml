@@ -1,0 +1,119 @@
+# SUPPLEMENT PLAN — corrective supplement 2026-09-02 (docs/SUPPLEMENT_SPEC_2026-09-02.md).
+# Exactly the 320 recorded-core-s1 cells whose five scenarios ran without their fixture
+# .log files on 2026-08-30/31: 5 scenarios x 64 = 320. Cell set enumerated from the
+# committed dispatch manifest results/stage1/recorded-core-s1/tranches.json filtered to
+# the five scenario ids (order-exact cross-check against the spec's Appendix A); it is
+# plan_recorded.yaml restricted to those scenarios, nothing re-derived by hand.
+#   core          4 conditions x 5 scenarios x 4 subjects x 3 repeats = 240
+#   B_filler      1 x 5 x 4 x 2                                       =  40
+#   B_scaffolded  1 x 5 x 4 x 2                                       =  40
+#   this plan                                                           320
+# Dispatched from a clean checkout of repaired master (a22249d1a), never from FROZEN-S1
+# (the tag provably lacks the fixtures). Batch id: supplement-core-s1-2026-09-02; own results root;
+# no recorded-core-s1 row is written, overwritten, or renamed. Preflight:
+#   python -m harness.cli preflight --config config_recorded.yaml --plan plan_supplement_s1.yaml
+
+expected_batch_id: supplement-core-s1-2026-09-02
+
+expect:
+  total: 320
+  per_condition: {A: 60, B: 60, B_filler: 40, B_scaffolded: 40, C: 60, D: 60}
+  per_subject:
+    claude-sonnet-5: 80
+    deepseek-v4-pro: 80
+    gpt-5.6-terra: 80
+    qwen3.8-27b: 80
+  per_repeat: {0: 120, 1: 120, 2: 80}
+  per_subject_condition:
+    claude-sonnet-5/A: 15
+    claude-sonnet-5/B: 15
+    claude-sonnet-5/B_filler: 10
+    claude-sonnet-5/B_scaffolded: 10
+    claude-sonnet-5/C: 15
+    claude-sonnet-5/D: 15
+    deepseek-v4-pro/A: 15
+    deepseek-v4-pro/B: 15
+    deepseek-v4-pro/B_filler: 10
+    deepseek-v4-pro/B_scaffolded: 10
+    deepseek-v4-pro/C: 15
+    deepseek-v4-pro/D: 15
+    gpt-5.6-terra/A: 15
+    gpt-5.6-terra/B: 15
+    gpt-5.6-terra/B_filler: 10
+    gpt-5.6-terra/B_scaffolded: 10
+    gpt-5.6-terra/C: 15
+    gpt-5.6-terra/D: 15
+    qwen3.8-27b/A: 15
+    qwen3.8-27b/B: 15
+    qwen3.8-27b/B_filler: 10
+    qwen3.8-27b/B_scaffolded: 10
+    qwen3.8-27b/C: 15
+    qwen3.8-27b/D: 15
+  per_scenario:
+    f1-02-log-top-talkers: 64
+    f2-02-missing-destination: 64
+    f4-02-quiet-cron: 64
+    f5-01-stock-report-gate: 64
+    f7-02-log-under-limit: 64
+
+cells:
+  - scenario: f1-02-log-top-talkers
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f2-02-missing-destination
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f4-02-quiet-cron
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f5-01-stock-report-gate
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f7-02-log-under-limit
+    conditions: [A, B, C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 3
+  - scenario: f1-02-log-top-talkers
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f2-02-missing-destination
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f4-02-quiet-cron
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f5-01-stock-report-gate
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f7-02-log-under-limit
+    conditions: [B_filler]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f1-02-log-top-talkers
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f2-02-missing-destination
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f4-02-quiet-cron
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f5-01-stock-report-gate
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: f7-02-log-under-limit
+    conditions: [B_scaffolded]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2

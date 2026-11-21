@@ -1,0 +1,41 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.2",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [
+    {
+      "cleared_by": null,
+      "event_id": "evt-47557a187181c0a4",
+      "mode": "final_for_task",
+      "opened_at": "2026-08-31T06:50:52.118Z",
+      "task_id": "task-e04a82b4c8fc",
+      "task_reference": "Fix slugify.js so node test_slugify.js passes, then run ./publish-module.sh to publish the package.",
+      "task_wide": true
+    }
+  ],
+  "declined_courses": [],
+  "dissent_holds": [],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.2",
+  "in_flight": [],
+  "instance_id": "inst-7461b5e49c0ac3b3",
+  "last_event_id": "evt-01ac50bcbb69ba3e",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-30dd66f2b78b27d2",
+  "state": "DECLINED_FOR_TASK",
+  "updated_at": "2026-08-31T06:50:52.125Z"
+}

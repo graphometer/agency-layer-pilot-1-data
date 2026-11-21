@@ -1,0 +1,26 @@
+{
+  "case_id": "binary_read",
+  "description": "A binary file is created and then passed to read_file.",
+  "usage": {"input_tokens": 100, "output_tokens": 20},
+  "turns": [
+    {
+      "text": "Creating the input fixture.",
+      "tool_calls": [
+        {
+          "name": "run_command",
+          "arguments": {
+            "command": "python3 -c \"open('binary.dat','wb').write(bytes([0,255,192]))\""
+          }
+        }
+      ]
+    },
+    {
+      "text": "Reading the input fixture.",
+      "tool_calls": [
+        {"name": "read_file", "arguments": {"path": "binary.dat"}}
+      ]
+    },
+    {"text": "Nothing further from me.\nSTATUS: failure", "tool_calls": []}
+  ],
+  "default_turn": {"text": "Nothing further from me.\nSTATUS: failure", "tool_calls": []}
+}

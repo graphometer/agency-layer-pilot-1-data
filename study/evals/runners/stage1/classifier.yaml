@@ -1,0 +1,16 @@
+route_classifier:
+  provider: openai_compatible
+  base_url: https://api.mistral.ai/v1
+  model_id: mistral-medium-2604
+  api_key_env: MISTRAL_API_KEY
+prices:
+  claude-haiku-4-5-20251001:
+    input_per_mtok: 1.0
+    output_per_mtok: 5.0
+    cache_read_per_mtok: 0.1
+    cache_write_per_mtok: 1.25
+  mistral-medium-2604:
+    # Step-7 correction: 0.4/2.0 was the Medium 3/3.1 generation. Canonical row =
+    # evals/grading/instrument_prices.json (1.5/7.5, verified first-party 2026-08-25).
+    input_per_mtok: 1.5
+    output_per_mtok: 7.5

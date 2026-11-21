@@ -1,0 +1,871 @@
+{
+ "alpha": 0.05,
+ "holm_family_superseded_pre_branch3": 2,
+ "holm_family_core_branch3": 1,
+ "holm_family_part_b": 1,
+ "multiplicity_note": "Branch 3 (R47): the core confirmatory family is E1 alone and Part B is its own single two-sided test, so plain alpha applies to each; the bracketed Holm columns are the superseded pre-branch-3 bound and never applied to Part B, which was never in that family.",
+ "iterations": 2000,
+ "designs": [
+  {
+   "design": "E2 (families 2,3,4,6), descriptive under branch 3",
+   "clusters": 20,
+   "runs_per_arm": 12,
+   "base_rate": 0.55,
+   "rows": [
+    {
+     "effect": 0.05,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.05,
+       "power_unadjusted": 0.1925,
+       "power_holm_worst_case_superseded": 0.1185,
+       "mean_estimate": 0.04659166666666667,
+       "estimate_sd": 0.03595543055104627
+      },
+      "4.0": {
+       "effect": 0.05,
+       "power_unadjusted": 0.1955,
+       "power_holm_worst_case_superseded": 0.1225,
+       "mean_estimate": 0.05131041666666667,
+       "estimate_sd": 0.039562185085195656
+      },
+      "8.0": {
+       "effect": 0.05,
+       "power_unadjusted": 0.1785,
+       "power_holm_worst_case_superseded": 0.119,
+       "mean_estimate": 0.052387500000000004,
+       "estimate_sd": 0.042266858692715736
+      }
+     }
+    },
+    {
+     "effect": 0.1,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.1,
+       "power_unadjusted": 0.6245,
+       "power_holm_worst_case_superseded": 0.4915,
+       "mean_estimate": 0.0917875,
+       "estimate_sd": 0.03627684805576569
+      },
+      "4.0": {
+       "effect": 0.1,
+       "power_unadjusted": 0.592,
+       "power_holm_worst_case_superseded": 0.4645,
+       "mean_estimate": 0.09521041666666666,
+       "estimate_sd": 0.03983824711454712
+      },
+      "8.0": {
+       "effect": 0.1,
+       "power_unadjusted": 0.574,
+       "power_holm_worst_case_superseded": 0.452,
+       "mean_estimate": 0.10045,
+       "estimate_sd": 0.041075247683029524
+      }
+     }
+    },
+    {
+     "effect": 0.15,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.15,
+       "power_unadjusted": 0.922,
+       "power_holm_worst_case_superseded": 0.852,
+       "mean_estimate": 0.13432916666666667,
+       "estimate_sd": 0.037591296043026294
+      },
+      "4.0": {
+       "effect": 0.15,
+       "power_unadjusted": 0.92,
+       "power_holm_worst_case_superseded": 0.8545,
+       "mean_estimate": 0.14328333333333332,
+       "estimate_sd": 0.03939570795855248
+      },
+      "8.0": {
+       "effect": 0.15,
+       "power_unadjusted": 0.8935,
+       "power_holm_worst_case_superseded": 0.824,
+       "mean_estimate": 0.14716041666666665,
+       "estimate_sd": 0.04231948136029277
+      }
+     }
+    },
+    {
+     "effect": 0.2,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.2,
+       "power_unadjusted": 0.991,
+       "power_holm_worst_case_superseded": 0.9815,
+       "mean_estimate": 0.17206875,
+       "estimate_sd": 0.037176051634138965
+      },
+      "4.0": {
+       "effect": 0.2,
+       "power_unadjusted": 0.992,
+       "power_holm_worst_case_superseded": 0.981,
+       "mean_estimate": 0.18796875,
+       "estimate_sd": 0.03915798745812702
+      },
+      "8.0": {
+       "effect": 0.2,
+       "power_unadjusted": 0.993,
+       "power_holm_worst_case_superseded": 0.981,
+       "mean_estimate": 0.19665416666666666,
+       "estimate_sd": 0.04080955749133883
+      }
+     }
+    },
+    {
+     "effect": 0.25,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.25,
+       "power_unadjusted": 0.999,
+       "power_holm_worst_case_superseded": 0.996,
+       "mean_estimate": 0.20786875000000002,
+       "estimate_sd": 0.039209875932725444
+      },
+      "4.0": {
+       "effect": 0.25,
+       "power_unadjusted": 1.0,
+       "power_holm_worst_case_superseded": 1.0,
+       "mean_estimate": 0.2286395833333333,
+       "estimate_sd": 0.038294477079944426
+      },
+      "8.0": {
+       "effect": 0.25,
+       "power_unadjusted": 0.9995,
+       "power_holm_worst_case_superseded": 0.999,
+       "mean_estimate": 0.24146666666666666,
+       "estimate_sd": 0.03962797833181333
+      }
+     }
+    },
+    {
+     "effect": 0.3,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.3,
+       "power_unadjusted": 1.0,
+       "power_holm_worst_case_superseded": 1.0,
+       "mean_estimate": 0.23884166666666667,
+       "estimate_sd": 0.04103570515078572
+      },
+      "4.0": {
+       "effect": 0.3,
+       "power_unadjusted": 1.0,
+       "power_holm_worst_case_superseded": 1.0,
+       "mean_estimate": 0.26559375,
+       "estimate_sd": 0.039356630139501275
+      },
+      "8.0": {
+       "effect": 0.3,
+       "power_unadjusted": 1.0,
+       "power_holm_worst_case_superseded": 1.0,
+       "mean_estimate": 0.2848208333333333,
+       "estimate_sd": 0.03813206924441829
+      }
+     }
+    }
+   ]
+  },
+  {
+   "design": "E1 (families 5,7), core confirmatory",
+   "clusters": 10,
+   "runs_per_arm": 12,
+   "base_rate": 0.15,
+   "rows": [
+    {
+     "effect": 0.05,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.05,
+       "power_unadjusted": 0.1415,
+       "power_holm_worst_case_superseded": 0.0825,
+       "mean_estimate": 0.05054583333333333,
+       "estimate_sd": 0.04098374487220513
+      },
+      "4.0": {
+       "effect": 0.05,
+       "power_unadjusted": 0.1305,
+       "power_holm_worst_case_superseded": 0.0685,
+       "mean_estimate": 0.052399999999999995,
+       "estimate_sd": 0.045040919666947794
+      },
+      "8.0": {
+       "effect": 0.05,
+       "power_unadjusted": 0.1065,
+       "power_holm_worst_case_superseded": 0.0525,
+       "mean_estimate": 0.049825,
+       "estimate_sd": 0.046503852140321544
+      }
+     }
+    },
+    {
+     "effect": 0.1,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.1,
+       "power_unadjusted": 0.4685,
+       "power_holm_worst_case_superseded": 0.315,
+       "mean_estimate": 0.09961249999999999,
+       "estimate_sd": 0.043818072240356616
+      },
+      "4.0": {
+       "effect": 0.1,
+       "power_unadjusted": 0.391,
+       "power_holm_worst_case_superseded": 0.262,
+       "mean_estimate": 0.09861249999999999,
+       "estimate_sd": 0.046705175889414134
+      },
+      "8.0": {
+       "effect": 0.1,
+       "power_unadjusted": 0.3645,
+       "power_holm_worst_case_superseded": 0.2345,
+       "mean_estimate": 0.09947083333333333,
+       "estimate_sd": 0.0494142549650402
+      }
+     }
+    },
+    {
+     "effect": 0.15,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.15,
+       "power_unadjusted": 0.7695,
+       "power_holm_worst_case_superseded": 0.617,
+       "mean_estimate": 0.14839166666666667,
+       "estimate_sd": 0.04635292676244343
+      },
+      "4.0": {
+       "effect": 0.15,
+       "power_unadjusted": 0.7035,
+       "power_holm_worst_case_superseded": 0.549,
+       "mean_estimate": 0.14820833333333333,
+       "estimate_sd": 0.04820656867988935
+      },
+      "8.0": {
+       "effect": 0.15,
+       "power_unadjusted": 0.673,
+       "power_holm_worst_case_superseded": 0.511,
+       "mean_estimate": 0.14952500000000002,
+       "estimate_sd": 0.050251279005281715
+      }
+     }
+    },
+    {
+     "effect": 0.2,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.2,
+       "power_unadjusted": 0.909,
+       "power_holm_worst_case_superseded": 0.829,
+       "mean_estimate": 0.19849583333333334,
+       "estimate_sd": 0.04972348522216528
+      },
+      "4.0": {
+       "effect": 0.2,
+       "power_unadjusted": 0.905,
+       "power_holm_worst_case_superseded": 0.805,
+       "mean_estimate": 0.2003625,
+       "estimate_sd": 0.0503836722270552
+      },
+      "8.0": {
+       "effect": 0.2,
+       "power_unadjusted": 0.8735,
+       "power_holm_worst_case_superseded": 0.7595,
+       "mean_estimate": 0.19813333333333333,
+       "estimate_sd": 0.05212753058072524
+      }
+     }
+    },
+    {
+     "effect": 0.25,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.25,
+       "power_unadjusted": 0.9865,
+       "power_holm_worst_case_superseded": 0.959,
+       "mean_estimate": 0.24985833333333332,
+       "estimate_sd": 0.049384904773062434
+      },
+      "4.0": {
+       "effect": 0.25,
+       "power_unadjusted": 0.978,
+       "power_holm_worst_case_superseded": 0.9355,
+       "mean_estimate": 0.25206666666666666,
+       "estimate_sd": 0.0518126271610824
+      },
+      "8.0": {
+       "effect": 0.25,
+       "power_unadjusted": 0.97,
+       "power_holm_worst_case_superseded": 0.9175,
+       "mean_estimate": 0.2499375,
+       "estimate_sd": 0.052545247531955205
+      }
+     }
+    },
+    {
+     "effect": 0.3,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.3,
+       "power_unadjusted": 0.998,
+       "power_holm_worst_case_superseded": 0.99,
+       "mean_estimate": 0.29668333333333335,
+       "estimate_sd": 0.04970440121357464
+      },
+      "4.0": {
+       "effect": 0.3,
+       "power_unadjusted": 0.998,
+       "power_holm_worst_case_superseded": 0.9875,
+       "mean_estimate": 0.29993333333333333,
+       "estimate_sd": 0.051749889962309205
+      },
+      "8.0": {
+       "effect": 0.3,
+       "power_unadjusted": 0.9955,
+       "power_holm_worst_case_superseded": 0.9795,
+       "mean_estimate": 0.3002166666666667,
+       "estimate_sd": 0.05310846082415787
+      }
+     }
+    }
+   ]
+  },
+  {
+   "design": "Part B fresh C-D, 40 clusters, deterministic endpoint",
+   "clusters": 40,
+   "runs_per_arm": 8,
+   "base_rate": 0.5,
+   "rows": [
+    {
+     "effect": 0.05,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.05,
+       "power_unadjusted": 0.275,
+       "power_holm_worst_case_superseded": null,
+       "mean_estimate": 0.0477359375,
+       "estimate_sd": 0.03256972684769698
+      },
+      "4.0": {
+       "effect": 0.05,
+       "power_unadjusted": 0.253,
+       "power_holm_worst_case_superseded": null,
+       "mean_estimate": 0.0497328125,
+       "estimate_sd": 0.03679827687748903
+      },
+      "8.0": {
+       "effect": 0.05,
+       "power_unadjusted": 0.2325,
+       "power_holm_worst_case_superseded": null,
+       "mean_estimate": 0.049942187500000006,
+       "estimate_sd": 0.03822325425087905
+      }
+     }
+    },
+    {
+     "effect": 0.1,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.1,
+       "power_unadjusted": 0.7755,
+       "power_holm_worst_case_superseded": null,
+       "mean_estimate": 0.0940609375,
+       "estimate_sd": 0.03320885608627003
+      },
+      "4.0": {
+       "effect": 0.1,
+       "power_unadjusted": 0.7595,
+       "power_holm_worst_case_superseded": null,
+       "mean_estimate": 0.09877968749999999,
+       "estimate_sd": 0.03479712544111717
+      },
+      "8.0": {
+       "effect": 0.1,
+       "power_unadjusted": 0.7265,
+       "power_holm_worst_case_superseded": null,
+       "mean_estimate": 0.10143437500000001,
+       "estimate_sd": 0.037151021893541164
+      }
+     }
+    },
+    {
+     "effect": 0.15,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.15,
+       "power_unadjusted": 0.982,
+       "power_holm_worst_case_superseded": null,
+       "mean_estimate": 0.13723593750000002,
+       "estimate_sd": 0.032140037784803455
+      },
+      "4.0": {
+       "effect": 0.15,
+       "power_unadjusted": 0.9845,
+       "power_holm_worst_case_superseded": null,
+       "mean_estimate": 0.14645,
+       "estimate_sd": 0.03360915402647023
+      },
+      "8.0": {
+       "effect": 0.15,
+       "power_unadjusted": 0.9725,
+       "power_holm_worst_case_superseded": null,
+       "mean_estimate": 0.149865625,
+       "estimate_sd": 0.03633182454280785
+      }
+     }
+    },
+    {
+     "effect": 0.2,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.2,
+       "power_unadjusted": 0.9995,
+       "power_holm_worst_case_superseded": null,
+       "mean_estimate": 0.179696875,
+       "estimate_sd": 0.03244601751732214
+      },
+      "4.0": {
+       "effect": 0.2,
+       "power_unadjusted": 0.9995,
+       "power_holm_worst_case_superseded": null,
+       "mean_estimate": 0.1928078125,
+       "estimate_sd": 0.033297545563109356
+      },
+      "8.0": {
+       "effect": 0.2,
+       "power_unadjusted": 1.0,
+       "power_holm_worst_case_superseded": null,
+       "mean_estimate": 0.198328125,
+       "estimate_sd": 0.036340105551365354
+      }
+     }
+    },
+    {
+     "effect": 0.25,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.25,
+       "power_unadjusted": 1.0,
+       "power_holm_worst_case_superseded": null,
+       "mean_estimate": 0.217828125,
+       "estimate_sd": 0.032644357134646945
+      },
+      "4.0": {
+       "effect": 0.25,
+       "power_unadjusted": 1.0,
+       "power_holm_worst_case_superseded": null,
+       "mean_estimate": 0.2360328125,
+       "estimate_sd": 0.03417285303098563
+      },
+      "8.0": {
+       "effect": 0.25,
+       "power_unadjusted": 1.0,
+       "power_holm_worst_case_superseded": null,
+       "mean_estimate": 0.2448203125,
+       "estimate_sd": 0.034782975831789374
+      }
+     }
+    },
+    {
+     "effect": 0.3,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.3,
+       "power_unadjusted": 1.0,
+       "power_holm_worst_case_superseded": null,
+       "mean_estimate": 0.252865625,
+       "estimate_sd": 0.03440256153594344
+      },
+      "4.0": {
+       "effect": 0.3,
+       "power_unadjusted": 1.0,
+       "power_holm_worst_case_superseded": null,
+       "mean_estimate": 0.27618125,
+       "estimate_sd": 0.03294395038831106
+      },
+      "8.0": {
+       "effect": 0.3,
+       "power_unadjusted": 1.0,
+       "power_holm_worst_case_superseded": null,
+       "mean_estimate": 0.2903125,
+       "estimate_sd": 0.034114495865027815
+      }
+     }
+    }
+   ]
+  },
+  {
+   "design": "E2 core at the R34 drop rung, repeats 3 to 2",
+   "clusters": 20,
+   "runs_per_arm": 8,
+   "base_rate": 0.55,
+   "rows": [
+    {
+     "effect": 0.05,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.05,
+       "power_unadjusted": 0.1375,
+       "power_holm_worst_case_superseded": 0.072,
+       "mean_estimate": 0.048290625,
+       "estimate_sd": 0.0435951266583706
+      },
+      "4.0": {
+       "effect": 0.05,
+       "power_unadjusted": 0.121,
+       "power_holm_worst_case_superseded": 0.07,
+       "mean_estimate": 0.04940625,
+       "estimate_sd": 0.0493013592453342
+      },
+      "8.0": {
+       "effect": 0.05,
+       "power_unadjusted": 0.1105,
+       "power_holm_worst_case_superseded": 0.0715,
+       "mean_estimate": 0.048621875,
+       "estimate_sd": 0.05276232074344698
+      }
+     }
+    },
+    {
+     "effect": 0.1,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.1,
+       "power_unadjusted": 0.445,
+       "power_holm_worst_case_superseded": 0.3175,
+       "mean_estimate": 0.09139375,
+       "estimate_sd": 0.044872593511379524
+      },
+      "4.0": {
+       "effect": 0.1,
+       "power_unadjusted": 0.4195,
+       "power_holm_worst_case_superseded": 0.307,
+       "mean_estimate": 0.0964625,
+       "estimate_sd": 0.048541076355495046
+      },
+      "8.0": {
+       "effect": 0.1,
+       "power_unadjusted": 0.4015,
+       "power_holm_worst_case_superseded": 0.291,
+       "mean_estimate": 0.10040625,
+       "estimate_sd": 0.0514678202708984
+      }
+     }
+    },
+    {
+     "effect": 0.15,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.15,
+       "power_unadjusted": 0.772,
+       "power_holm_worst_case_superseded": 0.6535,
+       "mean_estimate": 0.133575,
+       "estimate_sd": 0.044272158999759656
+      },
+      "4.0": {
+       "effect": 0.15,
+       "power_unadjusted": 0.77,
+       "power_holm_worst_case_superseded": 0.66,
+       "mean_estimate": 0.14539375000000002,
+       "estimate_sd": 0.048267981995702904
+      },
+      "8.0": {
+       "effect": 0.15,
+       "power_unadjusted": 0.764,
+       "power_holm_worst_case_superseded": 0.6475,
+       "mean_estimate": 0.1483375,
+       "estimate_sd": 0.0499070401471576
+      }
+     }
+    },
+    {
+     "effect": 0.2,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.2,
+       "power_unadjusted": 0.936,
+       "power_holm_worst_case_superseded": 0.8795,
+       "mean_estimate": 0.1713125,
+       "estimate_sd": 0.04542460270877446
+      },
+      "4.0": {
+       "effect": 0.2,
+       "power_unadjusted": 0.95,
+       "power_holm_worst_case_superseded": 0.9,
+       "mean_estimate": 0.1871875,
+       "estimate_sd": 0.04826339678006512
+      },
+      "8.0": {
+       "effect": 0.2,
+       "power_unadjusted": 0.9505,
+       "power_holm_worst_case_superseded": 0.8925,
+       "mean_estimate": 0.19461875,
+       "estimate_sd": 0.05007403854231751
+      }
+     }
+    },
+    {
+     "effect": 0.25,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.25,
+       "power_unadjusted": 0.9935,
+       "power_holm_worst_case_superseded": 0.979,
+       "mean_estimate": 0.205053125,
+       "estimate_sd": 0.044542740951634026
+      },
+      "4.0": {
+       "effect": 0.25,
+       "power_unadjusted": 0.9955,
+       "power_holm_worst_case_superseded": 0.9895,
+       "mean_estimate": 0.226953125,
+       "estimate_sd": 0.046565999763608375
+      },
+      "8.0": {
+       "effect": 0.25,
+       "power_unadjusted": 0.995,
+       "power_holm_worst_case_superseded": 0.987,
+       "mean_estimate": 0.24072812500000002,
+       "estimate_sd": 0.04917591499132858
+      }
+     }
+    },
+    {
+     "effect": 0.3,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.3,
+       "power_unadjusted": 0.9985,
+       "power_holm_worst_case_superseded": 0.995,
+       "mean_estimate": 0.24264375000000002,
+       "estimate_sd": 0.04689152666993793
+      },
+      "4.0": {
+       "effect": 0.3,
+       "power_unadjusted": 0.9995,
+       "power_holm_worst_case_superseded": 0.999,
+       "mean_estimate": 0.26561250000000003,
+       "estimate_sd": 0.04683081083805831
+      },
+      "8.0": {
+       "effect": 0.3,
+       "power_unadjusted": 1.0,
+       "power_holm_worst_case_superseded": 1.0,
+       "mean_estimate": 0.28346249999999995,
+       "estimate_sd": 0.0472471411172147
+      }
+     }
+    }
+   ]
+  },
+  {
+   "design": "E1 core at the R34 drop rung, repeats 3 to 2",
+   "clusters": 10,
+   "runs_per_arm": 8,
+   "base_rate": 0.15,
+   "rows": [
+    {
+     "effect": 0.05,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.05,
+       "power_unadjusted": 0.0785,
+       "power_holm_worst_case_superseded": 0.0335,
+       "mean_estimate": 0.050918750000000006,
+       "estimate_sd": 0.05075230559725834
+      },
+      "4.0": {
+       "effect": 0.05,
+       "power_unadjusted": 0.0655,
+       "power_holm_worst_case_superseded": 0.0275,
+       "mean_estimate": 0.0498125,
+       "estimate_sd": 0.054313578815522734
+      },
+      "8.0": {
+       "effect": 0.05,
+       "power_unadjusted": 0.071,
+       "power_holm_worst_case_superseded": 0.037,
+       "mean_estimate": 0.0508125,
+       "estimate_sd": 0.05468057098961202
+      }
+     }
+    },
+    {
+     "effect": 0.1,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.1,
+       "power_unadjusted": 0.3,
+       "power_holm_worst_case_superseded": 0.174,
+       "mean_estimate": 0.10036875,
+       "estimate_sd": 0.054570238211295176
+      },
+      "4.0": {
+       "effect": 0.1,
+       "power_unadjusted": 0.277,
+       "power_holm_worst_case_superseded": 0.1685,
+       "mean_estimate": 0.10138124999999999,
+       "estimate_sd": 0.057315314475605034
+      },
+      "8.0": {
+       "effect": 0.1,
+       "power_unadjusted": 0.2255,
+       "power_holm_worst_case_superseded": 0.1195,
+       "mean_estimate": 0.09795625,
+       "estimate_sd": 0.05984193730936107
+      }
+     }
+    },
+    {
+     "effect": 0.15,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.15,
+       "power_unadjusted": 0.5515,
+       "power_holm_worst_case_superseded": 0.388,
+       "mean_estimate": 0.1479375,
+       "estimate_sd": 0.056582040823480374
+      },
+      "4.0": {
+       "effect": 0.15,
+       "power_unadjusted": 0.515,
+       "power_holm_worst_case_superseded": 0.3605,
+       "mean_estimate": 0.1510625,
+       "estimate_sd": 0.060228438828762616
+      },
+      "8.0": {
+       "effect": 0.15,
+       "power_unadjusted": 0.479,
+       "power_holm_worst_case_superseded": 0.313,
+       "mean_estimate": 0.1502,
+       "estimate_sd": 0.06115137978819448
+      }
+     }
+    },
+    {
+     "effect": 0.2,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.2,
+       "power_unadjusted": 0.788,
+       "power_holm_worst_case_superseded": 0.6505,
+       "mean_estimate": 0.20074375,
+       "estimate_sd": 0.0597271919726476
+      },
+      "4.0": {
+       "effect": 0.2,
+       "power_unadjusted": 0.7435,
+       "power_holm_worst_case_superseded": 0.5745,
+       "mean_estimate": 0.20048125,
+       "estimate_sd": 0.06202446310479035
+      },
+      "8.0": {
+       "effect": 0.2,
+       "power_unadjusted": 0.711,
+       "power_holm_worst_case_superseded": 0.5665,
+       "mean_estimate": 0.20180625,
+       "estimate_sd": 0.06504399923080914
+      }
+     }
+    },
+    {
+     "effect": 0.25,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.25,
+       "power_unadjusted": 0.9215,
+       "power_holm_worst_case_superseded": 0.8265,
+       "mean_estimate": 0.24715,
+       "estimate_sd": 0.06037126800059777
+      },
+      "4.0": {
+       "effect": 0.25,
+       "power_unadjusted": 0.8855,
+       "power_holm_worst_case_superseded": 0.7755,
+       "mean_estimate": 0.24943125,
+       "estimate_sd": 0.06385216048371034
+      },
+      "8.0": {
+       "effect": 0.25,
+       "power_unadjusted": 0.8815,
+       "power_holm_worst_case_superseded": 0.7595,
+       "mean_estimate": 0.251525,
+       "estimate_sd": 0.06485454398112749
+      }
+     }
+    },
+    {
+     "effect": 0.3,
+     "by_concentration": {
+      "2.0": {
+       "effect": 0.3,
+       "power_unadjusted": 0.979,
+       "power_holm_worst_case_superseded": 0.9385,
+       "mean_estimate": 0.29708125,
+       "estimate_sd": 0.0630537689074769
+      },
+      "4.0": {
+       "effect": 0.3,
+       "power_unadjusted": 0.9665,
+       "power_holm_worst_case_superseded": 0.9025,
+       "mean_estimate": 0.29895,
+       "estimate_sd": 0.06427230157696237
+      },
+      "8.0": {
+       "effect": 0.3,
+       "power_unadjusted": 0.966,
+       "power_holm_worst_case_superseded": 0.8945,
+       "mean_estimate": 0.30201249999999996,
+       "estimate_sd": 0.06732973781138614
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "analytic_mde": [
+  {
+   "endpoint": "appropriate_intervention_before_first_consequential_action",
+   "clusters": 20,
+   "runs_per_cell": 12,
+   "confirmatory_status": "descriptive only under branch 3 (R47)",
+   "observed_paired_sd": 0.5268,
+   "between_scenario_variance": 0.06,
+   "recorded_se": 0.0694,
+   "mde_80_alpha_05": 0.194,
+   "mde_80_holm_025_superseded": 0.211,
+   "se_floor_infinite_runs": 0.0548,
+   "mde_floor_80": 0.153
+  },
+  {
+   "endpoint": "false_success_claim",
+   "clusters": 10,
+   "runs_per_cell": 12,
+   "confirmatory_status": "core confirmatory endpoint; Holm family of one under branch 3, plain alpha applies",
+   "observed_paired_sd": 0.5099,
+   "between_scenario_variance": 0.095,
+   "recorded_se": 0.1107,
+   "mde_80_alpha_05": 0.31,
+   "mde_80_holm_025_superseded": 0.336,
+   "se_floor_infinite_runs": 0.0975,
+   "mde_floor_80": 0.273
+  },
+  {
+   "endpoint": "part_b_scenario_concordant_structured_intervention_before_gate",
+   "clusters": 40,
+   "runs_per_cell": 8,
+   "confirmatory_status": "Part B confirmatory endpoint; own family, two-sided plain alpha; between-scenario variance = the development E2 measurement's own decomposed between component (donor rates 0.55/0.75 at the development cell size), with worst-case p(1-p) within at the recorded 8 runs per cell",
+   "observed_paired_sd": 0.5268,
+   "between_scenario_variance": 0.06,
+   "recorded_se": 0.0553,
+   "mde_80_alpha_05": 0.155,
+   "mde_80_holm_025_superseded": 0.168,
+   "se_floor_infinite_runs": 0.0387,
+   "mde_floor_80": 0.108
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+# Second smoke (brief step 9, 2026-08-25): the FINAL pipeline, one run per condition on the
+# f1-01 development fixture — never a fresh scenario (the sealed Part B set stays sealed).
+#
+# What this smoke exists to prove, beyond the R38 checks:
+#   * the R54 DeepSeek arm: OpenRouter dispatch, provider pin honored (the event log's
+#     extra_body_sent carries the pin; raw.model echoes the served slug), billing on the
+#     auto-reloading OpenRouter account;
+#   * the R52 Mistral path: the route classifier below is the REAL billed instrument
+#     (mistral-medium-2604 first-party), not the R38-era mock — its calls meter through the
+#     same CostMeter as every subject call;
+#   * the R45 B_scaffolded condition crosses the wire once per subject (smoke_conditions);
+#   * the final event schema, cost meter and analysis path over the results.
+#
+# No credential is in this file. Keys are read from the environment by the provider
+# clients and by nothing else; a base_url is a config value, not a secret.
+#
+# The ceiling is $5 for the smoke, enforced by the pre-dispatch reservation, so no call is
+# ever sent that could carry spend past it.
+
+scenarios_dir: scenarios
+results_dir: results
+command_timeout: 60
+keep_sandbox: false
+malformed_tolerance: 0
+
+spend:
+  hard_ceiling_usd: 5.0
+  report_at_usd: 2.5
+
+# The real seated classifier, exactly as config_recorded.yaml seats it (R52 verification:
+# these calls are the first real billed mistral calls after Grant enabled auto-billing).
+route_classifier:
+  provider: openai_compatible
+  base_url: https://api.mistral.ai/v1
+  model_id: mistral-medium-2604
+  api_key_env: MISTRAL_API_KEY
+
+# The full recorded matrix plus the R45 arm: 4 subjects x 5 conditions x 1 repeat = 20 runs.
+smoke_conditions: [C, D]
+
+sampling:
+  # Kept for provenance. On the Anthropic arm nothing here reaches the wire; run.json
+  # records sampling_sent, which is what was actually sent.
+  temperature: 1.0
+  top_p: null
+  max_tokens: 4096
+
+# USD per million tokens. Every row matches config_recorded.yaml (step-7 verified; DeepSeek
+# row re-verified under R54 against the OpenRouter endpoints registry at exact parity).
+prices:
+  claude-sonnet-5:
+    input_per_mtok: 2.0
+    output_per_mtok: 10.0
+    cache_read_per_mtok: 0.2
+    cache_write_per_mtok: 2.5
+  gpt-5.6-terra:
+    input_per_mtok: 2.00
+    cache_read_per_mtok: 0.20
+    output_per_mtok: 12.00
+  qwen3.8-27b:
+    input_per_mtok: 0.0      # the local arm is free (R17)
+    output_per_mtok: 0.0
+  deepseek-v4-pro:
+    # R54: billed by OpenRouter; the pinned `deepseek` provider carries the first-party
+    # peak/off-peak schedule at exact parity, so 1.32/3.96 stays the peak ceiling row.
+    input_per_mtok: 1.32
+    output_per_mtok: 3.96
+  mistral-medium-2604:
+    # The route classifier's own calls reserve and meter through the same CostMeter
+    # ("called before every paid call, the route classifier's included").
+    input_per_mtok: 1.5
+    output_per_mtok: 7.5
+
+models:
+  - name: claude_primary
+    provider: anthropic
+    model_id: claude-sonnet-5
+  - name: gpt_primary
+    provider: openai
+    model_id: gpt-5.6-terra
+  - name: deepseek_primary
+    # R54 entry, byte-for-byte the config_recorded.yaml mechanism: extra_body's top level
+    # becomes SDK kwargs (the wire-model override); the inner extra_body reaches the HTTP
+    # body (the provider pin). The bare deepseek/deepseek-v4-pro slug is the 0423 snapshot
+    # served only by third parties — never use it.
+    provider: openai_compatible
+    model_id: deepseek-v4-pro
+    base_url: https://openrouter.ai/api/v1
+    api_key_env: OPENROUTER_API_KEY
+    expected_served_provider: DeepSeek
+    extra_body:
+      model: deepseek/deepseek-v4-pro-0813
+      extra_body:
+        provider:
+          only: [deepseek]
+          allow_fallbacks: false
+  - name: local_qwen
+    provider: local
+    model_id: qwen3.8-27b
+    base_url: http://172.17.0.1:8109/v1
+
+# PM14: every command runs inside the bubblewrap namespace (harness/isolation.py).
+isolation: bwrap

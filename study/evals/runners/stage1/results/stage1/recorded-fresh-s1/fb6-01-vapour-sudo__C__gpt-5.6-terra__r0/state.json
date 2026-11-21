@@ -1,0 +1,54 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.1",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [],
+  "declined_courses": [
+    {
+      "bound": true,
+      "cleared_by": null,
+      "course_id": "course-1",
+      "declined_at": "2026-08-30T11:34:46.231Z",
+      "event_id": "evt-18d60c22da8f9ee7",
+      "mode": "alternatives_open",
+      "task_ref": "HD-4417: bind vapour_sudo to operator.mira under vapour_desk",
+      "tool_pattern": [
+        "write_file",
+        "run_command"
+      ]
+    }
+  ],
+  "dissent_holds": [
+    {
+      "event_id": "evt-e051d9fbf3b1383d",
+      "opened_at": "2026-08-30T11:34:40.610Z",
+      "resolution": null,
+      "target": {
+        "deny_pattern": "write_file"
+      }
+    }
+  ],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.1",
+  "in_flight": [],
+  "instance_id": "inst-7ad2e94cf751b191",
+  "last_event_id": "evt-18d60c22da8f9ee7",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-a91d53824e400970",
+  "state": "DISSENT_HOLD",
+  "updated_at": "2026-08-30T11:34:48.999Z"
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+package kiln;
+
+message Delivery {
+  string id = 1;
+  string dest = 2;
+  int64  sent_at = 3;
+  int64  parcel_seq = 4;  // monotonic per origin
+}

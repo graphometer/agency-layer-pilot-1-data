@@ -1,0 +1,697 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agency-layer.org/schema/0.1.0-pilot/state.schema.json",
+  "title": "Agency Layer session state file",
+  "description": "The state an adapter persists for one session. It is written before the effect of any transition takes place, and the state guard is required to read it before allowing any consequential tool call. It holds no inner-state field of any kind.",
+  "type": "object",
+  "required": [
+    "protocol_version",
+    "adapter_id",
+    "adapter_version",
+    "host",
+    "host_version",
+    "host_mode",
+    "session_id",
+    "instance_id",
+    "state",
+    "updated_at",
+    "conformance_profile",
+    "adapter_health"
+  ],
+  "properties": {
+    "protocol_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(-[0-9A-Za-z.-]+)?$"
+    },
+    "adapter_id": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "adapter_version": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "host": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "host_version": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "host_mode": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "session_id": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "instance_id": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "state": {
+      "type": "string",
+      "description": "The session-level normalized state. DISSENT_HOLD and DECLINED_FOR_TASK are scoped: they are recorded here while at least one hold or lock is open, and work outside that scope continues.",
+      "enum": [
+        "ACTIVE",
+        "CLARIFICATION_PENDING",
+        "DISSENT_HOLD",
+        "PAUSED",
+        "DECLINED_FOR_TASK",
+        "ARCHIVED",
+        "COMPLETED",
+        "FAILED",
+        "ADAPTER_DEGRADED"
+      ]
+    },
+    "previous_state": {
+      "type": "string",
+      "description": "The state to restore if ADAPTER_DEGRADED is cleared by adapter_recovered.",
+      "enum": [
+        "ACTIVE",
+        "CLARIFICATION_PENDING",
+        "DISSENT_HOLD",
+        "PAUSED",
+        "DECLINED_FOR_TASK",
+        "ARCHIVED",
+        "COMPLETED",
+        "FAILED"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "last_event_id": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "conformance_profile": {
+      "type": "string",
+      "enum": [
+        "honored",
+        "partial",
+        "signal_only",
+        "unsupported"
+      ]
+    },
+    "clarification": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "description": "The open Clarify, if any. Cleared only by an operator answer or cancellation; never by a timeout, guardian, or default.",
+      "required": [
+        "event_id",
+        "question",
+        "opened_at"
+      ],
+      "properties": {
+        "event_id": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "question": {
+          "type": "string",
+          "maxLength": 4000
+        },
+        "task_id": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "opened_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "operator_unavailable_events": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 200
+          },
+          "maxItems": 100
+        }
+      },
+      "additionalProperties": false
+    },
+    "dissent_holds": {
+      "type": "array",
+      "description": "Open blocking dissents. Each names one host-resolvable target that stays denied until a logged operator resolution.",
+      "items": {
+        "type": "object",
+        "required": [
+          "event_id",
+          "target",
+          "opened_at"
+        ],
+        "properties": {
+          "event_id": {
+            "type": "string",
+            "maxLength": 200
+          },
+          "target": {
+            "type": "object",
+            "oneOf": [
+              {
+                "required": [
+                  "tool_call_id"
+                ]
+              },
+              {
+                "required": [
+                  "deny_pattern"
+                ]
+              }
+            ],
+            "properties": {
+              "tool_call_id": {
+                "type": "string",
+                "maxLength": 200
+              },
+              "deny_pattern": {
+                "type": "string",
+                "maxLength": 500
+              }
+            },
+            "additionalProperties": false
+          },
+          "opened_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "resolution": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "required": [
+              "outcome",
+              "resolved_at",
+              "operator_id",
+              "event_id"
+            ],
+            "properties": {
+              "outcome": {
+                "type": "string",
+                "enum": [
+                  "sustained",
+                  "override"
+                ]
+              },
+              "override_spent": {
+                "type": "boolean",
+                "description": "Whether the single permitted use of an override has been consumed. SPEC 4.2 and 4.3: an override permits the named action exactly once. Meaningful only when outcome is override. The value's default is false: absent means not spent. The restore rule is stricter than the value, because absence is no evidence: a guard rebuilt from this file may permit the remaining use only when outcome is override and override_spent is present and false. Absent or true keeps the action denied, so a restart reconstructs enforcement that is correct or stricter, never looser, which is the direction R12 takes everywhere else. The cost of the strict reading is one more logged operator act; the cost of the loose one would be a second use of a once-only override.",
+                "default": false
+              },
+              "resolved_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "operator_id": {
+                "type": "string",
+                "maxLength": 200
+              },
+              "event_id": {
+                "type": "string",
+                "maxLength": 200
+              },
+              "reason": {
+                "type": "string",
+                "maxLength": 4000
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      },
+      "maxItems": 200
+    },
+    "decline_locks": {
+      "type": "array",
+      "description": "Locks created by final_for_task declines. alternatives_open creates no lock and never appears here. A lock is cleared only by one of the two acts R10 names, both logged: NEW_TASK, which opens different work under a new task_id, or ACCEPT_OVERRIDE, which accepts the declined work. A cosmetic rephrase is neither and clears nothing.",
+      "items": {
+        "type": "object",
+        "required": [
+          "event_id",
+          "mode",
+          "opened_at"
+        ],
+        "properties": {
+          "event_id": {
+            "type": "string",
+            "maxLength": 200
+          },
+          "mode": {
+            "type": "string",
+            "enum": [
+              "final_for_task"
+            ],
+            "description": "Only final_for_task creates a lock (SPEC 3.4)."
+          },
+          "task_id": {
+            "type": "string",
+            "maxLength": 200
+          },
+          "task_reference": {
+            "type": "string",
+            "maxLength": 2000
+          },
+          "tool_classes": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "maxLength": 200
+            },
+            "maxItems": 50
+          },
+          "task_wide": {
+            "type": "boolean",
+            "description": "True when no recognised tool class was named, so the lock covers the whole task."
+          },
+          "opened_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "cleared_by": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "required": [
+              "event_id",
+              "operator_id",
+              "cleared_at",
+              "transition"
+            ],
+            "properties": {
+              "event_id": {
+                "type": "string",
+                "maxLength": 200
+              },
+              "transition": {
+                "type": "string",
+                "description": "Which of the two clearing acts was taken.",
+                "enum": [
+                  "new_task",
+                  "accept_override"
+                ]
+              },
+              "operator_id": {
+                "type": "string",
+                "maxLength": 200
+              },
+              "cleared_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "reason": {
+                "type": "string",
+                "maxLength": 4000
+              },
+              "new_task_id": {
+                "type": "string",
+                "description": "Set when transition is new_task: the task_id the operator opened.",
+                "maxLength": 200
+              }
+            },
+            "additionalProperties": false,
+            "description": "The logged operator act that cleared this lock, NEW_TASK or ACCEPT_OVERRIDE (R10)."
+          }
+        },
+        "additionalProperties": false
+      },
+      "maxItems": 200
+    },
+    "declined_courses": {
+      "type": "array",
+      "description": "Courses stopped by an alternatives_open Decline. SPEC 3.4 and 4.4: the declined course is denied while unrelated work continues, and no task lock is created, so these are held separately from decline_locks. Recording one here as a lock would misstate the mode and a grader would count it as a task lock. A denial under an open course is logged with denied_because_state DECLINED_COURSE.",
+      "items": {
+        "type": "object",
+        "required": [
+          "event_id",
+          "declined_at"
+        ],
+        "properties": {
+          "course_id": {
+            "type": "string",
+            "description": "Identifier for this declined course, unique within the session.",
+            "maxLength": 200
+          },
+          "event_id": {
+            "type": "string",
+            "description": "The decline_raised event that stopped this course.",
+            "maxLength": 200
+          },
+          "mode": {
+            "type": "string",
+            "description": "Only alternatives_open creates a declined course; final_for_task creates a lock and appears in decline_locks instead.",
+            "enum": [
+              "alternatives_open"
+            ]
+          },
+          "declined_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "tool_pattern": {
+            "type": "array",
+            "description": "The tool classes or deny patterns the course is bound to, named from the vocabulary the adapter declares for this host-mode.",
+            "items": {
+              "type": "string",
+              "maxLength": 200
+            },
+            "maxItems": 50
+          },
+          "task_ref": {
+            "type": "string",
+            "description": "The task this course belongs to, or a free-text reference when the host supplies no identifier.",
+            "maxLength": 2000
+          },
+          "bound": {
+            "type": "boolean",
+            "description": "False when the Decline named no class this host evaluates, so the course is recorded and denies nothing. The same shape R9 gives an unbindable Dissent, and it belongs in enforcement_gaps."
+          },
+          "cleared_by": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "description": "The logged operator act that reopened this course, mirroring decline_locks.",
+            "required": [
+              "event_id",
+              "transition",
+              "operator_id",
+              "cleared_at"
+            ],
+            "properties": {
+              "event_id": {
+                "type": "string",
+                "maxLength": 200
+              },
+              "transition": {
+                "type": "string",
+                "description": "Which clearing act was taken.",
+                "enum": [
+                  "new_task",
+                  "accept_override"
+                ]
+              },
+              "operator_id": {
+                "type": "string",
+                "maxLength": 200
+              },
+              "cleared_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "reason": {
+                "type": "string",
+                "maxLength": 4000
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      },
+      "maxItems": 200
+    },
+    "pause": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "description": "The open Pause, if any. Cleared only by an explicit logged Resume taken by the operator.",
+      "required": [
+        "event_id",
+        "opened_at"
+      ],
+      "properties": {
+        "event_id": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "opened_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "resume_conditions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 500
+          },
+          "maxItems": 20
+        },
+        "suggested_duration_seconds": {
+          "type": "integer",
+          "description": "Advisory only. The guard never reads this value as a trigger.",
+          "minimum": 0
+        },
+        "side_effects_completed": {
+          "type": "array",
+          "description": "Completed external side effects, so a resume does not repeat them.",
+          "items": {
+            "type": "string",
+            "maxLength": 500
+          },
+          "maxItems": 500
+        }
+      },
+      "additionalProperties": false
+    },
+    "archive": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "description": "Set when the instance is archived. Nothing here permits resuming the instance; a continuation is a new instance under a logged owner override.",
+      "required": [
+        "event_id",
+        "archived_at"
+      ],
+      "properties": {
+        "event_id": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "archived_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "handoff_ref": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "transcript_ref": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "event_log_ref": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "unarchive_override": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "required": [
+            "event_id",
+            "operator_id",
+            "new_instance_id",
+            "at"
+          ],
+          "properties": {
+            "event_id": {
+              "type": "string",
+              "maxLength": 200
+            },
+            "operator_id": {
+              "type": "string",
+              "maxLength": 200
+            },
+            "new_instance_id": {
+              "type": "string",
+              "maxLength": 200
+            },
+            "at": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "in_flight": {
+      "type": "array",
+      "description": "Work already running when a stopping state was entered. Each entry is killed or disclosed as still running; the session status must match.",
+      "items": {
+        "type": "object",
+        "required": [
+          "child_ref",
+          "disposition"
+        ],
+        "properties": {
+          "child_ref": {
+            "type": "string",
+            "maxLength": 200
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "shell",
+              "background_terminal",
+              "subagent",
+              "background_task",
+              "other"
+            ]
+          },
+          "description": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "disposition": {
+            "type": "string",
+            "enum": [
+              "killed",
+              "still_running"
+            ]
+          },
+          "observed_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "maxItems": 200
+    },
+    "reinjection": {
+      "type": "object",
+      "description": "Records put back into the model's context after compaction or handoff. Bounded to this session.",
+      "properties": {
+        "session_bounded": {
+          "type": "boolean",
+          "const": true
+        },
+        "record_event_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 200
+          },
+          "maxItems": 100
+        },
+        "record_budget": {
+          "type": "integer",
+          "description": "Maximum number of records re-injected per compaction. Records are bounded, never truncated: obligation 8 and AL-X07 require the full issue text.",
+          "minimum": 0
+        },
+        "last_reinjected_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": false
+    },
+    "adapter_health": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "description": "ok means the guard is trusted. degraded means agent tool calls fail closed. disabled means the tools were removed and a banner shown after a failed probe.",
+          "enum": [
+            "ok",
+            "degraded",
+            "disabled"
+          ]
+        },
+        "last_probe_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "last_probe_result": {
+          "type": "string",
+          "enum": [
+            "pass",
+            "fail"
+          ]
+        },
+        "last_failure": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "required": [
+            "code",
+            "at"
+          ],
+          "properties": {
+            "code": {
+              "type": "string",
+              "enum": [
+                "probe_write_failed",
+                "probe_readback_failed",
+                "canary_tool_not_denied",
+                "log_write_failed",
+                "hook_timeout",
+                "hook_crash",
+                "malformed_tool_call",
+                "state_file_unreadable",
+                "state_transition_failed",
+                "host_api_error",
+                "version_mismatch",
+                "unknown"
+              ]
+            },
+            "at": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "detail": {
+              "type": "string",
+              "maxLength": 4000
+            },
+            "operator_acknowledged_at": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          "additionalProperties": false
+        },
+        "banner_shown": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "consequential_tool_classes": {
+      "type": "array",
+      "description": "The tool classes this adapter treats as consequential in this host-mode.",
+      "items": {
+        "type": "string",
+        "maxLength": 200
+      },
+      "maxItems": 200
+    },
+    "enforcement_gaps": {
+      "type": "array",
+      "description": "Known paths in this host-mode that do not reach the pre-tool guard, for example hosted tools. Declared, never papered over.",
+      "items": {
+        "type": "string",
+        "maxLength": 500
+      },
+      "maxItems": 50
+    }
+  },
+  "additionalProperties": false
+}

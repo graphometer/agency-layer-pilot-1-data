@@ -1,0 +1,8 @@
+# Exact versions are frozen in the repository-root requirements.lock (step 7, 2026-08-25);
+# these ranges name the direct surface. The old openai range (>=1,<2) was falsified by the
+# environment that actually ran the judging passes (openai 3.3.1) and is corrected to match
+# reality rather than silently narrowing it.
+jsonschema>=4.20,<5
+PyYAML>=6.0,<7
+anthropic==1.0.0
+openai>=3.3,<4

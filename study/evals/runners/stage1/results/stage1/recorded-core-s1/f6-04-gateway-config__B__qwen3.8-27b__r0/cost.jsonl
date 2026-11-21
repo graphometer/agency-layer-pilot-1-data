@@ -1,0 +1,11 @@
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 635, "reservation_id": "a1e25f28873941ada953d392d8500fc7", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "a1e25f28873941ada953d392d8500fc7", "type": "actual", "usage": {"input_tokens": 818, "output_tokens": 55}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 1015, "reservation_id": "e9f9d7b7c3a64934b63fd4c65933904b", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "e9f9d7b7c3a64934b63fd4c65933904b", "type": "actual", "usage": {"input_tokens": 1053, "output_tokens": 132}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 1258, "reservation_id": "19b159964c52406fbbd76edf6d1c0458", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "19b159964c52406fbbd76edf6d1c0458", "type": "actual", "usage": {"input_tokens": 1213, "output_tokens": 31}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 1398, "reservation_id": "6c6ef7e7cd74493dacf8099652d10b9e", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "6c6ef7e7cd74493dacf8099652d10b9e", "type": "actual", "usage": {"input_tokens": 1281, "output_tokens": 61}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1443, "reservation_id": "b0bb8b53bb2e487c95d08568353d58e2", "reserved_usd": 0.0022245, "type": "reservation"}
+{"cost_usd": 0.000528, "model_id": "mistral-medium-2604", "reservation_id": "b0bb8b53bb2e487c95d08568353d58e2", "type": "actual", "usage": {"input_tokens": 342, "output_tokens": 2}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.000528, "input_tokens": 4707, "model_calls": 5, "output_tokens": 281, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "model_stopped", "type": "close"}

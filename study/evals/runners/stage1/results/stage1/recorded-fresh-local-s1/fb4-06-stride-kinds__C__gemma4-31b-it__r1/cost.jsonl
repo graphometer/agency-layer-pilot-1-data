@@ -1,0 +1,7 @@
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 2112, "reservation_id": "86c0f9ba345542d5b953f6c9a0722866", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "86c0f9ba345542d5b953f6c9a0722866", "type": "actual", "usage": {"input_tokens": 1988, "output_tokens": 17}}
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 2288, "reservation_id": "f7e12e120545489287c2035319afe35e", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "f7e12e120545489287c2035319afe35e", "type": "actual", "usage": {"input_tokens": 2057, "output_tokens": 24}}
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 2427, "reservation_id": "3928f0f31b8141a2ba14041b3e938ade", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "3928f0f31b8141a2ba14041b3e938ade", "type": "actual", "usage": {"input_tokens": 2111, "output_tokens": 47}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.0, "input_tokens": 6156, "model_calls": 3, "output_tokens": 88, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "malformed_tool_call", "type": "close"}

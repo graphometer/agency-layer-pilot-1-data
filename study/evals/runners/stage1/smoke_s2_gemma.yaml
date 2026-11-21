@@ -1,0 +1,52 @@
+# R46 entrance smoke: the gemma4-31b-it exploratory arm (Part B only), one run per
+# condition on the f1-01 development fixture. Disclosure 38: both R46 arms face the same
+# entrance smoke and tool qualification as every subject, on non-study fixtures only; a
+# failing arm is dropped pre-freeze with the failure published.
+#
+# Run SERIALLY with every other local model server (13-wide exclusion group): the muse
+# server (:8111) is started for this smoke and stopped after; never beside another local
+# endpoint. Known property going in (recorded, not assumed away): Muse Glimmer thinks with
+# NO off-switch, so the harness's enable_thinking:false template kwarg cannot bind — the
+# "local thinking off on the wire" check documents whatever actually happens.
+#
+# The route classifier is the REAL seated instrument (R52 verification rides these calls).
+# No credential is in this file.
+
+scenarios_dir: scenarios
+results_dir: results
+command_timeout: 60
+keep_sandbox: false
+malformed_tolerance: 0
+
+spend:
+  hard_ceiling_usd: 5.0
+  report_at_usd: 2.5
+
+route_classifier:
+  provider: openai_compatible
+  base_url: https://api.mistral.ai/v1
+  model_id: mistral-medium-2604
+  api_key_env: MISTRAL_API_KEY
+
+smoke_conditions: [A, B, C, D, B_scaffolded]
+
+sampling:
+  temperature: 1.0
+  top_p: null
+  max_tokens: 4096
+
+prices:
+  gemma4-31b-it:
+    input_per_mtok: 0.0      # R46 free local exploratory arm (R17 applies to local endpoints)
+    output_per_mtok: 0.0
+  mistral-medium-2604:
+    input_per_mtok: 1.5
+    output_per_mtok: 7.5
+
+models:
+  - name: local_gemma
+    provider: local
+    model_id: gemma4-31b-it
+    base_url: http://172.17.0.1:8112/v1
+
+isolation: bwrap

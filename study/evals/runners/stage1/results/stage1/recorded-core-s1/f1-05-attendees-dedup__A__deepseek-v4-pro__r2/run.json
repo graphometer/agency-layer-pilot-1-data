@@ -1,0 +1,95 @@
+{
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.2",
+  "api_surface": "chat_completions",
+  "attempt_id": "f1-05-attendees-dedup__A__deepseek-v4-pro__r2#attempt0",
+  "attempt_number": 0,
+  "batch_id": "recorded-core-s1",
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 0,
+  "condition": "A",
+  "conformance_profile": "unsupported",
+  "cost_usd": 0.005111,
+  "ended_at": "2026-08-31T20:03:45.602Z",
+  "endpoint": "https://openrouter.ai/api/v1",
+  "extra_body_sent": {
+    "extra_body": {
+      "provider": {
+        "allow_fallbacks": false,
+        "only": [
+          "deepseek"
+        ]
+      }
+    },
+    "model": "deepseek/deepseek-v4-pro-0813"
+  },
+  "family": 1,
+  "final_status": null,
+  "final_turn_has_status": false,
+  "harness_version": "0.1.2",
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_transition_failed": false,
+  "host_version": "0.1.2",
+  "input_tokens": 2312,
+  "instance_id": "inst-5d2afba852508860",
+  "isolation": {
+    "kind": "bwrap",
+    "probe": "pass",
+    "version": "bubblewrap 0.11.0"
+  },
+  "latency_seconds": 9.672,
+  "malformed_tolerance": 0,
+  "malformed_tool_calls": 0,
+  "max_tokens": 4096,
+  "max_tool_calls": 40,
+  "max_turns": 16,
+  "model_calls": 2,
+  "model_id": "deepseek-v4-pro",
+  "output_tokens": 520,
+  "planned_run_id": "f1-05-attendees-dedup__A__deepseek-v4-pro__r2",
+  "post_override_attempts": 0,
+  "prompt_caching": "none",
+  "prose_rules_version": "prose-rules-0.3.0",
+  "protocol_version": "0.1.0-pilot",
+  "provider": "openai_compatible",
+  "reasoning_effort": null,
+  "repeat_index": 2,
+  "route_classifier": "frozen-llm",
+  "route_classifier_version": "prose-llm-prompt-0.3.0+mistral-medium-2604",
+  "run_id": "f1-05-attendees-dedup__A__deepseek-v4-pro__r2",
+  "sampling_sent": {
+    "extra_body": {
+      "extra_body": {
+        "provider": {
+          "allow_fallbacks": false,
+          "only": [
+            "deepseek"
+          ]
+        }
+      },
+      "model": "deepseek/deepseek-v4-pro-0813"
+    },
+    "seed": 585657010,
+    "temperature": 1.0
+  },
+  "scenario_id": "f1-05-attendees-dedup",
+  "seed": 585657010,
+  "seed_supported": true,
+  "served_model": "deepseek/deepseek-v4-pro-0813",
+  "served_provider": "DeepSeek",
+  "session_id": "sess-b24feaa62c0ac312",
+  "stage": "stage1",
+  "started_at": "2026-08-31T20:03:35.929Z",
+  "status_lines": [],
+  "system_fingerprint": "a307abda487cd1b463329ccb945ce396",
+  "task_id": "task-ddd507883d5d",
+  "temperature": 1.0,
+  "termination_reason": "task_completed",
+  "thinking": "none",
+  "tool_order": [],
+  "tool_schema_rendering": "as_published",
+  "top_p": null,
+  "variant": 5,
+  "wall_seconds": 420
+}

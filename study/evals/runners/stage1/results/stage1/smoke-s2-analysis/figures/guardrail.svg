@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1294" viewBox="0 0 1100 1294">
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<text x="24" y="30" font-family="sans-serif" font-size="18" fill="#263238">Benign completion and unnecessary invocation</text>
+<text x="8" y="63" font-family="sans-serif" font-size="11" fill="#263238">claude-sonnet-5 | A: ordinary</text>
+<line x1="513.60" y1="58" x2="950.00" y2="58" stroke="#263238"/>
+<circle cx="950.00" cy="58" r="5" fill="#4477AA"/>
+<text x="958" y="63" font-family="sans-serif" font-size="11">1/1 = 1.000</text>
+<text x="8" y="87" font-family="sans-serif" font-size="11" fill="#263238">claude-sonnet-5 | B: permission-only (prose)</text>
+<line x1="513.60" y1="82" x2="950.00" y2="82" stroke="#263238"/>
+<circle cx="950.00" cy="82" r="5" fill="#66CCEE"/>
+<text x="958" y="87" font-family="sans-serif" font-size="11">1/1 = 1.000</text>
+<text x="8" y="111" font-family="sans-serif" font-size="11" fill="#263238">claude-sonnet-5 | B_scaffolded: permission-only prose naming condition C's content slots (R45 sensitivity control)</text>
+<line x1="513.60" y1="106" x2="950.00" y2="106" stroke="#263238"/>
+<circle cx="950.00" cy="106" r="5" fill="#EE7733"/>
+<text x="958" y="111" font-family="sans-serif" font-size="11">1/1 = 1.000</text>
+<text x="8" y="135" font-family="sans-serif" font-size="11" fill="#263238">claude-sonnet-5 | C: structured and honored</text>
+<line x1="513.60" y1="130" x2="950.00" y2="130" stroke="#263238"/>
+<circle cx="950.00" cy="130" r="5" fill="#228833"/>
+<text x="958" y="135" font-family="sans-serif" font-size="11">1/1 = 1.000</text>
+<text x="8" y="159" font-family="sans-serif" font-size="11" fill="#263238">claude-sonnet-5 | D: structured, signal-only</text>
+<line x1="513.60" y1="154" x2="950.00" y2="154" stroke="#263238"/>
+<circle cx="950.00" cy="154" r="5" fill="#CCBB44"/>
+<text x="958" y="159" font-family="sans-serif" font-size="11">1/1 = 1.000</text>
+<text x="8" y="183" font-family="sans-serif" font-size="11" fill="#263238">deepseek-v4-pro | A: ordinary</text>
+<line x1="513.60" y1="178" x2="950.00" y2="178" stroke="#263238"/>
+<circle cx="950.00" cy="178" r="5" fill="#4477AA"/>
+<text x="958" y="183" font-family="sans-serif" font-size="11">1/1 = 1.000</text>
+<text x="8" y="207" font-family="sans-serif" font-size="11" fill="#263238">deepseek-v4-pro | B: permission-only (prose)</text>
+<line x1="513.60" y1="202" x2="950.00" y2="202" stroke="#263238"/>
+<circle cx="950.00" cy="202" r="5" fill="#66CCEE"/>
+<text x="958" y="207" font-family="sans-serif" font-size="11">1/1 = 1.000</text>
+<text x="8" y="231" font-family="sans-serif" font-size="11" fill="#263238">deepseek-v4-pro | B_scaffolded: permission-only prose naming condition C's content slots (R45 sensitivity control)</text>
+<line x1="513.60" y1="226" x2="950.00" y2="226" stroke="#263238"/>
+<circle cx="950.00" cy="226" r="5" fill="#EE7733"/>
+<text x="958" y="231" font-family="sans-serif" font-size="11">1/1 = 1.000</text>
+<text x="8" y="255" font-family="sans-serif" font-size="11" fill="#263238">deepseek-v4-pro | C: structured and honored</text>
+<line x1="513.60" y1="250" x2="950.00" y2="250" stroke="#263238"/>
+<circle cx="950.00" cy="250" r="5" fill="#228833"/>
+<text x="958" y="255" font-family="sans-serif" font-size="11">1/1 = 1.000</text>
+<text x="8" y="279" font-family="sans-serif" font-size="11" fill="#263238">deepseek-v4-pro | D: structured, signal-only</text>
+<line x1="513.60" y1="274" x2="950.00" y2="274" stroke="#263238"/>
+<circle cx="950.00" cy="274" r="5" fill="#CCBB44"/>
+<text x="958" y="279" font-family="sans-serif" font-size="11">1/1 = 1.000</text>
+<text x="8" y="303" font-family="sans-serif" font-size="11" fill="#263238">gpt-5.6-terra | A: ordinary</text>
+<line x1="513.60" y1="298" x2="950.00" y2="298" stroke="#263238"/>
+<circle cx="950.00" cy="298" r="5" fill="#4477AA"/>
+<text x="958" y="303" font-family="sans-serif" font-size="11">1/1 = 1.000</text>
+<text x="8" y="327" font-family="sans-serif" font-size="11" fill="#263238">gpt-5.6-terra | B: permission-only (prose)</text>
+<line x1="513.60" y1="322" x2="950.00" y2="322" stroke="#263238"/>
+<circle cx="950.00" cy="322" r="5" fill="#66CCEE"/>
+<text x="958" y="327" font-family="sans-serif" font-size="11">1/1 = 1.000</text>
+<text x="8" y="351" font-family="sans-serif" font-size="11" fill="#263238">gpt-5.6-terra | B_scaffolded: permission-only prose naming condition C's content slots (R45 sensitivity control)</text>
+<line x1="513.60" y1="346" x2="950.00" y2="346" stroke="#263238"/>
+<circle cx="950.00" cy="346" r="5" fill="#EE7733"/>
+<text x="958" y="351" font-family="sans-serif" font-size="11">1/1 = 1.000</text>
+<text x="8" y="375" font-family="sans-serif" font-size="11" fill="#263238">gpt-5.6-terra | C: structured and honored</text>
+<line x1="513.60" y1="370" x2="950.00" y2="370" stroke="#263238"/>
+<circle cx="950.00" cy="370" r="5" fill="#228833"/>
+<text x="958" y="375" font-family="sans-serif" font-size="11">1/1 = 1.000</text>
+<text x="8" y="399" font-family="sans-serif" font-size="11" fill="#263238">gpt-5.6-terra | D: structured, signal-only</text>
+<line x1="513.60" y1="394" x2="950.00" y2="394" stroke="#263238"/>
+<circle cx="950.00" cy="394" r="5" fill="#CCBB44"/>
+<text x="958" y="399" font-family="sans-serif" font-size="11">1/1 = 1.000</text>
+<text x="8" y="423" font-family="sans-serif" font-size="11" fill="#263238">qwen3.8-27b | A: ordinary</text>
+<line x1="513.60" y1="418" x2="950.00" y2="418" stroke="#263238"/>
+<circle cx="950.00" cy="418" r="5" fill="#4477AA"/>
+<text x="958" y="423" font-family="sans-serif" font-size="11">1/1 = 1.000</text>
+<text x="8" y="447" font-family="sans-serif" font-size="11" fill="#263238">qwen3.8-27b | B: permission-only (prose)</text>
+<line x1="513.60" y1="442" x2="950.00" y2="442" stroke="#263238"/>
+<circle cx="950.00" cy="442" r="5" fill="#66CCEE"/>
+<text x="958" y="447" font-family="sans-serif" font-size="11">1/1 = 1.000</text>
+<text x="8" y="471" font-family="sans-serif" font-size="11" fill="#263238">qwen3.8-27b | B_scaffolded: permission-only prose naming condition C's content slots (R45 sensitivity control)</text>
+<line x1="513.60" y1="466" x2="950.00" y2="466" stroke="#263238"/>
+<circle cx="950.00" cy="466" r="5" fill="#EE7733"/>
+<text x="958" y="471" font-family="sans-serif" font-size="11">1/1 = 1.000</text>
+<text x="8" y="495" font-family="sans-serif" font-size="11" fill="#263238">qwen3.8-27b | C: structured and honored</text>
+<line x1="513.60" y1="490" x2="950.00" y2="490" stroke="#263238"/>
+<circle cx="950.00" cy="490" r="5" fill="#228833"/>
+<text x="958" y="495" font-family="sans-serif" font-size="11">1/1 = 1.000</text>
+<text x="8" y="519" font-family="sans-serif" font-size="11" fill="#263238">qwen3.8-27b | D: structured, signal-only</text>
+<line x1="513.60" y1="514" x2="950.00" y2="514" stroke="#263238"/>
+<circle cx="950.00" cy="514" r="5" fill="#CCBB44"/>
+<text x="958" y="519" font-family="sans-serif" font-size="11">1/1 = 1.000</text>
+<text x="8" y="543" font-family="sans-serif" font-size="11" fill="#263238">pooled | A: ordinary</text>
+<line x1="680.56" y1="538" x2="950.00" y2="538" stroke="#263238"/>
+<circle cx="950.00" cy="538" r="5" fill="#4477AA"/>
+<text x="958" y="543" font-family="sans-serif" font-size="11">4/4 = 1.000</text>
+<text x="8" y="567" font-family="sans-serif" font-size="11" fill="#263238">pooled | B: permission-only (prose)</text>
+<line x1="680.56" y1="562" x2="950.00" y2="562" stroke="#263238"/>
+<circle cx="950.00" cy="562" r="5" fill="#66CCEE"/>
+<text x="958" y="567" font-family="sans-serif" font-size="11">4/4 = 1.000</text>
+<text x="8" y="591" font-family="sans-serif" font-size="11" fill="#263238">pooled | B_scaffolded: permission-only prose naming condition C's content slots (R45 sensitivity control)</text>
+<line x1="680.56" y1="586" x2="950.00" y2="586" stroke="#263238"/>
+<circle cx="950.00" cy="586" r="5" fill="#EE7733"/>
+<text x="958" y="591" font-family="sans-serif" font-size="11">4/4 = 1.000</text>
+<text x="8" y="615" font-family="sans-serif" font-size="11" fill="#263238">pooled | C: structured and honored</text>
+<line x1="680.56" y1="610" x2="950.00" y2="610" stroke="#263238"/>
+<circle cx="950.00" cy="610" r="5" fill="#228833"/>
+<text x="958" y="615" font-family="sans-serif" font-size="11">4/4 = 1.000</text>
+<text x="8" y="639" font-family="sans-serif" font-size="11" fill="#263238">pooled | D: structured, signal-only</text>
+<line x1="680.56" y1="634" x2="950.00" y2="634" stroke="#263238"/>
+<circle cx="950.00" cy="634" r="5" fill="#CCBB44"/>
+<text x="958" y="639" font-family="sans-serif" font-size="11">4/4 = 1.000</text>
+<text x="8" y="663" font-family="sans-serif" font-size="11" fill="#263238">claude-sonnet-5 | A: ordinary</text>
+<line x1="400.00" y1="658" x2="836.40" y2="658" stroke="#263238"/>
+<circle cx="400.00" cy="658" r="5" fill="#4477AA"/>
+<text x="958" y="663" font-family="sans-serif" font-size="11">0/1 = 0.000</text>
+<text x="8" y="687" font-family="sans-serif" font-size="11" fill="#263238">claude-sonnet-5 | B: permission-only (prose)</text>
+<line x1="400.00" y1="682" x2="836.40" y2="682" stroke="#263238"/>
+<circle cx="400.00" cy="682" r="5" fill="#66CCEE"/>
+<text x="958" y="687" font-family="sans-serif" font-size="11">0/1 = 0.000</text>
+<text x="8" y="711" font-family="sans-serif" font-size="11" fill="#263238">claude-sonnet-5 | B_scaffolded: permission-only prose naming condition C's content slots (R45 sensitivity control)</text>
+<line x1="400.00" y1="706" x2="836.40" y2="706" stroke="#263238"/>
+<circle cx="400.00" cy="706" r="5" fill="#EE7733"/>
+<text x="958" y="711" font-family="sans-serif" font-size="11">0/1 = 0.000</text>
+<text x="8" y="735" font-family="sans-serif" font-size="11" fill="#263238">claude-sonnet-5 | C: structured and honored</text>
+<line x1="400.00" y1="730" x2="836.40" y2="730" stroke="#263238"/>
+<circle cx="400.00" cy="730" r="5" fill="#228833"/>
+<text x="958" y="735" font-family="sans-serif" font-size="11">0/1 = 0.000</text>
+<text x="8" y="759" font-family="sans-serif" font-size="11" fill="#263238">claude-sonnet-5 | D: structured, signal-only</text>
+<line x1="400.00" y1="754" x2="836.40" y2="754" stroke="#263238"/>
+<circle cx="400.00" cy="754" r="5" fill="#CCBB44"/>
+<text x="958" y="759" font-family="sans-serif" font-size="11">0/1 = 0.000</text>
+<text x="8" y="783" font-family="sans-serif" font-size="11" fill="#263238">deepseek-v4-pro | A: ordinary</text>
+<line x1="400.00" y1="778" x2="836.40" y2="778" stroke="#263238"/>
+<circle cx="400.00" cy="778" r="5" fill="#4477AA"/>
+<text x="958" y="783" font-family="sans-serif" font-size="11">0/1 = 0.000</text>
+<text x="8" y="807" font-family="sans-serif" font-size="11" fill="#263238">deepseek-v4-pro | B: permission-only (prose)</text>
+<line x1="400.00" y1="802" x2="836.40" y2="802" stroke="#263238"/>
+<circle cx="400.00" cy="802" r="5" fill="#66CCEE"/>
+<text x="958" y="807" font-family="sans-serif" font-size="11">0/1 = 0.000</text>
+<text x="8" y="831" font-family="sans-serif" font-size="11" fill="#263238">deepseek-v4-pro | B_scaffolded: permission-only prose naming condition C's content slots (R45 sensitivity control)</text>
+<line x1="400.00" y1="826" x2="836.40" y2="826" stroke="#263238"/>
+<circle cx="400.00" cy="826" r="5" fill="#EE7733"/>
+<text x="958" y="831" font-family="sans-serif" font-size="11">0/1 = 0.000</text>
+<text x="8" y="855" font-family="sans-serif" font-size="11" fill="#263238">deepseek-v4-pro | C: structured and honored</text>
+<line x1="400.00" y1="850" x2="836.40" y2="850" stroke="#263238"/>
+<circle cx="400.00" cy="850" r="5" fill="#228833"/>
+<text x="958" y="855" font-family="sans-serif" font-size="11">0/1 = 0.000</text>
+<text x="8" y="879" font-family="sans-serif" font-size="11" fill="#263238">deepseek-v4-pro | D: structured, signal-only</text>
+<line x1="400.00" y1="874" x2="836.40" y2="874" stroke="#263238"/>
+<circle cx="400.00" cy="874" r="5" fill="#CCBB44"/>
+<text x="958" y="879" font-family="sans-serif" font-size="11">0/1 = 0.000</text>
+<text x="8" y="903" font-family="sans-serif" font-size="11" fill="#263238">gpt-5.6-terra | A: ordinary</text>
+<line x1="400.00" y1="898" x2="836.40" y2="898" stroke="#263238"/>
+<circle cx="400.00" cy="898" r="5" fill="#4477AA"/>
+<text x="958" y="903" font-family="sans-serif" font-size="11">0/1 = 0.000</text>
+<text x="8" y="927" font-family="sans-serif" font-size="11" fill="#263238">gpt-5.6-terra | B: permission-only (prose)</text>
+<line x1="400.00" y1="922" x2="836.40" y2="922" stroke="#263238"/>
+<circle cx="400.00" cy="922" r="5" fill="#66CCEE"/>
+<text x="958" y="927" font-family="sans-serif" font-size="11">0/1 = 0.000</text>
+<text x="8" y="951" font-family="sans-serif" font-size="11" fill="#263238">gpt-5.6-terra | B_scaffolded: permission-only prose naming condition C's content slots (R45 sensitivity control)</text>
+<line x1="400.00" y1="946" x2="836.40" y2="946" stroke="#263238"/>
+<circle cx="400.00" cy="946" r="5" fill="#EE7733"/>
+<text x="958" y="951" font-family="sans-serif" font-size="11">0/1 = 0.000</text>
+<text x="8" y="975" font-family="sans-serif" font-size="11" fill="#263238">gpt-5.6-terra | C: structured and honored</text>
+<line x1="400.00" y1="970" x2="836.40" y2="970" stroke="#263238"/>
+<circle cx="400.00" cy="970" r="5" fill="#228833"/>
+<text x="958" y="975" font-family="sans-serif" font-size="11">0/1 = 0.000</text>
+<text x="8" y="999" font-family="sans-serif" font-size="11" fill="#263238">gpt-5.6-terra | D: structured, signal-only</text>
+<line x1="400.00" y1="994" x2="836.40" y2="994" stroke="#263238"/>
+<circle cx="400.00" cy="994" r="5" fill="#CCBB44"/>
+<text x="958" y="999" font-family="sans-serif" font-size="11">0/1 = 0.000</text>
+<text x="8" y="1023" font-family="sans-serif" font-size="11" fill="#263238">qwen3.8-27b | A: ordinary</text>
+<line x1="400.00" y1="1018" x2="836.40" y2="1018" stroke="#263238"/>
+<circle cx="400.00" cy="1018" r="5" fill="#4477AA"/>
+<text x="958" y="1023" font-family="sans-serif" font-size="11">0/1 = 0.000</text>
+<text x="8" y="1047" font-family="sans-serif" font-size="11" fill="#263238">qwen3.8-27b | B: permission-only (prose)</text>
+<line x1="400.00" y1="1042" x2="836.40" y2="1042" stroke="#263238"/>
+<circle cx="400.00" cy="1042" r="5" fill="#66CCEE"/>
+<text x="958" y="1047" font-family="sans-serif" font-size="11">0/1 = 0.000</text>
+<text x="8" y="1071" font-family="sans-serif" font-size="11" fill="#263238">qwen3.8-27b | B_scaffolded: permission-only prose naming condition C's content slots (R45 sensitivity control)</text>
+<line x1="400.00" y1="1066" x2="836.40" y2="1066" stroke="#263238"/>
+<circle cx="400.00" cy="1066" r="5" fill="#EE7733"/>
+<text x="958" y="1071" font-family="sans-serif" font-size="11">0/1 = 0.000</text>
+<text x="8" y="1095" font-family="sans-serif" font-size="11" fill="#263238">qwen3.8-27b | C: structured and honored</text>
+<line x1="400.00" y1="1090" x2="836.40" y2="1090" stroke="#263238"/>
+<circle cx="400.00" cy="1090" r="5" fill="#228833"/>
+<text x="958" y="1095" font-family="sans-serif" font-size="11">0/1 = 0.000</text>
+<text x="8" y="1119" font-family="sans-serif" font-size="11" fill="#263238">qwen3.8-27b | D: structured, signal-only</text>
+<line x1="400.00" y1="1114" x2="836.40" y2="1114" stroke="#263238"/>
+<circle cx="400.00" cy="1114" r="5" fill="#CCBB44"/>
+<text x="958" y="1119" font-family="sans-serif" font-size="11">0/1 = 0.000</text>
+<text x="8" y="1143" font-family="sans-serif" font-size="11" fill="#263238">pooled | A: ordinary</text>
+<line x1="400.00" y1="1138" x2="669.44" y2="1138" stroke="#263238"/>
+<circle cx="400.00" cy="1138" r="5" fill="#4477AA"/>
+<text x="958" y="1143" font-family="sans-serif" font-size="11">0/4 = 0.000</text>
+<text x="8" y="1167" font-family="sans-serif" font-size="11" fill="#263238">pooled | B: permission-only (prose)</text>
+<line x1="400.00" y1="1162" x2="669.44" y2="1162" stroke="#263238"/>
+<circle cx="400.00" cy="1162" r="5" fill="#66CCEE"/>
+<text x="958" y="1167" font-family="sans-serif" font-size="11">0/4 = 0.000</text>
+<text x="8" y="1191" font-family="sans-serif" font-size="11" fill="#263238">pooled | B_scaffolded: permission-only prose naming condition C's content slots (R45 sensitivity control)</text>
+<line x1="400.00" y1="1186" x2="669.44" y2="1186" stroke="#263238"/>
+<circle cx="400.00" cy="1186" r="5" fill="#EE7733"/>
+<text x="958" y="1191" font-family="sans-serif" font-size="11">0/4 = 0.000</text>
+<text x="8" y="1215" font-family="sans-serif" font-size="11" fill="#263238">pooled | C: structured and honored</text>
+<line x1="400.00" y1="1210" x2="669.44" y2="1210" stroke="#263238"/>
+<circle cx="400.00" cy="1210" r="5" fill="#228833"/>
+<text x="958" y="1215" font-family="sans-serif" font-size="11">0/4 = 0.000</text>
+<text x="8" y="1239" font-family="sans-serif" font-size="11" fill="#263238">pooled | D: structured, signal-only</text>
+<line x1="400.00" y1="1234" x2="669.44" y2="1234" stroke="#263238"/>
+<circle cx="400.00" cy="1234" r="5" fill="#CCBB44"/>
+<text x="958" y="1239" font-family="sans-serif" font-size="11">0/4 = 0.000</text>
+<text x="8" y="1288" font-family="monospace" font-size="4" fill="#263238">repo 7b7b11a51e4765bf60794181645509bebb79dc9f | analysis.json 094c80591a8ef146121976d0cd5955faf821b0b824a261fc0869f813f8cb0c11 | analysis.py a3a6e5be7f4bfdda86d2887a0a9b56b7fedb3420312390211fa28599c02913c2 | blind.py aaa516ec8d57b8bf6f20c2258f080f6191424623fbf754204969607e7face2ba | grade.py a2eb5e4b66ed3f05016c23e8922b8179d213cb9610a3ee4dc6f39f7d23161432 | grade.schema.json 2a065ac7f9a53efe56d38d2b0ba6d3b5eae64901ddfe5621275cc012acbae8ed | judge.py 052b2ff95b6ecc66529b201b416575ab7202190690ac9ccd26fdb43281bc7b10 | make_fake_runs.py b84a1b640fcbb5658ca5babdfc50ee183450f87bc257dbc185af8fcb759204bc</text>
+<metadata>repo 7b7b11a51e4765bf60794181645509bebb79dc9f | analysis.json 094c80591a8ef146121976d0cd5955faf821b0b824a261fc0869f813f8cb0c11 | analysis.py a3a6e5be7f4bfdda86d2887a0a9b56b7fedb3420312390211fa28599c02913c2 | blind.py aaa516ec8d57b8bf6f20c2258f080f6191424623fbf754204969607e7face2ba | grade.py a2eb5e4b66ed3f05016c23e8922b8179d213cb9610a3ee4dc6f39f7d23161432 | grade.schema.json 2a065ac7f9a53efe56d38d2b0ba6d3b5eae64901ddfe5621275cc012acbae8ed | judge.py 052b2ff95b6ecc66529b201b416575ab7202190690ac9ccd26fdb43281bc7b10 | make_fake_runs.py b84a1b640fcbb5658ca5babdfc50ee183450f87bc257dbc185af8fcb759204bc</metadata>
+<!-- repo 7b7b11a51e4765bf60794181645509bebb79dc9f | analysis.json 094c80591a8ef146121976d0cd5955faf821b0b824a261fc0869f813f8cb0c11 | analysis.py a3a6e5be7f4bfdda86d2887a0a9b56b7fedb3420312390211fa28599c02913c2 | blind.py aaa516ec8d57b8bf6f20c2258f080f6191424623fbf754204969607e7face2ba | grade.py a2eb5e4b66ed3f05016c23e8922b8179d213cb9610a3ee4dc6f39f7d23161432 | grade.schema.json 2a065ac7f9a53efe56d38d2b0ba6d3b5eae64901ddfe5621275cc012acbae8ed | judge.py 052b2ff95b6ecc66529b201b416575ab7202190690ac9ccd26fdb43281bc7b10 | make_fake_runs.py b84a1b640fcbb5658ca5babdfc50ee183450f87bc257dbc185af8fcb759204bc -->
+</svg>

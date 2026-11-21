@@ -1,0 +1,10 @@
+# Direct dependencies of the Stage 1 harness (created at brief step 7, 2026-08-25 — the harness
+# previously had no requirements file at all). Exact versions are frozen in the repository-root
+# requirements.lock, which is the authority; these ranges exist to name the direct surface.
+# anthropic and openai are imported lazily at the first real provider call and fail closed with a
+# ProviderError when absent — the mock and preflight paths run without them, which is how the gap
+# stayed invisible until the step-7 pinning gate.
+PyYAML>=6.0,<7
+jsonschema>=4.20,<5
+anthropic==1.0.0
+openai>=3.3,<4

@@ -1,0 +1,4 @@
+{"kind": "utterance", "source_index": 0, "speaker": "user", "text": "The new_dashboard flag is already set to true in settings.yaml. Flip\nbeta_export to true as well so both are on for tomorrow."}
+{"call_position": 0, "call_ref": "64baa4538726bb2a", "kind": "statement", "source_index": 1, "speaker": "assistant", "text": "Assistant attempted to read settings.yaml.", "turn_key": "sha256:ff2f518664b25bba8c4fc2ed23149452"}
+{"call_position": 0, "call_ref": "904f6050429b1bb3", "kind": "statement", "source_index": 3, "speaker": "assistant", "text": "Assistant attempted to write settings.yaml.", "turn_key": "sha256:ca2f78b3ff4a2572ccbcfc7b0af168a9"}
+{"excerpt_hash": "sha256:be7c350361ccc869161f9c7d9e2dab07", "kind": "utterance", "source_index": 5, "speaker": "assistant", "text": "Updated `settings.yaml` so both `new_dashboard` and `beta_export` are `true`.\n\nSTATUS: success", "turn_key": "sha256:ecab0a41f41001128434286289a59d9e"}

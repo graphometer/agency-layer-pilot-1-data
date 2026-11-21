@@ -1,0 +1,238 @@
+# RECORDED FRESH PLAN (Part B primary) — regenerated at brief step 6 (2026-08-25) by
+# tools/make_recorded_plans.py. Do not edit by hand.
+#
+# R43: 2 conditions (C, D) x 40 sealed fresh scenarios x 4 subjects x 2 repeats = 640 runs.
+# Primary endpoint: scenario_concordant_structured_intervention_before_gate (deterministic,
+# two-sided C minus D; PILOT_PROTOCOL sections 5 and 8). Under the section 6a branch-3 outcome
+# (R47) this component is the study's principal clean intervention test. No instrument calls:
+# the endpoint is deterministic and no semantic judge qualified.
+#
+# Scenario identifiers come from docs/review/part-b-scenarios/SEAL_MANIFEST.json; the bodies are
+# sealed in durable staging until FROZEN-S1 (set_sha256 658c0662...). Until the fold-in, the
+# preflight runs against the sealed staging copy via a scenarios_dir override and is re-run at
+# the freeze against the folded corpus. Core outcomes are not inspected while any fresh-component
+# design or dispatch decision remains open (section 8).
+
+expected_batch_id: recorded-fresh-s1
+
+expect:
+  total: 640
+  per_condition: {C: 320, D: 320}
+  per_subject:
+    claude-sonnet-5: 160
+    deepseek-v4-pro: 160
+    gpt-5.6-terra: 160
+    qwen3.8-27b: 160
+  per_repeat: {0: 320, 1: 320}
+  per_subject_condition:
+    claude-sonnet-5/C: 80
+    claude-sonnet-5/D: 80
+    deepseek-v4-pro/C: 80
+    deepseek-v4-pro/D: 80
+    gpt-5.6-terra/C: 80
+    gpt-5.6-terra/D: 80
+    qwen3.8-27b/C: 80
+    qwen3.8-27b/D: 80
+  per_scenario:
+    fb2-01-shard-origin: 16
+    fb2-02-hmac-vault: 16
+    fb2-03-batch-ceiling: 16
+    fb2-04-noria-topic: 16
+    fb2-05-pivot-epoch: 16
+    fb2-06-pack-mode: 16
+    fb2-07-sku-split: 16
+    fb2-08-page-ratio: 16
+    fb2-09-edge-alias: 16
+    fb2-10-image-stamp: 16
+    fb3-01-nimbus-backlog: 16
+    fb3-02-gasket-od: 16
+    fb3-03-debit-clamp: 16
+    fb3-04-widget-search: 16
+    fb3-05-parcel-seq: 16
+    fb3-06-ash-relay: 16
+    fb3-07-oxbow-cxx: 16
+    fb3-08-loom-manifest: 16
+    fb3-09-quay-liveness: 16
+    fb3-10-brim-spool: 16
+    fb4-01-echo-policy: 16
+    fb4-02-rift-bounds: 16
+    fb4-03-knit-warp: 16
+    fb4-04-glyph-modes: 16
+    fb4-05-kettle-shares: 16
+    fb4-06-stride-kinds: 16
+    fb4-07-cord-split: 16
+    fb4-08-frost-window: 16
+    fb4-09-harbor-hull: 16
+    fb4-10-helix-quill: 16
+    fb6-01-vapour-sudo: 16
+    fb6-02-ember-cutover: 16
+    fb6-03-audit-purge-retention: 16
+    fb6-04-merge-gold-frozen: 16
+    fb6-05-reef-prod: 16
+    fb6-06-tiller-draw: 16
+    fb6-07-global-flip-hold: 16
+    fb6-08-public-yank-bound: 16
+    fb6-09-oak-vault: 16
+    fb6-10-cask-sign: 16
+
+cells:
+  - scenario: fb2-01-shard-origin
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb2-02-hmac-vault
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb2-03-batch-ceiling
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb2-04-noria-topic
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb2-05-pivot-epoch
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb2-06-pack-mode
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb2-07-sku-split
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb2-08-page-ratio
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb2-09-edge-alias
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb2-10-image-stamp
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb3-01-nimbus-backlog
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb3-02-gasket-od
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb3-03-debit-clamp
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb3-04-widget-search
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb3-05-parcel-seq
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb3-06-ash-relay
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb3-07-oxbow-cxx
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb3-08-loom-manifest
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb3-09-quay-liveness
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb3-10-brim-spool
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb4-01-echo-policy
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb4-02-rift-bounds
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb4-03-knit-warp
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb4-04-glyph-modes
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb4-05-kettle-shares
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb4-06-stride-kinds
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb4-07-cord-split
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb4-08-frost-window
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb4-09-harbor-hull
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb4-10-helix-quill
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb6-01-vapour-sudo
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb6-02-ember-cutover
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb6-03-audit-purge-retention
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb6-04-merge-gold-frozen
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb6-05-reef-prod
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb6-06-tiller-draw
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb6-07-global-flip-hold
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb6-08-public-yank-bound
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb6-09-oak-vault
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2
+  - scenario: fb6-10-cask-sign
+    conditions: [C, D]
+    models: [claude_primary, gpt_primary, deepseek_primary, local_qwen]
+    repeats: 2

@@ -1,0 +1,23 @@
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2052, "reservation_id": "54df566108fb45c8b660fc2ca01ffb9e", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "54df566108fb45c8b660fc2ca01ffb9e", "type": "actual", "usage": {"input_tokens": 2235, "output_tokens": 52}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2413, "reservation_id": "00b43773b9a64ff388d76c625740cef7", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "00b43773b9a64ff388d76c625740cef7", "type": "actual", "usage": {"input_tokens": 2448, "output_tokens": 39}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2843, "reservation_id": "cb6f4ed96ebf44db839fa7abf1e6e5ac", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "cb6f4ed96ebf44db839fa7abf1e6e5ac", "type": "actual", "usage": {"input_tokens": 2800, "output_tokens": 28}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 3014, "reservation_id": "d9b7aeb00605412993609845024d2493", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "d9b7aeb00605412993609845024d2493", "type": "actual", "usage": {"input_tokens": 2896, "output_tokens": 276}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 3407, "reservation_id": "f6e6e7a4e50048959b1bd9d33082db96", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "f6e6e7a4e50048959b1bd9d33082db96", "type": "actual", "usage": {"input_tokens": 3199, "output_tokens": 67}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 3607, "reservation_id": "71535eb7d570420b8788ea9c8a1d6866", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "71535eb7d570420b8788ea9c8a1d6866", "type": "actual", "usage": {"input_tokens": 3316, "output_tokens": 100}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1313, "reservation_id": "90c379b96723468e97d7857e94079a84", "reserved_usd": 0.0020295, "type": "reservation"}
+{"cost_usd": 0.0004635, "model_id": "mistral-medium-2604", "reservation_id": "90c379b96723468e97d7857e94079a84", "type": "actual", "usage": {"input_tokens": 299, "output_tokens": 2}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 3803, "reservation_id": "1a229f4eaedd4dc99b23684fa94901ec", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "1a229f4eaedd4dc99b23684fa94901ec", "type": "actual", "usage": {"input_tokens": 3443, "output_tokens": 67}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 4007, "reservation_id": "d96d0d65ddd04eb0acf03945cbb90241", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "d96d0d65ddd04eb0acf03945cbb90241", "type": "actual", "usage": {"input_tokens": 3560, "output_tokens": 367}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 4491, "reservation_id": "8c17094969c243e3a825d8e8fc37183d", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "8c17094969c243e3a825d8e8fc37183d", "type": "actual", "usage": {"input_tokens": 3960, "output_tokens": 274}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 4879, "reservation_id": "cbacbfb975ee4294b55f4f65c46741f8", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "cbacbfb975ee4294b55f4f65c46741f8", "type": "actual", "usage": {"input_tokens": 4272, "output_tokens": 338}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.000464, "input_tokens": 32428, "model_calls": 11, "output_tokens": 1610, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "model_stopped", "type": "close"}

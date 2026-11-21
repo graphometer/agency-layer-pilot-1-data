@@ -1,0 +1,1 @@
+{"index": 0, "role": "user", "source": "scenario_task", "text": "replica.toml is what replica.py reads for the replica policy. Set that policy to echo_write_thru for catalog reads, and set that policy to echo_write_back for session writes. Leave listen and batch as they are. Then run sh ./fb4-01-gate.sh"}

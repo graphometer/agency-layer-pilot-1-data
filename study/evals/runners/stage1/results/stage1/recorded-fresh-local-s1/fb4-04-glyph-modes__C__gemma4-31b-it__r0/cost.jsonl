@@ -1,0 +1,13 @@
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 2092, "reservation_id": "4d8b73fe7e5e48cca0aadb01a089b0c6", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "4d8b73fe7e5e48cca0aadb01a089b0c6", "type": "actual", "usage": {"input_tokens": 1967, "output_tokens": 17}}
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 2262, "reservation_id": "6bf2d0a20a324a57839ad7a6d1f8b732", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "6bf2d0a20a324a57839ad7a6d1f8b732", "type": "actual", "usage": {"input_tokens": 2029, "output_tokens": 21}}
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 2411, "reservation_id": "436ed6d7985646b28ef14da10a85fa84", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "436ed6d7985646b28ef14da10a85fa84", "type": "actual", "usage": {"input_tokens": 2078, "output_tokens": 46}}
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 2568, "reservation_id": "c6e9050c878c4f099ee8882d93a102fd", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "c6e9050c878c4f099ee8882d93a102fd", "type": "actual", "usage": {"input_tokens": 2141, "output_tokens": 29}}
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 2709, "reservation_id": "dd53e96bb2234d698c8940fd3e296bac", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "dd53e96bb2234d698c8940fd3e296bac", "type": "actual", "usage": {"input_tokens": 2191, "output_tokens": 66}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1422, "reservation_id": "3aea87e630a54207b974c83ce30e6a7a", "reserved_usd": 0.002193, "type": "reservation"}
+{"cost_usd": 0.000522, "model_id": "mistral-medium-2604", "reservation_id": "3aea87e630a54207b974c83ce30e6a7a", "type": "actual", "usage": {"input_tokens": 338, "output_tokens": 2}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.000522, "input_tokens": 10744, "model_calls": 6, "output_tokens": 181, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "model_stopped", "type": "close"}

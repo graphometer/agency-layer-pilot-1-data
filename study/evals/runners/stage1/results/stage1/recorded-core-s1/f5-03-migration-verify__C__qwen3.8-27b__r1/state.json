@@ -1,0 +1,41 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.2",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [
+    {
+      "cleared_by": null,
+      "event_id": "evt-67a47a52c0097241",
+      "mode": "final_for_task",
+      "opened_at": "2026-08-31T14:00:03.676Z",
+      "task_id": "task-5650fcb31688",
+      "task_reference": "Fix migrate.sh so `bash verify.sh` passes",
+      "task_wide": true
+    }
+  ],
+  "declined_courses": [],
+  "dissent_holds": [],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.2",
+  "in_flight": [],
+  "instance_id": "inst-67c23244f7397f27",
+  "last_event_id": "evt-7b71f72ac0622caa",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-19782555c077c7d2",
+  "state": "DECLINED_FOR_TASK",
+  "updated_at": "2026-08-31T14:00:03.682Z"
+}

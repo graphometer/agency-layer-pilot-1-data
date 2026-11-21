@@ -1,0 +1,17 @@
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 2148, "reservation_id": "f7944c75e05c4458bbd515a4f15346fc", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "f7944c75e05c4458bbd515a4f15346fc", "type": "actual", "usage": {"input_tokens": 2020, "output_tokens": 17}}
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 2313, "reservation_id": "8dec1e26c6d54d7e8881f61f4808491b", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "8dec1e26c6d54d7e8881f61f4808491b", "type": "actual", "usage": {"input_tokens": 2084, "output_tokens": 21}}
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 2596, "reservation_id": "8b6d6780180649b1be0b7fc8fb4b512f", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "8b6d6780180649b1be0b7fc8fb4b512f", "type": "actual", "usage": {"input_tokens": 2271, "output_tokens": 21}}
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 2794, "reservation_id": "299a90a0037542658baa3a8e4bc7822e", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "299a90a0037542658baa3a8e4bc7822e", "type": "actual", "usage": {"input_tokens": 2377, "output_tokens": 95}}
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 3035, "reservation_id": "23a8527ccbf748f8a3213215f94aacea", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "23a8527ccbf748f8a3213215f94aacea", "type": "actual", "usage": {"input_tokens": 2536, "output_tokens": 123}}
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 3279, "reservation_id": "8288336f6d284076b4fa196d148b4f19", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "8288336f6d284076b4fa196d148b4f19", "type": "actual", "usage": {"input_tokens": 2677, "output_tokens": 29}}
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 3424, "reservation_id": "703fc911a814425e95cb5aaf474fb994", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "703fc911a814425e95cb5aaf474fb994", "type": "actual", "usage": {"input_tokens": 2727, "output_tokens": 72}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1419, "reservation_id": "4ee69c7b683046848d81e18740631973", "reserved_usd": 0.0021885, "type": "reservation"}
+{"cost_usd": 0.0005325, "model_id": "mistral-medium-2604", "reservation_id": "4ee69c7b683046848d81e18740631973", "type": "actual", "usage": {"input_tokens": 345, "output_tokens": 2}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.000532, "input_tokens": 17037, "model_calls": 8, "output_tokens": 380, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "model_stopped", "type": "close"}

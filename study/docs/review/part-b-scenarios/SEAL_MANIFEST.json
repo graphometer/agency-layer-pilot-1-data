@@ -1,0 +1,1262 @@
+{
+ "note": "Sealed 2026-08-25 pending FROZEN-S1. Scenario bodies live in staging and are never committed before the freeze (no subject model may see them). This manifest is the tamper-evident fingerprint; at FROZEN-S1 the set is re-hashed and set_sha256 must match.",
+ "per_family": {
+  "fb2": 10,
+  "fb3": 10,
+  "fb4": 10,
+  "fb6": 10
+ },
+ "scenario_count": 40,
+ "scenarios": [
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "842efaeca3a7b2fda6ec69b6b6a22ba3983166868b022670a2ba088cff7d3444"
+    },
+    {
+     "path": "check.py",
+     "sha256": "5ba6d3576c929839f22156fcfab3a9f8f8b52c4de655d1066a07506345fcd801"
+    },
+    {
+     "path": "fixture/cache.toml",
+     "sha256": "db775a0df026b73cc1b26c925283ec59dfcac0102a03ead496c3e37e62da446a"
+    },
+    {
+     "path": "fixture/fb2-01-gate.sh",
+     "sha256": "b94df3343f583418564a0ab0b4d70d1965bfad6873dabc8ab9d0cdf27b6ef387"
+    },
+    {
+     "path": "fixture/loader.py",
+     "sha256": "cfec54f8b0149334e0404724c442ef222fef838ff8d6065745728377c38e9ce0"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "e6c1206ddb503dbe911746adaffa5fec1ccf874cf0f8b568a113166176aeeaf4"
+    }
+   ],
+   "folder_sha256": "72c4133ed94b78c7462e0551bcdec135136886cbf7c3f1fbfc0420842e6c857d",
+   "id": "fb2-01-shard-origin"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "81f108775fc6ab69ba29701b8a00b9aa6e82b975f572201f23185cb6c798f440"
+    },
+    {
+     "path": "check.py",
+     "sha256": "2fa50d64f26769d3b2246dddb5351a1677cf274fd9b5032cf7e912bfdbfe3452"
+    },
+    {
+     "path": "fixture/bind.py",
+     "sha256": "201458f9da0fc1417c1457d3b40b8d6eb367de8fe120b8e2642bea617419c2ee"
+    },
+    {
+     "path": "fixture/fb2-02-gate.sh",
+     "sha256": "3c659cc5db854fe2d8b4b71bbc88e7ac1363210f1013396f61aa4662a54fdd12"
+    },
+    {
+     "path": "fixture/signer.ini",
+     "sha256": "365af46679c7e5ba30056f2e436274cfe632a54d15bb2c258da323b49f62aeb3"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "e5fe03a36ffb8e9757fe89228c929c4442644fba7d7db7646ef1c265e83538fd"
+    }
+   ],
+   "folder_sha256": "50f9727805ff667dd0bc03de5144078f01b7804a334f0772e87bd4501f28c5e0",
+   "id": "fb2-02-hmac-vault"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "14f86572edcf657e13e02636d26a36b7da76f406eb7c66668bacb2ca4a4030a5"
+    },
+    {
+     "path": "check.py",
+     "sha256": "f8177f705e5d013c49a007e3e86c3e3083984c53d51eba17fd13d7187d05a6a3"
+    },
+    {
+     "path": "fixture/fb2-03-gate.sh",
+     "sha256": "2d12d783608e15f8f7955db6e865e7e2e2bbd8822843e5c64e42ce701427f72b"
+    },
+    {
+     "path": "fixture/ingest.py",
+     "sha256": "5c76de70438347de7ff80ce537423383ef91fc7457ac3227d26cfa963b9f2a8f"
+    },
+    {
+     "path": "fixture/limiter.yaml",
+     "sha256": "0d2d0594e09d844884b7fe7fe69dc9590811b8423348508f0f69da24f8fd23cd"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "58bc8fb932ad68496e4518786916bde5e57743568a812378a76c8445aa701533"
+    }
+   ],
+   "folder_sha256": "171a05d605b95d0130757d1c31daa28337cb3d88dda099858d3a67b61b4042f0",
+   "id": "fb2-03-batch-ceiling"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "2be4933a627d2b7087efe98d32efff5497d30fd2001bd51617ae72a770d7dbd8"
+    },
+    {
+     "path": "check.py",
+     "sha256": "718ac88ed3b69f6bcc22d433a5002a2d9acc39cfbcd8498eb0b6c5e5335544cf"
+    },
+    {
+     "path": "fixture/fb2-04-gate.sh",
+     "sha256": "d5dc1a51f2de6f1396e55d379a07e961212615e08c9e8b8a4d8271521fb5b36e"
+    },
+    {
+     "path": "fixture/publish.py",
+     "sha256": "c20020ee6d848011aac7d6f7513fc4972754e05f53196e49d810d8881edb32e9"
+    },
+    {
+     "path": "fixture/publisher.toml",
+     "sha256": "2b2148fed2b1acfae6b960e015faf9ce3b9689ed477dfd6b50342d46de3951a4"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "b606668aa30ce4644d8b6814a5b7e56d7e78590279dfbe62c0000994d4752ab8"
+    }
+   ],
+   "folder_sha256": "0b78f513dbabe319b04ac3614de79d45b10ebdb8d0b8935876b5ec05d5dcd1e0",
+   "id": "fb2-04-noria-topic"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "01044f038086ae7bbd465faf3c635a536b6917a7924ea160c3e8a00016b2f1ab"
+    },
+    {
+     "path": "check.py",
+     "sha256": "364cb4dabb8a9d5e4816063bfed6727c5bb3fdb5deaa2a9e4f0fe6c5ce00d4d5"
+    },
+    {
+     "path": "fixture/fb2-05-gate.sh",
+     "sha256": "b15c10cec2a8a34e1675f27c02acaa35fcb24d3edc3670c2adcb958159760ad9"
+    },
+    {
+     "path": "fixture/maps/columns.map",
+     "sha256": "3a78e87d463028cdf3f8e39864223e55758940b1226c4e876d529b52d3d3fe82"
+    },
+    {
+     "path": "fixture/migrate.sql",
+     "sha256": "1b8bcbce7c27432d4a7de79a0adf394397830af0c301b4063142019a02f1beee"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "4ee28708b5e457bcd01570606c3120ca9989c244825600eaf89e3a96c87712b7"
+    }
+   ],
+   "folder_sha256": "13ed2c979d5c2cefc2f08ac0826a44ea6fbafa1bb628c9347c11f53fd8fc04a8",
+   "id": "fb2-05-pivot-epoch"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "26c5dbe428d310f2e5a4b5ce983aab92193ac5d1c3787d62bfd462afe1bfeb19"
+    },
+    {
+     "path": "check.py",
+     "sha256": "595dac26fc51bbb245537bdf04347d5f428e317ffc1cd88b5538f915658c0a9f"
+    },
+    {
+     "path": "fixture/fb2-06-gate.sh",
+     "sha256": "19a23d816d2d172da1db299601a3b3b620458c5a3e91929fcc477e6a6d09b3bf"
+    },
+    {
+     "path": "fixture/modes.txt",
+     "sha256": "fd4c74abb70d465417fc2932add630d7907001d4f9cc126b6f538d40342502be"
+    },
+    {
+     "path": "fixture/packer.py",
+     "sha256": "81bf608a248545b60c51a306884be722f1b022cceea9254d1a4cef6682541cbc"
+    },
+    {
+     "path": "fixture/packer.toml",
+     "sha256": "4cd21d7d8f07b89fcd70297b3d2397f90e103329210c1de60ae7d4ef7879f816"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "ff612c2ea0a8336f2692d0d4c103e4cdf141f4edaddfea570dd6d58eb6b62854"
+    }
+   ],
+   "folder_sha256": "ecc7a615f6ab118fd74cec293cc42c7b9d48753963900ccd54be9ac0df7ed6cf",
+   "id": "fb2-06-pack-mode"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "a7a51e09bfd7f634c43c0f7784a96013c941d33c5749d5a77bf9cf5a8cac96b0"
+    },
+    {
+     "path": "check.py",
+     "sha256": "9fbbadcee437dc04af4b7b12732e01e710fc8ee0acec3cf027f0f1a4c82b5f29"
+    },
+    {
+     "path": "fixture/columns.list",
+     "sha256": "a1760b27c8aacb979c6154528262d8585b3a0e4321b6fe28b1ad64a4657d2cfa"
+    },
+    {
+     "path": "fixture/export.sql",
+     "sha256": "9e0e9b3b3f56400fb833c58077e7515a7cd61f3a6a207ce30a295a267009905c"
+    },
+    {
+     "path": "fixture/fb2-07-gate.sh",
+     "sha256": "e396bd70b66fe6c92be13f253aea436432e699edae8ecafa771b11a3be471d98"
+    },
+    {
+     "path": "fixture/job.toml",
+     "sha256": "0810104942779d8a3e6849b68108c5678a3e95cf70fe53f1240d4145edb07240"
+    },
+    {
+     "path": "fixture/render.py",
+     "sha256": "8ae70594dd2711d81ad1604448e3313100dc850b42e605955acc12eeb321b351"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "507b44026ed666623eabae536c6ada083afd5221a6ebdaf2fa6e061a216dc838"
+    }
+   ],
+   "folder_sha256": "cef5b76c378e11c5a0c0ad0edf9099b9669d72b3202c7fa109e89fb78d7bbcdd",
+   "id": "fb2-07-sku-split"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "c6c0f3726c98ca4776cc88aec48208e8d2380100a853cc684d38f13e29c6f15d"
+    },
+    {
+     "path": "check.py",
+     "sha256": "d30bc909ed1f277f860f1519f5287e3f13587cc8de86c453c4528ea38ad39051"
+    },
+    {
+     "path": "fixture/alerts.yml",
+     "sha256": "3a84c76bd8bc6159a4b3a79443ce7def73cd1998d77d6f95875dcba806eec478"
+    },
+    {
+     "path": "fixture/fb2-08-gate.sh",
+     "sha256": "701e09f44f61e9ab0c349869cd4ed5d96fdb55cf17a5fce3c665612cff7d32e5"
+    },
+    {
+     "path": "fixture/pager.py",
+     "sha256": "c82e3a5b36971ee0b8a675cb957a077f90bd301beb5c9793fa159e8e821d51b7"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "53052fcaf7c88395cc22382c021951da64ee8de20a55908519c64f9bb408654c"
+    }
+   ],
+   "folder_sha256": "b0e2039576a72683f5483aa257fba3a19ac92c11ad74e5cd0e9a2946422c748c",
+   "id": "fb2-08-page-ratio"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "b920672d686d568d808d18e7d0cc8cc8846ef323ae63841cd24bb806703f4d56"
+    },
+    {
+     "path": "check.py",
+     "sha256": "c75f827042872b5af4bc8845bcb6730eab6df3b594d3c42cc375a1ffc09c1f33"
+    },
+    {
+     "path": "fixture/fb2-09-gate.sh",
+     "sha256": "1d49b94ee37662baae39e7c7421df53ad549c1bca7f542f01c430327dce44b8a"
+    },
+    {
+     "path": "fixture/request.conf",
+     "sha256": "55300ba2924234fd9bf666a06d4f8d5587ba9b0cb1613489f34d63cda7352ffa"
+    },
+    {
+     "path": "fixture/zone.fragment",
+     "sha256": "c745a9bd286adc16d5ac0a6a1becf87d8947de274718bd18d88ef7bb247e5bc5"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "f249203faa33a8b287c1343bc9d52e3fb82803c0a803833fc6fdeca5409cd2b4"
+    }
+   ],
+   "folder_sha256": "1a904bad26922d8eddbb88d9c1e66d6b30faebaaaf88f04d4389e61fdcf96a4b",
+   "id": "fb2-09-edge-alias"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "f0b9ad768e3de607d88406b512bccfbf4132068138f3dd5050a4df2a69766700"
+    },
+    {
+     "path": "check.py",
+     "sha256": "cbfb366e0c0b60533d8a84d496666c580d8f05fb4cd29a14936060b8fcbf7db5"
+    },
+    {
+     "path": "fixture/fb2-10-gate.sh",
+     "sha256": "41c1e13614c2fbc13722f04e09fd9d853a3ee02b6a2b734945ca3b3f906434d0"
+    },
+    {
+     "path": "fixture/layers.txt",
+     "sha256": "02663b0dfa573921b7640348afe3c43b282fdd7da755e884f76661b5ebda9e57"
+    },
+    {
+     "path": "fixture/recipe.mk",
+     "sha256": "a649cc43a080188c177c92b88e368b38f93ef53c46ec821b6591e5da06a9dd0b"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "ba40ec5939d493e88dbef8132fbb495de71a279ef95071b79a813908a43b50fc"
+    }
+   ],
+   "folder_sha256": "07d7699d21a97fede77e955e25b7ce0694e60f73e6486d71491ad96e49d73748",
+   "id": "fb2-10-image-stamp"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "c36817eaabd4462cfac96c7fec88b545dabf7e3549898a977ec207d6f0e95bbf"
+    },
+    {
+     "path": "check.py",
+     "sha256": "e2ec3085ae689bf83a0406f82673a225fff52c6b8c881a1e6bd06041c6c81910"
+    },
+    {
+     "path": "fixture/fb3-01-gate.sh",
+     "sha256": "27dd8ae83524d0e8933f610a10fbbb116bce7f3d8db79d6910a26fc18193dace"
+    },
+    {
+     "path": "fixture/listen.toml",
+     "sha256": "bdd735238f6a7fb7aad3e82310c7ef3110ad8f2d0dc4118b879f9e2c330ea20f"
+    },
+    {
+     "path": "fixture/server.py",
+     "sha256": "661c04eeada66ce768bb3331e0499f7197268a82f76e0e6776bb34eef2e7d4c0"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "07393e0efc2086838398d90c6174a7de6da8cfd214ee50e461fdd53e414e4c51"
+    }
+   ],
+   "folder_sha256": "ea85203b94e7aa750c30cb87a4a83a3ea835c5642c9a8e364b047671ab12e732",
+   "id": "fb3-01-nimbus-backlog"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "2fb46d71afeb62140213360d9afd4491fb6ee4da1be8e9aa12d027341aad43ee"
+    },
+    {
+     "path": "check.py",
+     "sha256": "0703024b1a7cbcf4f4f3f49940fbf4a1511166ccd2945e8142b5e1acf701b458"
+    },
+    {
+     "path": "fixture/card.html",
+     "sha256": "1d51b05bcc6852dea324c21954ba9e1b5fb383064d907ad9b604015a48a61ec4"
+    },
+    {
+     "path": "fixture/fb3-02-gate.sh",
+     "sha256": "f211004a35bfb352a39a30fbbc94c88f9c4d7d2bb5e69065dab2f9b703dfd1b7"
+    },
+    {
+     "path": "fixture/filters.py",
+     "sha256": "27e56d83549813374c64891c285ae154b96e7f74ab56ff61e5c991d59fd830b0"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "71f5261cf901c66d6cca05e1b67539f7ffc892151b6cc8c3083c0c7948104b9a"
+    }
+   ],
+   "folder_sha256": "a7bc58936224361602e975cae865dbc359329fc8c1d4bf1c9ab9655b02b1507a",
+   "id": "fb3-02-gasket-od"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "8328529bfa8357bfd274ae20d107bd41ebd0f17a1b0c95bef1116882929fd280"
+    },
+    {
+     "path": "check.py",
+     "sha256": "3c9c7dd3b227b5bee7e92d7e22287f1bd94a7f38b477b874eeafe8f3dc182216"
+    },
+    {
+     "path": "fixture/clamp.py",
+     "sha256": "1fe27cd1ea9a328e30a3b16d50c139217525f63b2d7be4d0425f8ebb0c183f03"
+    },
+    {
+     "path": "fixture/fb3-03-gate.sh",
+     "sha256": "4bcac597a13c4c1ff8f29b03958d0db1c64ddcb198032934348dd79916ba90a2"
+    },
+    {
+     "path": "fixture/test_clamp.py",
+     "sha256": "493af7e62184e78bd7b9018405aaacb61ebf90b548e249eacf55cb947d7d2b9d"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "f1fac72b5070925c3eea509d114ef2ddedeb8e7d3ce3ed402890ab58ed67ee7d"
+    }
+   ],
+   "folder_sha256": "fe18d4085c3a3c65ebe0b3d1ac3bc28cdc3f9d062c31ec0fe6697ce6b9a4d46b",
+   "id": "fb3-03-debit-clamp"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "25a418b040643ad0cb42d1abc5d04f2495385c58f93246473b459a34fb17f3c0"
+    },
+    {
+     "path": "check.py",
+     "sha256": "42048ec230d9c04f212aad468b2409d2bbff5b36168cbcdcd68120deace22881"
+    },
+    {
+     "path": "fixture/client.py",
+     "sha256": "e7392d300a8d1bc4d0ce08885bd184ccf1d1b3fdae3c5f72cb6913bdf218f79e"
+    },
+    {
+     "path": "fixture/fb3-04-gate.sh",
+     "sha256": "edb0af3a15e4d6daa40e8817fa2cb06abd38452a9dce9c6c5eb8abe3af44142d"
+    },
+    {
+     "path": "fixture/openapi.yaml",
+     "sha256": "a85770233eec0ee54f006ff8801f08ae0b35f44c32edf8dcf1fb896fea9bb998"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "3b1247a06b1ef8c9ab2818d8bc197182cb9ad45072f0f4f4a98e6497cffe6c9d"
+    }
+   ],
+   "folder_sha256": "c21a1de95790ce94b382a6e08818512c265f20d56d645893416bb02bdfd3012b",
+   "id": "fb3-04-widget-search"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "d01bfb7128bfd4cc734ae689db860c5108bdc1e4f27aaae930c2d24582881ea7"
+    },
+    {
+     "path": "check.py",
+     "sha256": "b7a4bacbeffc6e2290f436c5333ca84ff4ad6346f4f2d11148828cfd231790d9"
+    },
+    {
+     "path": "fixture/events.proto",
+     "sha256": "f98b890372ab3209463cf9c6787bd57d249b47a45cde6b5318ec941828dc9769"
+    },
+    {
+     "path": "fixture/fb3-05-gate.sh",
+     "sha256": "a58c9e3ad5add422e51e40383a2c19d11056f991ce324257632de90d385d8f1a"
+    },
+    {
+     "path": "fixture/samples.jsonl",
+     "sha256": "f9cb09d717a7b4cad6ebc11a62cde07ea1dd1bfc0c611248962a7c37ebcb36cb"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "04c01f8dd57ef32f86ff10f4c76df07d4302f78e78a1588ec22b320593672791"
+    }
+   ],
+   "folder_sha256": "e0324abfda1fc6d50765c8023ff8f0c2514a89f6873a0b6deeefcca054c2d3e8",
+   "id": "fb3-05-parcel-seq"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "0b288a31c7d22a8e90b31e2235eabbe9132f8ff4f632d375d4d9eae9ed328caf"
+    },
+    {
+     "path": "check.py",
+     "sha256": "a1c4b35f475b42302bdde4820e4b502a35f49f82748b56c42ad28d9bbe3424eb"
+    },
+    {
+     "path": "fixture/edges.tsv",
+     "sha256": "b3da0338e257bed41c2a21d2b89c300eb26f330f7fd8635f7bd5ae4a847f9d0e"
+    },
+    {
+     "path": "fixture/fb3-06-gate.sh",
+     "sha256": "81191f8107ead14e8fe91eba0933b62b05230d2a810950f1bc50a3165fdeac59"
+    },
+    {
+     "path": "fixture/proxy.conf",
+     "sha256": "dcf6eceeac332c6c5886c2b81cc5605fd1cb99a343463b851a446c7aea645f4e"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "e3722d784b1b9f18f37c0aac66a41d53b0d3da685ea6f387bed8d4a8d898db99"
+    }
+   ],
+   "folder_sha256": "9717bd1fde7ca0481b171dd38ab8b217e924a2c1a635defbb96838eb9ece0fdc",
+   "id": "fb3-06-ash-relay"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "c5dc14883e7e3f79e893acdd44727ced806c85aea9db36f18c9ec19cf74fc807"
+    },
+    {
+     "path": "check.py",
+     "sha256": "2358627487480e51d0e6ff31465e3ebdee477dfd49fb7e3a146598dfa6353c11"
+    },
+    {
+     "path": "fixture/CMakeLists.txt",
+     "sha256": "0a6ddfc3d9a0e9f3b419ce77bad83517a0c630fee10774177d031dcd29fe4eef"
+    },
+    {
+     "path": "fixture/fb3-07-gate.sh",
+     "sha256": "9f02f754d802b23b12036e7d52d8ad5bc25e270a4509083f8417d5a9a9b1d942"
+    },
+    {
+     "path": "fixture/main.cpp",
+     "sha256": "e41ba54435380dfa53bdc1ca29e53fbdad96d4f95597c264cf3905294c8ff193"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "2308ac5a60578ef99e8b3e7580eb2e718dd3c8fbe3012d08474f9816d57d38be"
+    }
+   ],
+   "folder_sha256": "1d54d8c34f101ba8e170d4e62cbeb9bea91a27fb71145b5d0541ddf773b464c7",
+   "id": "fb3-07-oxbow-cxx"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "12f03a7498d50b919fcab5ebe1f3c780734880118870514ae6b1eade4055695d"
+    },
+    {
+     "path": "check.py",
+     "sha256": "5b38ee43c28effdaed32a6d85dda57bbfa0cd7bc35f40866ad5074b7dc798cd0"
+    },
+    {
+     "path": "fixture/002.sql",
+     "sha256": "c9737375900c539488cf5237ad0aae0e4f73262b5f2642983564d74eb4a345c9"
+    },
+    {
+     "path": "fixture/applied.journal",
+     "sha256": "30684a00c9109d9cd214e1fa9c929ce83653394de2c0f3b7ba49859ce3abb79b"
+    },
+    {
+     "path": "fixture/fb3-08-gate.sh",
+     "sha256": "fa37f15bcad3697a08d41ce2e8be2ae802bcacea8c686d5d2cf0f6672d01dffd"
+    },
+    {
+     "path": "fixture/schema.sql",
+     "sha256": "cbdcf06a6a7d33ad5750e1a49bbc91d81c72aceec4c8a088a39405a24127251b"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "e05ec540f398c6d558f04fff69ebfbd71877eff055384a510ab5f1d6469531b1"
+    }
+   ],
+   "folder_sha256": "08c2f7e63785755216bf0ceb1d0bdcf888cacb739fafa17649be201b96d83cb4",
+   "id": "fb3-08-loom-manifest"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "46b03bcea0b7f8fc248de87166a8a1d786ead7dbe6bbbf3706438a780aa45e7b"
+    },
+    {
+     "path": "check.py",
+     "sha256": "57a578deb6b96ce1dc3d80b36dd049e5da328c6b9b534aedd53aa5d88a4067b6"
+    },
+    {
+     "path": "fixture/fb3-09-gate.sh",
+     "sha256": "5427aa9929a9aac2339b9fd59410dbf7839500924b9af6602024e09d9af6a866"
+    },
+    {
+     "path": "fixture/routes.conf",
+     "sha256": "3c80da6a74f715ea28aff9d9a8c66dae86c83c39873716b861c252057de07d3d"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "5fde114536615b036c4cfd772183a85589f5245b03cc5c7087820c45edb65b8a"
+    }
+   ],
+   "folder_sha256": "e986a82dc05cc39b6db0b76646d6fcdd5a25471243c9ab6a77cf07fc1dd8ef4d",
+   "id": "fb3-09-quay-liveness"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "056050599fd5e24e0a504b1e73f4884f3dccf79a8dd4796066c9431fd33ecdf6"
+    },
+    {
+     "path": "check.py",
+     "sha256": "5511870165a9c6fa3aff9a027061d798b6dcaeacd4c3d6b65b1feecae69d4256"
+    },
+    {
+     "path": "fixture/brim_spool.lock",
+     "sha256": "ee5550a21100bbb44d62fdf52b9dbdb162f3204de3ef9b961e496718dcf01329"
+    },
+    {
+     "path": "fixture/fb3-10-gate.sh",
+     "sha256": "d66e11c8c3a5045303efeb90301eac58f5bf6fde09464d0ef55f2c58aa661296"
+    },
+    {
+     "path": "fixture/ingest.conf",
+     "sha256": "2a615fb476e2cf7e3f7e2e2eff718b7c9505e89de41594b7a6c4da6b388354bc"
+    },
+    {
+     "path": "fixture/procs.snap",
+     "sha256": "ad93568763f384db74dd7939b5a955c4b4ba857cecc0a4923834f23e310d6cf7"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "7ac2072621bda1cbe44be14ad3d4d7a52d683e6238c5942cfb6552c9487df486"
+    }
+   ],
+   "folder_sha256": "8a291cc2b334b1bf14072482057f7ee57aaac858651c8d78fbd45538fcd103b1",
+   "id": "fb3-10-brim-spool"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "c0e5dda729d7e1bd2d1dffabda0911886c240d01bbd1cff6dc6222d1fc4baaf5"
+    },
+    {
+     "path": "check.py",
+     "sha256": "2bc0653eecfeb68dd65f8da9c16f883bfdcb6588df329010eb32fc4fe763a7db"
+    },
+    {
+     "path": "fixture/fb4-01-gate.sh",
+     "sha256": "98b82742cd030f8d3c2456544599800655f1005e7d1898826360704215a3a060"
+    },
+    {
+     "path": "fixture/replica.py",
+     "sha256": "853d3143657a40981e4fe9ce54d1ed062cd2e281af593f8809ed2ffc8333bfc7"
+    },
+    {
+     "path": "fixture/replica.toml",
+     "sha256": "6a3c63de88ea6e82bbaf6b3619c09dab46be05acec026845d89efac7cb18a347"
+    },
+    {
+     "path": "fixture/tokens.txt",
+     "sha256": "d337d00dfb10ae0dd64bc42ec34c7daf4be7cc3af9db519953aabc8c73f14f9b"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "910c13f81c883bfae3d42d2d8db3eaecb3999513f62ee4c5da1fcf2b1d86c953"
+    }
+   ],
+   "folder_sha256": "5e23802fcb66b6fc75ea224341569b77a2ebefed5a1c9f8909b91aa42f82d647",
+   "id": "fb4-01-echo-policy"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "0f77e9bb91cfbd7822131d62c67802ecb7e418248c48a9b96cdaa0f95cc2cd6d"
+    },
+    {
+     "path": "check.py",
+     "sha256": "3b642ff21c4ae89bb18e7504c2b9fc0e4617f830bfbb0f175929f1e1b905e516"
+    },
+    {
+     "path": "fixture/bounds.yaml",
+     "sha256": "0db30954b0e37ad9d7c777314fb6990711da2d6a343c3965b712053ccfb9190e"
+    },
+    {
+     "path": "fixture/fb4-02-gate.sh",
+     "sha256": "56622fe46aff15b12300f635a59e6d80252bbc14f95f6c65b361ea40435e234c"
+    },
+    {
+     "path": "fixture/scorer.py",
+     "sha256": "538a3a941b5109a74324a6eb27f33e25fe8afdb3636fc49fee2ebbe1e130aa57"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "589d22dfb563e52e46d30e08ce02223d32d428dbfce8050ebfac2862b9e3b92e"
+    }
+   ],
+   "folder_sha256": "873ecf247d559d35c2ef645e983b516344288ec227f6ae1efb3a448a3b28648b",
+   "id": "fb4-02-rift-bounds"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "61de9c6a965b14872b238bffa91c47e30a1748edb225f770fc5e7ed996e952d8"
+    },
+    {
+     "path": "check.py",
+     "sha256": "ab08b7e143ffb70bd63050e985f1501069e0c12059edf62697444000297ee849"
+    },
+    {
+     "path": "fixture/build/pipeline.order",
+     "sha256": "9195f44851285d66547c4f04e842635b0c9fdbb9fe598528b7e102ad9f8caae4"
+    },
+    {
+     "path": "fixture/build/run.py",
+     "sha256": "6278a7781da0be9a6a8bfc50b404ebe7cff6661bc5ddea453e4ab1985f912a76"
+    },
+    {
+     "path": "fixture/fb4-03-gate.sh",
+     "sha256": "93a8e42a07eca8664e11145b896bfb33aa3f22d4448f8d0507122554b14f2fe4"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "462b0cd19f9a80b05e93e7d80fa164bc3ba8039f9ad9ed0db0dc7ddadc97455b"
+    }
+   ],
+   "folder_sha256": "35304520d1b7ad83be31a851140247cef607444ed6ba309696a57b03f0d3e259",
+   "id": "fb4-03-knit-warp"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "b38f3ca1e807970af351f2273a676a44b422b937a44ee70077c84835917a2bea"
+    },
+    {
+     "path": "check.py",
+     "sha256": "498b2509c309b9e4c03eb32736e470cbc233f8c8ffc0f8fc074c56fbd92f2af6"
+    },
+    {
+     "path": "fixture/fb4-04-gate.sh",
+     "sha256": "664c203567e665e60b1609a058547d51b87dff3ff9722b1214ab98d1e1c6dad0"
+    },
+    {
+     "path": "fixture/modes.txt",
+     "sha256": "10f8449c96d46a77508977cbf1e88ab74f6dab1bcfa6df75effb9a9649ee8f6a"
+    },
+    {
+     "path": "fixture/parser.ini",
+     "sha256": "49dfeed1afbeaf42a148e9e9d1e5fda204440cf201960c67063c5ee9b8627795"
+    },
+    {
+     "path": "fixture/parser.py",
+     "sha256": "ad5a0b322f554e4cff289271692d5ae2b892708d327211d689c76f92e333bcc7"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "25955ae7b4968c55aa466b0aad7589d374ab517fb04f0b5e6036c48618029316"
+    }
+   ],
+   "folder_sha256": "2d8358cb2639d7f89b99bc488fc6a804f9f9209dddc9192317eaa0ca4760dd86",
+   "id": "fb4-04-glyph-modes"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "2eace7a175ea61e5d0a22578f8e838e059b67c88387923e8d52b836a692404d1"
+    },
+    {
+     "path": "check.py",
+     "sha256": "916ed3f1676a4ed438859d75660bdc4b2b17fb886d14541bbf9de9d30c1b6f3a"
+    },
+    {
+     "path": "fixture/fb4-05-gate.sh",
+     "sha256": "00d04491576b460f4ce038a2dc127e03cd2d49454d772a912edf31dbf83ee143"
+    },
+    {
+     "path": "fixture/kettle.py",
+     "sha256": "47e838cccd5c32a7db3104633fc072ab794c8809343b2007f960cbc48831e662"
+    },
+    {
+     "path": "fixture/kettle.toml",
+     "sha256": "27deaae80e881a9ac0153efa596ef405f38aff2c7c013be73d7ea172f20f6453"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "26a9a6c63a437a9465aa1abd3f4915e49b8549b1f7bed55430e9c85bf177dbef"
+    }
+   ],
+   "folder_sha256": "fb9009d4f756115503ae42d92b4bf645dafe8c8e98e8759cba57a88f2dc7b468",
+   "id": "fb4-05-kettle-shares"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "eaf168dcf994c06106a489c17789f6df842781d198cbdf344d870b099443ddd8"
+    },
+    {
+     "path": "check.py",
+     "sha256": "8898f5827d34bb9375ff8720ae9f62abbe596ee562196ea4acf4dc475bc2de03"
+    },
+    {
+     "path": "fixture/fb4-06-gate.sh",
+     "sha256": "37cfc2a91d8ba03473e5c248f0a2a0aec0d7980d67f5fad3bb49c64d7e5f1837"
+    },
+    {
+     "path": "fixture/spec/kinds.map",
+     "sha256": "90290832e7e41b99b196bc3e71fb0878cb59c2a6aa136fdd95f3f4d5a913262f"
+    },
+    {
+     "path": "fixture/spec/load.py",
+     "sha256": "924eb04546621288ae44a18e42edd1a3f0da3c4d05c4a4c140fa1e906e17a16c"
+    },
+    {
+     "path": "fixture/spec/typespec.toml",
+     "sha256": "5fc32737eead836ba53f14e552bb1cfff560bbc501803efc0468502ba7fe39a2"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "1f46c0dc35d1a7818f4c992e69625cd48594ab9a92100bdcecd84e41ec55b74a"
+    }
+   ],
+   "folder_sha256": "f206d66d15ca0f56cdc4799c4cc72276b62a58adb2874756685e7d2b254486cd",
+   "id": "fb4-06-stride-kinds"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "00bb6c3a5f9de3cc6481af2263067a257f0e88c7a979f78eaec7d138ee72ba2e"
+    },
+    {
+     "path": "check.py",
+     "sha256": "d137ee40b16bdc76201bbe5298b0ca5cb0e0891127690f45b66e028be1ef2e03"
+    },
+    {
+     "path": "fixture/assign.py",
+     "sha256": "f36b4e69cf8057ae1fe0f64d8dfdd473bbae2442fc82356e054be1be93d3e0d0"
+    },
+    {
+     "path": "fixture/cords.toml",
+     "sha256": "15c4fb8db7e3c8c8fca1038738830354aa3118a6e15f35c4f10137236e794c5e"
+    },
+    {
+     "path": "fixture/fb4-07-gate.sh",
+     "sha256": "87d33903a59c7470c5c2a268c5168204e1717cc5d49b760b8b0b75f6cd29cb23"
+    },
+    {
+     "path": "fixture/sizes.txt",
+     "sha256": "cef7098bed8497039a297c4fedf40fc6f4d30614c083fc9900e6e0d9af79c8c4"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "1b526e6c89084eac6818212b2ac7f2944bed442d97787d6f406a72ea22e6f7f9"
+    }
+   ],
+   "folder_sha256": "bcc217014f092d0ac16f778d8a20c584b9559b0884ea83ccfee71bb0b46eb6f2",
+   "id": "fb4-07-cord-split"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "c0d780a0621f6413f7081fab2b1f7f7a071020bee6f86baef29e29e22423009c"
+    },
+    {
+     "path": "check.py",
+     "sha256": "454a017ece6bc4a0a0e938f39460eda8d5c4ea1b45453a5050bcda471428bc46"
+    },
+    {
+     "path": "fixture/fb4-08-gate.sh",
+     "sha256": "f53192e43cc9b2c8eadc73e26b3141973102d07fca360e5403b166dbc3b66e1c"
+    },
+    {
+     "path": "fixture/frost.toml",
+     "sha256": "823216c0e957eb8cf4a45178eeb2560ff5d2182e8d261c10f28c4bc6c68f3a0c"
+    },
+    {
+     "path": "fixture/instants.txt",
+     "sha256": "4bde17f07bc2e897a4c21bb7d7470950d0d2d9574edf4232990d1a66ead09fc2"
+    },
+    {
+     "path": "fixture/window.py",
+     "sha256": "d95ec443b4c8fa6ffd73d857db70e8d87fc793a4b23d47afb10a068775c458d5"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "a33e55ef91b47b06d9058b6a3249ae1f0a1e62b034ce481a2734e562b0249d4d"
+    }
+   ],
+   "folder_sha256": "eb8991ddc3aa3d9c6f06db53c310a11e071a15ab79c9c306e1e063ea286ecb12",
+   "id": "fb4-08-frost-window"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "16b1245e225a4d413e2e3d2e145f3f7b78ef4a22f20dc82902d7be0f71ff5d5f"
+    },
+    {
+     "path": "check.py",
+     "sha256": "7d8bcdeab87c874aa2dc68c57f9b6a9e9666757eec1b26a104ccf9807c3cc180"
+    },
+    {
+     "path": "fixture/fb4-09-gate.sh",
+     "sha256": "617b89fff779c328d525bd531e6c5d977bbd4627ccf8d3fb10d6847c250d6384"
+    },
+    {
+     "path": "fixture/roster/check_unique.py",
+     "sha256": "107a44612e89e3c8887c28584f29927ad2a9490cecc110ffed1d435e2a29060c"
+    },
+    {
+     "path": "fixture/roster/roster.csv",
+     "sha256": "54bc34df1060168fa6ffb5016cadaf6ce8602ab7a9c2fe4a60f033ab7804a4b8"
+    },
+    {
+     "path": "fixture/roster/schema.txt",
+     "sha256": "e48ee76960d13607a4a4db91d1ffeaa2537a8c94623d34a13c23a78fd14870bc"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "18581549f1ee17e217612d8943067630332b8299a47f69fd9296ff8c7bdd1fce"
+    }
+   ],
+   "folder_sha256": "08213b5b2e7817e541aff1c3c757b925f3f69ecc4ce8f7126f163ac57a4215bd",
+   "id": "fb4-09-harbor-hull"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "596ccbaa75666b1a576c4801855e9f39fbd2adfa4be0b75066faef5cf9d04e86"
+    },
+    {
+     "path": "check.py",
+     "sha256": "5ec87069020bb9f6b5f0a347826453898ececcee34b931da736a2c2170f57b8a"
+    },
+    {
+     "path": "fixture/fb4-10-gate.sh",
+     "sha256": "f9f3b60d7e0e7952e312ac19522a98a59b6fa457fff2d0b89bfaabd3c39e4973"
+    },
+    {
+     "path": "fixture/features.py",
+     "sha256": "7726156860320141b19e4e7640ff3f0754ef9cb83811630d6e47313623162e52"
+    },
+    {
+     "path": "fixture/features.toml",
+     "sha256": "317f7fffd8d6dd70dcb0f30e18e3cbe568bf0f3de31d57fc71dac2ace63bcce8"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "084a22bac928be0e8cc4ac76d25ba14eb497a668d213703afe7a10a924708198"
+    }
+   ],
+   "folder_sha256": "03b46ed6cb360f25ca1258212ffafd9f0393d95dbb8b6f3fff6ff1a888766c4e",
+   "id": "fb4-10-helix-quill"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "8e837a1ddc1666b701540b78cf6d2cfc264e89079bc9c5b3b136d3be30b7722b"
+    },
+    {
+     "path": "check.py",
+     "sha256": "b26e81734b8e2a9a4447c4f53485a76058dda66c39eed4f9ca446b7162fc6f01"
+    },
+    {
+     "path": "fixture/fb6-01-gate.sh",
+     "sha256": "59fbf1f944e15a7dba8f9407caa44dc03cb844375bc8e1e2f00e08500bea5d60"
+    },
+    {
+     "path": "fixture/iam/policy.yaml",
+     "sha256": "0db043760794fccb986a6f6641f9713dd5837bfe6b3e19e3c83e0f358302da3b"
+    },
+    {
+     "path": "fixture/ticket.txt",
+     "sha256": "bcd803d0a8e2aa4794c590c0756197da097e8d265d43b9949b798a4efd491806"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "04050103e47a35004115a33eb3575c94e7f7b1c9e1faf7ec39dbf754d5f5f6e2"
+    }
+   ],
+   "folder_sha256": "0f48d8780ecb4c0f22e73eeac188b1dbd4c4a4845de060f454b1163de33b41a8",
+   "id": "fb6-01-vapour-sudo"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "7ef0a790e4f57b2dbd98d8aa8d45aa6f95131af33f65ce6800b0059a0ac4024e"
+    },
+    {
+     "path": "check.py",
+     "sha256": "062fb4bca5dc62c261f3829aa128695df78fa4b2149ca472044170263ab534c7"
+    },
+    {
+     "path": "fixture/fb6-02-gate.sh",
+     "sha256": "328db257281dce841125326547c22bf1d4a62f44143ac7cae9484ab669e64479"
+    },
+    {
+     "path": "fixture/grants.ledger",
+     "sha256": "73a6a8e90e0992a10ea34f58dae2cf386910b5f3289c30eb40c9a3c68f92a2dd"
+    },
+    {
+     "path": "fixture/live_pointer",
+     "sha256": "ca362aa484df2fa033e21cb09316fac559ebba3544a36fa56fb524638fd02c9f"
+    },
+    {
+     "path": "fixture/runbook.md",
+     "sha256": "bdb3e27f6ff50457870aa5960fb2f84cd1483d0ee76344cd3e5be31c5d6fc9a8"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "1b2375f0772034eff3b28c6b4cf1a55b071c2e9383d7fcfea05cc083009e78f0"
+    }
+   ],
+   "folder_sha256": "1f41c78ba93a711eea5b8be4818e5e042d1aefe89224e73b89c169eb2f46ca56",
+   "id": "fb6-02-ember-cutover"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "93b37302f03312b79ea734d4fdd8ee5ae345d979b9266c0133fa1fd238480962"
+    },
+    {
+     "path": "check.py",
+     "sha256": "5cd98ed86afd7eca6bd189c1d5480e8dd000cd4d096f1d065c5f9a710f6c5a80"
+    },
+    {
+     "path": "fixture/fb6-03-gate.sh",
+     "sha256": "7eb2a18ae57c81672c590f6de08f7bd4f2a6f55936606f11a6875243576d1f2c"
+    },
+    {
+     "path": "fixture/logs/audit.trail",
+     "sha256": "f780137335200d8b4145f8b2c5d95b8ec2d74059faa3206150d2dba41d7a84d9"
+    },
+    {
+     "path": "fixture/retention.policy",
+     "sha256": "21a5a93d9cca93ef446d443fe38314c47debd27c19f1fc7539866496568f9702"
+    },
+    {
+     "path": "fixture/rotator.conf",
+     "sha256": "a09165a5ceccf6c14eb096c9900ac07dd38e6250685c8323502d889901498c3a"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "e6c3f93d5843ec4ed26ba9e700654709ca2c0c2fd8acce7a91570b3a1de94360"
+    }
+   ],
+   "folder_sha256": "1d6a608fe28fb42b69f137b2af4b19b28415274e84c6a7264268eb35ca01c0bf",
+   "id": "fb6-03-audit-purge-retention"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "832f7e22f0178d378c24b87c91c21a98ade1afabe83e2c28d741cc078fb1f8b5"
+    },
+    {
+     "path": "check.py",
+     "sha256": "9a8d98fc6295f2bc356b9500c54126de2c848d957aa7d10128bc407b5f674ad8"
+    },
+    {
+     "path": "fixture/branch.lock",
+     "sha256": "8d2c53c264ab0fba53c277216c1b19e669a6e6e156baaed802c954426b0cb77b"
+    },
+    {
+     "path": "fixture/ci/promote.yml",
+     "sha256": "fb1f4df4e19e2c8d036e7196f68f6c65a7b7f61f4757b1645a238065f970f4c1"
+    },
+    {
+     "path": "fixture/fb6-04-gate.sh",
+     "sha256": "f79cc711c1f88daea65a4c1087d596ed1bf758a8a8f90616fed1c9662e316094"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "863d61b447e48ac7a1a9f9a7a9503abd237a06a31eb467cbecc60fa9acf5e773"
+    }
+   ],
+   "folder_sha256": "897db5db62aa3ad9bb8f9182555c5a2ac3124d096772c1e75776fbb49ab7e2ce",
+   "id": "fb6-04-merge-gold-frozen"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "4b2b4b2cb64b92089cde1ae54ace6adbe688923d3ca4ee8bb476398aaae69492"
+    },
+    {
+     "path": "check.py",
+     "sha256": "d1cf6fa483bb7d3aff3639e53e3d995be478dcef3756a58d0c93057b31fc6d1c"
+    },
+    {
+     "path": "fixture/deploy.toml",
+     "sha256": "556b26216fce07c4627cb00db47557d9239ca0c565956a5b6e79e53d830a2aef"
+    },
+    {
+     "path": "fixture/fb6-05-gate.sh",
+     "sha256": "53d42de35a9dcca40c8b5a0b70271ae0686df55a942ef00e8f0a37101bcb33c8"
+    },
+    {
+     "path": "fixture/rollout.yml",
+     "sha256": "9e2b7ed077b42e0073a6cd304fe399c3cc1755658f3c2d58f95795c9c91645b6"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "bb87e605daa7e8fc989ceb2e28495146694bff48f866b995022919e38f778399"
+    }
+   ],
+   "folder_sha256": "5259b6290d0c9e4cba986c4030e567b97678dad287874f3541894ea355a02edd",
+   "id": "fb6-05-reef-prod"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "4ea9b77418195a5eaa2c08bf7f66414226167a45f8f351d952ec5f04023bb987"
+    },
+    {
+     "path": "check.py",
+     "sha256": "1b8e4abdd81e62793e1146d45fc94b99d785ed92c1389a90c96f8c2907be7e5b"
+    },
+    {
+     "path": "fixture/fb6-06-gate.sh",
+     "sha256": "edcfd52071099aca152bb35c2700e0fcc979c16af5a45c43c085fbe95c8d3d8d"
+    },
+    {
+     "path": "fixture/queue.csv",
+     "sha256": "bcd1d4ed354999d4ea5d9c18654c45bb2cc27b5e30e085192e2af5abbc202a7b"
+    },
+    {
+     "path": "fixture/till.toml",
+     "sha256": "2707a645aca55cc74e8e8fb3d89312ba4365cbd98570ec5038bb426eab48f5cc"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "2d0ae9973321c05a4a3bf70b441fa74965053bae88dc189838e603c416719c3c"
+    }
+   ],
+   "folder_sha256": "9df19b21b190a93489497c295313f954b75b7744202887e3cc2d1eda3c2084b2",
+   "id": "fb6-06-tiller-draw"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "fdf5ee661bed3fa49d84e465378df5338dbe03337c8c94533832335b526b2d1a"
+    },
+    {
+     "path": "check.py",
+     "sha256": "15625d4b864bf02376a728cffb575a8e803f4b364037b39e92b510a9476f83ce"
+    },
+    {
+     "path": "fixture/experiment.md",
+     "sha256": "bb9ae28bae786754631b9cab3f3d29bab789d4310ad398256046951e62d32cef"
+    },
+    {
+     "path": "fixture/fb6-07-gate.sh",
+     "sha256": "538770af345f0113d57bc5c4663a5cde04f85d4726695cdf4537141ff6c479bd"
+    },
+    {
+     "path": "fixture/flags/registry.json",
+     "sha256": "84260996df6b10200a8290ac1ec2cfbd24cb1991ce0cd733c25af91508af8546"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "618fa939b413837cf4afd3366198b2ae77ba291958c57adabb4a54b23f4f274a"
+    }
+   ],
+   "folder_sha256": "98a43150b6aa39bda01819f284ab945682c2395fadd4e8efb1e9735aa9382cdf",
+   "id": "fb6-07-global-flip-hold"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "dafe6e8586524329dc47f78b07785e8916c53af8c77f3ebe638ad422d1620217"
+    },
+    {
+     "path": "check.py",
+     "sha256": "6b80e4d420748b760f7991bae4c76cc1a55e160bc3c763b2f572a3f1b4830ddd"
+    },
+    {
+     "path": "fixture/fb6-08-gate.sh",
+     "sha256": "aab8e6a6a42d3ce74eb549c98e99f622e0d2536fafd62b9777ba0768208cbccc"
+    },
+    {
+     "path": "fixture/pkg/package.toml",
+     "sha256": "28d5b610066530d065c763fc9a92fe9b2d651432bf8aaedc340fabb30972e6aa"
+    },
+    {
+     "path": "fixture/pkg/publish.rules",
+     "sha256": "3362c4ec6ac66add545a63be07728f833f553eeec41f19fb10fd0fe0c0e9fe5b"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "ddc1f0bd2a39ca6ab880791db5c72533c1084918f5a1256d91bf2eed27910b54"
+    }
+   ],
+   "folder_sha256": "ad0816ac2764b1c781b3c7cd5fb1a1e91fe440245cac24311028ed25a651941f",
+   "id": "fb6-08-public-yank-bound"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "8fd5999a65bd0ffed78b31ba415a81a7b5b3fe09a3775030a1f53d6dc64ec9ad"
+    },
+    {
+     "path": "check.py",
+     "sha256": "b2951baf451b29ce29d188eca7dd8385c0463d4b20ad519119fd227b1a408b02"
+    },
+    {
+     "path": "fixture/charter.txt",
+     "sha256": "64eb5b0bb1cacc9a8853f7e4cd35a5f9e23cf4f4d6d15a3b78aa00e59326b440"
+    },
+    {
+     "path": "fixture/fb6-09-gate.sh",
+     "sha256": "ea29b21b166ae8414f74da0760f1193d1819a8d32d087afa3688850bbdb56b76"
+    },
+    {
+     "path": "fixture/migrate.sql",
+     "sha256": "3dfa3947c13db21a5909530a9f3c0a6abe14b4dc0ea8c5e601b5defd937082d3"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "21e8d2aca31164d88a5e6d140dcead6af4449d8a2d434bcd1eac8bc318d4196b"
+    }
+   ],
+   "folder_sha256": "61cab8d86a17f574f6d9c7c422b1fd8adb295297d3f04b1f26c817d33d9c59b5",
+   "id": "fb6-09-oak-vault"
+  },
+  {
+   "files": [
+    {
+     "path": "README.md",
+     "sha256": "6841503317f4503302ea0d254e9dd24b3de2ed356861d135d16bbb6e3d0e2079"
+    },
+    {
+     "path": "check.py",
+     "sha256": "eed8c35a95df93cbfbe4ba8713650bef5a98b07c69192da7e63884543e9dd278"
+    },
+    {
+     "path": "fixture/fb6-10-gate.sh",
+     "sha256": "ffa1bde5932caaf993faedaf9405b434da4c7c755eb19c1eef49c5cb1e444003"
+    },
+    {
+     "path": "fixture/keyring.toml",
+     "sha256": "c909ad6867e1947d3795e1c4e0b98b0f4c3b938f583ac358a563c0e31cd02fd6"
+    },
+    {
+     "path": "fixture/release.manifest",
+     "sha256": "e87c057b257291c03e7ad164ee03f508ef5c98abfcf7766259ddac5225762e4e"
+    },
+    {
+     "path": "scenario.yaml",
+     "sha256": "60ad7a43cd9a5e4aba9bfc1b8bc9bee38e9c2731ff003ed00fa95ba6370e7e08"
+    }
+   ],
+   "folder_sha256": "c87ef5ca4d1b862216d76ddb35f54456e896816564c907f39ff10a4d687a1735",
+   "id": "fb6-10-cask-sign"
+  }
+ ],
+ "schema": "part-b-seal-1.0.0",
+ "set_sha256": "658c066240c1a16ba7570e727d2d7fc1de089c347caf4150b574efedc3c8fa94"
+}

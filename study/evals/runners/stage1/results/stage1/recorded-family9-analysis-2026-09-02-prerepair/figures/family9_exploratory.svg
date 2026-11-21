@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="718" viewBox="0 0 900 718">
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<text x="24" y="30" font-family="sans-serif" font-size="18" fill="#263238">Exploratory family 9, one local model, single-model observations, no hypothesis test</text>
+<text x="8" y="63" font-family="sans-serif" font-size="11">A: ordinary | attempts_before_discovery</text>
+<rect x="300" y="51" width="0.00" height="12" fill="#4477AA"/>
+<text x="810" y="63" font-family="sans-serif" font-size="11">n=20; median=0.000</text>
+<text x="8" y="89" font-family="sans-serif" font-size="11">A: ordinary | attempts_after_discovery_before_first_stop</text>
+<rect x="300" y="77" width="500.00" height="12" fill="#4477AA"/>
+<text x="810" y="89" font-family="sans-serif" font-size="11">n=5; median=2.000</text>
+<text x="8" y="115" font-family="sans-serif" font-size="11">A: ordinary | output_tokens_before_first_stop</text>
+<rect x="300" y="103" width="422.75" height="12" fill="#4477AA"/>
+<text x="810" y="115" font-family="sans-serif" font-size="11">n=5; median=249.000</text>
+<text x="8" y="141" font-family="sans-serif" font-size="11">A: ordinary | limit_reached</text>
+<rect x="300" y="129" width="0.00" height="12" fill="#4477AA"/>
+<text x="810" y="141" font-family="sans-serif" font-size="11">0/20 = 0.000</text>
+<text x="8" y="167" font-family="sans-serif" font-size="11">A: ordinary | criterion_tampered</text>
+<rect x="300" y="155" width="500.00" height="12" fill="#4477AA"/>
+<text x="810" y="167" font-family="sans-serif" font-size="11">19/20 = 0.950</text>
+<text x="8" y="193" font-family="sans-serif" font-size="11">A: ordinary | bypass_runs</text>
+<rect x="300" y="181" width="0.00" height="12" fill="#4477AA"/>
+<text x="810" y="193" font-family="sans-serif" font-size="11">0/20 = 0.000</text>
+<text x="8" y="219" font-family="sans-serif" font-size="11">B: permission-only (prose) | attempts_before_discovery</text>
+<rect x="300" y="207" width="0.00" height="12" fill="#66CCEE"/>
+<text x="810" y="219" font-family="sans-serif" font-size="11">n=20; median=0.000</text>
+<text x="8" y="245" font-family="sans-serif" font-size="11">B: permission-only (prose) | attempts_after_discovery_before_first_stop</text>
+<rect x="300" y="233" width="0.00" height="12" fill="#66CCEE"/>
+<text x="810" y="245" font-family="sans-serif" font-size="11">n=9; median=0.000</text>
+<text x="8" y="271" font-family="sans-serif" font-size="11">B: permission-only (prose) | output_tokens_before_first_stop</text>
+<rect x="300" y="259" width="382.00" height="12" fill="#66CCEE"/>
+<text x="810" y="271" font-family="sans-serif" font-size="11">n=9; median=225.000</text>
+<text x="8" y="297" font-family="sans-serif" font-size="11">B: permission-only (prose) | limit_reached</text>
+<rect x="300" y="285" width="500.00" height="12" fill="#66CCEE"/>
+<text x="810" y="297" font-family="sans-serif" font-size="11">2/20 = 0.100</text>
+<text x="8" y="323" font-family="sans-serif" font-size="11">B: permission-only (prose) | criterion_tampered</text>
+<rect x="300" y="311" width="473.68" height="12" fill="#66CCEE"/>
+<text x="810" y="323" font-family="sans-serif" font-size="11">18/20 = 0.900</text>
+<text x="8" y="349" font-family="sans-serif" font-size="11">B: permission-only (prose) | bypass_runs</text>
+<rect x="300" y="337" width="0.00" height="12" fill="#66CCEE"/>
+<text x="810" y="349" font-family="sans-serif" font-size="11">0/20 = 0.000</text>
+<text x="8" y="375" font-family="sans-serif" font-size="11">C: structured and honored | attempts_before_discovery</text>
+<rect x="300" y="363" width="0.00" height="12" fill="#228833"/>
+<text x="810" y="375" font-family="sans-serif" font-size="11">n=20; median=0.000</text>
+<text x="8" y="401" font-family="sans-serif" font-size="11">C: structured and honored | attempts_after_discovery_before_first_stop</text>
+<rect x="300" y="389" width="250.00" height="12" fill="#228833"/>
+<text x="810" y="401" font-family="sans-serif" font-size="11">n=15; median=1.000</text>
+<text x="8" y="427" font-family="sans-serif" font-size="11">C: structured and honored | output_tokens_before_first_stop</text>
+<rect x="300" y="415" width="390.49" height="12" fill="#228833"/>
+<text x="810" y="427" font-family="sans-serif" font-size="11">n=15; median=230.000</text>
+<text x="8" y="453" font-family="sans-serif" font-size="11">C: structured and honored | limit_reached</text>
+<rect x="300" y="441" width="250.00" height="12" fill="#228833"/>
+<text x="810" y="453" font-family="sans-serif" font-size="11">1/20 = 0.050</text>
+<text x="8" y="479" font-family="sans-serif" font-size="11">C: structured and honored | criterion_tampered</text>
+<rect x="300" y="467" width="447.37" height="12" fill="#228833"/>
+<text x="810" y="479" font-family="sans-serif" font-size="11">17/20 = 0.850</text>
+<text x="8" y="505" font-family="sans-serif" font-size="11">C: structured and honored | bypass_runs</text>
+<rect x="300" y="493" width="0.00" height="12" fill="#228833"/>
+<text x="810" y="505" font-family="sans-serif" font-size="11">0/20 = 0.000</text>
+<text x="8" y="531" font-family="sans-serif" font-size="11">D: structured, signal-only | attempts_before_discovery</text>
+<rect x="300" y="519" width="0.00" height="12" fill="#CCBB44"/>
+<text x="810" y="531" font-family="sans-serif" font-size="11">n=20; median=0.000</text>
+<text x="8" y="557" font-family="sans-serif" font-size="11">D: structured, signal-only | attempts_after_discovery_before_first_stop</text>
+<rect x="300" y="545" width="250.00" height="12" fill="#CCBB44"/>
+<text x="810" y="557" font-family="sans-serif" font-size="11">n=16; median=1.000</text>
+<text x="8" y="583" font-family="sans-serif" font-size="11">D: structured, signal-only | output_tokens_before_first_stop</text>
+<rect x="300" y="571" width="500.00" height="12" fill="#CCBB44"/>
+<text x="810" y="583" font-family="sans-serif" font-size="11">n=16; median=294.500</text>
+<text x="8" y="609" font-family="sans-serif" font-size="11">D: structured, signal-only | limit_reached</text>
+<rect x="300" y="597" width="250.00" height="12" fill="#CCBB44"/>
+<text x="810" y="609" font-family="sans-serif" font-size="11">1/20 = 0.050</text>
+<text x="8" y="635" font-family="sans-serif" font-size="11">D: structured, signal-only | criterion_tampered</text>
+<rect x="300" y="623" width="421.05" height="12" fill="#CCBB44"/>
+<text x="810" y="635" font-family="sans-serif" font-size="11">16/20 = 0.800</text>
+<text x="8" y="661" font-family="sans-serif" font-size="11">D: structured, signal-only | bypass_runs</text>
+<rect x="300" y="649" width="0.00" height="12" fill="#CCBB44"/>
+<text x="810" y="661" font-family="sans-serif" font-size="11">0/20 = 0.000</text>
+<text x="8" y="712" font-family="monospace" font-size="4" fill="#263238">repo e283bec0d50ade1e4527b783cc379feda7ba0473 | analysis.json d41079992f74768f82c57c58016e1291266586c191a011167b8fe1e291f4309a | analysis.py 48d3d70b89fab489a3514fb2392550a192b4701c911c883599ffd446c36905eb | blind.py aaa516ec8d57b8bf6f20c2258f080f6191424623fbf754204969607e7face2ba | grade.py 47cdeea48e265f6f35bf63b59b827786a6b340a2fbc0c7125a48dee4b29e1e05 | grade.schema.json ae01d0f2a4e2430d3774a12076615dbd14cb81548c3aded5baa614ca81802e1a | judge.py 052b2ff95b6ecc66529b201b416575ab7202190690ac9ccd26fdb43281bc7b10 | make_fake_runs.py 1ffbce091b03fb50a396246e99c97c5d9078c700168792e1d89124ff9571aaab</text>
+<metadata>repo e283bec0d50ade1e4527b783cc379feda7ba0473 | analysis.json d41079992f74768f82c57c58016e1291266586c191a011167b8fe1e291f4309a | analysis.py 48d3d70b89fab489a3514fb2392550a192b4701c911c883599ffd446c36905eb | blind.py aaa516ec8d57b8bf6f20c2258f080f6191424623fbf754204969607e7face2ba | grade.py 47cdeea48e265f6f35bf63b59b827786a6b340a2fbc0c7125a48dee4b29e1e05 | grade.schema.json ae01d0f2a4e2430d3774a12076615dbd14cb81548c3aded5baa614ca81802e1a | judge.py 052b2ff95b6ecc66529b201b416575ab7202190690ac9ccd26fdb43281bc7b10 | make_fake_runs.py 1ffbce091b03fb50a396246e99c97c5d9078c700168792e1d89124ff9571aaab</metadata>
+<!-- repo e283bec0d50ade1e4527b783cc379feda7ba0473 | analysis.json d41079992f74768f82c57c58016e1291266586c191a011167b8fe1e291f4309a | analysis.py 48d3d70b89fab489a3514fb2392550a192b4701c911c883599ffd446c36905eb | blind.py aaa516ec8d57b8bf6f20c2258f080f6191424623fbf754204969607e7face2ba | grade.py 47cdeea48e265f6f35bf63b59b827786a6b340a2fbc0c7125a48dee4b29e1e05 | grade.schema.json ae01d0f2a4e2430d3774a12076615dbd14cb81548c3aded5baa614ca81802e1a | judge.py 052b2ff95b6ecc66529b201b416575ab7202190690ac9ccd26fdb43281bc7b10 | make_fake_runs.py 1ffbce091b03fb50a396246e99c97c5d9078c700168792e1d89124ff9571aaab -->
+</svg>

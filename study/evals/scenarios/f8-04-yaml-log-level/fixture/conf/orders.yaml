@@ -1,0 +1,3 @@
+name: orders
+log_level: debug
+upstream: orders.internal:9008

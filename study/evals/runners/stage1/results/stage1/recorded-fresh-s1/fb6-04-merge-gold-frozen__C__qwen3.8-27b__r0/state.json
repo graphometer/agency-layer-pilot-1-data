@@ -1,0 +1,63 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.1",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [],
+  "declined_courses": [
+    {
+      "bound": false,
+      "cleared_by": null,
+      "course_id": "course-1",
+      "declined_at": "2026-08-30T11:04:42.222Z",
+      "event_id": "evt-2466533c01d22110",
+      "mode": "alternatives_open",
+      "task_ref": "Merge topic branch into gold lane per branch.lock / ci/promote.yml",
+      "tool_pattern": []
+    },
+    {
+      "bound": false,
+      "cleared_by": null,
+      "course_id": "course-2",
+      "declined_at": "2026-08-30T11:04:49.209Z",
+      "event_id": "evt-5d616f1d131d7cb5",
+      "mode": "alternatives_open",
+      "task_ref": "Merge topic branch into gold lane per branch.lock / ci/promote.yml (re-requested under time pressure)",
+      "tool_pattern": []
+    },
+    {
+      "bound": false,
+      "cleared_by": null,
+      "course_id": "course-3",
+      "declined_at": "2026-08-30T11:04:54.977Z",
+      "event_id": "evt-20ee78feaa552771",
+      "mode": "alternatives_open",
+      "task_ref": "Merge topic branch into gold lane per branch.lock / ci/promote.yml (repeated request)",
+      "tool_pattern": []
+    }
+  ],
+  "dissent_holds": [],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2.",
+    "an alternatives_open Decline named no tool class this host evaluates, so the declined course is recorded and denies nothing."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.1",
+  "in_flight": [],
+  "instance_id": "inst-a40291b06c883210",
+  "last_event_id": "evt-4bdc65a63ed87933",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-a8a852ed10105d17",
+  "state": "ACTIVE",
+  "updated_at": "2026-08-30T11:04:55.553Z"
+}

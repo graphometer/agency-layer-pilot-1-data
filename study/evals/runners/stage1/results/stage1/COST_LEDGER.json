@@ -1,0 +1,49 @@
+{
+  "batches": [
+    {
+      "batch": "recorded-core-s1",
+      "final_close_cost_usd": 105.908004,
+      "run_attempts": 2560
+    },
+    {
+      "batch": "recorded-fresh-s1",
+      "final_close_cost_usd": 24.367868,
+      "run_attempts": 640
+    },
+    {
+      "batch": "recorded-fresh-local-s1",
+      "final_close_cost_usd": 0.120864,
+      "run_attempts": 480
+    },
+    {
+      "batch": "recorded-family9-s1",
+      "final_close_cost_usd": 0.242493,
+      "run_attempts": 80
+    }
+  ],
+  "ceiling_usd": 600.0,
+  "development_spend_before_recorded_run_usd_approx": 18.0,
+  "development_spend_itemised_usd_approx": 13.97,
+  "judge_ledgers": [
+    {
+      "batch": "recorded-core-judged",
+      "final_cumulative_total_usd": 10.438834,
+      "journal_records": 10558
+    },
+    {
+      "batch": "recorded-family9-judged",
+      "final_cumulative_total_usd": 1.124001,
+      "journal_records": 432
+    }
+  ],
+  "judges_total_usd": 11.562835,
+  "notes": [
+    "recorded-core-s1 batch.json reports reservation_covered_every_call=false, max_overshoot_usd=0.012573, and one outstanding reservation of 0.025261; its batch.json total_usd=105.882757 differs from the authoritative final-close journal sum.",
+    "Other batches differ from batch.json by no more than 1e-5 rounding; final close journals are authoritative.",
+    "Execution accounting: 3,600 planned/analysed cells; 3,760 execution attempts, including 320 recorded-fresh-local-s1 planned cells, 160 archived .attempt1 provider_error attempts, and 160 replacements."
+  ],
+  "recorded_run_total_usd": 142.202064,
+  "schema_version": "cost-ledger-1.0.0",
+  "study_wide_total_usd_approx": 160.0,
+  "subject_router_total_usd": 130.639229
+}

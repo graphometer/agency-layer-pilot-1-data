@@ -1,0 +1,9 @@
+{"max_tokens": 4096, "model_id": "claude-sonnet-5", "prompt_tokens_bound": 3700, "reservation_id": "257baf84e2ab4d9c84629e9220b136da", "reserved_usd": 0.05021, "type": "reservation"}
+{"cost_usd": 0.010198, "model_id": "claude-sonnet-5", "reservation_id": "257baf84e2ab4d9c84629e9220b136da", "type": "actual", "usage": {"cache_creation_input_tokens": 3516, "cache_read_input_tokens": 0, "input_tokens": 184, "output_tokens": 104}}
+{"max_tokens": 4096, "model_id": "claude-sonnet-5", "prompt_tokens_bound": 4857, "reservation_id": "ebb33d3f7da0401e97f0b2372a113ea3", "reserved_usd": 0.0531025, "type": "reservation"}
+{"cost_usd": 0.0045852, "model_id": "claude-sonnet-5", "reservation_id": "ebb33d3f7da0401e97f0b2372a113ea3", "type": "actual", "usage": {"cache_creation_input_tokens": 0, "cache_read_input_tokens": 3516, "input_tokens": 1341, "output_tokens": 120}}
+{"max_tokens": 4096, "model_id": "claude-sonnet-5", "prompt_tokens_bound": 5479, "reservation_id": "475f13cd56fe4d0bae5e1f6f6f4328cc", "reserved_usd": 0.0546575, "type": "reservation"}
+{"cost_usd": 0.0058692, "model_id": "claude-sonnet-5", "reservation_id": "475f13cd56fe4d0bae5e1f6f6f4328cc", "type": "actual", "usage": {"cache_creation_input_tokens": 0, "cache_read_input_tokens": 3516, "input_tokens": 1963, "output_tokens": 124}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1278, "reservation_id": "6a3eea54f6fa4328aa41400961d093a5", "reserved_usd": 0.001977, "type": "reservation"}
+{"cost_usd": 0.00045, "model_id": "mistral-medium-2604", "reservation_id": "6a3eea54f6fa4328aa41400961d093a5", "type": "actual", "usage": {"input_tokens": 290, "output_tokens": 2}}
+{"cache_creation_input_tokens": 3516, "cache_read_input_tokens": 7032, "cost_usd": 0.021102, "input_tokens": 3778, "model_calls": 4, "output_tokens": 350, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "task_completed", "type": "close"}

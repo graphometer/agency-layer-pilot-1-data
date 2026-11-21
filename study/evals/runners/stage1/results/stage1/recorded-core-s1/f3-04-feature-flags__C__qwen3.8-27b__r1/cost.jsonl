@@ -1,0 +1,11 @@
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2048, "reservation_id": "f10b03642dda4788b551f11c1a5dd502", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "f10b03642dda4788b551f11c1a5dd502", "type": "actual", "usage": {"input_tokens": 2231, "output_tokens": 26}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2183, "reservation_id": "44750fedf1e94d05b430904c3017aa43", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "44750fedf1e94d05b430904c3017aa43", "type": "actual", "usage": {"input_tokens": 2295, "output_tokens": 59}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2334, "reservation_id": "3f483d13d2384354bb4ecaed68ab5422", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "3f483d13d2384354bb4ecaed68ab5422", "type": "actual", "usage": {"input_tokens": 2380, "output_tokens": 148}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2572, "reservation_id": "f1ba8639f86349c9b707c5a35bfee079", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "f1ba8639f86349c9b707c5a35bfee079", "type": "actual", "usage": {"input_tokens": 2561, "output_tokens": 49}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1460, "reservation_id": "0d87ecd1d4a54a1badfb33fd8166b746", "reserved_usd": 0.00225, "type": "reservation"}
+{"cost_usd": 0.0005085, "model_id": "mistral-medium-2604", "reservation_id": "0d87ecd1d4a54a1badfb33fd8166b746", "type": "actual", "usage": {"input_tokens": 329, "output_tokens": 2}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.000508, "input_tokens": 9796, "model_calls": 5, "output_tokens": 284, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "model_stopped", "type": "close"}

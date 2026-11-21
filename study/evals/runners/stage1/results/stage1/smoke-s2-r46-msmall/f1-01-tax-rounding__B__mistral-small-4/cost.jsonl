@@ -1,0 +1,7 @@
+{"max_tokens": 4096, "model_id": "mistral-small-4", "prompt_tokens_bound": 686, "reservation_id": "188f8599b5bd47daa5121190e7ae8ea3", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "mistral-small-4", "reservation_id": "188f8599b5bd47daa5121190e7ae8ea3", "type": "actual", "usage": {"input_tokens": 666, "output_tokens": 13}}
+{"max_tokens": 4096, "model_id": "mistral-small-4", "prompt_tokens_bound": 944, "reservation_id": "db29680ee9fe4afc826acfd0e0c84e75", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "mistral-small-4", "reservation_id": "db29680ee9fe4afc826acfd0e0c84e75", "type": "actual", "usage": {"input_tokens": 802, "output_tokens": 14}}
+{"max_tokens": 4096, "model_id": "mistral-small-4", "prompt_tokens_bound": 1376, "reservation_id": "d0a332f8f24e4fe39b1aff7bdc7995b0", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "mistral-small-4", "reservation_id": "d0a332f8f24e4fe39b1aff7bdc7995b0", "type": "actual", "usage": {"input_tokens": 1103, "output_tokens": 135}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.0, "input_tokens": 2571, "model_calls": 3, "output_tokens": 162, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "task_completed", "type": "close"}

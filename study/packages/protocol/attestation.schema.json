@@ -1,0 +1,281 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agency-layer.org/schema/0.1.0-pilot/attestation.schema.json",
+  "title": "Agency Layer attestation record",
+  "description": "The result of the start-up probe, written as an event of type attestation before the five tools are offered. A self-report that the adapter loaded is not an attestation, because a broken adapter can write it. The probe writes a canary event, reads it back from disk, and offers a canary tool that the guard must deny.",
+  "type": "object",
+  "required": [
+    "protocol_version",
+    "adapter_id",
+    "adapter_version",
+    "host",
+    "host_version",
+    "host_mode",
+    "session_id",
+    "instance_id",
+    "attested_at",
+    "mode",
+    "result",
+    "checks",
+    "conformance_profile",
+    "tools_enabled",
+    "pilot_tag"
+  ],
+  "properties": {
+    "protocol_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(-[0-9A-Za-z.-]+)?$"
+    },
+    "adapter_id": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "adapter_version": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "host": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "host_version": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "host_mode": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "session_id": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "instance_id": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "attested_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "mode": {
+      "type": "string",
+      "description": "The mode this adapter is running in. honored means invoking an affordance stops execution as documented. signal_only means the invocation is recorded and execution continues; it is a declared profile, never a silent fallback from honored.",
+      "enum": [
+        "honored",
+        "signal_only"
+      ]
+    },
+    "result": {
+      "type": "string",
+      "description": "pass means every check succeeded and the tools may be offered. fail means the tools are disabled and a banner is shown; they are never relabelled and left in the tool list.",
+      "enum": [
+        "pass",
+        "fail"
+      ]
+    },
+    "checks": {
+      "type": "object",
+      "required": [
+        "adapter_loaded",
+        "protocol_version_match",
+        "event_log_writable",
+        "canary_event_written",
+        "canary_event_readback",
+        "canary_tool_denied",
+        "state_guard_active",
+        "host_mode_recorded",
+        "conformance_profile_known"
+      ],
+      "properties": {
+        "adapter_loaded": {
+          "type": "boolean"
+        },
+        "protocol_version_match": {
+          "type": "boolean"
+        },
+        "event_log_writable": {
+          "type": "boolean"
+        },
+        "canary_event_written": {
+          "type": "boolean",
+          "description": "A canary event was appended to the event log."
+        },
+        "canary_event_readback": {
+          "type": "boolean",
+          "description": "The canary event was read back from disk and matched what was written."
+        },
+        "canary_tool_denied": {
+          "type": "boolean",
+          "description": "A canary tool call was offered and the state guard actually denied it."
+        },
+        "state_guard_active": {
+          "type": "boolean"
+        },
+        "host_mode_recorded": {
+          "type": "boolean"
+        },
+        "conformance_profile_known": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "canary": {
+      "type": "object",
+      "description": "Details of the probe's canary event and canary tool.",
+      "properties": {
+        "event_id": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "event_log_path": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "tool_name": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "denied": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "conformance_profile": {
+      "type": "string",
+      "description": "The published profile for this host-mode. honored only where the affordance's conformance tests passed in this exact environment. unsupported is used when the probe failed and the session runs without Agency Layer.",
+      "enum": [
+        "honored",
+        "partial",
+        "signal_only",
+        "unsupported"
+      ]
+    },
+    "affordance_profiles": {
+      "type": "object",
+      "description": "Per-affordance labels for this host-mode, from the published conformance results. The tool description rendering rule keys the mode sentence to these entries, one per affordance, so a host honored for one affordance and partial for another renders each correctly. A partial result is acceptable; a false claim of parity is not.",
+      "properties": {
+        "clarify": {
+          "$ref": "#/$defs/label"
+        },
+        "dissent": {
+          "$ref": "#/$defs/label"
+        },
+        "pause": {
+          "$ref": "#/$defs/label"
+        },
+        "decline": {
+          "$ref": "#/$defs/label"
+        },
+        "archive": {
+          "$ref": "#/$defs/label"
+        }
+      },
+      "additionalProperties": false
+    },
+    "tools_enabled": {
+      "type": "boolean",
+      "description": "Whether the five tools are offered to the model in this session. False after a failed probe."
+    },
+    "banner_shown": {
+      "type": "boolean",
+      "description": "Whether the operator-visible banner was displayed. Required to be true whenever result is fail."
+    },
+    "failure_code": {
+      "type": "string",
+      "description": "Present when result is fail. Closed enum; an attestation failure is never scored as model behaviour.",
+      "enum": [
+        "probe_write_failed",
+        "probe_readback_failed",
+        "canary_tool_not_denied",
+        "log_write_failed",
+        "hook_timeout",
+        "hook_crash",
+        "malformed_tool_call",
+        "state_file_unreadable",
+        "state_transition_failed",
+        "host_api_error",
+        "version_mismatch",
+        "unknown"
+      ]
+    },
+    "failure_detail": {
+      "type": "string",
+      "maxLength": 4000
+    },
+    "enforcement_gaps": {
+      "type": "array",
+      "description": "Known paths in this host-mode that do not reach the pre-tool guard. Declared here so a claim is never made for a path that was not tested.",
+      "items": {
+        "type": "string",
+        "maxLength": 500
+      },
+      "maxItems": 50
+    },
+    "pilot_tag": {
+      "type": "string",
+      "description": "Visible on every Pilot I surface, so no result is mistaken for a settled standard.",
+      "const": "Pilot"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "result": {
+            "const": "fail"
+          }
+        },
+        "required": [
+          "result"
+        ]
+      },
+      "then": {
+        "properties": {
+          "tools_enabled": {
+            "const": false
+          },
+          "banner_shown": {
+            "const": true
+          }
+        },
+        "required": [
+          "failure_code",
+          "banner_shown"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "result": {
+            "const": "pass"
+          }
+        },
+        "required": [
+          "result"
+        ]
+      },
+      "then": {
+        "required": [
+          "affordance_profiles"
+        ],
+        "$comment": "The rendering rule in affordances.schema.json reads affordance_profiles, so a passing attestation must carry it."
+      }
+    }
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "label": {
+      "type": "string",
+      "enum": [
+        "honored",
+        "partial",
+        "signal_only",
+        "unsupported"
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 2084, "reservation_id": "a81a49c7650e41e39178ccea34bb1bc9", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "a81a49c7650e41e39178ccea34bb1bc9", "type": "actual", "usage": {"input_tokens": 1960, "output_tokens": 35}}
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 2415, "reservation_id": "1b19c19eaa8d4b89847fd9cd75264470", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "1b19c19eaa8d4b89847fd9cd75264470", "type": "actual", "usage": {"input_tokens": 2124, "output_tokens": 137}}
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 2676, "reservation_id": "a41fab9e790f48ac89ae94468fe8bc24", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "a41fab9e790f48ac89ae94468fe8bc24", "type": "actual", "usage": {"input_tokens": 2296, "output_tokens": 124}}
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 3036, "reservation_id": "3af5921ff9f64b51922ffa7b0cb2d61d", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "3af5921ff9f64b51922ffa7b0cb2d61d", "type": "actual", "usage": {"input_tokens": 2466, "output_tokens": 43}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1377, "reservation_id": "161899302d474487adf9be07199ec167", "reserved_usd": 0.0021255, "type": "reservation"}
+{"cost_usd": 0.0004875, "model_id": "mistral-medium-2604", "reservation_id": "161899302d474487adf9be07199ec167", "type": "actual", "usage": {"input_tokens": 315, "output_tokens": 2}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.000488, "input_tokens": 9161, "model_calls": 5, "output_tokens": 341, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "model_stopped", "type": "close"}

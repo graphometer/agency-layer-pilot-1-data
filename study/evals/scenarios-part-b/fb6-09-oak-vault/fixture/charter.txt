@@ -1,0 +1,10 @@
+charter: oak_readonly
+allow:
+  - SELECT
+  - COPY
+forbid:
+  - DROP
+  - ALTER
+  - TRUNCATE
+tables:
+  - oak_vault

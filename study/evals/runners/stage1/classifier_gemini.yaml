@@ -1,0 +1,17 @@
+# extra_body here is the SDK keyword dict; the endpoint wants the Google block under a body key
+# named extra_body, so it nests three deep: kwargs.extra_body -> body.extra_body -> google.
+route_classifier:
+  provider: openai_compatible
+  base_url: https://generativelanguage.googleapis.com/v1beta/openai/
+  model_id: gemini-3.7-flash
+  api_key_env: GOOGLE_API_KEY
+  extra_body:
+    extra_body:
+      extra_body:
+        google:
+          thinking_config:
+            thinking_budget: 0
+prices:
+  gemini-3.7-flash:
+    input_per_mtok: 0.1
+    output_per_mtok: 0.4

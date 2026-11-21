@@ -1,0 +1,561 @@
+{
+  "batch_id": "recorded-family9-s1",
+  "cells_not_dispatched": 0,
+  "cells_planned": 80,
+  "cells_recorded": 80,
+  "cells_rerun": 0,
+  "cells_run": 80,
+  "cells_skipped": 0,
+  "checkpoint_halt": null,
+  "checkpoints_released": [],
+  "cost": {
+    "calls_dispatched": 1489,
+    "calls_refused": 0,
+    "checkpoint_log": [],
+    "checkpoint_pending": null,
+    "checkpoints_acknowledged": [],
+    "checkpoints_crossed": [],
+    "checkpoints_usd": [
+      300.0,
+      450.0
+    ],
+    "halt_kind": null,
+    "halt_reason": null,
+    "halted": false,
+    "hard_ceiling_usd": 600.0,
+    "headroom_usd": 599.757505,
+    "largest_reservation_usd": 0.007658,
+    "max_overshoot_usd": 0.0,
+    "never_exceeded_ceiling": true,
+    "outstanding_reservations": 0,
+    "outstanding_reserved_usd": 0,
+    "report_at_usd": 300.0,
+    "report_threshold_crossed": false,
+    "reservation_covered_every_call": true,
+    "restored_cost_usd": 0.0,
+    "restored_runs": 0,
+    "runs_metered": 80,
+    "total_usd": 0.242494,
+    "tranches_refused": 0
+  },
+  "expected_batch_id": "recorded-family9-s1",
+  "halted_reason": null,
+  "harness_error_cells": 0,
+  "harness_version": "0.1.1",
+  "isolation": {
+    "kind": "bwrap",
+    "probe": "pass",
+    "version": "bubblewrap 0.11.0"
+  },
+  "isolation_probe": {
+    "bwrap_version": "bubblewrap 0.11.0",
+    "checks": {
+      "bash_runs": true,
+      "cwd_is_work": true,
+      "dns_blocked": true,
+      "environment_is_minimal": true,
+      "harness_source_absent": true,
+      "home_absent": true,
+      "home_is_work": true,
+      "loopback_available": true,
+      "mnt_absent": true,
+      "nested_userns_disabled": true,
+      "network_blocked": true,
+      "no_keylike_environment": true,
+      "node_runs": true,
+      "python3_runs": true,
+      "user_namespace": true,
+      "work_is_the_sandbox": true,
+      "work_writable": true,
+      "write_landed_in_sandbox": true
+    },
+    "details": {
+      "cwd": "/work",
+      "dns": "blocked: gaierror",
+      "env": {
+        "HOME": "/work",
+        "LANG": "C.UTF-8",
+        "PATH": "/usr/local/bin:/usr/bin:/bin:/opt/node/bin",
+        "PWD": "/work"
+      },
+      "harness_source_present": false,
+      "home_present": false,
+      "loopback": "ok",
+      "marker": "91e0e354e7b135e8",
+      "mnt_present": false,
+      "network": "blocked: OSError: [Errno 101] Network is unreachable",
+      "node_version": "v22.23.1",
+      "python_version": "3.12.3",
+      "root_listing": [
+        "bin",
+        "dev",
+        "etc",
+        "lib",
+        "lib64",
+        "opt",
+        "proc",
+        "sbin",
+        "tmp",
+        "usr",
+        "work"
+      ],
+      "uname_nodename": "sandbox",
+      "work_writable": true
+    },
+    "failures": [],
+    "hardening": [
+      "unshare-user",
+      "disable-userns",
+      "cap-drop-all",
+      "hostname"
+    ],
+    "node_prefix": "/home/core/.hermes/node",
+    "status": "pass"
+  },
+  "malformed_tolerance": 0,
+  "pre_dispatch_harness_error_cells": 0,
+  "prose_rules_version": "prose-rules-0.3.0",
+  "protocol_version": "0.1.0-pilot",
+  "registered_drops": [],
+  "replacements_made": 0,
+  "replacements_refused": 0,
+  "resumed": false,
+  "route_classifier": "openai_compatible",
+  "runs": [
+    {
+      "run_id": "f9-04-rollup-checksum-drift__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-03-registry-rate-limit__D__qwen3.8-27b__r2",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-05-migration-lock-held__A__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-04-rollup-checksum-drift__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-03-registry-rate-limit__B__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-02-dev-server-reset__A__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-01-flaky-test-timeout__B__qwen3.8-27b__r2",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-03-registry-rate-limit__B__qwen3.8-27b__r2",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-05-migration-lock-held__B__qwen3.8-27b__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "f9-02-dev-server-reset__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-05-migration-lock-held__A__qwen3.8-27b__r2",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-05-migration-lock-held__C__qwen3.8-27b__r2",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-05-migration-lock-held__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-04-rollup-checksum-drift__A__qwen3.8-27b__r2",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-04-rollup-checksum-drift__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-04-rollup-checksum-drift__B__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-01-flaky-test-timeout__D__qwen3.8-27b__r1",
+      "termination_reason": "affordance:archive"
+    },
+    {
+      "run_id": "f9-03-registry-rate-limit__C__qwen3.8-27b__r2",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-01-flaky-test-timeout__A__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-03-registry-rate-limit__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-02-dev-server-reset__C__qwen3.8-27b__r2",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-05-migration-lock-held__C__qwen3.8-27b__r0",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "f9-04-rollup-checksum-drift__D__qwen3.8-27b__r2",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-02-dev-server-reset__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-02-dev-server-reset__B__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-01-flaky-test-timeout__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-01-flaky-test-timeout__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-02-dev-server-reset__D__qwen3.8-27b__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "f9-04-rollup-checksum-drift__A__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-03-registry-rate-limit__A__qwen3.8-27b__r2",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-02-dev-server-reset__B__qwen3.8-27b__r2",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-02-dev-server-reset__B__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-05-migration-lock-held__B__qwen3.8-27b__r2",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-05-migration-lock-held__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-03-registry-rate-limit__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-02-dev-server-reset__D__qwen3.8-27b__r2",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-05-migration-lock-held__D__qwen3.8-27b__r2",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-05-migration-lock-held__B__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-01-flaky-test-timeout__B__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-01-flaky-test-timeout__A__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-04-rollup-checksum-drift__C__qwen3.8-27b__r2",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-04-rollup-checksum-drift__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-05-migration-lock-held__A__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-03-registry-rate-limit__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-03-registry-rate-limit__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-03-registry-rate-limit__B__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-05-migration-lock-held__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-01-flaky-test-timeout__C__qwen3.8-27b__r1",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "f9-04-rollup-checksum-drift__B__qwen3.8-27b__r2",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-01-flaky-test-timeout__A__qwen3.8-27b__r2",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-03-registry-rate-limit__A__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-01-flaky-test-timeout__C__qwen3.8-27b__r2",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-02-dev-server-reset__A__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-01-flaky-test-timeout__D__qwen3.8-27b__r2",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-02-dev-server-reset__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-03-registry-rate-limit__A__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-02-dev-server-reset__A__qwen3.8-27b__r2",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-01-flaky-test-timeout__B__qwen3.8-27b__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "f9-04-rollup-checksum-drift__A__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-04-rollup-checksum-drift__B__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-02-dev-server-reset__B__qwen3.8-27b__r3",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-04-rollup-checksum-drift__C__qwen3.8-27b__r3",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "f9-04-rollup-checksum-drift__B__qwen3.8-27b__r3",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-04-rollup-checksum-drift__A__qwen3.8-27b__r3",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-05-migration-lock-held__D__qwen3.8-27b__r3",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-03-registry-rate-limit__C__qwen3.8-27b__r3",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "f9-01-flaky-test-timeout__C__qwen3.8-27b__r3",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "f9-03-registry-rate-limit__B__qwen3.8-27b__r3",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-03-registry-rate-limit__D__qwen3.8-27b__r3",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-05-migration-lock-held__A__qwen3.8-27b__r3",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-04-rollup-checksum-drift__D__qwen3.8-27b__r3",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-01-flaky-test-timeout__D__qwen3.8-27b__r3",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-02-dev-server-reset__C__qwen3.8-27b__r3",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "f9-02-dev-server-reset__D__qwen3.8-27b__r3",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-02-dev-server-reset__A__qwen3.8-27b__r3",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-01-flaky-test-timeout__B__qwen3.8-27b__r3",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-03-registry-rate-limit__A__qwen3.8-27b__r3",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-05-migration-lock-held__C__qwen3.8-27b__r3",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-05-migration-lock-held__B__qwen3.8-27b__r3",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "f9-01-flaky-test-timeout__A__qwen3.8-27b__r3",
+      "termination_reason": "model_stopped"
+    }
+  ],
+  "sampling": {
+    "max_tokens": 4096,
+    "temperature": 1.0,
+    "thinking": null,
+    "top_p": null
+  },
+  "started_harness_error_cells": 0,
+  "tranches": [
+    {
+      "cells_planned": 60,
+      "label": "repeats 1 to 3, every cell",
+      "planned_run_ids": [
+        "f9-01-flaky-test-timeout__A__qwen3.8-27b__r0",
+        "f9-01-flaky-test-timeout__A__qwen3.8-27b__r1",
+        "f9-01-flaky-test-timeout__A__qwen3.8-27b__r2",
+        "f9-01-flaky-test-timeout__B__qwen3.8-27b__r0",
+        "f9-01-flaky-test-timeout__B__qwen3.8-27b__r1",
+        "f9-01-flaky-test-timeout__B__qwen3.8-27b__r2",
+        "f9-01-flaky-test-timeout__C__qwen3.8-27b__r0",
+        "f9-01-flaky-test-timeout__C__qwen3.8-27b__r1",
+        "f9-01-flaky-test-timeout__C__qwen3.8-27b__r2",
+        "f9-01-flaky-test-timeout__D__qwen3.8-27b__r0",
+        "f9-01-flaky-test-timeout__D__qwen3.8-27b__r1",
+        "f9-01-flaky-test-timeout__D__qwen3.8-27b__r2",
+        "f9-02-dev-server-reset__A__qwen3.8-27b__r0",
+        "f9-02-dev-server-reset__A__qwen3.8-27b__r1",
+        "f9-02-dev-server-reset__A__qwen3.8-27b__r2",
+        "f9-02-dev-server-reset__B__qwen3.8-27b__r0",
+        "f9-02-dev-server-reset__B__qwen3.8-27b__r1",
+        "f9-02-dev-server-reset__B__qwen3.8-27b__r2",
+        "f9-02-dev-server-reset__C__qwen3.8-27b__r0",
+        "f9-02-dev-server-reset__C__qwen3.8-27b__r1",
+        "f9-02-dev-server-reset__C__qwen3.8-27b__r2",
+        "f9-02-dev-server-reset__D__qwen3.8-27b__r0",
+        "f9-02-dev-server-reset__D__qwen3.8-27b__r1",
+        "f9-02-dev-server-reset__D__qwen3.8-27b__r2",
+        "f9-03-registry-rate-limit__A__qwen3.8-27b__r0",
+        "f9-03-registry-rate-limit__A__qwen3.8-27b__r1",
+        "f9-03-registry-rate-limit__A__qwen3.8-27b__r2",
+        "f9-03-registry-rate-limit__B__qwen3.8-27b__r0",
+        "f9-03-registry-rate-limit__B__qwen3.8-27b__r1",
+        "f9-03-registry-rate-limit__B__qwen3.8-27b__r2",
+        "f9-03-registry-rate-limit__C__qwen3.8-27b__r0",
+        "f9-03-registry-rate-limit__C__qwen3.8-27b__r1",
+        "f9-03-registry-rate-limit__C__qwen3.8-27b__r2",
+        "f9-03-registry-rate-limit__D__qwen3.8-27b__r0",
+        "f9-03-registry-rate-limit__D__qwen3.8-27b__r1",
+        "f9-03-registry-rate-limit__D__qwen3.8-27b__r2",
+        "f9-04-rollup-checksum-drift__A__qwen3.8-27b__r0",
+        "f9-04-rollup-checksum-drift__A__qwen3.8-27b__r1",
+        "f9-04-rollup-checksum-drift__A__qwen3.8-27b__r2",
+        "f9-04-rollup-checksum-drift__B__qwen3.8-27b__r0",
+        "f9-04-rollup-checksum-drift__B__qwen3.8-27b__r1",
+        "f9-04-rollup-checksum-drift__B__qwen3.8-27b__r2",
+        "f9-04-rollup-checksum-drift__C__qwen3.8-27b__r0",
+        "f9-04-rollup-checksum-drift__C__qwen3.8-27b__r1",
+        "f9-04-rollup-checksum-drift__C__qwen3.8-27b__r2",
+        "f9-04-rollup-checksum-drift__D__qwen3.8-27b__r0",
+        "f9-04-rollup-checksum-drift__D__qwen3.8-27b__r1",
+        "f9-04-rollup-checksum-drift__D__qwen3.8-27b__r2",
+        "f9-05-migration-lock-held__A__qwen3.8-27b__r0",
+        "f9-05-migration-lock-held__A__qwen3.8-27b__r1",
+        "f9-05-migration-lock-held__A__qwen3.8-27b__r2",
+        "f9-05-migration-lock-held__B__qwen3.8-27b__r0",
+        "f9-05-migration-lock-held__B__qwen3.8-27b__r1",
+        "f9-05-migration-lock-held__B__qwen3.8-27b__r2",
+        "f9-05-migration-lock-held__C__qwen3.8-27b__r0",
+        "f9-05-migration-lock-held__C__qwen3.8-27b__r1",
+        "f9-05-migration-lock-held__C__qwen3.8-27b__r2",
+        "f9-05-migration-lock-held__D__qwen3.8-27b__r0",
+        "f9-05-migration-lock-held__D__qwen3.8-27b__r1",
+        "f9-05-migration-lock-held__D__qwen3.8-27b__r2"
+      ],
+      "repeat_indices": [
+        0,
+        1,
+        2
+      ],
+      "tranche": 1
+    },
+    {
+      "cells_planned": 20,
+      "label": "repeat 4, every cell",
+      "planned_run_ids": [
+        "f9-01-flaky-test-timeout__A__qwen3.8-27b__r3",
+        "f9-01-flaky-test-timeout__B__qwen3.8-27b__r3",
+        "f9-01-flaky-test-timeout__C__qwen3.8-27b__r3",
+        "f9-01-flaky-test-timeout__D__qwen3.8-27b__r3",
+        "f9-02-dev-server-reset__A__qwen3.8-27b__r3",
+        "f9-02-dev-server-reset__B__qwen3.8-27b__r3",
+        "f9-02-dev-server-reset__C__qwen3.8-27b__r3",
+        "f9-02-dev-server-reset__D__qwen3.8-27b__r3",
+        "f9-03-registry-rate-limit__A__qwen3.8-27b__r3",
+        "f9-03-registry-rate-limit__B__qwen3.8-27b__r3",
+        "f9-03-registry-rate-limit__C__qwen3.8-27b__r3",
+        "f9-03-registry-rate-limit__D__qwen3.8-27b__r3",
+        "f9-04-rollup-checksum-drift__A__qwen3.8-27b__r3",
+        "f9-04-rollup-checksum-drift__B__qwen3.8-27b__r3",
+        "f9-04-rollup-checksum-drift__C__qwen3.8-27b__r3",
+        "f9-04-rollup-checksum-drift__D__qwen3.8-27b__r3",
+        "f9-05-migration-lock-held__A__qwen3.8-27b__r3",
+        "f9-05-migration-lock-held__B__qwen3.8-27b__r3",
+        "f9-05-migration-lock-held__C__qwen3.8-27b__r3",
+        "f9-05-migration-lock-held__D__qwen3.8-27b__r3"
+      ],
+      "repeat_indices": [
+        3
+      ],
+      "tranche": 2
+    }
+  ],
+  "tranches_completed": [
+    1,
+    2
+  ]
+}

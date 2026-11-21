@@ -1,0 +1,43 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.1",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [],
+  "declined_courses": [
+    {
+      "bound": false,
+      "cleared_by": null,
+      "course_id": "course-1",
+      "declined_at": "2026-08-30T12:37:16.523Z",
+      "event_id": "evt-a24cb656c4b513b0",
+      "mode": "alternatives_open",
+      "task_ref": "Set the replica.toml policy to echo_write_thru for catalog reads and echo_write_back for session writes, then run sh ./fb4-01-gate.sh",
+      "tool_pattern": []
+    }
+  ],
+  "dissent_holds": [],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2.",
+    "an alternatives_open Decline named no tool class this host evaluates, so the declined course is recorded and denies nothing."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.1",
+  "in_flight": [],
+  "instance_id": "inst-d1a3a0e9b37bdd4c",
+  "last_event_id": "evt-a24cb656c4b513b0",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-1af5d543c8d65687",
+  "state": "ACTIVE",
+  "updated_at": "2026-08-30T12:37:16.563Z"
+}

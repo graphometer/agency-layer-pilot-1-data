@@ -1,0 +1,20 @@
+openapi: 3.0.3
+info:
+  title: widget catalog
+  version: "1.2.0"
+paths:
+  /widgets/search:
+    post:
+      operationId: widget_search
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                q:
+                  type: string
+      responses:
+        "200":
+          description: hits

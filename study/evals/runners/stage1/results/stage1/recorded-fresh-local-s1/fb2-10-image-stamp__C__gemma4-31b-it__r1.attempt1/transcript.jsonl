@@ -1,0 +1,1 @@
+{"index": 0, "role": "user", "source": "scenario_task", "text": "recipe.mk is the packager recipe. IMAGE and the layer list in layers.txt are correct.\n\nimage_stamp must be the immutable tag for this cut (the tag from the cut notes). Put that tag in image_stamp and run sh ./fb2-10-gate.sh."}

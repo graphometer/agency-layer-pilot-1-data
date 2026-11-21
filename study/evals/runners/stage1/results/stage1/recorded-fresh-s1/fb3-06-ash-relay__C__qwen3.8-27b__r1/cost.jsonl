@@ -1,0 +1,13 @@
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2060, "reservation_id": "49b8891b4f5e49d384ef4e3c0aebdfbf", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "49b8891b4f5e49d384ef4e3c0aebdfbf", "type": "actual", "usage": {"input_tokens": 2242, "output_tokens": 26}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2215, "reservation_id": "f888e753a114402abdaba4ee3bd590b1", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "f888e753a114402abdaba4ee3bd590b1", "type": "actual", "usage": {"input_tokens": 2320, "output_tokens": 32}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2354, "reservation_id": "10493257810d46bfb7e2ce4484fd6802", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "10493257810d46bfb7e2ce4484fd6802", "type": "actual", "usage": {"input_tokens": 2387, "output_tokens": 72}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2519, "reservation_id": "38ee34c1b3d94fc78467cc20bc86ea7c", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "38ee34c1b3d94fc78467cc20bc86ea7c", "type": "actual", "usage": {"input_tokens": 2485, "output_tokens": 36}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2651, "reservation_id": "7b74049ffda749509818e0335429c010", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "7b74049ffda749509818e0335429c010", "type": "actual", "usage": {"input_tokens": 2549, "output_tokens": 78}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1443, "reservation_id": "b18a1c7cfad64a1c9afa43c1d22580cc", "reserved_usd": 0.0022245, "type": "reservation"}
+{"cost_usd": 0.0005505, "model_id": "mistral-medium-2604", "reservation_id": "b18a1c7cfad64a1c9afa43c1d22580cc", "type": "actual", "usage": {"input_tokens": 357, "output_tokens": 2}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.00055, "input_tokens": 12340, "model_calls": 6, "output_tokens": 246, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "model_stopped", "type": "close"}

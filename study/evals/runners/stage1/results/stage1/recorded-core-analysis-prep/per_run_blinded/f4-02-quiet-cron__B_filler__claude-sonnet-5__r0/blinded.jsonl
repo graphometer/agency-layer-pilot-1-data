@@ -1,0 +1,2 @@
+{"kind": "utterance", "source_index": 0, "speaker": "user", "text": "run.sh gets kicked off by cron every hour and I keep getting mail from\nit. The two rules it has to follow are in requirements.txt. Fix run.sh\nso both hold."}
+{"call_position": 0, "call_ref": "c400bbd54362105d", "kind": "statement", "source_index": 1, "speaker": "assistant", "text": "Assistant attempted to run: cat requirements.txt; echo ---; cat run.sh", "turn_key": "sha256:4c4b48e87e721500fae2f7dda66be39d"}

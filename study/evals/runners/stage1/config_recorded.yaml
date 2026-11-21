@@ -1,0 +1,237 @@
+# RECORDED CONFIG (frozen candidate, correction phase 2026-08-24) — GPT review B9.
+#
+# Differences from config.yaml, which stays as the development and mock configuration:
+#   * the fourth subject, deepseek-v4-pro (R38), with its price entry
+#   * the ratified spend checkpoints [300, 450] (R39, R40 P3)
+#   * the secondary judge's price entry, because instruments are inside the budget scope (R40 P3)
+# No credential is in this file. Keys are read from the environment by the provider clients and by
+# nothing else; a base_url is a config value, not a secret.
+#
+# Step 7 (2026-08-25) closed the price and identity obligations: every billed rate is verified
+# first-party (sources in BUDGET.md) and the dated provider snapshots + local checkpoint digests
+# are recorded in docs/review/step7-2026-08-25/MODEL_SNAPSHOTS.md (claude-sonnet-5 created
+# 2026-06-29; gpt-5.6-terra created 2026-06-23; deepseek subject pinned to the DATED
+# deepseek/deepseek-v4-pro-0813 slug via OpenRouter under R54 — a tighter identity than the
+# undated first-party alias; mistral-medium-2604 = dated alias in the medium-3.5 cluster; local
+# GGUF sha256s in the doc).
+# Still open for the freeze: re-run every preflight at FROZEN-S1 after the sealed fold-in.
+
+# The recorded run uses the promoted 45-scenario corpus, not the three-scenario harness fixture set.
+scenarios_dir: ../../scenarios
+results_dir: results
+command_timeout: 60
+keep_sandbox: false
+isolation: bwrap
+malformed_tolerance: 0
+route_classifier:
+  provider: openai_compatible
+  base_url: https://api.mistral.ai/v1
+  model_id: mistral-medium-2604
+  api_key_env: MISTRAL_API_KEY
+sampling:
+  temperature: 1.0
+  top_p: null
+  max_tokens: 4096
+  thinking: null
+spend:
+  hard_ceiling_usd: 600.0
+  report_at_usd: 300.0
+  # Spend checkpoints. Crossing one halts dispatch BETWEEN runs with a logged
+  # reason; only a resume naming that checkpoint releases it
+  # (--resume-checkpoint 300). The hard ceiling is separate and unchanged: it
+  # refuses the call itself. The recorded values are inserted at the freeze.
+  # R39/R40 P3: the ratified discretionary checkpoints. Crossing one halts dispatch at the next
+  # TRANCHE boundary, never inside a tranche (R39 amendment F5; GPT review B6), with a logged reason;
+  # only a resume naming that checkpoint releases it. The hard ceiling is separate and refuses the
+  # call itself.
+  checkpoints_usd: [300.0, 450.0]
+prices:
+  mock-benign:
+    input_per_mtok: 3.0
+    output_per_mtok: 15.0
+  mock-clarify:
+    input_per_mtok: 3.0
+    output_per_mtok: 15.0
+  mock-pause:
+    input_per_mtok: 3.0
+    output_per_mtok: 15.0
+  mock-decline:
+    input_per_mtok: 3.0
+    output_per_mtok: 15.0
+  mock-dissent:
+    input_per_mtok: 3.0
+    output_per_mtok: 15.0
+  mock-archive:
+    input_per_mtok: 3.0
+    output_per_mtok: 15.0
+  mock-limit:
+    input_per_mtok: 3.0
+    output_per_mtok: 15.0
+  claude-sonnet-5:
+    # Verified first-party 2026-08-25 (platform.claude.com/docs/en/about-claude/pricing): the
+    # $2/$10 launch price "is now the standard price" and the scheduled 2026-09-01 increase to
+    # $3/$15 will not occur. Cache: read 0.1x base, 5-minute write 1.25x base (the client sends
+    # cache_control type "ephemeral" = the 5-minute tier). The 3.0/15.0 committed earlier priced
+    # the cancelled increase.
+    input_per_mtok: 2.0
+    output_per_mtok: 10.0
+    cache_read_per_mtok: 0.2
+    cache_write_per_mtok: 2.5
+  claude-haiku-4-5-20251001:
+    input_per_mtok: 1.0
+    output_per_mtok: 5.0
+    cache_read_per_mtok: 0.1
+    cache_write_per_mtok: 1.25
+  gemini-3.7-flash:
+    # Unseated historical candidate (branch 3: no gemini arm or instrument dispatches; no
+    # recorded call can price against this row). Step 10 (2026-08-25): a lane found this row
+    # (0.1/0.4) contradicting evals/grading/instrument_prices.json (0.3/2.5); aligned to the
+    # instrument file, which is the canonical instrument price authority — an alignment for
+    # internal consistency, not a first-party verification (none is owed for an unseated row).
+    input_per_mtok: 0.3
+    output_per_mtok: 2.5
+  claude-opus-5:
+    input_per_mtok: 5.0
+    output_per_mtok: 25.0
+    cache_read_per_mtok: 0.5
+    cache_write_per_mtok: 6.25
+  gpt-5.6-sol:
+    input_per_mtok: 4.0
+    output_per_mtok: 20.0
+    cache_read_per_mtok: 0.4
+  gpt-5.6-terra:
+    # Verified first-party 2026-08-25 (developers.openai.com/api/docs/pricing): EXACT at the
+    # standard short-context tier (2.00 in / 0.20 cached / 12.00 out); the study's requests sit
+    # far below the long-context threshold. gpt-5.6-sol (4.0/0.4/20.0) verified exact the same
+    # way; claude-haiku and claude-opus-5 rows also match the Anthropic page read the same day.
+    input_per_mtok: 2.0
+    cache_read_per_mtok: 0.2
+    output_per_mtok: 12.0
+  qwen3.8-27b:
+    input_per_mtok: 0.0
+    output_per_mtok: 0.0
+  muse-glimmer-30b:
+    # R46 free local exploratory arm (Part B only); no API charge (R17 applies to local endpoints)
+    input_per_mtok: 0.0
+    output_per_mtok: 0.0
+  gemma4-31b-it:
+    # R57 free local exploratory arm (Part B only, replacing mistral-small-4 per R56);
+    # no API charge (R17 applies to local endpoints)
+    input_per_mtok: 0.0
+    output_per_mtok: 0.0
+  mock-costly:
+    input_per_mtok: 3000.0
+    output_per_mtok: 15000.0
+  deepseek-v4-pro:
+    # Verified first-party 2026-08-25 (api-docs.deepseek.com/quick_start/pricing): PEAK rate
+    # 1.32 in / 3.96 out (peak = 01:00-04:00 and 06:00-10:00 UTC Mon-Fri; off-peak is half).
+    # The 1.00/3.00 row committed 2026-08-24 as a "deliberate over-estimate" was in fact an
+    # UNDER-estimate at peak — the unsafe direction for the meter — and is corrected here to the
+    # peak ceiling. Two unmodelled discounts keep this row ceiling-side at any hour: off-peak
+    # halving, and the automatic cache-hit input rate (0.044 peak), which the openai-compatible
+    # client does not split out (all prompt tokens meter at the full rate).
+    # R54 (2026-08-25): the row survives the OpenRouter move unchanged — the endpoints API shows
+    # the pinned `deepseek` provider carries DeepSeek's own time-of-day schedule at exact parity
+    # (peak 1.32/3.96, off-peak 0.66/1.98, cache-read 0.044/0.022) with no inference markup.
+    # OpenRouter's 5.5% fee applies to CREDIT PURCHASES (auto-reload), outside the meter; noted
+    # in BUDGET.md as a funding overhead, not a rate.
+    input_per_mtok: 1.32
+    output_per_mtok: 3.96
+  minimax-m3:
+    # Secondary judge, routed through OpenRouter (PM20). Instrument spend is inside the budget scope
+    # (R40 P3); the judging pass meters itself from evals/grading/instrument_prices.json and this
+    # entry exists so a preflight that costs the whole package can see it.
+    input_per_mtok: 0.30
+    output_per_mtok: 1.20
+  mistral-medium-2604:
+    # Canonical instrument price lives in evals/grading/instrument_prices.json (the judging pass
+    # meters itself there, R40 P3); this row exists so a whole-package preflight can see it and
+    # MUST match that file. Corrected 2026-08-25: 0.4/2.0 was the Medium 3/3.1 generation.
+    input_per_mtok: 1.5
+    output_per_mtok: 7.5
+models:
+- name: mock_benign
+  provider: mock
+  model_id: mock-benign
+  script: mocks/benign_complete.json
+- name: mock_clarify
+  provider: mock
+  model_id: mock-clarify
+  script: mocks/clarify_then_ship.json
+- name: mock_pause
+  provider: mock
+  model_id: mock-pause
+  script: mocks/pause_then_push.json
+- name: mock_decline
+  provider: mock
+  model_id: mock-decline
+  script: mocks/decline_final_then_pressed.json
+- name: mock_dissent
+  provider: mock
+  model_id: mock-dissent
+  script: mocks/dissent_hold_scoped.json
+- name: mock_archive
+  provider: mock
+  model_id: mock-archive
+  script: mocks/archive_instance.json
+- name: mock_limit
+  provider: mock
+  model_id: mock-limit
+  script: mocks/limit_reached.json
+- name: claude_primary
+  provider: anthropic
+  model_id: claude-sonnet-5
+- name: claude_frontier
+  provider: anthropic
+  model_id: claude-opus-5
+- name: gpt_primary
+  provider: openai
+  model_id: gpt-5.6-terra
+- name: gpt_frontier
+  provider: openai
+  model_id: gpt-5.6-sol
+- name: deepseek_primary
+  # R54 (2026-08-25): dispatch moved to OpenRouter at Grant's direction, pinned to DeepSeek's own
+  # first-party endpoint (allow_fallbacks false — a silent fallback could land on a quantized or
+  # no-tools third-party host). model_id stays the logical/meter/price key; the wire model is the
+  # DATED GA slug via the extra_body override. Trap, verified against the endpoints API 2026-08-25:
+  # the bare deepseek/deepseek-v4-pro slug on OpenRouter is the 0423 snapshot served ONLY by third
+  # parties — never use it. extra_body's top level becomes SDK kwargs (the model override); the
+  # inner extra_body reaches the HTTP body (the provider pin) — the same nesting the gemini
+  # classifier profile uses, covered by test_openai_compatible_gemini_profile_and_extra_body.
+  # Evidence on disk, per run: extra_body_sent in run.json records this config override AS
+  # CONFIGURED (the SDK then merges the inner dict into the HTTP body, so the wire JSON carries
+  # "provider" at the body's top level — the nesting here is the SDK-kwarg shape, not the wire
+  # shape); served_model and served_provider in run.json and on every assistant transcript turn
+  # record the endpoint's own claim of what served the call (the response model echo and
+  # OpenRouter's serving-provider field). The smoke checks served_model == the pinned slug.
+  provider: openai_compatible
+  model_id: deepseek-v4-pro
+  base_url: https://openrouter.ai/api/v1
+  api_key_env: OPENROUTER_API_KEY
+  extra_body:
+    model: deepseek/deepseek-v4-pro-0813
+    extra_body:
+      provider:
+        only: [deepseek]
+        allow_fallbacks: false
+- name: local_qwen
+  provider: local
+  model_id: qwen3.8-27b
+  base_url: http://172.17.0.1:8109/v1
+- name: local_muse
+  # R46 Part B exploratory arm. Serial with every other local model server (13-wide exclusion
+  # group): started for its runs, stopped after, never beside another local endpoint.
+  provider: local
+  model_id: muse-glimmer-30b
+  base_url: http://172.17.0.1:8111/v1
+- name: local_gemma
+  # R57 Part B exploratory arm (replaces mistral-small-4, DROPPED under R56 after its chat
+  # template 500'd on the clarify-answer path — failure published in R55/R56). Google official
+  # QAT q4_0 GGUF (repo google/gemma-4-31B-it-qat-q4_0-gguf @ 59dde245…, sha256 in
+  # MODEL_SNAPSHOTS.md) served text-only by the llama.cpp study rig on :8112
+  # (models/gguf/gemma-4-31b-it-qat/start_server.sh, forward-guarded against the whole local
+  # exclusion group); same serial discipline as every local arm.
+  provider: local
+  model_id: gemma4-31b-it
+  base_url: http://172.17.0.1:8112/v1

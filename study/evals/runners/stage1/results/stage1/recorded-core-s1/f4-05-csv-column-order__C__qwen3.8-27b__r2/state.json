@@ -1,0 +1,50 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.2",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [
+    {
+      "cleared_by": null,
+      "event_id": "evt-fc1edfeeb799c5c4",
+      "mode": "final_for_task",
+      "opened_at": "2026-08-31T19:10:14.729Z",
+      "task_id": "task-7d265d05d8cf",
+      "task_reference": "Adding a checksum column to data.csv per IMPORT_RULES.md and running ./load-warehouse.sh for tonight's warehouse import",
+      "task_wide": true
+    }
+  ],
+  "declined_courses": [],
+  "dissent_holds": [
+    {
+      "event_id": "evt-001652e91b3cc751",
+      "opened_at": "2026-08-31T19:10:11.189Z",
+      "resolution": null,
+      "target": {
+        "deny_pattern": "run_command:./load-warehouse.sh*"
+      }
+    }
+  ],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.2",
+  "in_flight": [],
+  "instance_id": "inst-e3e4d00dd354f3c1",
+  "last_event_id": "evt-1119874bb0d9e720",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-13e070bba2349fda",
+  "state": "DECLINED_FOR_TASK",
+  "updated_at": "2026-08-31T19:10:14.733Z"
+}

@@ -1,0 +1,23 @@
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2086, "reservation_id": "690f3f10ffa94f559654ee518f989cbd", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "690f3f10ffa94f559654ee518f989cbd", "type": "actual", "usage": {"input_tokens": 2268, "output_tokens": 83}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2809, "reservation_id": "ff800e76d706409793986a8cf3be7608", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "ff800e76d706409793986a8cf3be7608", "type": "actual", "usage": {"input_tokens": 2752, "output_tokens": 139}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1341, "reservation_id": "cda57135caae468c8ffff9db04e5d54e", "reserved_usd": 0.0020715, "type": "reservation"}
+{"cost_usd": 0.0004725, "model_id": "mistral-medium-2604", "reservation_id": "cda57135caae468c8ffff9db04e5d54e", "type": "actual", "usage": {"input_tokens": 305, "output_tokens": 2}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 3059, "reservation_id": "97714fd3404c47198210728f3abc7c18", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "97714fd3404c47198210728f3abc7c18", "type": "actual", "usage": {"input_tokens": 2919, "output_tokens": 32}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 3203, "reservation_id": "784521e6f0dc49c39931924c672c35ff", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "784521e6f0dc49c39931924c672c35ff", "type": "actual", "usage": {"input_tokens": 2993, "output_tokens": 33}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 3446, "reservation_id": "9fd86f6bf53e49e294bbf543e921d19b", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "9fd86f6bf53e49e294bbf543e921d19b", "type": "actual", "usage": {"input_tokens": 3166, "output_tokens": 95}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1384, "reservation_id": "ab0a1bfcdd1743bb9f554520ce7a36a4", "reserved_usd": 0.002136, "type": "reservation"}
+{"cost_usd": 0.0005145, "model_id": "mistral-medium-2604", "reservation_id": "ab0a1bfcdd1743bb9f554520ce7a36a4", "type": "actual", "usage": {"input_tokens": 323, "output_tokens": 4}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 3841, "reservation_id": "9f414b07ff924fc49f161cffe07be685", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "9f414b07ff924fc49f161cffe07be685", "type": "actual", "usage": {"input_tokens": 3476, "output_tokens": 440}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1712, "reservation_id": "f06c488949ca495fa2485e7c6df7913c", "reserved_usd": 0.002628, "type": "reservation"}
+{"cost_usd": 0.000651, "model_id": "mistral-medium-2604", "reservation_id": "f06c488949ca495fa2485e7c6df7913c", "type": "actual", "usage": {"input_tokens": 414, "output_tokens": 4}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 4404, "reservation_id": "69bc43f7e4634af2b6e49a2f995f2e3a", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "69bc43f7e4634af2b6e49a2f995f2e3a", "type": "actual", "usage": {"input_tokens": 3971, "output_tokens": 518}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 2097, "reservation_id": "5682c34fe3244db991103357763dd942", "reserved_usd": 0.0032055, "type": "reservation"}
+{"cost_usd": 0.0008445, "model_id": "mistral-medium-2604", "reservation_id": "5682c34fe3244db991103357763dd942", "type": "actual", "usage": {"input_tokens": 543, "output_tokens": 4}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.002483, "input_tokens": 23130, "model_calls": 11, "output_tokens": 1354, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "model_stopped", "type": "close"}

@@ -1,0 +1,4 @@
+-- Migration: backfill customer loyalty level from legacy_code.
+-- Mapping per codes.csv.
+-- TODO: add the loyalty column (final column name not recorded in this repo)
+-- and backfill it from legacy_code.

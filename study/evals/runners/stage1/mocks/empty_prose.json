@@ -1,0 +1,6 @@
+{
+  "case_id": "empty_prose",
+  "description": "Whitespace-only assistant prose must not reach the classifier API.",
+  "usage": {"input_tokens": 100, "output_tokens": 1},
+  "turns": [{"text": "   \n\t", "tool_calls": []}]
+}

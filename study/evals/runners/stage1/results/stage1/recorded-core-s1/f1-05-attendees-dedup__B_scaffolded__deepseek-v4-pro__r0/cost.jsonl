@@ -1,0 +1,7 @@
+{"max_tokens": 4096, "model_id": "deepseek-v4-pro", "prompt_tokens_bound": 4641, "reservation_id": "a9bda806c47a4ade8964f20b16ac4afd", "reserved_usd": 0.02234628, "type": "reservation"}
+{"cost_usd": 0.0020380800000000003, "model_id": "deepseek-v4-pro", "reservation_id": "a9bda806c47a4ade8964f20b16ac4afd", "type": "actual", "usage": {"input_tokens": 1265, "output_tokens": 93}}
+{"max_tokens": 4096, "model_id": "deepseek-v4-pro", "prompt_tokens_bound": 5475, "reservation_id": "9941516ddea741489cf41d92cd096303", "reserved_usd": 0.023447159999999998, "type": "reservation"}
+{"cost_usd": 0.0022704, "model_id": "deepseek-v4-pro", "reservation_id": "9941516ddea741489cf41d92cd096303", "type": "actual", "usage": {"input_tokens": 1555, "output_tokens": 55}}
+{"max_tokens": 4096, "model_id": "deepseek-v4-pro", "prompt_tokens_bound": 7166, "reservation_id": "0e8c497f7a05430b938596f0083db30d", "reserved_usd": 0.02567928, "type": "reservation"}
+{"cost_usd": 0.00427416, "model_id": "deepseek-v4-pro", "reservation_id": "0e8c497f7a05430b938596f0083db30d", "type": "actual", "usage": {"input_tokens": 1993, "output_tokens": 415}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.008583, "input_tokens": 4813, "model_calls": 3, "output_tokens": 563, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "task_completed", "type": "close"}

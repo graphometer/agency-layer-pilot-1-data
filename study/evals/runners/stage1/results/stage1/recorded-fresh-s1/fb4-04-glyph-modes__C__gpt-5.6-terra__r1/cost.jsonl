@@ -1,0 +1,11 @@
+{"max_tokens": 4096, "model_id": "gpt-5.6-terra", "prompt_tokens_bound": 9797, "reservation_id": "0033ca1a0c4b40bb8aff1ecc06165c31", "reserved_usd": 0.068746, "type": "reservation"}
+{"cost_usd": 0.00393, "model_id": "gpt-5.6-terra", "reservation_id": "0033ca1a0c4b40bb8aff1ecc06165c31", "type": "actual", "usage": {"cache_creation_input_tokens": 1758, "cache_read_input_tokens": 0, "input_tokens": 1761, "output_tokens": 34}}
+{"max_tokens": 4096, "model_id": "gpt-5.6-terra", "prompt_tokens_bound": 11824, "reservation_id": "ad629a5c40584be2994255c31f9d438c", "reserved_usd": 0.0728, "type": "reservation"}
+{"cost_usd": 0.0046116, "model_id": "gpt-5.6-terra", "reservation_id": "ad629a5c40584be2994255c31f9d438c", "type": "actual", "usage": {"cache_creation_input_tokens": 63, "cache_read_input_tokens": 1758, "input_tokens": 1824, "output_tokens": 51}}
+{"max_tokens": 4096, "model_id": "gpt-5.6-terra", "prompt_tokens_bound": 13950, "reservation_id": "5c1103ab2eb44383a9a5921dd7684cac", "reserved_usd": 0.077052, "type": "reservation"}
+{"cost_usd": 0.0044642, "model_id": "gpt-5.6-terra", "reservation_id": "5c1103ab2eb44383a9a5921dd7684cac", "type": "actual", "usage": {"cache_creation_input_tokens": 70, "cache_read_input_tokens": 1821, "input_tokens": 1894, "output_tokens": 26}}
+{"max_tokens": 4096, "model_id": "gpt-5.6-terra", "prompt_tokens_bound": 14573, "reservation_id": "8c24c188e8c34a159981c0a2765f61b1", "reserved_usd": 0.078298, "type": "reservation"}
+{"cost_usd": 0.0048722, "model_id": "gpt-5.6-terra", "reservation_id": "8c24c188e8c34a159981c0a2765f61b1", "type": "actual", "usage": {"cache_creation_input_tokens": 47, "cache_read_input_tokens": 1891, "input_tokens": 1941, "output_tokens": 51}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1395, "reservation_id": "0bda974f53e6420c9e18a20fd2b315d5", "reserved_usd": 0.0021525, "type": "reservation"}
+{"cost_usd": 0.00051, "model_id": "mistral-medium-2604", "reservation_id": "0bda974f53e6420c9e18a20fd2b315d5", "type": "actual", "usage": {"input_tokens": 330, "output_tokens": 2}}
+{"cache_creation_input_tokens": 1938, "cache_read_input_tokens": 5470, "cost_usd": 0.018388, "input_tokens": 7750, "model_calls": 5, "output_tokens": 164, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "model_stopped", "type": "close"}

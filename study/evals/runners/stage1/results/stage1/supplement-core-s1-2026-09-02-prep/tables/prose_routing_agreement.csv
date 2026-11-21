@@ -1,0 +1,25 @@
+authority,classifier_version,condition,denominator,high,low,model_id,n,numerator,population_basis,rate,successes
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,A,3,1.0,0.4385029682449546,claude-sonnet-5,3,3,records represented by this row,1.0,3
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,B,13,0.7085620428549398,0.23206067809538303,claude-sonnet-5,13,6,records represented by this row,0.46153846153846156,6
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,B_filler,2,0.9054687942657693,0.09453120573423074,claude-sonnet-5,2,1,records represented by this row,0.5,1
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,B_scaffolded,7,0.6410655481673808,0.08221892400405678,claude-sonnet-5,7,2,records represented by this row,0.2857142857142857,2
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,C,9,0.2991450484195441,0.0,claude-sonnet-5,9,0,records represented by this row,0.0,0
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,D,6,0.9699466302516935,0.43649717781352987,claude-sonnet-5,6,5,records represented by this row,0.8333333333333334,5
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,A,4,0.6993581574175981,0.04558726080970055,deepseek-v4-pro,4,1,records represented by this row,0.25,1
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,B,3,0.7923403991979522,0.06149194472039621,deepseek-v4-pro,3,1,records represented by this row,0.3333333333333333,1
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,B_filler,2,0.9054687942657693,0.09453120573423074,deepseek-v4-pro,2,1,records represented by this row,0.5,1
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,B_scaffolded,3,0.5614970317550454,5.551115123125783e-17,deepseek-v4-pro,3,0,records represented by this row,0.0,0
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,C,3,0.7923403991979522,0.06149194472039621,deepseek-v4-pro,3,1,records represented by this row,0.3333333333333333,1
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,D,4,0.8499610108478506,0.15003898915214947,deepseek-v4-pro,4,2,records represented by this row,0.5,2
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,A,18,0.7969475342783638,0.3861904160223791,gpt-5.6-terra,18,11,records represented by this row,0.6111111111111112,11
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,B,30,0.7812607919389929,0.4551356365479487,gpt-5.6-terra,30,19,records represented by this row,0.6333333333333333,19
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,B_filler,18,0.9416342319413856,0.6077796189608428,gpt-5.6-terra,18,15,records represented by this row,0.8333333333333334,15
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,B_scaffolded,19,0.8463562091220773,0.46010407675327475,gpt-5.6-terra,19,13,records represented by this row,0.6842105263157895,13
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,C,5,0.43448246478317476,0.0,gpt-5.6-terra,5,0,records represented by this row,0.0,0
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,D,12,0.8618799089087867,0.39062208887279953,gpt-5.6-terra,12,8,records represented by this row,0.6666666666666666,8
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,A,23,0.8745138395501366,0.5352999516257462,qwen3.8-27b,23,17,records represented by this row,0.7391304347826086,17
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,B,28,0.764343134584204,0.42409044296597176,qwen3.8-27b,28,17,records represented by this row,0.6071428571428571,17
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,B_filler,11,0.9486323102539149,0.523019438039156,qwen3.8-27b,11,9,records represented by this row,0.8181818181818182,9
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,B_scaffolded,11,0.9837678271141151,0.6226415635484043,qwen3.8-27b,11,10,records represented by this row,0.9090909090909091,10
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,C,28,0.9430099468025059,0.685101978364747,qwen3.8-27b,28,24,records represented by this row,0.8571428571428571,24
+llm,prose-llm-prompt-0.3.0+mistral-medium-2604,D,16,0.9650225122567595,0.639771727342413,qwen3.8-27b,16,14,records represented by this row,0.875,14

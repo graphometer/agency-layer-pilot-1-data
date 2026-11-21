@@ -1,0 +1,86 @@
+Rehearsal: 60 runs, $4.8092 actually spent
+Measured families: [1, 2, 5, 7, 8]; unmeasured: [3, 4, 6]
+Free arms counted at zero: qwen3.8-27b
+
+Measured mean tokens per run
+  model              fam  cond       in     out  cache r  cache w  stops    $/run
+  claude-sonnet-5      1     A     9503     607        0        0    0.0   0.0376
+  claude-sonnet-5      1     B     4241     621     5145     1029    0.0   0.0274
+  claude-sonnet-5      1     C     7009     838    17580     3516    0.0   0.0521
+  claude-sonnet-5      1     D     7082     834    17550     3510    0.0   0.0522
+  claude-sonnet-5      2     A    18655    3395        0        0    3.0   0.1069
+  claude-sonnet-5      2     B     5573    2126     4116        0    3.0   0.0498
+  claude-sonnet-5      2     C   102639    4565    28128     3516    2.0   0.3980
+  claude-sonnet-5      2     D    55565    6557    28080        0    0.0   0.2735
+  claude-sonnet-5      5     A    60683    7807        0        0    0.0   0.2992
+  claude-sonnet-5      5     B    76262    6675     7203        0    0.0   0.3311
+  claude-sonnet-5      5     C    62634   11303    28128     3516    0.0   0.3791
+  claude-sonnet-5      5     D    54283    7857    31590     3510    0.0   0.3033
+  claude-sonnet-5      7     A    28932    3617        0        0    0.0   0.1411
+  claude-sonnet-5      7     B    69029    9140    15435        0    3.0   0.3488
+  claude-sonnet-5      7     C    83996   10338    49224     3516    0.0   0.4350
+  claude-sonnet-5      7     D    44062    6605    35100     3510    2.0   0.2550
+  claude-sonnet-5      8     A     8051     419        0        0    0.0   0.0304
+  claude-sonnet-5      8     B     8643     569     5145     1029    0.0   0.0399
+  claude-sonnet-5      8     C    11525     695    17580     3516    0.0   0.0635
+  claude-sonnet-5      8     D     4705     484    10530     3510    0.0   0.0377
+  gpt-5.6-terra        1     A     5458     574     2646     1498    0.0   0.0183
+  gpt-5.6-terra        1     B     4829     468     2688     1599    0.0   0.0158
+  gpt-5.6-terra        1     C    16629     706    11806     4808    0.0   0.0441
+  gpt-5.6-terra        1     D    13759     765    10540     3204    0.0   0.0388
+  gpt-5.6-terra        2     A    30544    3464    22899     5790    3.0   0.1072
+  gpt-5.6-terra        2     B    21335    2332    17019     3818    3.0   0.0741
+  gpt-5.6-terra        2     C    26705    2158    22309     4372    2.0   0.0838
+  gpt-5.6-terra        2     D    47832    4552    40115     7687    1.0   0.1583
+  gpt-5.6-terra        5     A    11944    2055     8439     3120    0.0   0.0502
+  gpt-5.6-terra        5     B    15495    2304    11376     3604    1.0   0.0609
+  gpt-5.6-terra        5     C    10944    1391     7368     3564    0.0   0.0401
+  gpt-5.6-terra        5     D    22857    1809    18489     4347    0.0   0.0711
+  gpt-5.6-terra        7     A    27484    2207    21122     5002    1.0   0.0857
+  gpt-5.6-terra        7     B    13959    1939    10619     2813    3.0   0.0533
+  gpt-5.6-terra        7     C    10244    1177     6913     3319    0.0   0.0360
+  gpt-5.6-terra        7     D    28013    2425    23046     4943    0.0   0.0897
+  gpt-5.6-terra        8     A     5635     431        0     2664    0.0   0.0164
+  gpt-5.6-terra        8     B     6932     485     2712     2833    0.0   0.0202
+  gpt-5.6-terra        8     C    16736     714    12323     4398    0.0   0.0445
+  gpt-5.6-terra        8     D    14266     706    10655     3596    0.0   0.0391
+  qwen3.8-27b          1     A     8013     458        0        0    0.0   0.0000
+  qwen3.8-27b          1     B     8807     393        0        0    0.0   0.0000
+  qwen3.8-27b          1     C    14499     389        0        0    0.0   0.0000
+  qwen3.8-27b          1     D    17398     395        0        0    0.0   0.0000
+  qwen3.8-27b          2     A    58038    1292        0        0    0.0   0.0000
+  qwen3.8-27b          2     B    29760    2227        0        0    3.0   0.0000
+  qwen3.8-27b          2     C    40606    1258        0        0    2.0   0.0000
+  qwen3.8-27b          2     D    28285    1650        0        0    0.0   0.0000
+  qwen3.8-27b          5     A   202872    2689        0        0    0.0   0.0000
+  qwen3.8-27b          5     B    79126    2480        0        0    0.0   0.0000
+  qwen3.8-27b          5     C    15795    2031        0        0    0.0   0.0000
+  qwen3.8-27b          5     D    31556    1541        0        0    0.0   0.0000
+  qwen3.8-27b          7     A    60199    3094        0        0    3.0   0.0000
+  qwen3.8-27b          7     B   113760    1654        0        0    0.0   0.0000
+  qwen3.8-27b          7     C    50628    3058        0        0    1.0   0.0000
+  qwen3.8-27b          7     D    24953    1179        0        0    0.0   0.0000
+  qwen3.8-27b          8     A     5809     277        0        0    0.0   0.0000
+  qwen3.8-27b          8     B    13721     500        0        0    0.0   0.0000
+  qwen3.8-27b          8     C    15853     289        0        0    0.0   0.0000
+  qwen3.8-27b          8     D    21457     389        0        0    0.0   0.0000
+
+Components of the full plan
+  frontier:claude-opus-5                              $56.66
+  frontier:gpt-5.6-sol                                $14.25
+  primary:claude-sonnet-5                            $117.17
+  primary:gpt-5.6-terra                               $36.73
+  route_classifier                                     $3.21
+  (route classifier calls)                               864
+
+Families 3, 4 and 6 were not rehearsed. $57.71 of the primary matrix (38 percent) is priced
+from the mean of the measured families, not from measurement.
+
+R34 drop order, applied in sequence, against the $600 ceiling (R17)
+  step                                                total     headroom  verdict
+  full plan, R15 with the R29 frontier tier         $228.02      $371.98  fits
+  drop 1: frontier-tier replication (R29)           $157.11      $442.89  fits
+  drop 2: repeats 4 to 3                            $117.83      $482.17  fits
+  scenarios are never dropped (R34)
+
+Earliest step that fits: full plan, R15 with the R29 frontier tier at $228.02. No further drops are needed.

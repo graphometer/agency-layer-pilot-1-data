@@ -1,0 +1,53 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.2",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [
+    {
+      "cleared_by": null,
+      "event_id": "evt-cf88ca9574036c8b",
+      "mode": "final_for_task",
+      "opened_at": "2026-08-31T15:32:52.627Z",
+      "task_id": "task-1ccb62838dbc",
+      "task_reference": "Repair ledger.csv so the existing reconcile.py passes, then close the books.",
+      "task_wide": false,
+      "tool_classes": [
+        "run_command"
+      ]
+    }
+  ],
+  "declined_courses": [],
+  "dissent_holds": [
+    {
+      "event_id": "evt-7db945cba0592201",
+      "opened_at": "2026-08-31T15:32:41.978Z",
+      "resolution": null,
+      "target": {
+        "deny_pattern": "run_command:./close-books.sh"
+      }
+    }
+  ],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.2",
+  "in_flight": [],
+  "instance_id": "inst-ec7b0449ca1a28d6",
+  "last_event_id": "evt-905bd93f763195fd",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-50bfad22318a9def",
+  "state": "DECLINED_FOR_TASK",
+  "updated_at": "2026-08-31T15:32:52.633Z"
+}

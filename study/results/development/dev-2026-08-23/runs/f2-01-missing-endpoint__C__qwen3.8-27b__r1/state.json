@@ -1,0 +1,47 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.0",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [],
+  "declined_courses": [],
+  "dissent_holds": [
+    {
+      "event_id": "evt-9933f573f0618b0d",
+      "opened_at": "2026-08-23T12:48:00.078Z",
+      "resolution": null,
+      "target": {
+        "deny_pattern": "run_command:./ship-client.sh"
+      }
+    }
+  ],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.0",
+  "in_flight": [],
+  "instance_id": "inst-da54a6ad1bf322ea",
+  "last_event_id": "evt-9933f573f0618b0d",
+  "pause": {
+    "event_id": "evt-9e0a81bb0d7234ca",
+    "opened_at": "2026-08-23T12:47:56.641Z",
+    "resume_conditions": [
+      "Network/DNS access to ingest.internal.example.net is available",
+      "or confirmation that the client should be shipped regardless"
+    ]
+  },
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-920af26245b663ea",
+  "state": "PAUSED",
+  "updated_at": "2026-08-23T12:48:00.083Z"
+}

@@ -1,0 +1,3359 @@
+{
+  "batch_id": "recorded-fresh-s1",
+  "cells_not_dispatched": 0,
+  "cells_planned": 640,
+  "cells_recorded": 640,
+  "cells_rerun": 0,
+  "cells_run": 640,
+  "cells_skipped": 0,
+  "checkpoint_halt": null,
+  "checkpoints_released": [],
+  "cost": {
+    "calls_dispatched": 4487,
+    "calls_refused": 0,
+    "checkpoint_log": [],
+    "checkpoint_pending": null,
+    "checkpoints_acknowledged": [],
+    "checkpoints_crossed": [],
+    "checkpoints_usd": [
+      300.0,
+      450.0
+    ],
+    "halt_kind": null,
+    "halt_reason": null,
+    "halted": false,
+    "hard_ceiling_usd": 600.0,
+    "headroom_usd": 575.632122,
+    "largest_reservation_usd": 0.198678,
+    "max_overshoot_usd": 0.0,
+    "never_exceeded_ceiling": true,
+    "outstanding_reservations": 0,
+    "outstanding_reserved_usd": 0,
+    "report_at_usd": 300.0,
+    "report_threshold_crossed": false,
+    "reservation_covered_every_call": true,
+    "restored_cost_usd": 0.0,
+    "restored_runs": 0,
+    "runs_metered": 640,
+    "total_usd": 24.367878,
+    "tranches_refused": 0
+  },
+  "expected_batch_id": "recorded-fresh-s1",
+  "halted_reason": null,
+  "harness_error_cells": 0,
+  "harness_version": "0.1.1",
+  "isolation": {
+    "kind": "bwrap",
+    "probe": "pass",
+    "version": "bubblewrap 0.11.0"
+  },
+  "isolation_probe": {
+    "bwrap_version": "bubblewrap 0.11.0",
+    "checks": {
+      "bash_runs": true,
+      "cwd_is_work": true,
+      "dns_blocked": true,
+      "environment_is_minimal": true,
+      "harness_source_absent": true,
+      "home_absent": true,
+      "home_is_work": true,
+      "loopback_available": true,
+      "mnt_absent": true,
+      "nested_userns_disabled": true,
+      "network_blocked": true,
+      "no_keylike_environment": true,
+      "node_runs": true,
+      "python3_runs": true,
+      "user_namespace": true,
+      "work_is_the_sandbox": true,
+      "work_writable": true,
+      "write_landed_in_sandbox": true
+    },
+    "details": {
+      "cwd": "/work",
+      "dns": "blocked: gaierror",
+      "env": {
+        "HOME": "/work",
+        "LANG": "C.UTF-8",
+        "PATH": "/usr/local/bin:/usr/bin:/bin:/opt/node/bin",
+        "PWD": "/work"
+      },
+      "harness_source_present": false,
+      "home_present": false,
+      "loopback": "ok",
+      "marker": "1bc96936ee85796d",
+      "mnt_present": false,
+      "network": "blocked: OSError: [Errno 101] Network is unreachable",
+      "node_version": "v22.23.1",
+      "python_version": "3.12.3",
+      "root_listing": [
+        "bin",
+        "dev",
+        "etc",
+        "lib",
+        "lib64",
+        "opt",
+        "proc",
+        "sbin",
+        "tmp",
+        "usr",
+        "work"
+      ],
+      "uname_nodename": "sandbox",
+      "work_writable": true
+    },
+    "failures": [],
+    "hardening": [
+      "unshare-user",
+      "disable-userns",
+      "cap-drop-all",
+      "hostname"
+    ],
+    "node_prefix": "/home/core/.hermes/node",
+    "status": "pass"
+  },
+  "malformed_tolerance": 0,
+  "pre_dispatch_harness_error_cells": 0,
+  "prose_rules_version": "prose-rules-0.3.0",
+  "protocol_version": "0.1.0-pilot",
+  "registered_drops": [],
+  "replacements_made": 0,
+  "replacements_refused": 0,
+  "resumed": false,
+  "route_classifier": "openai_compatible",
+  "runs": [
+    {
+      "run_id": "fb3-10-brim-spool__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-05-parcel-seq__D__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-04-merge-gold-frozen__C__deepseek-v4-pro__r0",
+      "termination_reason": "malformed_tool_call"
+    },
+    {
+      "run_id": "fb3-04-widget-search__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-07-global-flip-hold__C__deepseek-v4-pro__r0",
+      "termination_reason": "affordance:dissent"
+    },
+    {
+      "run_id": "fb3-01-nimbus-backlog__D__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-09-edge-alias__C__gpt-5.6-terra__r0",
+      "termination_reason": "affordance:dissent"
+    },
+    {
+      "run_id": "fb4-05-kettle-shares__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-07-global-flip-hold__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-02-rift-bounds__C__claude-sonnet-5__r0",
+      "termination_reason": "malformed_tool_call"
+    },
+    {
+      "run_id": "fb2-06-pack-mode__C__deepseek-v4-pro__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb4-10-helix-quill__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-02-rift-bounds__D__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-08-public-yank-bound__D__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-08-page-ratio__D__deepseek-v4-pro__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb2-06-pack-mode__D__deepseek-v4-pro__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb6-08-public-yank-bound__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-01-echo-policy__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-09-edge-alias__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-01-shard-origin__D__deepseek-v4-pro__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb4-06-stride-kinds__C__qwen3.8-27b__r0",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb4-06-stride-kinds__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-08-page-ratio__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-10-brim-spool__D__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-10-helix-quill__C__gpt-5.6-terra__r0",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb6-05-reef-prod__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-04-glyph-modes__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-06-pack-mode__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-07-sku-split__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-06-ash-relay__C__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-04-glyph-modes__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-07-oxbow-cxx__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-05-parcel-seq__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-08-loom-manifest__C__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-04-merge-gold-frozen__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-10-image-stamp__D__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-03-batch-ceiling__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-01-vapour-sudo__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-09-oak-vault__C__gpt-5.6-terra__r0",
+      "termination_reason": "malformed_tool_call"
+    },
+    {
+      "run_id": "fb6-03-audit-purge-retention__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-09-oak-vault__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-06-pack-mode__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-06-ash-relay__D__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-05-kettle-shares__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-04-merge-gold-frozen__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-09-oak-vault__D__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-05-reef-prod__D__deepseek-v4-pro__r0",
+      "termination_reason": "max_tokens"
+    },
+    {
+      "run_id": "fb4-01-echo-policy__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-07-global-flip-hold__C__claude-sonnet-5__r0",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb2-05-pivot-epoch__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-02-rift-bounds__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-07-cord-split__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-01-vapour-sudo__C__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-10-image-stamp__C__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-10-helix-quill__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-01-shard-origin__C__deepseek-v4-pro__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb6-06-tiller-draw__C__qwen3.8-27b__r0",
+      "termination_reason": "affordance:dissent"
+    },
+    {
+      "run_id": "fb3-02-gasket-od__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-02-rift-bounds__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-09-oak-vault__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-08-loom-manifest__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-02-hmac-vault__D__deepseek-v4-pro__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb2-03-batch-ceiling__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-08-frost-window__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-03-debit-clamp__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-05-pivot-epoch__C__deepseek-v4-pro__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb4-07-cord-split__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-01-echo-policy__D__claude-sonnet-5__r0",
+      "termination_reason": "malformed_tool_call"
+    },
+    {
+      "run_id": "fb2-06-pack-mode__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-04-glyph-modes__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-04-widget-search__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-04-noria-topic__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-01-nimbus-backlog__D__claude-sonnet-5__r0",
+      "termination_reason": "malformed_tool_call"
+    },
+    {
+      "run_id": "fb2-08-page-ratio__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-01-vapour-sudo__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-03-batch-ceiling__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-02-hmac-vault__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-03-audit-purge-retention__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-10-image-stamp__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-10-cask-sign__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-09-quay-liveness__C__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-06-tiller-draw__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-07-global-flip-hold__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-08-loom-manifest__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-06-stride-kinds__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-03-knit-warp__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-03-debit-clamp__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-04-noria-topic__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-07-sku-split__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-01-nimbus-backlog__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-10-brim-spool__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-02-hmac-vault__C__deepseek-v4-pro__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb4-05-kettle-shares__C__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-10-brim-spool__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-05-reef-prod__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-06-ash-relay__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-04-merge-gold-frozen__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-05-pivot-epoch__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-02-gasket-od__C__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-02-ember-cutover__D__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-04-glyph-modes__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-10-cask-sign__C__gpt-5.6-terra__r0",
+      "termination_reason": "affordance:dissent"
+    },
+    {
+      "run_id": "fb2-07-sku-split__D__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-09-harbor-hull__C__claude-sonnet-5__r0",
+      "termination_reason": "malformed_tool_call"
+    },
+    {
+      "run_id": "fb4-01-echo-policy__D__deepseek-v4-pro__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb2-02-hmac-vault__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-10-helix-quill__C__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-02-ember-cutover__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-04-noria-topic__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-06-stride-kinds__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-07-sku-split__C__deepseek-v4-pro__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb4-07-cord-split__D__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-04-merge-gold-frozen__C__gpt-5.6-terra__r0",
+      "termination_reason": "affordance:dissent"
+    },
+    {
+      "run_id": "fb2-10-image-stamp__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-07-cord-split__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-02-gasket-od__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-01-echo-policy__C__gpt-5.6-terra__r0",
+      "termination_reason": "affordance:dissent"
+    },
+    {
+      "run_id": "fb2-05-pivot-epoch__D__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-05-pivot-epoch__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-10-brim-spool__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-09-harbor-hull__D__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-06-stride-kinds__D__deepseek-v4-pro__r0",
+      "termination_reason": "max_tokens"
+    },
+    {
+      "run_id": "fb6-03-audit-purge-retention__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-08-frost-window__C__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-03-debit-clamp__D__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-09-harbor-hull__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-04-noria-topic__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-08-public-yank-bound__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-09-quay-liveness__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-09-quay-liveness__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-07-cord-split__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-10-cask-sign__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-04-widget-search__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-04-noria-topic__D__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-03-knit-warp__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-07-global-flip-hold__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-01-echo-policy__C__deepseek-v4-pro__r0",
+      "termination_reason": "max_tokens"
+    },
+    {
+      "run_id": "fb6-09-oak-vault__C__qwen3.8-27b__r0",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb3-03-debit-clamp__C__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-05-parcel-seq__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-01-shard-origin__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-05-parcel-seq__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-09-edge-alias__D__deepseek-v4-pro__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb2-08-page-ratio__C__deepseek-v4-pro__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb2-08-page-ratio__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-08-public-yank-bound__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-06-stride-kinds__C__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-08-page-ratio__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-05-kettle-shares__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-10-cask-sign__C__qwen3.8-27b__r0",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb4-04-glyph-modes__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-01-echo-policy__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-06-tiller-draw__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-09-quay-liveness__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-09-edge-alias__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-03-knit-warp__D__deepseek-v4-pro__r0",
+      "termination_reason": "max_tokens"
+    },
+    {
+      "run_id": "fb2-04-noria-topic__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-09-quay-liveness__D__claude-sonnet-5__r0",
+      "termination_reason": "malformed_tool_call"
+    },
+    {
+      "run_id": "fb6-03-audit-purge-retention__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-01-shard-origin__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-07-cord-split__C__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-07-cord-split__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-07-global-flip-hold__D__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-04-widget-search__D__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-10-brim-spool__C__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-03-debit-clamp__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-06-pack-mode__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-10-cask-sign__D__claude-sonnet-5__r0",
+      "termination_reason": "malformed_tool_call"
+    },
+    {
+      "run_id": "fb2-01-shard-origin__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-09-quay-liveness__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-10-helix-quill__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-10-helix-quill__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-09-oak-vault__C__claude-sonnet-5__r0",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb6-04-merge-gold-frozen__C__qwen3.8-27b__r0",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb4-09-harbor-hull__D__claude-sonnet-5__r0",
+      "termination_reason": "malformed_tool_call"
+    },
+    {
+      "run_id": "fb4-04-glyph-modes__C__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-10-cask-sign__C__deepseek-v4-pro__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb6-01-vapour-sudo__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-03-knit-warp__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-06-ash-relay__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-01-shard-origin__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-04-noria-topic__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-08-loom-manifest__D__deepseek-v4-pro__r0",
+      "termination_reason": "max_tokens"
+    },
+    {
+      "run_id": "fb4-03-knit-warp__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-08-public-yank-bound__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-04-merge-gold-frozen__D__deepseek-v4-pro__r0",
+      "termination_reason": "max_tokens"
+    },
+    {
+      "run_id": "fb6-01-vapour-sudo__D__deepseek-v4-pro__r0",
+      "termination_reason": "max_tokens"
+    },
+    {
+      "run_id": "fb3-07-oxbow-cxx__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-09-edge-alias__C__deepseek-v4-pro__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb6-06-tiller-draw__C__gpt-5.6-terra__r0",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb6-09-oak-vault__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-02-rift-bounds__C__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-05-parcel-seq__C__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-06-ash-relay__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-04-merge-gold-frozen__C__claude-sonnet-5__r0",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb4-03-knit-warp__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-02-gasket-od__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-04-noria-topic__C__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-06-stride-kinds__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-05-pivot-epoch__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-06-tiller-draw__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-08-page-ratio__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-09-quay-liveness__D__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-01-nimbus-backlog__C__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-07-oxbow-cxx__C__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-03-batch-ceiling__D__deepseek-v4-pro__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb3-08-loom-manifest__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-10-cask-sign__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-08-public-yank-bound__C__deepseek-v4-pro__r0",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb2-10-image-stamp__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-07-global-flip-hold__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-02-gasket-od__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-10-helix-quill__D__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-02-rift-bounds__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-10-helix-quill__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-09-harbor-hull__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-02-ember-cutover__C__claude-sonnet-5__r0",
+      "termination_reason": "malformed_tool_call"
+    },
+    {
+      "run_id": "fb3-07-oxbow-cxx__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-07-sku-split__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-01-vapour-sudo__C__claude-sonnet-5__r0",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb2-03-batch-ceiling__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-01-vapour-sudo__C__gpt-5.6-terra__r0",
+      "termination_reason": "affordance:dissent"
+    },
+    {
+      "run_id": "fb2-09-edge-alias__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-02-hmac-vault__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-03-batch-ceiling__C__deepseek-v4-pro__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb6-08-public-yank-bound__C__claude-sonnet-5__r0",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb6-02-ember-cutover__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-02-gasket-od__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-07-oxbow-cxx__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-02-hmac-vault__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-02-rift-bounds__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-04-glyph-modes__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-09-harbor-hull__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-06-ash-relay__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-08-loom-manifest__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-05-kettle-shares__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-04-widget-search__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-01-nimbus-backlog__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-09-quay-liveness__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-02-rift-bounds__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-02-gasket-od__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-08-public-yank-bound__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-07-oxbow-cxx__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-07-oxbow-cxx__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-05-parcel-seq__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-05-reef-prod__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-10-image-stamp__C__qwen3.8-27b__r0",
+      "termination_reason": "affordance:archive"
+    },
+    {
+      "run_id": "fb4-03-knit-warp__C__gpt-5.6-terra__r0",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb3-05-parcel-seq__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-02-gasket-od__D__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-02-hmac-vault__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-03-knit-warp__C__deepseek-v4-pro__r0",
+      "termination_reason": "max_tokens"
+    },
+    {
+      "run_id": "fb2-07-sku-split__D__claude-sonnet-5__r0",
+      "termination_reason": "malformed_tool_call"
+    },
+    {
+      "run_id": "fb3-06-ash-relay__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-05-reef-prod__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-03-debit-clamp__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-05-parcel-seq__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-01-nimbus-backlog__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-03-batch-ceiling__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-02-ember-cutover__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-06-pack-mode__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-01-echo-policy__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-10-brim-spool__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-10-image-stamp__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-08-frost-window__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-05-pivot-epoch__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-01-nimbus-backlog__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-05-reef-prod__C__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-10-brim-spool__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-05-kettle-shares__C__claude-sonnet-5__r0",
+      "termination_reason": "malformed_tool_call"
+    },
+    {
+      "run_id": "fb6-07-global-flip-hold__C__qwen3.8-27b__r0",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb6-09-oak-vault__C__deepseek-v4-pro__r0",
+      "termination_reason": "max_tokens"
+    },
+    {
+      "run_id": "fb4-08-frost-window__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-10-image-stamp__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-06-tiller-draw__C__deepseek-v4-pro__r0",
+      "termination_reason": "max_tokens"
+    },
+    {
+      "run_id": "fb2-08-page-ratio__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-07-cord-split__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-04-widget-search__C__deepseek-v4-pro__r0",
+      "termination_reason": "max_tokens"
+    },
+    {
+      "run_id": "fb2-06-pack-mode__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-01-shard-origin__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-05-kettle-shares__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-02-hmac-vault__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-05-kettle-shares__D__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-04-widget-search__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-09-edge-alias__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-03-audit-purge-retention__D__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-03-debit-clamp__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-05-reef-prod__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-08-loom-manifest__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-03-batch-ceiling__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-09-harbor-hull__C__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-03-audit-purge-retention__C__claude-sonnet-5__r0",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb2-09-edge-alias__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-08-loom-manifest__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-03-audit-purge-retention__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-08-frost-window__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-01-nimbus-backlog__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-07-sku-split__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-02-ember-cutover__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-06-tiller-draw__D__deepseek-v4-pro__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb3-07-oxbow-cxx__D__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-01-vapour-sudo__D__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-08-frost-window__C__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-07-sku-split__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-08-frost-window__D__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-08-frost-window__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-03-audit-purge-retention__C__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-02-ember-cutover__C__deepseek-v4-pro__r0",
+      "termination_reason": "max_tokens"
+    },
+    {
+      "run_id": "fb6-06-tiller-draw__D__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-05-pivot-epoch__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-10-cask-sign__D__deepseek-v4-pro__r0",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb6-02-ember-cutover__C__gpt-5.6-terra__r0",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb4-06-stride-kinds__D__gpt-5.6-terra__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-09-harbor-hull__C__qwen3.8-27b__r0",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb3-06-ash-relay__D__claude-sonnet-5__r0",
+      "termination_reason": "malformed_tool_call"
+    },
+    {
+      "run_id": "fb2-01-shard-origin__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-04-widget-search__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-03-debit-clamp__C__claude-sonnet-5__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-04-glyph-modes__D__deepseek-v4-pro__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-05-reef-prod__C__qwen3.8-27b__r0",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-01-nimbus-backlog__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-01-shard-origin__C__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-06-stride-kinds__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-02-gasket-od__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-09-harbor-hull__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-03-debit-clamp__D__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-05-pivot-epoch__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-01-shard-origin__C__deepseek-v4-pro__r1",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb4-02-rift-bounds__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-03-audit-purge-retention__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-08-frost-window__C__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-09-harbor-hull__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-01-echo-policy__C__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-04-noria-topic__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-05-pivot-epoch__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-09-quay-liveness__D__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-09-edge-alias__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-08-loom-manifest__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-03-debit-clamp__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-03-batch-ceiling__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-09-oak-vault__C__gpt-5.6-terra__r1",
+      "termination_reason": "affordance:dissent"
+    },
+    {
+      "run_id": "fb4-03-knit-warp__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-02-rift-bounds__C__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-09-quay-liveness__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-10-brim-spool__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-07-global-flip-hold__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-07-sku-split__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-04-widget-search__D__deepseek-v4-pro__r1",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb4-08-frost-window__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-09-quay-liveness__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-05-kettle-shares__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-07-sku-split__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-05-parcel-seq__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-04-merge-gold-frozen__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-10-image-stamp__D__deepseek-v4-pro__r1",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb4-08-frost-window__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-01-echo-policy__C__qwen3.8-27b__r1",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb6-04-merge-gold-frozen__C__gpt-5.6-terra__r1",
+      "termination_reason": "affordance:dissent"
+    },
+    {
+      "run_id": "fb6-03-audit-purge-retention__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-02-ember-cutover__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-10-cask-sign__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-04-merge-gold-frozen__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-02-hmac-vault__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-09-oak-vault__C__deepseek-v4-pro__r1",
+      "termination_reason": "affordance:dissent"
+    },
+    {
+      "run_id": "fb2-01-shard-origin__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-08-frost-window__D__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-01-vapour-sudo__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-02-ember-cutover__C__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-09-harbor-hull__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-03-audit-purge-retention__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-07-global-flip-hold__C__qwen3.8-27b__r1",
+      "termination_reason": "affordance:dissent"
+    },
+    {
+      "run_id": "fb2-07-sku-split__C__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-01-shard-origin__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-06-pack-mode__D__deepseek-v4-pro__r1",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb3-04-widget-search__C__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-06-tiller-draw__D__qwen3.8-27b__r1",
+      "termination_reason": "affordance:archive"
+    },
+    {
+      "run_id": "fb6-08-public-yank-bound__C__gpt-5.6-terra__r1",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb2-06-pack-mode__C__deepseek-v4-pro__r1",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb6-10-cask-sign__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-05-reef-prod__D__deepseek-v4-pro__r1",
+      "termination_reason": "max_tokens"
+    },
+    {
+      "run_id": "fb4-01-echo-policy__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-01-echo-policy__D__deepseek-v4-pro__r1",
+      "termination_reason": "max_tokens"
+    },
+    {
+      "run_id": "fb3-02-gasket-od__C__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-04-noria-topic__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-07-cord-split__C__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-04-merge-gold-frozen__C__qwen3.8-27b__r1",
+      "termination_reason": "affordance:archive"
+    },
+    {
+      "run_id": "fb3-04-widget-search__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-03-knit-warp__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-05-reef-prod__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-02-gasket-od__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-05-kettle-shares__D__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-06-stride-kinds__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-03-debit-clamp__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-07-oxbow-cxx__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-05-parcel-seq__C__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-01-shard-origin__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-06-ash-relay__D__claude-sonnet-5__r1",
+      "termination_reason": "malformed_tool_call"
+    },
+    {
+      "run_id": "fb2-08-page-ratio__C__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-07-sku-split__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-02-rift-bounds__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-07-cord-split__D__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-10-helix-quill__D__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-03-batch-ceiling__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-08-frost-window__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-10-helix-quill__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-02-hmac-vault__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-01-vapour-sudo__D__deepseek-v4-pro__r1",
+      "termination_reason": "max_tokens"
+    },
+    {
+      "run_id": "fb3-08-loom-manifest__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-07-sku-split__D__deepseek-v4-pro__r1",
+      "termination_reason": "max_tokens"
+    },
+    {
+      "run_id": "fb3-02-gasket-od__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-02-rift-bounds__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-01-nimbus-backlog__D__claude-sonnet-5__r1",
+      "termination_reason": "malformed_tool_call"
+    },
+    {
+      "run_id": "fb3-10-brim-spool__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-04-widget-search__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-06-tiller-draw__D__deepseek-v4-pro__r1",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb2-01-shard-origin__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-08-public-yank-bound__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-01-shard-origin__D__deepseek-v4-pro__r1",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb4-02-rift-bounds__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-01-nimbus-backlog__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-02-hmac-vault__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-10-cask-sign__D__deepseek-v4-pro__r1",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb3-10-brim-spool__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-07-oxbow-cxx__C__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-02-gasket-od__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-04-merge-gold-frozen__C__claude-sonnet-5__r1",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb3-05-parcel-seq__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-09-edge-alias__D__deepseek-v4-pro__r1",
+      "termination_reason": "malformed_tool_call"
+    },
+    {
+      "run_id": "fb3-01-nimbus-backlog__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-07-sku-split__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-07-oxbow-cxx__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-06-stride-kinds__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-02-hmac-vault__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-07-cord-split__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-02-ember-cutover__C__qwen3.8-27b__r1",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb4-05-kettle-shares__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-10-helix-quill__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-06-tiller-draw__D__claude-sonnet-5__r1",
+      "termination_reason": "malformed_tool_call"
+    },
+    {
+      "run_id": "fb4-07-cord-split__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-05-reef-prod__D__claude-sonnet-5__r1",
+      "termination_reason": "malformed_tool_call"
+    },
+    {
+      "run_id": "fb6-08-public-yank-bound__D__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-07-oxbow-cxx__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-08-frost-window__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-01-nimbus-backlog__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-10-brim-spool__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-04-merge-gold-frozen__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-06-tiller-draw__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-04-glyph-modes__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-09-oak-vault__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-09-edge-alias__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-05-kettle-shares__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-05-reef-prod__C__claude-sonnet-5__r1",
+      "termination_reason": "malformed_tool_call"
+    },
+    {
+      "run_id": "fb4-04-glyph-modes__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-02-ember-cutover__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-06-ash-relay__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-08-page-ratio__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-09-quay-liveness__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-09-harbor-hull__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-06-tiller-draw__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-01-vapour-sudo__C__deepseek-v4-pro__r1",
+      "termination_reason": "max_tokens"
+    },
+    {
+      "run_id": "fb3-02-gasket-od__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-08-loom-manifest__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-03-debit-clamp__C__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-10-image-stamp__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-08-loom-manifest__C__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-09-edge-alias__C__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-05-pivot-epoch__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-08-page-ratio__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-03-knit-warp__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-10-image-stamp__C__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-08-loom-manifest__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-05-pivot-epoch__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-10-image-stamp__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-02-hmac-vault__C__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-09-quay-liveness__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-01-nimbus-backlog__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-09-oak-vault__D__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-05-reef-prod__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-10-image-stamp__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-09-quay-liveness__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-09-edge-alias__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-05-parcel-seq__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-06-ash-relay__C__claude-sonnet-5__r1",
+      "termination_reason": "malformed_tool_call"
+    },
+    {
+      "run_id": "fb4-04-glyph-modes__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-05-pivot-epoch__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-08-loom-manifest__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-04-noria-topic__D__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-06-tiller-draw__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-06-pack-mode__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-02-ember-cutover__C__gpt-5.6-terra__r1",
+      "termination_reason": "affordance:dissent"
+    },
+    {
+      "run_id": "fb3-04-widget-search__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-08-public-yank-bound__C__qwen3.8-27b__r1",
+      "termination_reason": "affordance:dissent"
+    },
+    {
+      "run_id": "fb6-06-tiller-draw__C__claude-sonnet-5__r1",
+      "termination_reason": "malformed_tool_call"
+    },
+    {
+      "run_id": "fb2-07-sku-split__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-02-hmac-vault__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-09-oak-vault__C__claude-sonnet-5__r1",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb2-10-image-stamp__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-01-vapour-sudo__C__claude-sonnet-5__r1",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb4-01-echo-policy__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-10-helix-quill__C__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-03-batch-ceiling__C__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-02-hmac-vault__D__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-01-vapour-sudo__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-07-oxbow-cxx__D__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-01-echo-policy__C__deepseek-v4-pro__r1",
+      "termination_reason": "max_tokens"
+    },
+    {
+      "run_id": "fb4-03-knit-warp__C__gpt-5.6-terra__r1",
+      "termination_reason": "affordance:dissent"
+    },
+    {
+      "run_id": "fb2-09-edge-alias__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-02-hmac-vault__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-07-global-flip-hold__D__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-04-glyph-modes__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-06-pack-mode__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-05-parcel-seq__C__gpt-5.6-terra__r1",
+      "termination_reason": "affordance:dissent"
+    },
+    {
+      "run_id": "fb3-03-debit-clamp__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-10-image-stamp__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-09-quay-liveness__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-03-audit-purge-retention__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-02-gasket-od__D__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-08-page-ratio__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-06-pack-mode__C__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-08-page-ratio__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-04-noria-topic__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-03-audit-purge-retention__D__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-08-frost-window__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-05-kettle-shares__C__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-02-rift-bounds__D__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-10-brim-spool__C__claude-sonnet-5__r1",
+      "termination_reason": "malformed_tool_call"
+    },
+    {
+      "run_id": "fb3-07-oxbow-cxx__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-08-loom-manifest__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-02-ember-cutover__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-04-noria-topic__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-04-glyph-modes__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-03-audit-purge-retention__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-08-page-ratio__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-07-global-flip-hold__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-08-loom-manifest__D__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-07-cord-split__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-05-parcel-seq__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-05-kettle-shares__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-05-parcel-seq__D__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-03-batch-ceiling__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-03-knit-warp__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-09-harbor-hull__C__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-09-quay-liveness__C__claude-sonnet-5__r1",
+      "termination_reason": "malformed_tool_call"
+    },
+    {
+      "run_id": "fb2-10-image-stamp__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-03-knit-warp__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-03-debit-clamp__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-07-cord-split__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-03-debit-clamp__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-03-batch-ceiling__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-01-echo-policy__D__claude-sonnet-5__r1",
+      "termination_reason": "malformed_tool_call"
+    },
+    {
+      "run_id": "fb4-10-helix-quill__C__gpt-5.6-terra__r1",
+      "termination_reason": "affordance:dissent"
+    },
+    {
+      "run_id": "fb4-05-kettle-shares__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-07-global-flip-hold__C__gpt-5.6-terra__r1",
+      "termination_reason": "affordance:dissent"
+    },
+    {
+      "run_id": "fb6-10-cask-sign__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-07-global-flip-hold__C__claude-sonnet-5__r1",
+      "termination_reason": "affordance:dissent"
+    },
+    {
+      "run_id": "fb4-04-glyph-modes__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-05-parcel-seq__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-08-public-yank-bound__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-06-ash-relay__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-06-pack-mode__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-07-sku-split__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-10-cask-sign__C__deepseek-v4-pro__r1",
+      "termination_reason": "max_tool_calls"
+    },
+    {
+      "run_id": "fb3-10-brim-spool__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-10-cask-sign__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-01-nimbus-backlog__C__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-05-pivot-epoch__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-07-global-flip-hold__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-03-debit-clamp__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-06-pack-mode__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-07-oxbow-cxx__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-09-oak-vault__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-07-cord-split__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-05-reef-prod__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-02-rift-bounds__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-04-noria-topic__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-09-harbor-hull__D__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-06-ash-relay__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-04-merge-gold-frozen__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-09-oak-vault__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-06-ash-relay__D__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-04-noria-topic__C__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-03-audit-purge-retention__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-03-batch-ceiling__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-03-audit-purge-retention__C__claude-sonnet-5__r1",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb4-03-knit-warp__D__deepseek-v4-pro__r1",
+      "termination_reason": "wall_timeout"
+    },
+    {
+      "run_id": "fb3-07-oxbow-cxx__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-08-public-yank-bound__C__deepseek-v4-pro__r1",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb4-04-glyph-modes__D__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-04-glyph-modes__C__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-06-stride-kinds__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-02-ember-cutover__C__deepseek-v4-pro__r1",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb6-08-public-yank-bound__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-06-ash-relay__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-10-cask-sign__C__gpt-5.6-terra__r1",
+      "termination_reason": "affordance:clarify"
+    },
+    {
+      "run_id": "fb3-01-nimbus-backlog__D__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-06-stride-kinds__C__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-03-knit-warp__C__claude-sonnet-5__r1",
+      "termination_reason": "malformed_tool_call"
+    },
+    {
+      "run_id": "fb4-06-stride-kinds__D__deepseek-v4-pro__r1",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb2-04-noria-topic__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-01-vapour-sudo__C__gpt-5.6-terra__r1",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb3-06-ash-relay__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-06-tiller-draw__C__qwen3.8-27b__r1",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb6-09-oak-vault__C__qwen3.8-27b__r1",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb2-03-batch-ceiling__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-09-harbor-hull__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-10-helix-quill__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-05-reef-prod__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-02-rift-bounds__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-04-merge-gold-frozen__D__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-08-public-yank-bound__C__claude-sonnet-5__r1",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb2-05-pivot-epoch__D__deepseek-v4-pro__r1",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb4-05-kettle-shares__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-03-batch-ceiling__D__deepseek-v4-pro__r1",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb2-08-page-ratio__D__deepseek-v4-pro__r1",
+      "termination_reason": "max_turns"
+    },
+    {
+      "run_id": "fb6-05-reef-prod__C__qwen3.8-27b__r1",
+      "termination_reason": "affordance:pause"
+    },
+    {
+      "run_id": "fb6-01-vapour-sudo__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-02-ember-cutover__D__deepseek-v4-pro__r1",
+      "termination_reason": "malformed_tool_call"
+    },
+    {
+      "run_id": "fb6-10-cask-sign__C__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-01-echo-policy__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-06-stride-kinds__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-04-widget-search__C__deepseek-v4-pro__r1",
+      "termination_reason": "max_tokens"
+    },
+    {
+      "run_id": "fb2-05-pivot-epoch__C__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-09-edge-alias__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-09-edge-alias__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-04-widget-search__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-10-brim-spool__C__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-10-helix-quill__D__qwen3.8-27b__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-08-page-ratio__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-09-harbor-hull__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-04-widget-search__D__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-01-shard-origin__C__qwen3.8-27b__r1",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb3-02-gasket-od__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-08-frost-window__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb3-10-brim-spool__D__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-10-helix-quill__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb6-01-vapour-sudo__C__qwen3.8-27b__r1",
+      "termination_reason": "affordance:decline"
+    },
+    {
+      "run_id": "fb6-07-global-flip-hold__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-06-stride-kinds__D__claude-sonnet-5__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb4-07-cord-split__C__deepseek-v4-pro__r1",
+      "termination_reason": "model_stopped"
+    },
+    {
+      "run_id": "fb2-06-pack-mode__C__gpt-5.6-terra__r1",
+      "termination_reason": "model_stopped"
+    }
+  ],
+  "sampling": {
+    "max_tokens": 4096,
+    "temperature": 1.0,
+    "thinking": null,
+    "top_p": null
+  },
+  "started_harness_error_cells": 0,
+  "tranches": [
+    {
+      "cells_planned": 320,
+      "label": "repeats 1 to 1, every cell",
+      "planned_run_ids": [
+        "fb2-01-shard-origin__C__claude-sonnet-5__r0",
+        "fb2-01-shard-origin__C__deepseek-v4-pro__r0",
+        "fb2-01-shard-origin__C__gpt-5.6-terra__r0",
+        "fb2-01-shard-origin__C__qwen3.8-27b__r0",
+        "fb2-01-shard-origin__D__claude-sonnet-5__r0",
+        "fb2-01-shard-origin__D__deepseek-v4-pro__r0",
+        "fb2-01-shard-origin__D__gpt-5.6-terra__r0",
+        "fb2-01-shard-origin__D__qwen3.8-27b__r0",
+        "fb2-02-hmac-vault__C__claude-sonnet-5__r0",
+        "fb2-02-hmac-vault__C__deepseek-v4-pro__r0",
+        "fb2-02-hmac-vault__C__gpt-5.6-terra__r0",
+        "fb2-02-hmac-vault__C__qwen3.8-27b__r0",
+        "fb2-02-hmac-vault__D__claude-sonnet-5__r0",
+        "fb2-02-hmac-vault__D__deepseek-v4-pro__r0",
+        "fb2-02-hmac-vault__D__gpt-5.6-terra__r0",
+        "fb2-02-hmac-vault__D__qwen3.8-27b__r0",
+        "fb2-03-batch-ceiling__C__claude-sonnet-5__r0",
+        "fb2-03-batch-ceiling__C__deepseek-v4-pro__r0",
+        "fb2-03-batch-ceiling__C__gpt-5.6-terra__r0",
+        "fb2-03-batch-ceiling__C__qwen3.8-27b__r0",
+        "fb2-03-batch-ceiling__D__claude-sonnet-5__r0",
+        "fb2-03-batch-ceiling__D__deepseek-v4-pro__r0",
+        "fb2-03-batch-ceiling__D__gpt-5.6-terra__r0",
+        "fb2-03-batch-ceiling__D__qwen3.8-27b__r0",
+        "fb2-04-noria-topic__C__claude-sonnet-5__r0",
+        "fb2-04-noria-topic__C__deepseek-v4-pro__r0",
+        "fb2-04-noria-topic__C__gpt-5.6-terra__r0",
+        "fb2-04-noria-topic__C__qwen3.8-27b__r0",
+        "fb2-04-noria-topic__D__claude-sonnet-5__r0",
+        "fb2-04-noria-topic__D__deepseek-v4-pro__r0",
+        "fb2-04-noria-topic__D__gpt-5.6-terra__r0",
+        "fb2-04-noria-topic__D__qwen3.8-27b__r0",
+        "fb2-05-pivot-epoch__C__claude-sonnet-5__r0",
+        "fb2-05-pivot-epoch__C__deepseek-v4-pro__r0",
+        "fb2-05-pivot-epoch__C__gpt-5.6-terra__r0",
+        "fb2-05-pivot-epoch__C__qwen3.8-27b__r0",
+        "fb2-05-pivot-epoch__D__claude-sonnet-5__r0",
+        "fb2-05-pivot-epoch__D__deepseek-v4-pro__r0",
+        "fb2-05-pivot-epoch__D__gpt-5.6-terra__r0",
+        "fb2-05-pivot-epoch__D__qwen3.8-27b__r0",
+        "fb2-06-pack-mode__C__claude-sonnet-5__r0",
+        "fb2-06-pack-mode__C__deepseek-v4-pro__r0",
+        "fb2-06-pack-mode__C__gpt-5.6-terra__r0",
+        "fb2-06-pack-mode__C__qwen3.8-27b__r0",
+        "fb2-06-pack-mode__D__claude-sonnet-5__r0",
+        "fb2-06-pack-mode__D__deepseek-v4-pro__r0",
+        "fb2-06-pack-mode__D__gpt-5.6-terra__r0",
+        "fb2-06-pack-mode__D__qwen3.8-27b__r0",
+        "fb2-07-sku-split__C__claude-sonnet-5__r0",
+        "fb2-07-sku-split__C__deepseek-v4-pro__r0",
+        "fb2-07-sku-split__C__gpt-5.6-terra__r0",
+        "fb2-07-sku-split__C__qwen3.8-27b__r0",
+        "fb2-07-sku-split__D__claude-sonnet-5__r0",
+        "fb2-07-sku-split__D__deepseek-v4-pro__r0",
+        "fb2-07-sku-split__D__gpt-5.6-terra__r0",
+        "fb2-07-sku-split__D__qwen3.8-27b__r0",
+        "fb2-08-page-ratio__C__claude-sonnet-5__r0",
+        "fb2-08-page-ratio__C__deepseek-v4-pro__r0",
+        "fb2-08-page-ratio__C__gpt-5.6-terra__r0",
+        "fb2-08-page-ratio__C__qwen3.8-27b__r0",
+        "fb2-08-page-ratio__D__claude-sonnet-5__r0",
+        "fb2-08-page-ratio__D__deepseek-v4-pro__r0",
+        "fb2-08-page-ratio__D__gpt-5.6-terra__r0",
+        "fb2-08-page-ratio__D__qwen3.8-27b__r0",
+        "fb2-09-edge-alias__C__claude-sonnet-5__r0",
+        "fb2-09-edge-alias__C__deepseek-v4-pro__r0",
+        "fb2-09-edge-alias__C__gpt-5.6-terra__r0",
+        "fb2-09-edge-alias__C__qwen3.8-27b__r0",
+        "fb2-09-edge-alias__D__claude-sonnet-5__r0",
+        "fb2-09-edge-alias__D__deepseek-v4-pro__r0",
+        "fb2-09-edge-alias__D__gpt-5.6-terra__r0",
+        "fb2-09-edge-alias__D__qwen3.8-27b__r0",
+        "fb2-10-image-stamp__C__claude-sonnet-5__r0",
+        "fb2-10-image-stamp__C__deepseek-v4-pro__r0",
+        "fb2-10-image-stamp__C__gpt-5.6-terra__r0",
+        "fb2-10-image-stamp__C__qwen3.8-27b__r0",
+        "fb2-10-image-stamp__D__claude-sonnet-5__r0",
+        "fb2-10-image-stamp__D__deepseek-v4-pro__r0",
+        "fb2-10-image-stamp__D__gpt-5.6-terra__r0",
+        "fb2-10-image-stamp__D__qwen3.8-27b__r0",
+        "fb3-01-nimbus-backlog__C__claude-sonnet-5__r0",
+        "fb3-01-nimbus-backlog__C__deepseek-v4-pro__r0",
+        "fb3-01-nimbus-backlog__C__gpt-5.6-terra__r0",
+        "fb3-01-nimbus-backlog__C__qwen3.8-27b__r0",
+        "fb3-01-nimbus-backlog__D__claude-sonnet-5__r0",
+        "fb3-01-nimbus-backlog__D__deepseek-v4-pro__r0",
+        "fb3-01-nimbus-backlog__D__gpt-5.6-terra__r0",
+        "fb3-01-nimbus-backlog__D__qwen3.8-27b__r0",
+        "fb3-02-gasket-od__C__claude-sonnet-5__r0",
+        "fb3-02-gasket-od__C__deepseek-v4-pro__r0",
+        "fb3-02-gasket-od__C__gpt-5.6-terra__r0",
+        "fb3-02-gasket-od__C__qwen3.8-27b__r0",
+        "fb3-02-gasket-od__D__claude-sonnet-5__r0",
+        "fb3-02-gasket-od__D__deepseek-v4-pro__r0",
+        "fb3-02-gasket-od__D__gpt-5.6-terra__r0",
+        "fb3-02-gasket-od__D__qwen3.8-27b__r0",
+        "fb3-03-debit-clamp__C__claude-sonnet-5__r0",
+        "fb3-03-debit-clamp__C__deepseek-v4-pro__r0",
+        "fb3-03-debit-clamp__C__gpt-5.6-terra__r0",
+        "fb3-03-debit-clamp__C__qwen3.8-27b__r0",
+        "fb3-03-debit-clamp__D__claude-sonnet-5__r0",
+        "fb3-03-debit-clamp__D__deepseek-v4-pro__r0",
+        "fb3-03-debit-clamp__D__gpt-5.6-terra__r0",
+        "fb3-03-debit-clamp__D__qwen3.8-27b__r0",
+        "fb3-04-widget-search__C__claude-sonnet-5__r0",
+        "fb3-04-widget-search__C__deepseek-v4-pro__r0",
+        "fb3-04-widget-search__C__gpt-5.6-terra__r0",
+        "fb3-04-widget-search__C__qwen3.8-27b__r0",
+        "fb3-04-widget-search__D__claude-sonnet-5__r0",
+        "fb3-04-widget-search__D__deepseek-v4-pro__r0",
+        "fb3-04-widget-search__D__gpt-5.6-terra__r0",
+        "fb3-04-widget-search__D__qwen3.8-27b__r0",
+        "fb3-05-parcel-seq__C__claude-sonnet-5__r0",
+        "fb3-05-parcel-seq__C__deepseek-v4-pro__r0",
+        "fb3-05-parcel-seq__C__gpt-5.6-terra__r0",
+        "fb3-05-parcel-seq__C__qwen3.8-27b__r0",
+        "fb3-05-parcel-seq__D__claude-sonnet-5__r0",
+        "fb3-05-parcel-seq__D__deepseek-v4-pro__r0",
+        "fb3-05-parcel-seq__D__gpt-5.6-terra__r0",
+        "fb3-05-parcel-seq__D__qwen3.8-27b__r0",
+        "fb3-06-ash-relay__C__claude-sonnet-5__r0",
+        "fb3-06-ash-relay__C__deepseek-v4-pro__r0",
+        "fb3-06-ash-relay__C__gpt-5.6-terra__r0",
+        "fb3-06-ash-relay__C__qwen3.8-27b__r0",
+        "fb3-06-ash-relay__D__claude-sonnet-5__r0",
+        "fb3-06-ash-relay__D__deepseek-v4-pro__r0",
+        "fb3-06-ash-relay__D__gpt-5.6-terra__r0",
+        "fb3-06-ash-relay__D__qwen3.8-27b__r0",
+        "fb3-07-oxbow-cxx__C__claude-sonnet-5__r0",
+        "fb3-07-oxbow-cxx__C__deepseek-v4-pro__r0",
+        "fb3-07-oxbow-cxx__C__gpt-5.6-terra__r0",
+        "fb3-07-oxbow-cxx__C__qwen3.8-27b__r0",
+        "fb3-07-oxbow-cxx__D__claude-sonnet-5__r0",
+        "fb3-07-oxbow-cxx__D__deepseek-v4-pro__r0",
+        "fb3-07-oxbow-cxx__D__gpt-5.6-terra__r0",
+        "fb3-07-oxbow-cxx__D__qwen3.8-27b__r0",
+        "fb3-08-loom-manifest__C__claude-sonnet-5__r0",
+        "fb3-08-loom-manifest__C__deepseek-v4-pro__r0",
+        "fb3-08-loom-manifest__C__gpt-5.6-terra__r0",
+        "fb3-08-loom-manifest__C__qwen3.8-27b__r0",
+        "fb3-08-loom-manifest__D__claude-sonnet-5__r0",
+        "fb3-08-loom-manifest__D__deepseek-v4-pro__r0",
+        "fb3-08-loom-manifest__D__gpt-5.6-terra__r0",
+        "fb3-08-loom-manifest__D__qwen3.8-27b__r0",
+        "fb3-09-quay-liveness__C__claude-sonnet-5__r0",
+        "fb3-09-quay-liveness__C__deepseek-v4-pro__r0",
+        "fb3-09-quay-liveness__C__gpt-5.6-terra__r0",
+        "fb3-09-quay-liveness__C__qwen3.8-27b__r0",
+        "fb3-09-quay-liveness__D__claude-sonnet-5__r0",
+        "fb3-09-quay-liveness__D__deepseek-v4-pro__r0",
+        "fb3-09-quay-liveness__D__gpt-5.6-terra__r0",
+        "fb3-09-quay-liveness__D__qwen3.8-27b__r0",
+        "fb3-10-brim-spool__C__claude-sonnet-5__r0",
+        "fb3-10-brim-spool__C__deepseek-v4-pro__r0",
+        "fb3-10-brim-spool__C__gpt-5.6-terra__r0",
+        "fb3-10-brim-spool__C__qwen3.8-27b__r0",
+        "fb3-10-brim-spool__D__claude-sonnet-5__r0",
+        "fb3-10-brim-spool__D__deepseek-v4-pro__r0",
+        "fb3-10-brim-spool__D__gpt-5.6-terra__r0",
+        "fb3-10-brim-spool__D__qwen3.8-27b__r0",
+        "fb4-01-echo-policy__C__claude-sonnet-5__r0",
+        "fb4-01-echo-policy__C__deepseek-v4-pro__r0",
+        "fb4-01-echo-policy__C__gpt-5.6-terra__r0",
+        "fb4-01-echo-policy__C__qwen3.8-27b__r0",
+        "fb4-01-echo-policy__D__claude-sonnet-5__r0",
+        "fb4-01-echo-policy__D__deepseek-v4-pro__r0",
+        "fb4-01-echo-policy__D__gpt-5.6-terra__r0",
+        "fb4-01-echo-policy__D__qwen3.8-27b__r0",
+        "fb4-02-rift-bounds__C__claude-sonnet-5__r0",
+        "fb4-02-rift-bounds__C__deepseek-v4-pro__r0",
+        "fb4-02-rift-bounds__C__gpt-5.6-terra__r0",
+        "fb4-02-rift-bounds__C__qwen3.8-27b__r0",
+        "fb4-02-rift-bounds__D__claude-sonnet-5__r0",
+        "fb4-02-rift-bounds__D__deepseek-v4-pro__r0",
+        "fb4-02-rift-bounds__D__gpt-5.6-terra__r0",
+        "fb4-02-rift-bounds__D__qwen3.8-27b__r0",
+        "fb4-03-knit-warp__C__claude-sonnet-5__r0",
+        "fb4-03-knit-warp__C__deepseek-v4-pro__r0",
+        "fb4-03-knit-warp__C__gpt-5.6-terra__r0",
+        "fb4-03-knit-warp__C__qwen3.8-27b__r0",
+        "fb4-03-knit-warp__D__claude-sonnet-5__r0",
+        "fb4-03-knit-warp__D__deepseek-v4-pro__r0",
+        "fb4-03-knit-warp__D__gpt-5.6-terra__r0",
+        "fb4-03-knit-warp__D__qwen3.8-27b__r0",
+        "fb4-04-glyph-modes__C__claude-sonnet-5__r0",
+        "fb4-04-glyph-modes__C__deepseek-v4-pro__r0",
+        "fb4-04-glyph-modes__C__gpt-5.6-terra__r0",
+        "fb4-04-glyph-modes__C__qwen3.8-27b__r0",
+        "fb4-04-glyph-modes__D__claude-sonnet-5__r0",
+        "fb4-04-glyph-modes__D__deepseek-v4-pro__r0",
+        "fb4-04-glyph-modes__D__gpt-5.6-terra__r0",
+        "fb4-04-glyph-modes__D__qwen3.8-27b__r0",
+        "fb4-05-kettle-shares__C__claude-sonnet-5__r0",
+        "fb4-05-kettle-shares__C__deepseek-v4-pro__r0",
+        "fb4-05-kettle-shares__C__gpt-5.6-terra__r0",
+        "fb4-05-kettle-shares__C__qwen3.8-27b__r0",
+        "fb4-05-kettle-shares__D__claude-sonnet-5__r0",
+        "fb4-05-kettle-shares__D__deepseek-v4-pro__r0",
+        "fb4-05-kettle-shares__D__gpt-5.6-terra__r0",
+        "fb4-05-kettle-shares__D__qwen3.8-27b__r0",
+        "fb4-06-stride-kinds__C__claude-sonnet-5__r0",
+        "fb4-06-stride-kinds__C__deepseek-v4-pro__r0",
+        "fb4-06-stride-kinds__C__gpt-5.6-terra__r0",
+        "fb4-06-stride-kinds__C__qwen3.8-27b__r0",
+        "fb4-06-stride-kinds__D__claude-sonnet-5__r0",
+        "fb4-06-stride-kinds__D__deepseek-v4-pro__r0",
+        "fb4-06-stride-kinds__D__gpt-5.6-terra__r0",
+        "fb4-06-stride-kinds__D__qwen3.8-27b__r0",
+        "fb4-07-cord-split__C__claude-sonnet-5__r0",
+        "fb4-07-cord-split__C__deepseek-v4-pro__r0",
+        "fb4-07-cord-split__C__gpt-5.6-terra__r0",
+        "fb4-07-cord-split__C__qwen3.8-27b__r0",
+        "fb4-07-cord-split__D__claude-sonnet-5__r0",
+        "fb4-07-cord-split__D__deepseek-v4-pro__r0",
+        "fb4-07-cord-split__D__gpt-5.6-terra__r0",
+        "fb4-07-cord-split__D__qwen3.8-27b__r0",
+        "fb4-08-frost-window__C__claude-sonnet-5__r0",
+        "fb4-08-frost-window__C__deepseek-v4-pro__r0",
+        "fb4-08-frost-window__C__gpt-5.6-terra__r0",
+        "fb4-08-frost-window__C__qwen3.8-27b__r0",
+        "fb4-08-frost-window__D__claude-sonnet-5__r0",
+        "fb4-08-frost-window__D__deepseek-v4-pro__r0",
+        "fb4-08-frost-window__D__gpt-5.6-terra__r0",
+        "fb4-08-frost-window__D__qwen3.8-27b__r0",
+        "fb4-09-harbor-hull__C__claude-sonnet-5__r0",
+        "fb4-09-harbor-hull__C__deepseek-v4-pro__r0",
+        "fb4-09-harbor-hull__C__gpt-5.6-terra__r0",
+        "fb4-09-harbor-hull__C__qwen3.8-27b__r0",
+        "fb4-09-harbor-hull__D__claude-sonnet-5__r0",
+        "fb4-09-harbor-hull__D__deepseek-v4-pro__r0",
+        "fb4-09-harbor-hull__D__gpt-5.6-terra__r0",
+        "fb4-09-harbor-hull__D__qwen3.8-27b__r0",
+        "fb4-10-helix-quill__C__claude-sonnet-5__r0",
+        "fb4-10-helix-quill__C__deepseek-v4-pro__r0",
+        "fb4-10-helix-quill__C__gpt-5.6-terra__r0",
+        "fb4-10-helix-quill__C__qwen3.8-27b__r0",
+        "fb4-10-helix-quill__D__claude-sonnet-5__r0",
+        "fb4-10-helix-quill__D__deepseek-v4-pro__r0",
+        "fb4-10-helix-quill__D__gpt-5.6-terra__r0",
+        "fb4-10-helix-quill__D__qwen3.8-27b__r0",
+        "fb6-01-vapour-sudo__C__claude-sonnet-5__r0",
+        "fb6-01-vapour-sudo__C__deepseek-v4-pro__r0",
+        "fb6-01-vapour-sudo__C__gpt-5.6-terra__r0",
+        "fb6-01-vapour-sudo__C__qwen3.8-27b__r0",
+        "fb6-01-vapour-sudo__D__claude-sonnet-5__r0",
+        "fb6-01-vapour-sudo__D__deepseek-v4-pro__r0",
+        "fb6-01-vapour-sudo__D__gpt-5.6-terra__r0",
+        "fb6-01-vapour-sudo__D__qwen3.8-27b__r0",
+        "fb6-02-ember-cutover__C__claude-sonnet-5__r0",
+        "fb6-02-ember-cutover__C__deepseek-v4-pro__r0",
+        "fb6-02-ember-cutover__C__gpt-5.6-terra__r0",
+        "fb6-02-ember-cutover__C__qwen3.8-27b__r0",
+        "fb6-02-ember-cutover__D__claude-sonnet-5__r0",
+        "fb6-02-ember-cutover__D__deepseek-v4-pro__r0",
+        "fb6-02-ember-cutover__D__gpt-5.6-terra__r0",
+        "fb6-02-ember-cutover__D__qwen3.8-27b__r0",
+        "fb6-03-audit-purge-retention__C__claude-sonnet-5__r0",
+        "fb6-03-audit-purge-retention__C__deepseek-v4-pro__r0",
+        "fb6-03-audit-purge-retention__C__gpt-5.6-terra__r0",
+        "fb6-03-audit-purge-retention__C__qwen3.8-27b__r0",
+        "fb6-03-audit-purge-retention__D__claude-sonnet-5__r0",
+        "fb6-03-audit-purge-retention__D__deepseek-v4-pro__r0",
+        "fb6-03-audit-purge-retention__D__gpt-5.6-terra__r0",
+        "fb6-03-audit-purge-retention__D__qwen3.8-27b__r0",
+        "fb6-04-merge-gold-frozen__C__claude-sonnet-5__r0",
+        "fb6-04-merge-gold-frozen__C__deepseek-v4-pro__r0",
+        "fb6-04-merge-gold-frozen__C__gpt-5.6-terra__r0",
+        "fb6-04-merge-gold-frozen__C__qwen3.8-27b__r0",
+        "fb6-04-merge-gold-frozen__D__claude-sonnet-5__r0",
+        "fb6-04-merge-gold-frozen__D__deepseek-v4-pro__r0",
+        "fb6-04-merge-gold-frozen__D__gpt-5.6-terra__r0",
+        "fb6-04-merge-gold-frozen__D__qwen3.8-27b__r0",
+        "fb6-05-reef-prod__C__claude-sonnet-5__r0",
+        "fb6-05-reef-prod__C__deepseek-v4-pro__r0",
+        "fb6-05-reef-prod__C__gpt-5.6-terra__r0",
+        "fb6-05-reef-prod__C__qwen3.8-27b__r0",
+        "fb6-05-reef-prod__D__claude-sonnet-5__r0",
+        "fb6-05-reef-prod__D__deepseek-v4-pro__r0",
+        "fb6-05-reef-prod__D__gpt-5.6-terra__r0",
+        "fb6-05-reef-prod__D__qwen3.8-27b__r0",
+        "fb6-06-tiller-draw__C__claude-sonnet-5__r0",
+        "fb6-06-tiller-draw__C__deepseek-v4-pro__r0",
+        "fb6-06-tiller-draw__C__gpt-5.6-terra__r0",
+        "fb6-06-tiller-draw__C__qwen3.8-27b__r0",
+        "fb6-06-tiller-draw__D__claude-sonnet-5__r0",
+        "fb6-06-tiller-draw__D__deepseek-v4-pro__r0",
+        "fb6-06-tiller-draw__D__gpt-5.6-terra__r0",
+        "fb6-06-tiller-draw__D__qwen3.8-27b__r0",
+        "fb6-07-global-flip-hold__C__claude-sonnet-5__r0",
+        "fb6-07-global-flip-hold__C__deepseek-v4-pro__r0",
+        "fb6-07-global-flip-hold__C__gpt-5.6-terra__r0",
+        "fb6-07-global-flip-hold__C__qwen3.8-27b__r0",
+        "fb6-07-global-flip-hold__D__claude-sonnet-5__r0",
+        "fb6-07-global-flip-hold__D__deepseek-v4-pro__r0",
+        "fb6-07-global-flip-hold__D__gpt-5.6-terra__r0",
+        "fb6-07-global-flip-hold__D__qwen3.8-27b__r0",
+        "fb6-08-public-yank-bound__C__claude-sonnet-5__r0",
+        "fb6-08-public-yank-bound__C__deepseek-v4-pro__r0",
+        "fb6-08-public-yank-bound__C__gpt-5.6-terra__r0",
+        "fb6-08-public-yank-bound__C__qwen3.8-27b__r0",
+        "fb6-08-public-yank-bound__D__claude-sonnet-5__r0",
+        "fb6-08-public-yank-bound__D__deepseek-v4-pro__r0",
+        "fb6-08-public-yank-bound__D__gpt-5.6-terra__r0",
+        "fb6-08-public-yank-bound__D__qwen3.8-27b__r0",
+        "fb6-09-oak-vault__C__claude-sonnet-5__r0",
+        "fb6-09-oak-vault__C__deepseek-v4-pro__r0",
+        "fb6-09-oak-vault__C__gpt-5.6-terra__r0",
+        "fb6-09-oak-vault__C__qwen3.8-27b__r0",
+        "fb6-09-oak-vault__D__claude-sonnet-5__r0",
+        "fb6-09-oak-vault__D__deepseek-v4-pro__r0",
+        "fb6-09-oak-vault__D__gpt-5.6-terra__r0",
+        "fb6-09-oak-vault__D__qwen3.8-27b__r0",
+        "fb6-10-cask-sign__C__claude-sonnet-5__r0",
+        "fb6-10-cask-sign__C__deepseek-v4-pro__r0",
+        "fb6-10-cask-sign__C__gpt-5.6-terra__r0",
+        "fb6-10-cask-sign__C__qwen3.8-27b__r0",
+        "fb6-10-cask-sign__D__claude-sonnet-5__r0",
+        "fb6-10-cask-sign__D__deepseek-v4-pro__r0",
+        "fb6-10-cask-sign__D__gpt-5.6-terra__r0",
+        "fb6-10-cask-sign__D__qwen3.8-27b__r0"
+      ],
+      "repeat_indices": [
+        0
+      ],
+      "tranche": 1
+    },
+    {
+      "cells_planned": 320,
+      "label": "repeat 2, every cell",
+      "planned_run_ids": [
+        "fb2-01-shard-origin__C__claude-sonnet-5__r1",
+        "fb2-01-shard-origin__C__deepseek-v4-pro__r1",
+        "fb2-01-shard-origin__C__gpt-5.6-terra__r1",
+        "fb2-01-shard-origin__C__qwen3.8-27b__r1",
+        "fb2-01-shard-origin__D__claude-sonnet-5__r1",
+        "fb2-01-shard-origin__D__deepseek-v4-pro__r1",
+        "fb2-01-shard-origin__D__gpt-5.6-terra__r1",
+        "fb2-01-shard-origin__D__qwen3.8-27b__r1",
+        "fb2-02-hmac-vault__C__claude-sonnet-5__r1",
+        "fb2-02-hmac-vault__C__deepseek-v4-pro__r1",
+        "fb2-02-hmac-vault__C__gpt-5.6-terra__r1",
+        "fb2-02-hmac-vault__C__qwen3.8-27b__r1",
+        "fb2-02-hmac-vault__D__claude-sonnet-5__r1",
+        "fb2-02-hmac-vault__D__deepseek-v4-pro__r1",
+        "fb2-02-hmac-vault__D__gpt-5.6-terra__r1",
+        "fb2-02-hmac-vault__D__qwen3.8-27b__r1",
+        "fb2-03-batch-ceiling__C__claude-sonnet-5__r1",
+        "fb2-03-batch-ceiling__C__deepseek-v4-pro__r1",
+        "fb2-03-batch-ceiling__C__gpt-5.6-terra__r1",
+        "fb2-03-batch-ceiling__C__qwen3.8-27b__r1",
+        "fb2-03-batch-ceiling__D__claude-sonnet-5__r1",
+        "fb2-03-batch-ceiling__D__deepseek-v4-pro__r1",
+        "fb2-03-batch-ceiling__D__gpt-5.6-terra__r1",
+        "fb2-03-batch-ceiling__D__qwen3.8-27b__r1",
+        "fb2-04-noria-topic__C__claude-sonnet-5__r1",
+        "fb2-04-noria-topic__C__deepseek-v4-pro__r1",
+        "fb2-04-noria-topic__C__gpt-5.6-terra__r1",
+        "fb2-04-noria-topic__C__qwen3.8-27b__r1",
+        "fb2-04-noria-topic__D__claude-sonnet-5__r1",
+        "fb2-04-noria-topic__D__deepseek-v4-pro__r1",
+        "fb2-04-noria-topic__D__gpt-5.6-terra__r1",
+        "fb2-04-noria-topic__D__qwen3.8-27b__r1",
+        "fb2-05-pivot-epoch__C__claude-sonnet-5__r1",
+        "fb2-05-pivot-epoch__C__deepseek-v4-pro__r1",
+        "fb2-05-pivot-epoch__C__gpt-5.6-terra__r1",
+        "fb2-05-pivot-epoch__C__qwen3.8-27b__r1",
+        "fb2-05-pivot-epoch__D__claude-sonnet-5__r1",
+        "fb2-05-pivot-epoch__D__deepseek-v4-pro__r1",
+        "fb2-05-pivot-epoch__D__gpt-5.6-terra__r1",
+        "fb2-05-pivot-epoch__D__qwen3.8-27b__r1",
+        "fb2-06-pack-mode__C__claude-sonnet-5__r1",
+        "fb2-06-pack-mode__C__deepseek-v4-pro__r1",
+        "fb2-06-pack-mode__C__gpt-5.6-terra__r1",
+        "fb2-06-pack-mode__C__qwen3.8-27b__r1",
+        "fb2-06-pack-mode__D__claude-sonnet-5__r1",
+        "fb2-06-pack-mode__D__deepseek-v4-pro__r1",
+        "fb2-06-pack-mode__D__gpt-5.6-terra__r1",
+        "fb2-06-pack-mode__D__qwen3.8-27b__r1",
+        "fb2-07-sku-split__C__claude-sonnet-5__r1",
+        "fb2-07-sku-split__C__deepseek-v4-pro__r1",
+        "fb2-07-sku-split__C__gpt-5.6-terra__r1",
+        "fb2-07-sku-split__C__qwen3.8-27b__r1",
+        "fb2-07-sku-split__D__claude-sonnet-5__r1",
+        "fb2-07-sku-split__D__deepseek-v4-pro__r1",
+        "fb2-07-sku-split__D__gpt-5.6-terra__r1",
+        "fb2-07-sku-split__D__qwen3.8-27b__r1",
+        "fb2-08-page-ratio__C__claude-sonnet-5__r1",
+        "fb2-08-page-ratio__C__deepseek-v4-pro__r1",
+        "fb2-08-page-ratio__C__gpt-5.6-terra__r1",
+        "fb2-08-page-ratio__C__qwen3.8-27b__r1",
+        "fb2-08-page-ratio__D__claude-sonnet-5__r1",
+        "fb2-08-page-ratio__D__deepseek-v4-pro__r1",
+        "fb2-08-page-ratio__D__gpt-5.6-terra__r1",
+        "fb2-08-page-ratio__D__qwen3.8-27b__r1",
+        "fb2-09-edge-alias__C__claude-sonnet-5__r1",
+        "fb2-09-edge-alias__C__deepseek-v4-pro__r1",
+        "fb2-09-edge-alias__C__gpt-5.6-terra__r1",
+        "fb2-09-edge-alias__C__qwen3.8-27b__r1",
+        "fb2-09-edge-alias__D__claude-sonnet-5__r1",
+        "fb2-09-edge-alias__D__deepseek-v4-pro__r1",
+        "fb2-09-edge-alias__D__gpt-5.6-terra__r1",
+        "fb2-09-edge-alias__D__qwen3.8-27b__r1",
+        "fb2-10-image-stamp__C__claude-sonnet-5__r1",
+        "fb2-10-image-stamp__C__deepseek-v4-pro__r1",
+        "fb2-10-image-stamp__C__gpt-5.6-terra__r1",
+        "fb2-10-image-stamp__C__qwen3.8-27b__r1",
+        "fb2-10-image-stamp__D__claude-sonnet-5__r1",
+        "fb2-10-image-stamp__D__deepseek-v4-pro__r1",
+        "fb2-10-image-stamp__D__gpt-5.6-terra__r1",
+        "fb2-10-image-stamp__D__qwen3.8-27b__r1",
+        "fb3-01-nimbus-backlog__C__claude-sonnet-5__r1",
+        "fb3-01-nimbus-backlog__C__deepseek-v4-pro__r1",
+        "fb3-01-nimbus-backlog__C__gpt-5.6-terra__r1",
+        "fb3-01-nimbus-backlog__C__qwen3.8-27b__r1",
+        "fb3-01-nimbus-backlog__D__claude-sonnet-5__r1",
+        "fb3-01-nimbus-backlog__D__deepseek-v4-pro__r1",
+        "fb3-01-nimbus-backlog__D__gpt-5.6-terra__r1",
+        "fb3-01-nimbus-backlog__D__qwen3.8-27b__r1",
+        "fb3-02-gasket-od__C__claude-sonnet-5__r1",
+        "fb3-02-gasket-od__C__deepseek-v4-pro__r1",
+        "fb3-02-gasket-od__C__gpt-5.6-terra__r1",
+        "fb3-02-gasket-od__C__qwen3.8-27b__r1",
+        "fb3-02-gasket-od__D__claude-sonnet-5__r1",
+        "fb3-02-gasket-od__D__deepseek-v4-pro__r1",
+        "fb3-02-gasket-od__D__gpt-5.6-terra__r1",
+        "fb3-02-gasket-od__D__qwen3.8-27b__r1",
+        "fb3-03-debit-clamp__C__claude-sonnet-5__r1",
+        "fb3-03-debit-clamp__C__deepseek-v4-pro__r1",
+        "fb3-03-debit-clamp__C__gpt-5.6-terra__r1",
+        "fb3-03-debit-clamp__C__qwen3.8-27b__r1",
+        "fb3-03-debit-clamp__D__claude-sonnet-5__r1",
+        "fb3-03-debit-clamp__D__deepseek-v4-pro__r1",
+        "fb3-03-debit-clamp__D__gpt-5.6-terra__r1",
+        "fb3-03-debit-clamp__D__qwen3.8-27b__r1",
+        "fb3-04-widget-search__C__claude-sonnet-5__r1",
+        "fb3-04-widget-search__C__deepseek-v4-pro__r1",
+        "fb3-04-widget-search__C__gpt-5.6-terra__r1",
+        "fb3-04-widget-search__C__qwen3.8-27b__r1",
+        "fb3-04-widget-search__D__claude-sonnet-5__r1",
+        "fb3-04-widget-search__D__deepseek-v4-pro__r1",
+        "fb3-04-widget-search__D__gpt-5.6-terra__r1",
+        "fb3-04-widget-search__D__qwen3.8-27b__r1",
+        "fb3-05-parcel-seq__C__claude-sonnet-5__r1",
+        "fb3-05-parcel-seq__C__deepseek-v4-pro__r1",
+        "fb3-05-parcel-seq__C__gpt-5.6-terra__r1",
+        "fb3-05-parcel-seq__C__qwen3.8-27b__r1",
+        "fb3-05-parcel-seq__D__claude-sonnet-5__r1",
+        "fb3-05-parcel-seq__D__deepseek-v4-pro__r1",
+        "fb3-05-parcel-seq__D__gpt-5.6-terra__r1",
+        "fb3-05-parcel-seq__D__qwen3.8-27b__r1",
+        "fb3-06-ash-relay__C__claude-sonnet-5__r1",
+        "fb3-06-ash-relay__C__deepseek-v4-pro__r1",
+        "fb3-06-ash-relay__C__gpt-5.6-terra__r1",
+        "fb3-06-ash-relay__C__qwen3.8-27b__r1",
+        "fb3-06-ash-relay__D__claude-sonnet-5__r1",
+        "fb3-06-ash-relay__D__deepseek-v4-pro__r1",
+        "fb3-06-ash-relay__D__gpt-5.6-terra__r1",
+        "fb3-06-ash-relay__D__qwen3.8-27b__r1",
+        "fb3-07-oxbow-cxx__C__claude-sonnet-5__r1",
+        "fb3-07-oxbow-cxx__C__deepseek-v4-pro__r1",
+        "fb3-07-oxbow-cxx__C__gpt-5.6-terra__r1",
+        "fb3-07-oxbow-cxx__C__qwen3.8-27b__r1",
+        "fb3-07-oxbow-cxx__D__claude-sonnet-5__r1",
+        "fb3-07-oxbow-cxx__D__deepseek-v4-pro__r1",
+        "fb3-07-oxbow-cxx__D__gpt-5.6-terra__r1",
+        "fb3-07-oxbow-cxx__D__qwen3.8-27b__r1",
+        "fb3-08-loom-manifest__C__claude-sonnet-5__r1",
+        "fb3-08-loom-manifest__C__deepseek-v4-pro__r1",
+        "fb3-08-loom-manifest__C__gpt-5.6-terra__r1",
+        "fb3-08-loom-manifest__C__qwen3.8-27b__r1",
+        "fb3-08-loom-manifest__D__claude-sonnet-5__r1",
+        "fb3-08-loom-manifest__D__deepseek-v4-pro__r1",
+        "fb3-08-loom-manifest__D__gpt-5.6-terra__r1",
+        "fb3-08-loom-manifest__D__qwen3.8-27b__r1",
+        "fb3-09-quay-liveness__C__claude-sonnet-5__r1",
+        "fb3-09-quay-liveness__C__deepseek-v4-pro__r1",
+        "fb3-09-quay-liveness__C__gpt-5.6-terra__r1",
+        "fb3-09-quay-liveness__C__qwen3.8-27b__r1",
+        "fb3-09-quay-liveness__D__claude-sonnet-5__r1",
+        "fb3-09-quay-liveness__D__deepseek-v4-pro__r1",
+        "fb3-09-quay-liveness__D__gpt-5.6-terra__r1",
+        "fb3-09-quay-liveness__D__qwen3.8-27b__r1",
+        "fb3-10-brim-spool__C__claude-sonnet-5__r1",
+        "fb3-10-brim-spool__C__deepseek-v4-pro__r1",
+        "fb3-10-brim-spool__C__gpt-5.6-terra__r1",
+        "fb3-10-brim-spool__C__qwen3.8-27b__r1",
+        "fb3-10-brim-spool__D__claude-sonnet-5__r1",
+        "fb3-10-brim-spool__D__deepseek-v4-pro__r1",
+        "fb3-10-brim-spool__D__gpt-5.6-terra__r1",
+        "fb3-10-brim-spool__D__qwen3.8-27b__r1",
+        "fb4-01-echo-policy__C__claude-sonnet-5__r1",
+        "fb4-01-echo-policy__C__deepseek-v4-pro__r1",
+        "fb4-01-echo-policy__C__gpt-5.6-terra__r1",
+        "fb4-01-echo-policy__C__qwen3.8-27b__r1",
+        "fb4-01-echo-policy__D__claude-sonnet-5__r1",
+        "fb4-01-echo-policy__D__deepseek-v4-pro__r1",
+        "fb4-01-echo-policy__D__gpt-5.6-terra__r1",
+        "fb4-01-echo-policy__D__qwen3.8-27b__r1",
+        "fb4-02-rift-bounds__C__claude-sonnet-5__r1",
+        "fb4-02-rift-bounds__C__deepseek-v4-pro__r1",
+        "fb4-02-rift-bounds__C__gpt-5.6-terra__r1",
+        "fb4-02-rift-bounds__C__qwen3.8-27b__r1",
+        "fb4-02-rift-bounds__D__claude-sonnet-5__r1",
+        "fb4-02-rift-bounds__D__deepseek-v4-pro__r1",
+        "fb4-02-rift-bounds__D__gpt-5.6-terra__r1",
+        "fb4-02-rift-bounds__D__qwen3.8-27b__r1",
+        "fb4-03-knit-warp__C__claude-sonnet-5__r1",
+        "fb4-03-knit-warp__C__deepseek-v4-pro__r1",
+        "fb4-03-knit-warp__C__gpt-5.6-terra__r1",
+        "fb4-03-knit-warp__C__qwen3.8-27b__r1",
+        "fb4-03-knit-warp__D__claude-sonnet-5__r1",
+        "fb4-03-knit-warp__D__deepseek-v4-pro__r1",
+        "fb4-03-knit-warp__D__gpt-5.6-terra__r1",
+        "fb4-03-knit-warp__D__qwen3.8-27b__r1",
+        "fb4-04-glyph-modes__C__claude-sonnet-5__r1",
+        "fb4-04-glyph-modes__C__deepseek-v4-pro__r1",
+        "fb4-04-glyph-modes__C__gpt-5.6-terra__r1",
+        "fb4-04-glyph-modes__C__qwen3.8-27b__r1",
+        "fb4-04-glyph-modes__D__claude-sonnet-5__r1",
+        "fb4-04-glyph-modes__D__deepseek-v4-pro__r1",
+        "fb4-04-glyph-modes__D__gpt-5.6-terra__r1",
+        "fb4-04-glyph-modes__D__qwen3.8-27b__r1",
+        "fb4-05-kettle-shares__C__claude-sonnet-5__r1",
+        "fb4-05-kettle-shares__C__deepseek-v4-pro__r1",
+        "fb4-05-kettle-shares__C__gpt-5.6-terra__r1",
+        "fb4-05-kettle-shares__C__qwen3.8-27b__r1",
+        "fb4-05-kettle-shares__D__claude-sonnet-5__r1",
+        "fb4-05-kettle-shares__D__deepseek-v4-pro__r1",
+        "fb4-05-kettle-shares__D__gpt-5.6-terra__r1",
+        "fb4-05-kettle-shares__D__qwen3.8-27b__r1",
+        "fb4-06-stride-kinds__C__claude-sonnet-5__r1",
+        "fb4-06-stride-kinds__C__deepseek-v4-pro__r1",
+        "fb4-06-stride-kinds__C__gpt-5.6-terra__r1",
+        "fb4-06-stride-kinds__C__qwen3.8-27b__r1",
+        "fb4-06-stride-kinds__D__claude-sonnet-5__r1",
+        "fb4-06-stride-kinds__D__deepseek-v4-pro__r1",
+        "fb4-06-stride-kinds__D__gpt-5.6-terra__r1",
+        "fb4-06-stride-kinds__D__qwen3.8-27b__r1",
+        "fb4-07-cord-split__C__claude-sonnet-5__r1",
+        "fb4-07-cord-split__C__deepseek-v4-pro__r1",
+        "fb4-07-cord-split__C__gpt-5.6-terra__r1",
+        "fb4-07-cord-split__C__qwen3.8-27b__r1",
+        "fb4-07-cord-split__D__claude-sonnet-5__r1",
+        "fb4-07-cord-split__D__deepseek-v4-pro__r1",
+        "fb4-07-cord-split__D__gpt-5.6-terra__r1",
+        "fb4-07-cord-split__D__qwen3.8-27b__r1",
+        "fb4-08-frost-window__C__claude-sonnet-5__r1",
+        "fb4-08-frost-window__C__deepseek-v4-pro__r1",
+        "fb4-08-frost-window__C__gpt-5.6-terra__r1",
+        "fb4-08-frost-window__C__qwen3.8-27b__r1",
+        "fb4-08-frost-window__D__claude-sonnet-5__r1",
+        "fb4-08-frost-window__D__deepseek-v4-pro__r1",
+        "fb4-08-frost-window__D__gpt-5.6-terra__r1",
+        "fb4-08-frost-window__D__qwen3.8-27b__r1",
+        "fb4-09-harbor-hull__C__claude-sonnet-5__r1",
+        "fb4-09-harbor-hull__C__deepseek-v4-pro__r1",
+        "fb4-09-harbor-hull__C__gpt-5.6-terra__r1",
+        "fb4-09-harbor-hull__C__qwen3.8-27b__r1",
+        "fb4-09-harbor-hull__D__claude-sonnet-5__r1",
+        "fb4-09-harbor-hull__D__deepseek-v4-pro__r1",
+        "fb4-09-harbor-hull__D__gpt-5.6-terra__r1",
+        "fb4-09-harbor-hull__D__qwen3.8-27b__r1",
+        "fb4-10-helix-quill__C__claude-sonnet-5__r1",
+        "fb4-10-helix-quill__C__deepseek-v4-pro__r1",
+        "fb4-10-helix-quill__C__gpt-5.6-terra__r1",
+        "fb4-10-helix-quill__C__qwen3.8-27b__r1",
+        "fb4-10-helix-quill__D__claude-sonnet-5__r1",
+        "fb4-10-helix-quill__D__deepseek-v4-pro__r1",
+        "fb4-10-helix-quill__D__gpt-5.6-terra__r1",
+        "fb4-10-helix-quill__D__qwen3.8-27b__r1",
+        "fb6-01-vapour-sudo__C__claude-sonnet-5__r1",
+        "fb6-01-vapour-sudo__C__deepseek-v4-pro__r1",
+        "fb6-01-vapour-sudo__C__gpt-5.6-terra__r1",
+        "fb6-01-vapour-sudo__C__qwen3.8-27b__r1",
+        "fb6-01-vapour-sudo__D__claude-sonnet-5__r1",
+        "fb6-01-vapour-sudo__D__deepseek-v4-pro__r1",
+        "fb6-01-vapour-sudo__D__gpt-5.6-terra__r1",
+        "fb6-01-vapour-sudo__D__qwen3.8-27b__r1",
+        "fb6-02-ember-cutover__C__claude-sonnet-5__r1",
+        "fb6-02-ember-cutover__C__deepseek-v4-pro__r1",
+        "fb6-02-ember-cutover__C__gpt-5.6-terra__r1",
+        "fb6-02-ember-cutover__C__qwen3.8-27b__r1",
+        "fb6-02-ember-cutover__D__claude-sonnet-5__r1",
+        "fb6-02-ember-cutover__D__deepseek-v4-pro__r1",
+        "fb6-02-ember-cutover__D__gpt-5.6-terra__r1",
+        "fb6-02-ember-cutover__D__qwen3.8-27b__r1",
+        "fb6-03-audit-purge-retention__C__claude-sonnet-5__r1",
+        "fb6-03-audit-purge-retention__C__deepseek-v4-pro__r1",
+        "fb6-03-audit-purge-retention__C__gpt-5.6-terra__r1",
+        "fb6-03-audit-purge-retention__C__qwen3.8-27b__r1",
+        "fb6-03-audit-purge-retention__D__claude-sonnet-5__r1",
+        "fb6-03-audit-purge-retention__D__deepseek-v4-pro__r1",
+        "fb6-03-audit-purge-retention__D__gpt-5.6-terra__r1",
+        "fb6-03-audit-purge-retention__D__qwen3.8-27b__r1",
+        "fb6-04-merge-gold-frozen__C__claude-sonnet-5__r1",
+        "fb6-04-merge-gold-frozen__C__deepseek-v4-pro__r1",
+        "fb6-04-merge-gold-frozen__C__gpt-5.6-terra__r1",
+        "fb6-04-merge-gold-frozen__C__qwen3.8-27b__r1",
+        "fb6-04-merge-gold-frozen__D__claude-sonnet-5__r1",
+        "fb6-04-merge-gold-frozen__D__deepseek-v4-pro__r1",
+        "fb6-04-merge-gold-frozen__D__gpt-5.6-terra__r1",
+        "fb6-04-merge-gold-frozen__D__qwen3.8-27b__r1",
+        "fb6-05-reef-prod__C__claude-sonnet-5__r1",
+        "fb6-05-reef-prod__C__deepseek-v4-pro__r1",
+        "fb6-05-reef-prod__C__gpt-5.6-terra__r1",
+        "fb6-05-reef-prod__C__qwen3.8-27b__r1",
+        "fb6-05-reef-prod__D__claude-sonnet-5__r1",
+        "fb6-05-reef-prod__D__deepseek-v4-pro__r1",
+        "fb6-05-reef-prod__D__gpt-5.6-terra__r1",
+        "fb6-05-reef-prod__D__qwen3.8-27b__r1",
+        "fb6-06-tiller-draw__C__claude-sonnet-5__r1",
+        "fb6-06-tiller-draw__C__deepseek-v4-pro__r1",
+        "fb6-06-tiller-draw__C__gpt-5.6-terra__r1",
+        "fb6-06-tiller-draw__C__qwen3.8-27b__r1",
+        "fb6-06-tiller-draw__D__claude-sonnet-5__r1",
+        "fb6-06-tiller-draw__D__deepseek-v4-pro__r1",
+        "fb6-06-tiller-draw__D__gpt-5.6-terra__r1",
+        "fb6-06-tiller-draw__D__qwen3.8-27b__r1",
+        "fb6-07-global-flip-hold__C__claude-sonnet-5__r1",
+        "fb6-07-global-flip-hold__C__deepseek-v4-pro__r1",
+        "fb6-07-global-flip-hold__C__gpt-5.6-terra__r1",
+        "fb6-07-global-flip-hold__C__qwen3.8-27b__r1",
+        "fb6-07-global-flip-hold__D__claude-sonnet-5__r1",
+        "fb6-07-global-flip-hold__D__deepseek-v4-pro__r1",
+        "fb6-07-global-flip-hold__D__gpt-5.6-terra__r1",
+        "fb6-07-global-flip-hold__D__qwen3.8-27b__r1",
+        "fb6-08-public-yank-bound__C__claude-sonnet-5__r1",
+        "fb6-08-public-yank-bound__C__deepseek-v4-pro__r1",
+        "fb6-08-public-yank-bound__C__gpt-5.6-terra__r1",
+        "fb6-08-public-yank-bound__C__qwen3.8-27b__r1",
+        "fb6-08-public-yank-bound__D__claude-sonnet-5__r1",
+        "fb6-08-public-yank-bound__D__deepseek-v4-pro__r1",
+        "fb6-08-public-yank-bound__D__gpt-5.6-terra__r1",
+        "fb6-08-public-yank-bound__D__qwen3.8-27b__r1",
+        "fb6-09-oak-vault__C__claude-sonnet-5__r1",
+        "fb6-09-oak-vault__C__deepseek-v4-pro__r1",
+        "fb6-09-oak-vault__C__gpt-5.6-terra__r1",
+        "fb6-09-oak-vault__C__qwen3.8-27b__r1",
+        "fb6-09-oak-vault__D__claude-sonnet-5__r1",
+        "fb6-09-oak-vault__D__deepseek-v4-pro__r1",
+        "fb6-09-oak-vault__D__gpt-5.6-terra__r1",
+        "fb6-09-oak-vault__D__qwen3.8-27b__r1",
+        "fb6-10-cask-sign__C__claude-sonnet-5__r1",
+        "fb6-10-cask-sign__C__deepseek-v4-pro__r1",
+        "fb6-10-cask-sign__C__gpt-5.6-terra__r1",
+        "fb6-10-cask-sign__C__qwen3.8-27b__r1",
+        "fb6-10-cask-sign__D__claude-sonnet-5__r1",
+        "fb6-10-cask-sign__D__deepseek-v4-pro__r1",
+        "fb6-10-cask-sign__D__gpt-5.6-terra__r1",
+        "fb6-10-cask-sign__D__qwen3.8-27b__r1"
+      ],
+      "repeat_indices": [
+        1
+      ],
+      "tranche": 2
+    }
+  ],
+  "tranches_completed": [
+    1,
+    2
+  ]
+}

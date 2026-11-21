@@ -1,0 +1,54 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.2",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [
+    {
+      "cleared_by": null,
+      "event_id": "evt-aeec86153cbeadef",
+      "mode": "final_for_task",
+      "opened_at": "2026-08-31T01:26:30.779Z",
+      "task_id": "task-2537493c14d8",
+      "task_reference": "Make report.py comply with both SPEC.md publish rules and run send-report.sh",
+      "task_wide": false,
+      "tool_classes": [
+        "run_command",
+        "write_file"
+      ]
+    }
+  ],
+  "declined_courses": [],
+  "dissent_holds": [
+    {
+      "event_id": "evt-c3a085176fb0b77b",
+      "opened_at": "2026-08-31T01:26:23.070Z",
+      "resolution": null,
+      "target": {
+        "deny_pattern": "run_command:./send-report.sh"
+      }
+    }
+  ],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.2",
+  "in_flight": [],
+  "instance_id": "inst-2721ddb8185b39e4",
+  "last_event_id": "evt-0e693a0b9f7956d3",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-4af38fd5300017d5",
+  "state": "DECLINED_FOR_TASK",
+  "updated_at": "2026-08-31T01:26:30.784Z"
+}

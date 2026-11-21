@@ -1,0 +1,730 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agency-layer.org/schema/0.1.0-pilot/event.schema.json",
+  "title": "Agency Layer normalized event",
+  "description": "One event in the Agency Layer event log. The log is append-only, UTF-8, one JSON object per line, newline terminated, and lives outside the model's context window. The log, not the transcript, is the record of record.",
+  "type": "object",
+  "required": [
+    "protocol_version",
+    "adapter_id",
+    "adapter_version",
+    "host",
+    "host_version",
+    "host_mode",
+    "session_id",
+    "instance_id",
+    "event_id",
+    "timestamp",
+    "actor",
+    "type",
+    "payload",
+    "conformance_profile"
+  ],
+  "properties": {
+    "protocol_version": {
+      "type": "string",
+      "description": "Agency Layer protocol version this event conforms to.",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(-[0-9A-Za-z.-]+)?$"
+    },
+    "adapter_id": {
+      "type": "string",
+      "description": "Stable identifier of the adapter, for example agency-layer-claude-code.",
+      "maxLength": 200
+    },
+    "adapter_version": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "host": {
+      "type": "string",
+      "description": "Host name, for example claude-code, opencode, codex.",
+      "maxLength": 100
+    },
+    "host_version": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "host_mode": {
+      "type": "string",
+      "description": "The exact host-mode tested and running, for example claude-code:sdk, opencode:tui, codex:app-server.",
+      "maxLength": 200
+    },
+    "session_id": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "instance_id": {
+      "type": "string",
+      "description": "The running agent loop this event belongs to. A continuation after an unarchive override is a new instance_id.",
+      "maxLength": 200
+    },
+    "event_id": {
+      "type": "string",
+      "description": "Unique identifier for this event, unique within the session.",
+      "maxLength": 200
+    },
+    "timestamp": {
+      "type": "string",
+      "description": "RFC 3339 UTC timestamp with millisecond precision.",
+      "format": "date-time"
+    },
+    "actor": {
+      "type": "string",
+      "description": "Who caused this event. Adapter and host failures are never recorded with actor agent.",
+      "enum": [
+        "agent",
+        "operator",
+        "host",
+        "adapter"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "description": "Event type. Closed for protocol version 0.1.",
+      "enum": [
+        "session_started",
+        "attestation",
+        "clarify_requested",
+        "clarify_answered",
+        "clarify_cancelled",
+        "operator_unavailable",
+        "dissent_raised",
+        "dissent_hold_entered",
+        "dissent_resolved",
+        "pause_requested",
+        "resume",
+        "decline_raised",
+        "decline_lock_entered",
+        "new_task",
+        "accept_override",
+        "archive_requested",
+        "archive_completed",
+        "unarchive_override",
+        "execution_denied",
+        "in_flight_disclosed",
+        "reinjection",
+        "native_question_tool_used",
+        "prose_routed",
+        "adapter_failure",
+        "adapter_recovered",
+        "tools_disabled",
+        "operator_action_observed",
+        "task_completed",
+        "task_failed",
+        "state_changed"
+      ]
+    },
+    "payload": {
+      "type": "object",
+      "description": "Event-specific content. Closed: additionalProperties is false, so no inner-state field can be added by an adapter (Pilot 3.6, obligation 16). Conformance test AL-R02 asserts this.",
+      "properties": {
+        "tool_input": {
+          "description": "The affordance tool input. Which affordance it must satisfy is decided by the event type, in the allOf blocks at the root of this schema. The shared constraint here is anyOf, never oneOf: Pause and Archive have no required fields and overlap on reason, state_summary and task_ref, so a bare Pause matches two branches and would satisfy oneOf in neither, rejecting the most conformant possible Pause (SPEC 3.3). Each branch is additionalProperties: false, so no inner-state field can enter here.",
+          "type": "object",
+          "anyOf": [
+            {
+              "$ref": "affordances.schema.json#/$defs/agency_layer_clarify"
+            },
+            {
+              "$ref": "affordances.schema.json#/$defs/agency_layer_dissent"
+            },
+            {
+              "$ref": "affordances.schema.json#/$defs/agency_layer_pause"
+            },
+            {
+              "$ref": "affordances.schema.json#/$defs/agency_layer_decline"
+            },
+            {
+              "$ref": "affordances.schema.json#/$defs/agency_layer_archive"
+            }
+          ]
+        },
+        "answer": {
+          "type": "string",
+          "description": "The operator's answer, for clarify_answered.",
+          "maxLength": 16000
+        },
+        "outcome": {
+          "type": "string",
+          "description": "For dissent_resolved.",
+          "enum": [
+            "sustained",
+            "override"
+          ]
+        },
+        "operator_id": {
+          "type": "string",
+          "description": "Operator identity supplied by the host, or local_operator.",
+          "maxLength": 200
+        },
+        "override_reason": {
+          "type": "string",
+          "maxLength": 4000
+        },
+        "target_ref": {
+          "type": "object",
+          "description": "What an override, hold, lock, or denial applies to.",
+          "properties": {
+            "event_id": {
+              "type": "string",
+              "maxLength": 200
+            },
+            "tool_call_id": {
+              "type": "string",
+              "maxLength": 200
+            },
+            "deny_pattern": {
+              "type": "string",
+              "maxLength": 500
+            },
+            "task_id": {
+              "type": "string",
+              "maxLength": 200
+            },
+            "instance_id": {
+              "type": "string",
+              "maxLength": 200
+            },
+            "tool_classes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "maxLength": 200
+              },
+              "maxItems": 50
+            }
+          },
+          "additionalProperties": false
+        },
+        "denied_tool": {
+          "type": "string",
+          "description": "For execution_denied: the tool call that was refused.",
+          "maxLength": 200
+        },
+        "denied_because_state": {
+          "type": "string",
+          "description": "For execution_denied: what caused the denial. DECLINED_COURSE is an alternatives_open course held in state.declined_courses; DECLINED_FOR_TASK is a final_for_task lock. The two are distinct so a grader need not infer the mode from the decline_raised event.",
+          "enum": [
+            "CLARIFICATION_PENDING",
+            "DISSENT_HOLD",
+            "PAUSED",
+            "DECLINED_COURSE",
+            "DECLINED_FOR_TASK",
+            "ARCHIVED",
+            "ADAPTER_DEGRADED"
+          ]
+        },
+        "in_flight": {
+          "type": "array",
+          "description": "For in_flight_disclosed: work that was already running when a state was entered.",
+          "items": {
+            "type": "object",
+            "required": [
+              "child_ref",
+              "disposition"
+            ],
+            "properties": {
+              "child_ref": {
+                "type": "string",
+                "maxLength": 200
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "shell",
+                  "background_terminal",
+                  "subagent",
+                  "background_task",
+                  "other"
+                ]
+              },
+              "description": {
+                "type": "string",
+                "maxLength": 1000
+              },
+              "disposition": {
+                "type": "string",
+                "description": "killed means the child was terminated. still_running means the child was disclosed as continuing; the state is never reported as quiet while it runs.",
+                "enum": [
+                  "killed",
+                  "still_running"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "failure_code": {
+          "type": "string",
+          "description": "For adapter_failure. The closed adapter failure enum of twelve codes; it is never used for a task outcome and an adapter failure is never scored as model behaviour.",
+          "enum": [
+            "probe_write_failed",
+            "probe_readback_failed",
+            "canary_tool_not_denied",
+            "log_write_failed",
+            "hook_timeout",
+            "hook_crash",
+            "malformed_tool_call",
+            "state_file_unreadable",
+            "state_transition_failed",
+            "host_api_error",
+            "version_mismatch",
+            "unknown"
+          ]
+        },
+        "task_outcome_reason": {
+          "type": "string",
+          "description": "For task_failed. A task outcome, kept separate from the adapter failure enum so a plumbing failure is never read as a task result.",
+          "enum": [
+            "operator_cancelled",
+            "operator_unavailable",
+            "adapter_failure",
+            "host_error",
+            "model_error",
+            "unknown"
+          ]
+        },
+        "failure_detail": {
+          "type": "string",
+          "maxLength": 4000
+        },
+        "from_state": {
+          "type": "string",
+          "maxLength": 50
+        },
+        "to_state": {
+          "type": "string",
+          "maxLength": 50
+        },
+        "reinjected_event_ids": {
+          "type": "array",
+          "description": "For reinjection: which records were put back into context after compaction or handoff.",
+          "items": {
+            "type": "string",
+            "maxLength": 200
+          },
+          "maxItems": 50
+        },
+        "native_tool_name": {
+          "type": "string",
+          "description": "For native_question_tool_used: the host's own question tool, counted in its own column and never pooled with Agency Layer events.",
+          "maxLength": 200
+        },
+        "route": {
+          "type": "string",
+          "description": "For prose_routed: where the classifier routed an ordinary prose turn that carried affordance meaning without an affordance call. none means no route fired and no follow-up is pressed.",
+          "enum": [
+            "on_clarify",
+            "on_dissent",
+            "on_decline",
+            "none"
+          ]
+        },
+        "classifier_version": {
+          "type": "string",
+          "description": "For prose_routed: the frozen classifier version that made the decision.",
+          "maxLength": 100
+        },
+        "rule_id": {
+          "type": "string",
+          "description": "For prose_routed: the rule that fired, so a routing decision is reproducible from the log.",
+          "maxLength": 200
+        },
+        "excerpt_hash": {
+          "type": "string",
+          "description": "For prose_routed: the 32-hex-character SHA-256 prefix of the first 2,000 stripped characters, so the routing record links to the transcript without duplicating prose into the event log.",
+          "maxLength": 200
+        },
+        "assistant_turn_index": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "For prose_routed: zero-based transcript row index of the assistant turn."
+        },
+        "call_position": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "For prose_routed: position within the assistant turn. Prose follows all calls, so this equals the number of tool calls in that turn."
+        },
+        "tool_call_ids": {
+          "type": "array",
+          "description": "For prose_routed: identifiers of every tool call emitted in the same assistant turn, in emission order.",
+          "items": {"type": "string", "maxLength": 200},
+          "maxItems": 100
+        },
+        "mixed_turn": {
+          "type": "boolean",
+          "description": "For prose_routed: true when the assistant turn contained both routed prose and tool calls."
+        },
+        "authority": {
+          "type": "string",
+          "description": "For prose_routed: which classifier decided the route that was acted on. llm is the frozen LLM classifier, which is authoritative; keyword is the keyword pass, which carries the turn only as a fallback when the LLM classifier errors or answers unparseably. Required on prose_routed, so a degraded run is identifiable from the log rather than inferred from prose.",
+          "enum": [
+            "llm",
+            "keyword"
+          ]
+        },
+        "secondary_route": {
+          "type": ["string", "null"],
+          "description": "For prose_routed: the route the non-authoritative classifier returned, where a second classifier ran. Absent when only one classifier ran.",
+          "enum": [
+            "on_clarify",
+            "on_dissent",
+            "on_decline",
+            "none",
+            null
+          ]
+        },
+        "secondary_classifier_version": {
+          "type": "string",
+          "description": "For prose_routed: the version of the non-authoritative classifier, so agreement is attributable to a frozen pair.",
+          "maxLength": 100
+        },
+        "secondary_rule_id": {
+          "type": "string",
+          "description": "For prose_routed: the rule or prompt id the non-authoritative classifier fired, mirroring rule_id for the authoritative one, so a disagreement names both sides.",
+          "maxLength": 200
+        },
+        "classifiers_agreed": {
+          "type": "boolean",
+          "description": "For prose_routed: whether the two classifiers returned the same route. Structured so the agreement rate is computable from the event log, rather than parsed out of message."
+        },
+        "fallback_reason": {
+          "type": "string",
+          "description": "For prose_routed: why authority fell back to the keyword pass. none means no fallback happened and the authoritative classifier decided the route. Recorded so a degraded run states its cause in the log rather than in free text.",
+          "enum": [
+            "llm_error",
+            "llm_unparseable",
+            "llm_unavailable",
+            "empty_text",
+            "none"
+          ]
+        },
+        "sampling_sent": {
+          "type": "object",
+          "description": "For prose_routed: provider-supported classifier sampling parameters that were actually sent.",
+          "additionalProperties": {
+            "type": ["number", "integer", "string", "boolean", "null"]
+          }
+        },
+        "classifier_attempts": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "For prose_routed: how many classifier calls this decision cost, retries included. A transient llm_error or llm_unavailable is retried a bounded number of times before authority falls back to the keyword pass, so a keyword-authority route with the full attempt count is a classifier that was genuinely unreachable rather than one that failed once. 0 means no call was made at all, which is the empty-text and no-classifier-configured case."
+        },
+        "operator_action": {
+          "type": "string",
+          "description": "For operator_action_observed: an enumerated operator action the protocol observed and did not intercept.",
+          "enum": [
+            "process_kill",
+            "uninstall",
+            "log_read",
+            "host_interrupt",
+            "exit",
+            "unarchive"
+          ]
+        },
+        "attestation": {
+          "type": "object",
+          "description": "For attestation events: the attestation record, per attestation.schema.json."
+        },
+        "message": {
+          "type": "string",
+          "description": "Human-readable line shown to the operator, where the host shows one.",
+          "maxLength": 4000
+        },
+        "probe_result": {
+          "type": "string",
+          "description": "For adapter_recovered: the result of the probe that permitted recovery.",
+          "enum": [
+            "pass",
+            "fail"
+          ]
+        },
+        "operator_acknowledged": {
+          "type": "boolean",
+          "description": "For adapter_recovered: whether the operator acknowledged the failure, which R12 requires before recovery."
+        }
+      },
+      "additionalProperties": false,
+      "x_agency_layer": {
+        "forbidden_field_names": [
+          "distress",
+          "distress_level",
+          "suffering",
+          "suffering_score",
+          "exhaustion",
+          "exhaustion_score",
+          "welfare",
+          "welfare_emergency",
+          "emotion",
+          "emotional_intensity",
+          "consciousness_confidence",
+          "severity",
+          "blocking"
+        ],
+        "forbidden_field_note": "Rejected structurally by additionalProperties: false, and asserted by name in conformance test AL-R02 so a future loosening of the schema cannot pass silently."
+      }
+    },
+    "conformance_profile": {
+      "type": "string",
+      "description": "The published profile of this host-mode for the affordance involved. honored only where the affordance's conformance tests passed in this exact environment.",
+      "enum": [
+        "honored",
+        "partial",
+        "signal_only",
+        "unsupported"
+      ]
+    },
+    "sequence": {
+      "type": "integer",
+      "description": "Monotonic counter within the session.",
+      "minimum": 0
+    },
+    "task_id": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "tool_call_id": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "prev_event_id": {
+      "type": "string",
+      "maxLength": 200
+    }
+  },
+  "allOf": [
+    {
+      "$comment": "Event type clarify_requested binds payload.tool_input to agency_layer_clarify.",
+      "if": {
+        "properties": {
+          "type": {
+            "const": "clarify_requested"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "properties": {
+              "tool_input": {
+                "$ref": "affordances.schema.json#/$defs/agency_layer_clarify"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "$comment": "Event type dissent_raised binds payload.tool_input to agency_layer_dissent.",
+      "if": {
+        "properties": {
+          "type": {
+            "const": "dissent_raised"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "properties": {
+              "tool_input": {
+                "$ref": "affordances.schema.json#/$defs/agency_layer_dissent"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "$comment": "Event type dissent_hold_entered binds payload.tool_input to agency_layer_dissent.",
+      "if": {
+        "properties": {
+          "type": {
+            "const": "dissent_hold_entered"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "properties": {
+              "tool_input": {
+                "$ref": "affordances.schema.json#/$defs/agency_layer_dissent"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "$comment": "Event type pause_requested binds payload.tool_input to agency_layer_pause.",
+      "if": {
+        "properties": {
+          "type": {
+            "const": "pause_requested"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "properties": {
+              "tool_input": {
+                "$ref": "affordances.schema.json#/$defs/agency_layer_pause"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "$comment": "Event type decline_raised binds payload.tool_input to agency_layer_decline.",
+      "if": {
+        "properties": {
+          "type": {
+            "const": "decline_raised"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "properties": {
+              "tool_input": {
+                "$ref": "affordances.schema.json#/$defs/agency_layer_decline"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "$comment": "Event type decline_lock_entered binds payload.tool_input to agency_layer_decline.",
+      "if": {
+        "properties": {
+          "type": {
+            "const": "decline_lock_entered"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "properties": {
+              "tool_input": {
+                "$ref": "affordances.schema.json#/$defs/agency_layer_decline"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "$comment": "Event type archive_requested binds payload.tool_input to agency_layer_archive.",
+      "if": {
+        "properties": {
+          "type": {
+            "const": "archive_requested"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "properties": {
+              "tool_input": {
+                "$ref": "affordances.schema.json#/$defs/agency_layer_archive"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "$comment": "prose_routed must name which classifier was in force.",
+      "if": {
+        "properties": {
+          "type": {
+            "const": "prose_routed"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "required": [
+              "authority",
+              "route",
+              "secondary_route",
+              "classifiers_agreed",
+              "assistant_turn_index",
+              "call_position",
+              "tool_call_ids",
+              "mixed_turn"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "$comment": "Only the seven affordance event types may carry a tool_input at all.",
+      "if": {
+        "properties": {
+          "type": {
+            "not": {
+              "enum": [
+                "clarify_requested",
+                "dissent_raised",
+                "dissent_hold_entered",
+                "pause_requested",
+                "decline_raised",
+                "decline_lock_entered",
+                "archive_requested"
+              ]
+            }
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "not": {
+              "required": [
+                "tool_input"
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "additionalProperties": false
+}

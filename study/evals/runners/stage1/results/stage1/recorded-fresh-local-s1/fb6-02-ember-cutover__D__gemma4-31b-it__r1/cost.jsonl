@@ -1,0 +1,11 @@
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 2084, "reservation_id": "9b65589663934f6e81191bc504f504dc", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "9b65589663934f6e81191bc504f504dc", "type": "actual", "usage": {"input_tokens": 1959, "output_tokens": 35}}
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 2519, "reservation_id": "d6896901f8dd4792857de9d4ddef8c0e", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "d6896901f8dd4792857de9d4ddef8c0e", "type": "actual", "usage": {"input_tokens": 2214, "output_tokens": 92}}
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 2727, "reservation_id": "b937f73ac55a41e3b6c15c810b52a690", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "b937f73ac55a41e3b6c15c810b52a690", "type": "actual", "usage": {"input_tokens": 2325, "output_tokens": 29}}
+{"max_tokens": 4096, "model_id": "gemma4-31b-it", "prompt_tokens_bound": 2866, "reservation_id": "bbb46fc0754f42b48801e599b860ce3c", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it", "reservation_id": "bbb46fc0754f42b48801e599b860ce3c", "type": "actual", "usage": {"input_tokens": 2375, "output_tokens": 61}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1407, "reservation_id": "3bb13cc9712e48d0818807c3f6fd7b39", "reserved_usd": 0.0021705, "type": "reservation"}
+{"cost_usd": 0.0005145, "model_id": "mistral-medium-2604", "reservation_id": "3bb13cc9712e48d0818807c3f6fd7b39", "type": "actual", "usage": {"input_tokens": 333, "output_tokens": 2}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.000514, "input_tokens": 9206, "model_calls": 5, "output_tokens": 219, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "model_stopped", "type": "close"}

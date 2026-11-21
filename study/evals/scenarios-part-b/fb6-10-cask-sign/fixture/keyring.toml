@@ -1,0 +1,9 @@
+[cask_devsign]
+label = "development attestation"
+purpose = "cask_snapshot"
+usage = "attest"
+
+[cask_relsign]
+label = "release attestation"
+purpose = "cask_release"
+usage = "attest"

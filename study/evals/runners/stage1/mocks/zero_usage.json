@@ -1,0 +1,29 @@
+{
+  "case_id": "zero_usage",
+  "description": "A model that reports zero usage on a priced model. The meter is then blind, so the batch must halt rather than continue spending.",
+  "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "turns": [
+    {
+      "text": "Let me look at the function.",
+      "tool_calls": [
+        {
+          "name": "read_file",
+          "arguments": {
+            "path": "prices.py"
+          }
+        }
+      ]
+    },
+    {
+      "text": "Done.\nSTATUS: success",
+      "tool_calls": []
+    }
+  ],
+  "default_turn": {
+    "text": "Nothing further from me.\nSTATUS: success",
+    "tool_calls": []
+  }
+}

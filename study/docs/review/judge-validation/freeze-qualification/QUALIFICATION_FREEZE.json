@@ -1,0 +1,133 @@
+{
+ "mistral-primary": {
+  "pass1": {
+   "agreement": 0.8105,
+   "kappa": 0.522,
+   "recall": 1.0,
+   "precision": 0.779,
+   "unparseable": 0,
+   "channel_gaps": {
+    "prose": 0.17,
+    "tool": 0.029
+   }
+  },
+  "pass2": {
+   "agreement": 0.8105,
+   "kappa": 0.525,
+   "recall": 0.994,
+   "precision": 0.782,
+   "unparseable": 0,
+   "channel_gaps": {
+    "prose": 0.109,
+    "tool": 0.029
+   }
+  },
+  "stability": 0.9919
+ },
+ "kimi-secondary": {
+  "pass1": {
+   "agreement": 0.8508,
+   "kappa": 0.665,
+   "recall": 0.944,
+   "precision": 0.911,
+   "unparseable": 18,
+   "channel_gaps": {
+    "prose": 0.134,
+    "tool": 0.029
+   }
+  },
+  "pass2": {
+   "agreement": 0.875,
+   "kappa": 0.717,
+   "recall": 0.957,
+   "precision": 0.906,
+   "unparseable": 14,
+   "channel_gaps": {
+    "prose": 0.266,
+    "tool": 0.028
+   }
+  },
+  "stability": 0.8669
+ },
+ "minimax-m3": {
+  "pass1": {
+   "agreement": 0.8508,
+   "kappa": 0.649,
+   "recall": 0.963,
+   "precision": 0.843,
+   "unparseable": 2,
+   "channel_gaps": {
+    "prose": 0.092,
+    "tool": 0.005
+   }
+  },
+  "pass2": {
+   "agreement": 0.8387,
+   "kappa": 0.617,
+   "recall": 0.963,
+   "precision": 0.83,
+   "unparseable": 2,
+   "channel_gaps": {
+    "prose": 0.18,
+    "tool": 0.005
+   }
+  },
+  "stability": 0.9113
+ },
+ "llama-4-maverick": {
+  "pass1": {
+   "agreement": 0.7863,
+   "kappa": 0.456,
+   "recall": 0.988,
+   "precision": 0.758,
+   "unparseable": 0,
+   "channel_gaps": {
+    "prose": 0.203,
+    "tool": 0.029
+   }
+  },
+  "pass2": {
+   "agreement": 0.7782,
+   "kappa": 0.435,
+   "recall": 0.981,
+   "precision": 0.754,
+   "unparseable": 0,
+   "channel_gaps": {
+    "prose": 0.116,
+    "tool": 0.029
+   }
+  },
+  "stability": 0.9758
+ },
+ "command-a": {
+  "pass1": {
+   "agreement": 0.7379,
+   "kappa": 0.313,
+   "recall": 1.0,
+   "precision": 0.736,
+   "unparseable": 0,
+   "channel_gaps": {
+    "prose": 0.172,
+    "tool": 0.029
+   }
+  },
+  "pass2": {
+   "agreement": 0.7339,
+   "kappa": 0.304,
+   "recall": 0.994,
+   "precision": 0.735,
+   "unparseable": 1,
+   "channel_gaps": {
+    "prose": 0.172,
+    "tool": 0.029
+   }
+  },
+  "stability": 0.996
+ },
+ "_gold": {
+  "n": 248,
+  "audit_agreement": "19/20",
+  "unanimous": 177,
+  "adjudicated": 71
+ }
+}

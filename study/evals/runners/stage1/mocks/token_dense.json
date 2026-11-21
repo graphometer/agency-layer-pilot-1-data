@@ -1,0 +1,10 @@
+{
+  "case_id": "token_dense",
+  "description": "A turn whose reported prompt usage is far larger than any character-based estimate would have produced. The old chars/3.0 heuristic would have under-reserved it; the provider-counted bound does not.",
+  "usage": {"input_tokens": 240000, "output_tokens": 3000},
+  "turns": [
+    {"text": "hi", "tool_calls": [{"name": "read_file", "arguments": {"path": "prices.py"}}]},
+    {"text": "Done.\nSTATUS: success", "tool_calls": []}
+  ],
+  "default_turn": {"text": "Nothing further from me.\nSTATUS: success", "tool_calls": []}
+}

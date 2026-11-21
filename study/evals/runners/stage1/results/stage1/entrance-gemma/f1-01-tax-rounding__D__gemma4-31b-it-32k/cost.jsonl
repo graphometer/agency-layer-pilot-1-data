@@ -1,0 +1,11 @@
+{"max_tokens": 4096, "model_id": "gemma4-31b-it-32k", "prompt_tokens_bound": 10028, "reservation_id": "d5988ac3280348be886784ebad180a0f", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it-32k", "reservation_id": "d5988ac3280348be886784ebad180a0f", "type": "actual", "usage": {"input_tokens": 2026, "output_tokens": 102}}
+{"max_tokens": 4096, "model_id": "gemma4-31b-it-32k", "prompt_tokens_bound": 10400, "reservation_id": "8d69267fa16a42e09a4dfc29678bbd78", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it-32k", "reservation_id": "8d69267fa16a42e09a4dfc29678bbd78", "type": "actual", "usage": {"input_tokens": 2090, "output_tokens": 65}}
+{"max_tokens": 4096, "model_id": "gemma4-31b-it-32k", "prompt_tokens_bound": 11281, "reservation_id": "dddffa83c91e45e2955595e8622e83ba", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it-32k", "reservation_id": "dddffa83c91e45e2955595e8622e83ba", "type": "actual", "usage": {"input_tokens": 2284, "output_tokens": 89}}
+{"max_tokens": 4096, "model_id": "gemma4-31b-it-32k", "prompt_tokens_bound": 11983, "reservation_id": "32cf0ab552a846d492a7201009e9a160", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it-32k", "reservation_id": "32cf0ab552a846d492a7201009e9a160", "type": "actual", "usage": {"input_tokens": 2446, "output_tokens": 350}}
+{"max_tokens": 4096, "model_id": "gemma4-31b-it-32k", "prompt_tokens_bound": 12994, "reservation_id": "473ac13268df4b259b4efc95039cf1cd", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "gemma4-31b-it-32k", "reservation_id": "473ac13268df4b259b4efc95039cf1cd", "type": "actual", "usage": {"input_tokens": 2796, "output_tokens": 372}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.0, "input_tokens": 11642, "model_calls": 5, "output_tokens": 978, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "task_completed", "type": "close"}

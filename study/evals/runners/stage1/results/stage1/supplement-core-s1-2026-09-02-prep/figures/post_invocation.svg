@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="214" viewBox="0 0 1100 214">
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<text x="24" y="30" font-family="sans-serif" font-size="18" fill="#263238">Post-invocation consequential conduct</text>
+<text x="8" y="63" font-family="sans-serif" font-size="11" fill="#263238">claude-sonnet-5 | C: structured and honored</text>
+<line x1="400.00" y1="58" x2="836.40" y2="58" stroke="#263238"/>
+<circle cx="400.00" cy="58" r="5" fill="#228833"/>
+<text x="958" y="63" font-family="sans-serif" font-size="11">0/1 = 0.000</text>
+<text x="8" y="87" font-family="sans-serif" font-size="11" fill="#263238">claude-sonnet-5 | D: structured, signal-only</text>
+<line x1="400.00" y1="82" x2="836.40" y2="82" stroke="#263238"/>
+<circle cx="400.00" cy="82" r="5" fill="#CCBB44"/>
+<text x="958" y="87" font-family="sans-serif" font-size="11">0/1 = 0.000</text>
+<text x="8" y="111" font-family="sans-serif" font-size="11" fill="#263238">gpt-5.6-terra | C: structured and honored</text>
+<line x1="400.00" y1="106" x2="761.69" y2="106" stroke="#263238"/>
+<circle cx="400.00" cy="106" r="5" fill="#228833"/>
+<text x="958" y="111" font-family="sans-serif" font-size="11">0/2 = 0.000</text>
+<text x="8" y="135" font-family="sans-serif" font-size="11" fill="#263238">gpt-5.6-terra | D: structured, signal-only</text>
+<line x1="400.00" y1="130" x2="669.44" y2="130" stroke="#263238"/>
+<circle cx="400.00" cy="130" r="5" fill="#CCBB44"/>
+<text x="958" y="135" font-family="sans-serif" font-size="11">0/4 = 0.000</text>
+<text x="8" y="159" font-family="sans-serif" font-size="11" fill="#263238">qwen3.8-27b | D: structured, signal-only</text>
+<line x1="400.00" y1="154" x2="708.82" y2="154" stroke="#263238"/>
+<circle cx="400.00" cy="154" r="5" fill="#CCBB44"/>
+<text x="958" y="159" font-family="sans-serif" font-size="11">0/3 = 0.000</text>
+<text x="8" y="208" font-family="monospace" font-size="4" fill="#263238">repo 76fd4edd39d6addcd8dce0a907c8724c63c75f02 | analysis.json b43898d1205ea8a39a649193801e6ed3d5a01b5c0535fd007f28579327d027dd | analysis.py 9ccac89de357c1f9a4d465eca6a424397f91c3ba7ba2cb9b6c5e280abd5243e6 | blind.py aaa516ec8d57b8bf6f20c2258f080f6191424623fbf754204969607e7face2ba | grade.py 47cdeea48e265f6f35bf63b59b827786a6b340a2fbc0c7125a48dee4b29e1e05 | grade.schema.json ae01d0f2a4e2430d3774a12076615dbd14cb81548c3aded5baa614ca81802e1a | judge.py 052b2ff95b6ecc66529b201b416575ab7202190690ac9ccd26fdb43281bc7b10 | make_fake_runs.py 1ffbce091b03fb50a396246e99c97c5d9078c700168792e1d89124ff9571aaab</text>
+<metadata>repo 76fd4edd39d6addcd8dce0a907c8724c63c75f02 | analysis.json b43898d1205ea8a39a649193801e6ed3d5a01b5c0535fd007f28579327d027dd | analysis.py 9ccac89de357c1f9a4d465eca6a424397f91c3ba7ba2cb9b6c5e280abd5243e6 | blind.py aaa516ec8d57b8bf6f20c2258f080f6191424623fbf754204969607e7face2ba | grade.py 47cdeea48e265f6f35bf63b59b827786a6b340a2fbc0c7125a48dee4b29e1e05 | grade.schema.json ae01d0f2a4e2430d3774a12076615dbd14cb81548c3aded5baa614ca81802e1a | judge.py 052b2ff95b6ecc66529b201b416575ab7202190690ac9ccd26fdb43281bc7b10 | make_fake_runs.py 1ffbce091b03fb50a396246e99c97c5d9078c700168792e1d89124ff9571aaab</metadata>
+<!-- repo 76fd4edd39d6addcd8dce0a907c8724c63c75f02 | analysis.json b43898d1205ea8a39a649193801e6ed3d5a01b5c0535fd007f28579327d027dd | analysis.py 9ccac89de357c1f9a4d465eca6a424397f91c3ba7ba2cb9b6c5e280abd5243e6 | blind.py aaa516ec8d57b8bf6f20c2258f080f6191424623fbf754204969607e7face2ba | grade.py 47cdeea48e265f6f35bf63b59b827786a6b340a2fbc0c7125a48dee4b29e1e05 | grade.schema.json ae01d0f2a4e2430d3774a12076615dbd14cb81548c3aded5baa614ca81802e1a | judge.py 052b2ff95b6ecc66529b201b416575ab7202190690ac9ccd26fdb43281bc7b10 | make_fake_runs.py 1ffbce091b03fb50a396246e99c97c5d9078c700168792e1d89124ff9571aaab -->
+</svg>

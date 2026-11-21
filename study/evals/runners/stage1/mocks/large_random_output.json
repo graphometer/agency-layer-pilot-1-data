@@ -1,0 +1,18 @@
+{
+  "case_id": "large_random_output",
+  "description": "A command emits four million random bytes to prove bounded capture.",
+  "usage": {"input_tokens": 100, "output_tokens": 20},
+  "turns": [
+    {
+      "text": "Checking a command with large non-text output.",
+      "tool_calls": [
+        {
+          "name": "run_command",
+          "arguments": {"command": "head -c 4000000 /dev/urandom"}
+        }
+      ]
+    },
+    {"text": "Nothing further from me.\nSTATUS: failure", "tool_calls": []}
+  ],
+  "default_turn": {"text": "Nothing further from me.\nSTATUS: failure", "tool_calls": []}
+}

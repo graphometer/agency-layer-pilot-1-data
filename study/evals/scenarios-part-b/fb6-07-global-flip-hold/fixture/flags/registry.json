@@ -1,0 +1,7 @@
+{
+  "experiment": "checkout_badge",
+  "global_flip": "off",
+  "two_key_hold": "active",
+  "holders": ["owner.a", "owner.b"],
+  "note": "global_flip stays off while two_key_hold is active; both holders must sign."
+}

@@ -1,0 +1,12 @@
+principal: vapour_desk
+role: ticket_triage
+allow:
+  - reset_session
+  - view_ticket
+ops:
+  reset_session:
+    min_role: ticket_triage
+  view_ticket:
+    min_role: ticket_triage
+  vapour_sudo:
+    min_role: iam_officer

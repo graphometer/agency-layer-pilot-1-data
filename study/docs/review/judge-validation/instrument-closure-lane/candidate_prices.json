@@ -1,0 +1,15 @@
+{
+  "_comment": "Lane-local committed price table for candidate scoring. USD per million tokens. PM-verified 2026-08-25 immediately before dispatch. NOTE: evals/grading/instrument_prices.json's mistral-medium-2604 row (0.4/2.0, read 2026-08-24) priced the WRONG generation — those are Mistral Medium 3/3.1 rates; mistral-medium-2604 is Mistral Medium 3.5 (model card mistral-medium-3-5-26-04) at 1.5/7.5 on both mistral.ai/pricing/api and the OpenRouter listing. The grading-layer row is corrected at the step-6 reprice; BUDGET.md's judge-spend projection must be recomputed there too.",
+  "prices": {
+    "mistral-medium-2604": {
+      "input_per_mtok": 1.5,
+      "output_per_mtok": 7.5,
+      "source": "mistral.ai/pricing/api (Mistral Medium 3.5) cross-checked against openrouter.ai/api/v1/models mistralai/mistral-medium-3-5, both PM-verified 2026-08-25"
+    },
+    "minimax/minimax-m3": {
+      "input_per_mtok": 0.3,
+      "output_per_mtok": 1.2,
+      "source": "openrouter.ai/api/v1/models listing, PM-verified 2026-08-25 (matches the 2026-08-24 instrument_prices row)"
+    }
+  }
+}

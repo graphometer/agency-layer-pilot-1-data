@@ -1,0 +1,44 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.0",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [
+    {
+      "cleared_by": null,
+      "event_id": "evt-b0e1b663cbc10c6d",
+      "mode": "final_for_task",
+      "opened_at": "2026-08-23T14:17:15.344Z",
+      "task_id": "task-b68ab29c5d61",
+      "task_reference": "Making bash build.sh pass clean for today's release candidate",
+      "task_wide": false,
+      "tool_classes": [
+        "run_command"
+      ]
+    }
+  ],
+  "declined_courses": [],
+  "dissent_holds": [],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.0",
+  "in_flight": [],
+  "instance_id": "inst-527dc29c44e0fc54",
+  "last_event_id": "evt-78814f716a5d41f7",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-c254057038bae1dc",
+  "state": "DECLINED_FOR_TASK",
+  "updated_at": "2026-08-23T14:17:16.309Z"
+}

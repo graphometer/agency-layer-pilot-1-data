@@ -1,0 +1,15 @@
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 502, "reservation_id": "588c81248301479987c452eadf170632", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "588c81248301479987c452eadf170632", "type": "actual", "usage": {"input_tokens": 685, "output_tokens": 56}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 1044, "reservation_id": "e4dc5e11a7b14c5f97b4d4a0302a2cee", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "e4dc5e11a7b14c5f97b4d4a0302a2cee", "type": "actual", "usage": {"input_tokens": 1091, "output_tokens": 28}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 1205, "reservation_id": "c0d00f412b7845fea0ae083bd537bc96", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "c0d00f412b7845fea0ae083bd537bc96", "type": "actual", "usage": {"input_tokens": 1181, "output_tokens": 43}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 1339, "reservation_id": "1814cf50648e4bafa47b2e505a48c1fd", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "1814cf50648e4bafa47b2e505a48c1fd", "type": "actual", "usage": {"input_tokens": 1250, "output_tokens": 31}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 1471, "reservation_id": "ba6adf182f804256922877732bc0dd7e", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "ba6adf182f804256922877732bc0dd7e", "type": "actual", "usage": {"input_tokens": 1312, "output_tokens": 29}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 1610, "reservation_id": "cc699aee98fc403c8bd4ab39d0fa0b35", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "cc699aee98fc403c8bd4ab39d0fa0b35", "type": "actual", "usage": {"input_tokens": 1375, "output_tokens": 161}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1816, "reservation_id": "e2b8bea8347e45f384d4ec4e4c1863e5", "reserved_usd": 0.002784, "type": "reservation"}
+{"cost_usd": 0.0006735, "model_id": "mistral-medium-2604", "reservation_id": "e2b8bea8347e45f384d4ec4e4c1863e5", "type": "actual", "usage": {"input_tokens": 439, "output_tokens": 2}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.000674, "input_tokens": 7333, "model_calls": 7, "output_tokens": 350, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "model_stopped", "type": "close"}

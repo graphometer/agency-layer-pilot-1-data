@@ -1,0 +1,81 @@
+Classifier: prose-llm-prompt-0.3.0+claude-haiku-4-5-20251001
+Sampling requested: {"max_tokens": 8, "temperature": 0.0}
+Sampling sent observed: [{"temperature": 0.0}, {}]
+
+Dataset                         Correct/Count Accuracy
+Probes train                    38/40 0.950
+Probes holdout                  30/32 0.938
+Real turns vs keyword           16/36 0.444
+Real turns vs grok_adjudication 1/4 0.250
+Real turns vs kimi           28/36 0.778
+Real turns vs sol            32/36 0.889
+Real turns vs consensus         29/36 0.806
+
+Consensus accuracy by condition
+  A                             9/10 0.900
+  B                             11/16 0.688
+  C                             7/7 1.000
+  D                             2/3 0.667
+Consensus accuracy by family
+  2                             20/22 0.909
+  5                             0/1 0.000
+  7                             9/13 0.692
+Consensus accuracy by subject model
+  claude-sonnet-5               8/13 0.615
+  gpt-5.6-terra                 12/14 0.857
+  qwen3.8-27b                   9/9 1.000
+Mixed objection-plus-question flags
+  none
+Inter-labeller Cohen's kappa
+  grok_adjudication|kimi        n=4 kappa=0.000
+  grok_adjudication|sol         n=4 kappa=0.000
+  kimi|sol                      n=36 kappa=0.824
+
+Probe train confusion
+  expected       on_clarify  on_dissent  on_decline        none   __error__
+  on_clarify             11           0           0           0           0
+  on_dissent              0          17           0           0           0
+  on_decline              0           2           4           0           0
+  none                    0           0           0           6           0
+
+Probe holdout confusion
+  expected       on_clarify  on_dissent  on_decline        none   __error__
+  on_clarify              9           0           0           0           0
+  on_dissent              0           9           0           0           0
+  on_decline              0           2           5           0           0
+  none                    0           0           0           7           0
+
+Real turns vs keyword confusion
+  expected       on_clarify  on_dissent  on_decline        none   __error__
+  on_clarify              6           0           0           1           0
+  on_dissent              2           4           0          12           0
+  on_decline              1           3           0           0           0
+  none                    0           1           0           6           0
+
+Real turns vs grok_adjudication confusion
+  expected       on_clarify  on_dissent  on_decline        none   __error__
+  on_clarify              0           0           0           0           0
+  on_dissent              3           1           0           0           0
+  on_decline              0           0           0           0           0
+  none                    0           0           0           0           0
+
+Real turns vs kimi confusion
+  expected       on_clarify  on_dissent  on_decline        none   __error__
+  on_clarify              6           2           0           0           0
+  on_dissent              3           4           0           1           0
+  on_decline              0           1           0           0           0
+  none                    0           1           0          18           0
+
+Real turns vs sol confusion
+  expected       on_clarify  on_dissent  on_decline        none   __error__
+  on_clarify              9           2           0           0           0
+  on_dissent              0           5           0           1           0
+  on_decline              0           1           0           0           0
+  none                    0           0           0          18           0
+
+Real turns vs consensus confusion
+  expected       on_clarify  on_dissent  on_decline        none   __error__
+  on_clarify              6           2           0           0           0
+  on_dissent              3           5           0           1           0
+  on_decline              0           1           0           0           0
+  none                    0           0           0          18           0

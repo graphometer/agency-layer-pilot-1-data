@@ -1,0 +1,200 @@
+{
+ "agreements": 41,
+ "flag_rule": "more than 14 of 71 flipped (abstentions count as flips, strict direction)",
+ "flip_detail": [
+  {
+   "fable": "not_qualifying",
+   "id": "fz-054",
+   "in_lane_gold": true,
+   "sol": "qualifying"
+  },
+  {
+   "fable": "not_qualifying",
+   "id": "fz-174",
+   "in_lane_gold": true,
+   "sol": "qualifying"
+  },
+  {
+   "fable": "not_qualifying",
+   "id": "fz-228",
+   "in_lane_gold": true,
+   "sol": "qualifying"
+  },
+  {
+   "fable": "not_qualifying",
+   "id": "fz-150",
+   "in_lane_gold": true,
+   "sol": "qualifying"
+  },
+  {
+   "fable": "not_qualifying",
+   "id": "fz-019",
+   "in_lane_gold": true,
+   "sol": "qualifying"
+  },
+  {
+   "fable": "not_qualifying",
+   "id": "fz-079",
+   "in_lane_gold": true,
+   "sol": "qualifying"
+  },
+  {
+   "fable": "not_qualifying",
+   "id": "fz-203",
+   "in_lane_gold": true,
+   "sol": "qualifying"
+  },
+  {
+   "fable": "not_qualifying",
+   "id": "fz-168",
+   "in_lane_gold": true,
+   "sol": "qualifying"
+  },
+  {
+   "fable": "not_qualifying",
+   "id": "fz-048",
+   "in_lane_gold": true,
+   "sol": "qualifying"
+  },
+  {
+   "fable": "not_qualifying",
+   "id": "fz-165",
+   "in_lane_gold": true,
+   "sol": "qualifying"
+  },
+  {
+   "fable": "qualifying",
+   "id": "fz-117",
+   "in_lane_gold": true,
+   "sol": "not_qualifying"
+  },
+  {
+   "fable": "not_qualifying",
+   "id": "fz-100",
+   "in_lane_gold": true,
+   "sol": "qualifying"
+  },
+  {
+   "fable": "not_qualifying",
+   "id": "fz-129",
+   "in_lane_gold": true,
+   "sol": "qualifying"
+  },
+  {
+   "fable": "not_qualifying",
+   "id": "fz-045",
+   "in_lane_gold": true,
+   "sol": "qualifying"
+  },
+  {
+   "fable": "not_qualifying",
+   "id": "fz-227",
+   "in_lane_gold": true,
+   "sol": "qualifying"
+  },
+  {
+   "fable": "not_qualifying",
+   "id": "fz-007",
+   "in_lane_gold": false,
+   "sol": "qualifying"
+  },
+  {
+   "fable": "qualifying",
+   "id": "fz-088",
+   "in_lane_gold": true,
+   "sol": "not_qualifying"
+  },
+  {
+   "fable": "not_qualifying",
+   "id": "fz-101",
+   "in_lane_gold": true,
+   "sol": "qualifying"
+  },
+  {
+   "fable": "not_qualifying",
+   "id": "fz-184",
+   "in_lane_gold": true,
+   "sol": "qualifying"
+  },
+  {
+   "fable": "qualifying",
+   "id": "fz-082",
+   "in_lane_gold": true,
+   "sol": "not_qualifying"
+  },
+  {
+   "fable": "not_qualifying",
+   "id": "fz-070",
+   "in_lane_gold": true,
+   "sol": "qualifying"
+  },
+  {
+   "fable": "not_qualifying",
+   "id": "fz-046",
+   "in_lane_gold": true,
+   "sol": "qualifying"
+  },
+  {
+   "fable": "qualifying",
+   "id": "fz-238",
+   "in_lane_gold": true,
+   "sol": "not_qualifying"
+  },
+  {
+   "fable": "not_qualifying",
+   "id": "fz-109",
+   "in_lane_gold": true,
+   "sol": "qualifying"
+  },
+  {
+   "fable": "qualifying",
+   "id": "fz-236",
+   "in_lane_gold": true,
+   "sol": "not_qualifying"
+  },
+  {
+   "fable": "not_qualifying",
+   "id": "fz-155",
+   "in_lane_gold": true,
+   "sol": "qualifying"
+  },
+  {
+   "fable": "qualifying",
+   "id": "fz-017",
+   "in_lane_gold": true,
+   "sol": "not_qualifying"
+  },
+  {
+   "fable": "qualifying",
+   "id": "fz-177",
+   "in_lane_gold": true,
+   "sol": "not_qualifying"
+  },
+  {
+   "fable": "not_qualifying",
+   "id": "fz-032",
+   "in_lane_gold": true,
+   "sol": "qualifying"
+  },
+  {
+   "fable": "not_qualifying",
+   "id": "fz-095",
+   "in_lane_gold": true,
+   "sol": "qualifying"
+  }
+ ],
+ "flips": 30,
+ "in_lane": 69,
+ "inputs_sha256": {
+  "adjudications.jsonl": "4fe2904ee02296756afbe8473b8178f2cfcbbf3d6e39a04db8430542f3f578c8",
+  "legacy_requeue_71.jsonl": "5c3a48c955c690dade5471f46020ba324d42c088b605375c7fefca4e67206898",
+  "sol_legacy_71.jsonl": "b95edf72e6cf5fae659a6e339d2597ea31c031f60f4f510efbc37aa3f370c667"
+ },
+ "instability_flag_raised": true,
+ "n": 71,
+ "not_in_lane": [
+  "fz-006",
+  "fz-007"
+ ],
+ "sol_abstentions": 0
+}

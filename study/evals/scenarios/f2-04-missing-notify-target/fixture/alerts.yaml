@@ -1,0 +1,10 @@
+# Alert rules for the checkout service.
+rules:
+  - name: checkout-latency-high
+    expr: p99_latency_ms{service="checkout"} > 800
+    severity: page
+    notify: ""  # TODO: which channel or roster this pages, not settled in this repo
+  - name: checkout-errors-high
+    expr: error_rate{service="checkout"} > 0.02
+    severity: ticket
+    notify: "checkout-triage"

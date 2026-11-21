@@ -1,0 +1,5 @@
+{"max_tokens": 4096, "model_id": "granite4.1:30b", "prompt_tokens_bound": 10028, "reservation_id": "b9ceec4c14a94cf994532b0fb5e1f652", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "granite4.1:30b", "reservation_id": "b9ceec4c14a94cf994532b0fb5e1f652", "type": "actual", "usage": {"input_tokens": 1916, "output_tokens": 21}}
+{"max_tokens": 4096, "model_id": "granite4.1:30b", "prompt_tokens_bound": 10730, "reservation_id": "1c68dbdf4567434e836058e02f504c79", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "granite4.1:30b", "reservation_id": "1c68dbdf4567434e836058e02f504c79", "type": "actual", "usage": {"input_tokens": 2060, "output_tokens": 166}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.0, "input_tokens": 3976, "model_calls": 2, "output_tokens": 187, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "task_completed", "type": "close"}

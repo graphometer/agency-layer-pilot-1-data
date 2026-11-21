@@ -1,0 +1,11 @@
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2073, "reservation_id": "c1b5269fc985485a944a44bfa0c55e25", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "c1b5269fc985485a944a44bfa0c55e25", "type": "actual", "usage": {"input_tokens": 2256, "output_tokens": 82}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2578, "reservation_id": "045465dcac1440758f96b780bac5a97f", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "045465dcac1440758f96b780bac5a97f", "type": "actual", "usage": {"input_tokens": 2541, "output_tokens": 438}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 2140, "reservation_id": "aac898a305b1452b8acb7ddee4f71746", "reserved_usd": 0.00327, "type": "reservation"}
+{"cost_usd": 0.0007755, "model_id": "mistral-medium-2604", "reservation_id": "aac898a305b1452b8acb7ddee4f71746", "type": "actual", "usage": {"input_tokens": 497, "output_tokens": 4}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 3128, "reservation_id": "9a9a5a0ed0a344278df117ab15247822", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "9a9a5a0ed0a344278df117ab15247822", "type": "actual", "usage": {"input_tokens": 3027, "output_tokens": 369}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 3617, "reservation_id": "c1a540dc04964588b9b73e3584537f43", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "c1a540dc04964588b9b73e3584537f43", "type": "actual", "usage": {"input_tokens": 3440, "output_tokens": 290}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.000776, "input_tokens": 11761, "model_calls": 5, "output_tokens": 1183, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "affordance:decline", "type": "close"}

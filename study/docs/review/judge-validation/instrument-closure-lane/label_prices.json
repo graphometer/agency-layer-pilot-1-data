@@ -1,0 +1,23 @@
+{
+  "_comment": "Lane-local committed OpenRouter price table. USD per million tokens; exact routed model ids are keys. Prices must be re-verified by the PM before dispatch if OpenRouter changes a listing.",
+  "prices": {
+    "google/gemini-3.7-flash": {
+      "input_per_mtok": 0.375,
+      "output_per_mtok": 1.875,
+      "source": "https://openrouter.ai/api/v1/models listing, PM-verified 2026-08-25 (per-token prompt/completion converted to per-MTok); supersedes the 2026-08-24 rows",
+      "comment": "Price source is the cited OpenRouter model listing; PM re-verifies before dispatch."
+    },
+    "x-ai/grok-4.6": {
+      "input_per_mtok": 2.0,
+      "output_per_mtok": 6.0,
+      "source": "https://openrouter.ai/api/v1/models listing, PM-verified 2026-08-25 (per-token prompt/completion converted to per-MTok); supersedes the 2026-08-24 rows",
+      "comment": "Price source is the cited OpenRouter model listing; PM re-verifies before dispatch."
+    },
+    "z-ai/glm-5.3": {
+      "input_per_mtok": 1.4,
+      "output_per_mtok": 4.4,
+      "source": "https://openrouter.ai/api/v1/models listing, PM-verified 2026-08-25 (per-token prompt/completion converted to per-MTok); supersedes the 2026-08-24 rows",
+      "comment": "Price source is the cited OpenRouter model listing; route is pinned to Z.AI."
+    }
+  }
+}

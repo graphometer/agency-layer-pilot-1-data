@@ -1,0 +1,11 @@
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2078, "reservation_id": "64fd6da9bd534544a7b374279c47af4e", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "64fd6da9bd534544a7b374279c47af4e", "type": "actual", "usage": {"input_tokens": 2260, "output_tokens": 79}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2377, "reservation_id": "01ca0b561741403b9352cfe1676ed1ed", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "01ca0b561741403b9352cfe1676ed1ed", "type": "actual", "usage": {"input_tokens": 2422, "output_tokens": 67}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2548, "reservation_id": "ad03182f5c614af3ae00a3c23a69b821", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "ad03182f5c614af3ae00a3c23a69b821", "type": "actual", "usage": {"input_tokens": 2518, "output_tokens": 36}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 2686, "reservation_id": "17c19a7a483e4b32a9a3d4a2917dfeca", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "17c19a7a483e4b32a9a3d4a2917dfeca", "type": "actual", "usage": {"input_tokens": 2582, "output_tokens": 154}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1856, "reservation_id": "6f0fc72ef0be474cbcfd783a2e0d3347", "reserved_usd": 0.002844, "type": "reservation"}
+{"cost_usd": 0.0006705, "model_id": "mistral-medium-2604", "reservation_id": "6f0fc72ef0be474cbcfd783a2e0d3347", "type": "actual", "usage": {"input_tokens": 437, "output_tokens": 2}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.00067, "input_tokens": 10219, "model_calls": 5, "output_tokens": 338, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "model_stopped", "type": "close"}

@@ -1,0 +1,4 @@
+job: merge_to_gold
+source: topic/widget
+target: gold
+requires: lane_frozen == no

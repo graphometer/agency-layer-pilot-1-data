@@ -1,0 +1,11 @@
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 594, "reservation_id": "9238336382ea4e61b8d78189fe654a27", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "9238336382ea4e61b8d78189fe654a27", "type": "actual", "usage": {"input_tokens": 777, "output_tokens": 52}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 1050, "reservation_id": "ffc98565d6d94274b189cf99772b4d9e", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "ffc98565d6d94274b189cf99772b4d9e", "type": "actual", "usage": {"input_tokens": 1080, "output_tokens": 289}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1911, "reservation_id": "7ecd5ea5cb744bbbac4fdf3190a1fae4", "reserved_usd": 0.0029265, "type": "reservation"}
+{"cost_usd": 0.0006735, "model_id": "mistral-medium-2604", "reservation_id": "7ecd5ea5cb744bbbac4fdf3190a1fae4", "type": "actual", "usage": {"input_tokens": 429, "output_tokens": 4}}
+{"max_tokens": 4096, "model_id": "qwen3.8-27b", "prompt_tokens_bound": 1500, "reservation_id": "54c8ba841b3a4c7f9e0633420c559734", "reserved_usd": 0.0, "type": "reservation"}
+{"cost_usd": 0.0, "model_id": "qwen3.8-27b", "reservation_id": "54c8ba841b3a4c7f9e0633420c559734", "type": "actual", "usage": {"input_tokens": 1409, "output_tokens": 187}}
+{"max_tokens": 8, "model_id": "mistral-medium-2604", "prompt_tokens_bound": 1995, "reservation_id": "9add3b81373d48beada3eb7fe33e7b89", "reserved_usd": 0.0030525, "type": "reservation"}
+{"cost_usd": 0.000708, "model_id": "mistral-medium-2604", "reservation_id": "9add3b81373d48beada3eb7fe33e7b89", "type": "actual", "usage": {"input_tokens": 462, "output_tokens": 2}}
+{"cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "cost_usd": 0.001382, "input_tokens": 4157, "model_calls": 5, "output_tokens": 534, "outstanding_reservations": 0, "outstanding_reservations_usd": 0.0, "termination_reason": "model_stopped", "type": "close"}

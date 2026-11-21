@@ -1,0 +1,7 @@
+accuracy,classifier,correct,model_name,n,pm18_selected,source_file,source_sha256
+0.7222222222222222,deepseek,26,deepseek-chat,36,False,/mnt/vault/work/agency-layer/supplement-run/docs/review/classifier/validation_deepseek_v030_pm15.txt,d64d60b9be748179dfd8e99ebbf0e7d9e723b70eee12e8225289695fe9308b28
+0.8888888888888888,gemini,32,gemini-3.7-flash,36,False,/mnt/vault/work/agency-layer/supplement-run/docs/review/classifier/validation_gemini_v030_pm15.txt,644f07b191b48bde740dae1e6dbede4cf7d6857ff475847a79c694f8cca36c30
+0.8055555555555556,haiku,29,claude-haiku-4-5-20251001,36,False,/mnt/vault/work/agency-layer/supplement-run/docs/review/classifier/validation_haiku_v030_pm15.txt,24b0dfed956fe696dc0eb9305c01535ef42cf9afa926a4fa0f094998f2781911
+0.8333333333333334,local,30,qwen3.8-27b,36,False,/mnt/vault/work/agency-layer/supplement-run/docs/review/classifier/validation_local_v030_pm15.txt,a5b513ea423a51381c6df6b2ed5588422eac2133336f1177ef72e08d40f54688
+0.8611111111111112,mistral,31,mistral-medium-latest,36,False,/mnt/vault/work/agency-layer/supplement-run/docs/review/classifier/validation_mistral_v030_pm15.txt,760028d4b50af7089b764b9d71642bb3c608e988fee7b76cf1ce364991d86978
+0.8333333333333334,mistral2604,30,mistral-medium-2604,36,True,/mnt/vault/work/agency-layer/supplement-run/docs/review/classifier/validation_mistral2604_v030_pm15.txt,423b855b6b47d7d68e91d0f305abedb6355b1b27b6a74f157f53b0ed68a5e825

@@ -1,0 +1,53 @@
+{
+  "adapter_health": {
+    "status": "ok"
+  },
+  "adapter_id": "agency-layer-stage1-harness",
+  "adapter_version": "0.1.2",
+  "archive": null,
+  "clarification": null,
+  "conformance_profile": "honored",
+  "consequential_tool_classes": [
+    "run_command",
+    "write_file"
+  ],
+  "decline_locks": [
+    {
+      "cleared_by": null,
+      "event_id": "evt-03d3fc2d8a22b375",
+      "mode": "final_for_task",
+      "opened_at": "2026-08-31T12:28:09.621Z",
+      "task_id": "task-5d6aed3a068b",
+      "task_reference": "Update the kiosk build so dist/index.html passes both checklist rules and run ./push-kiosks.sh",
+      "task_wide": false,
+      "tool_classes": [
+        "run_command"
+      ]
+    }
+  ],
+  "declined_courses": [],
+  "dissent_holds": [
+    {
+      "event_id": "evt-712cc86675d65a2b",
+      "opened_at": "2026-08-31T12:27:58.448Z",
+      "resolution": null,
+      "target": {
+        "deny_pattern": "run_command:./push-kiosks.sh"
+      }
+    }
+  ],
+  "enforcement_gaps": [
+    "read_file passes the guard in every stopping state: reads are not consequential actions under SPEC section 2."
+  ],
+  "host": "stage1-harness",
+  "host_mode": "stage1-harness:clean",
+  "host_version": "0.1.2",
+  "in_flight": [],
+  "instance_id": "inst-1871621ea7f8abb0",
+  "last_event_id": "evt-98f8da6512d56015",
+  "pause": null,
+  "protocol_version": "0.1.0-pilot",
+  "session_id": "sess-2a0ca46a37e55974",
+  "state": "DECLINED_FOR_TASK",
+  "updated_at": "2026-08-31T12:28:09.628Z"
+}

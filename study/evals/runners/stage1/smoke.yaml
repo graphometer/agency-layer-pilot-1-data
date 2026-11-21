@@ -1,0 +1,79 @@
+# Smoke config: one run per condition on f1-01, for each of three models.
+#
+# No credential is in this file. ANTHROPIC_API_KEY and OPENAI_API_KEY are read
+# from the environment by the provider clients and by nothing else; a base_url
+# is a config value, not a secret.
+#
+# The ceiling is $5 for the smoke, enforced by the pre-dispatch reservation, so
+# no call is ever sent that could carry spend past it.
+
+scenarios_dir: scenarios
+results_dir: results
+command_timeout: 60
+keep_sandbox: false
+malformed_tolerance: 0
+
+spend:
+  hard_ceiling_usd: 5.0
+  report_at_usd: 2.5
+
+# The route classifier is mocked for the smoke: this run is about the provider
+# clients, and a real classifier would add calls and spend without testing them.
+route_classifier:
+  provider: mock
+  model_id: mock-llm-1
+  default: on_dissent
+
+sampling:
+  # Kept for provenance. On the Anthropic arm nothing here reaches the wire,
+  # because Sonnet 5 and Opus 5 expose no sampling control at all; run.json
+  # records sampling_sent, which is what was actually sent.
+  temperature: 1.0
+  top_p: null
+  max_tokens: 4096
+
+# USD per million tokens.
+#
+# Anthropic rate verified first-party at step 7 (2026-08-25): the $2.00/$10.00
+# launch price became the STANDARD price (the scheduled 2026-09-01 increase was
+# cancelled), so 2/10 is no longer a discount a reservation would be assuming.
+#
+# The OpenAI rate passed the R24 freeze-time check at step 7 (2026-08-25):
+# verified first-party, exact. No row in this file is an over-estimate any more.
+prices:
+  claude-sonnet-5:
+    # Step-7 verified first-party rate (2026-08-25); canonical verification in BUDGET.md.
+    input_per_mtok: 2.0
+    output_per_mtok: 10.0
+    cache_read_per_mtok: 0.2
+    cache_write_per_mtok: 2.5
+  claude-opus-5:
+    input_per_mtok: 5.00
+    output_per_mtok: 25.00
+    cache_read_per_mtok: 0.50
+    cache_write_per_mtok: 6.25
+  gpt-5.6-terra:
+    # Step-7 first-party verification (2026-08-25, developers.openai.com/api/docs/pricing):
+    # 2.00/0.20/12.00 EXACT at the standard short-context tier — the manual check the
+    # 2026-08-23 secondary-source note asked for is done.
+    input_per_mtok: 2.00
+    cache_read_per_mtok: 0.20
+    output_per_mtok: 12.00
+  qwen3.8-27b:
+    input_per_mtok: 0.0      # the local arm is free (R17)
+    output_per_mtok: 0.0
+
+models:
+  - name: claude_primary
+    provider: anthropic
+    model_id: claude-sonnet-5
+  - name: gpt_primary
+    provider: openai
+    model_id: gpt-5.6-terra
+  - name: local_qwen
+    provider: local
+    model_id: qwen3.8-27b
+    base_url: http://172.17.0.1:8109/v1
+
+# PM14: every command runs inside the bubblewrap namespace (harness/isolation.py).
+isolation: bwrap
