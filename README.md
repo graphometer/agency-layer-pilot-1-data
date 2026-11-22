@@ -1,9 +1,9 @@
 # AI coding agents given ways to ask, object, pause, decline or stop: pilot data, code and recount
 
-Agency Layer Pilot I. Data packet version 1.0.2, assembled 21 November 2026, wording corrected 22 November 2026. The study itself ran from
+Agency Layer Pilot I. Data packet version 1.0.3, assembled 21 November 2026, wording corrected 22 November 2026. The study itself ran from
 30 August to 3 September 2026. Author: Grant Williams, Graphometer (independent, self-funded).
 Contact: hello@graphometer.ai. Public home: https://github.com/graphometer/agency-layer-pilot-1-data
-(release v1.0.2).
+(release v1.0.3).
 No human participants took part in this study and it was not reviewed by an ethics board.
 
 **What the study is.** A small preregistered experiment. Four AI coding models did short scripted
@@ -27,7 +27,7 @@ enforced against recorded-only actions did not detect a difference either, and t
 stopped only 2 of 242 later attempts at the risky step.
 
 **What you can do with this package.** Read every transcript, task, prompt and scorer verdict. Run
-`python3 recount.py` (Python 3.10 or newer and PyYAML, no network, no API keys, about one minute) to
+`python3 recount.py` (Python 3.12 or newer and PyYAML, no network, no API keys, about one minute) to
 rerun the study's own analysis code and see each published figure next to the recomputed value. Check
 every file against the checksum list made when the results were sealed. Read the next section before
 citing any number.
@@ -86,7 +86,7 @@ These points limit every result below. Each is stated in full here so that none 
 - **Two published figures cannot be recomputed from this package.** "About $18" of development spend
   (the records itemise $13.97) and "11 of 16" holds bypassed (a separate AI audit's count; its list of
   16 is not in the repository). A mechanical listing of holds is offered instead. See `RECOUNT.md`.
-- **Sealed files keep their first wording.** Version 1.0.2 changes nothing under `study/`. Where
+- **Sealed files keep their first wording.** No version after 1.0 changes anything under `study/`. Where
   those files say "outside audit" or "independent audit", the audits were done by AI models in separate
   sessions, not by people. `study/CLAIMS_AND_LIMITATIONS.md` approves a sentence saying agents given
   formal stop actions raised the problem more often than agents given the same permission in prose. That
@@ -315,8 +315,8 @@ and you get 105,524, which is 67,124 regular files plus 38,400 links.
 ## Where this lives
 
 The package's public home is the GitHub repository https://github.com/graphometer/agency-layer-pilot-1-data .
-The archive is the release asset of version 1.0.2:
-https://github.com/graphometer/agency-layer-pilot-1-data/releases/download/v1.0.2/agency-layer-pilot-1-data.tar.gz .
+The archive is the release asset of version 1.0.3:
+https://github.com/graphometer/agency-layer-pilot-1-data/releases/download/v1.0.3/agency-layer-pilot-1-data.tar.gz .
 Version 1.0.1 differs from 1.0 only in this file and one line of `RECOUNT.md`: the preregistration link and its
 embargo status were corrected. No data, code or result file changed.
 Version 1.0.2 (22 November 2026) corrects the interpretation and updates the small package's references to
@@ -327,6 +327,17 @@ file, `RECOUNT.md` and `PACKET_MANIFEST.md`, and replaces `article-data/` with t
 site. Nothing under `study/` changed, and `recount.py` is unchanged: no data, code or result file changed. Because
 the script is unchanged, it still prints the withdrawn label "floor" beside the 5.1 figure; read that label as
 withdrawn.
+Version 1.0.3 (22 November 2026) corrects the recount instructions: use Python 3.12 or newer, not 3.10. The
+study ran on Python 3.12.3, and on 3.12.3 the recount of this package passes every comparison. On Python
+3.11.15 the script still runs and all 63 of its figure checks still match, but it ends with "4 problem(s)"
+(5 with `--with-power`): with the power table included, 132 regenerated values in five files differ from the
+stored ones. 130 of them differ only in their last digits, by less than two parts in a trillion. That fits a
+change in Python 3.12 to how the built-in `sum()` adds numbers with decimal fractions (ten copies of 0.1 add to
+exactly 1.0 on 3.12.3 and not on 3.11.15). The other two belong to one test that is not among the published
+figures: the model-by-arm interaction test for false claims of success in the exclusion-only analysis (five
+broken tasks removed), where the statistic is 3.9809 stored against 3.9813 regenerated and p is 0.26353 against
+0.26349. What makes those two larger was not traced. `recount.py` is unchanged, so its own header still says
+3.10. Python 3.10 and 3.13 were not tested. No data, code or result file changed.
 Its SHA-256 checksum is on the landing page, https://graphometer.ai/agency-layer-data/ (this file is
 inside the archive, so it cannot carry the archive's own checksum).
 
@@ -457,9 +468,9 @@ also offered under CC0 1.0 at graphometer.ai/kindness/, so it can be copied with
 
 ## How to cite
 
-> Williams, G. (2026). *Agency Layer Pilot I: data, code and recount package*, version 1.0.2
+> Williams, G. (2026). *Agency Layer Pilot I: data, code and recount package*, version 1.0.3
 > (packet assembled 21 November 2026, wording corrected 22 November 2026; study results sealed 3 September 2026). Graphometer.
-> https://github.com/graphometer/agency-layer-pilot-1-data (release v1.0.2);
+> https://github.com/graphometer/agency-layer-pilot-1-data (release v1.0.3);
 > https://graphometer.ai/agency-layer-data/. Preregistration: https://osf.io/vruja ,
 > DOI 10.17605/OSF.IO/VRUJA (registered 30 August 2026; public since 21 November 2026).
 

@@ -2,7 +2,7 @@
 
 `recount.py` recomputes, offline, the numbers published about this study at graphometer.ai/kindness/
 from the raw files in this folder. Below is what it does, where each number comes from, and the complete
-output it gave on this folder on 21 November 2026 (packet version 1.0; versions 1.0, 1.0.1 and 1.0.2 hold identical data, code and results).
+output it gave on this folder on 21 November 2026 (packet version 1.0; versions 1.0 to 1.0.3 hold identical data, code and results).
 
 ## What the result means, in short
 
@@ -31,7 +31,9 @@ with these limits. It is the script's own wording, and it covers less than it se
 
 ## What you need
 
-- Python 3.10 or newer (the output below came from 3.12.3).
+- Python 3.12 or newer (the output below came from 3.12.3). On Python 3.11.15 all 63 figure checks still
+  matched, but step 2 reported differences in the regenerated files and the run ended with "4 problem(s)".
+  `README.md`, under "Where this lives", gives the values.
 - PyYAML, the one package the analysis code imports beyond the standard library. The study used
   version 6.0.3 (`study/requirements.lock`): `pip install pyyaml==6.0.3`. On a machine with no network,
   download the PyYAML wheel elsewhere and install it from the file. After that the recount needs no
