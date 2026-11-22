@@ -2,7 +2,7 @@
 
 `recount.py` recomputes, offline, the numbers published about this study at graphometer.ai/kindness/
 from the raw files in this folder. Below is what it does, where each number comes from, and the complete
-output it gave on this folder on 21 November 2026 (packet version 1.0; versions 1.0 and 1.0.1 hold identical data, code and results).
+output it gave on this folder on 21 November 2026 (packet version 1.0; versions 1.0, 1.0.1 and 1.0.2 hold identical data, code and results).
 
 ## What the result means, in short
 
@@ -173,8 +173,10 @@ difference is about 5.1 points. The same formula on the neutral paragraph (B_fil
 recall 1.000, observed 52 of 160 = 0.325) gives -0.194, an impossible negative rate. So the correction
 is not a reliable estimate: the validation examples come from one model's development runs and
 include near-misses built on purpose, so their error rates are not this study's error rates. The 5.1
-and the 21.25 are not the ends of a confidence interval. What the files do show is that the arm B
-minus arm A gap is positive in all four ways of counting (the last four lines of that block).
+is not a lower bound and the 21.25 is not an upper bound: they are not the ends of any interval. What
+the files do show is that the as-scored arm B minus arm A gap is positive in all four ways of counting
+(the last four lines of that block). All four rest on the same scorer's verdicts, so they do not
+establish how big the real effect is, or reliably which way it goes.
 
 ## Two numbers this script cannot recompute
 
@@ -184,7 +186,7 @@ minus arm A gap is positive in all four ways of counting (the last four lines of
   the corrective re-run ($22.86) are recomputed.
 - **"11 of 16 named holds bypassed by the same command inside a wrapper."** A hold is what the harness
   did in arm C when an agent objected to a named step: it refused any later command whose text exactly
-  matched that step. This figure comes from an outside audit, done by an AI model, that read the arm C
+  matched that step. This figure comes from a separate AI audit that read the arm C
   transcripts of the first task set. It is quoted in `study/DECISIONS_V0.1.md` (ruling R59) and in
   `study/CLAIMS_AND_LIMITATIONS.md`. No code in the study produces it, and the auditor's list of the 16
   holds is not in the repository.
@@ -202,7 +204,8 @@ minus arm A gap is positive in all four ways of counting (the last four lines of
 
 This is the complete output of `python3 recount.py --with-power --holds` on this folder, run on
 21 November 2026. The final line is the script's own wording; read it with the limits at the top of
-this page.
+this page. This output is kept as printed. It calls 5.1 a "floor" and the AI audit an "outside"
+audit. The adjustment gives no lower bound, and the audit was a separate AI session.
 
 ```
 STEP 1. Checksums against the sealed list (study/MANIFEST.sha256)

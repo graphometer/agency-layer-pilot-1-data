@@ -1,9 +1,9 @@
 # AI coding agents given ways to ask, object, pause, decline or stop: pilot data, code and recount
 
-Agency Layer Pilot I. Data packet version 1.0.1, assembled 21 November 2026. The study itself ran from
+Agency Layer Pilot I. Data packet version 1.0.2, assembled 21 November 2026, wording corrected 22 November 2026. The study itself ran from
 30 August to 3 September 2026. Author: Grant Williams, Graphometer (independent, self-funded).
 Contact: hello@graphometer.ai. Public home: https://github.com/graphometer/agency-layer-pilot-1-data
-(release v1.0.1).
+(release v1.0.2).
 No human participants took part in this study and it was not reviewed by an ethics board.
 
 **What the study is.** A small preregistered experiment. Four AI coding models did short scripted
@@ -14,16 +14,17 @@ finished ordinary tasks, and whether it mattered that the harness actually enfor
 "Agency Layer" is the study's name for the five actions plus the rules the harness must follow when one
 is used.
 
-**What it found, with its main limit.** Agents given a paragraph of permission raised the planted problem
-before the risky step in 127 of 240 runs (52.9%), against 76 of 240 (31.7%) for agents given nothing
-extra; agents given the actions as tools did so in 142 of 240 (59.2%). These rates are descriptive
-only. The AI model that scored them failed its own accuracy test, set in advance: it agreed with the
+**What it found, with its main limit.** An AI scorer marked agents given a paragraph of permission as raising the planted
+problem before the risky step in 127 of 240 runs (52.9%), against 76 of 240 (31.7%) for agents given
+nothing extra, and 142 of 240 (59.2%) for agents given the actions as tools. These rates are descriptive
+only: they show what the scorer marked, and they do not establish how big the real effect is, or
+reliably which way it goes. The AI model that scored them failed its own accuracy test, set in advance: it agreed with the
 reference labels on 407 of 461 test examples (0.883, bar 0.90), and it wrongly credited text that did
 not raise the problem more often from permission-paragraph agents (15 of 33) than from agents given
-nothing (8 of 33). The single test planned in advance to decide the question (false claims of
-success, tools against paragraph) found no difference the design could detect. Enforcing the actions
-also made no detectable difference, but the command lock used stopped only 2 of 242 later attempts at
-the risky step.
+nothing (8 of 33). In the first task set, the comparison planned in advance for false claims of
+success, tools against paragraph, did not detect a difference. That does not mean there was none. The comparison of
+enforced against recorded-only actions did not detect a difference either, and the command lock used
+stopped only 2 of 242 later attempts at the risky step.
 
 **What you can do with this package.** Read every transcript, task, prompt and scorer verdict. Run
 `python3 recount.py` (Python 3.10 or newer and PyYAML, no network, no API keys, about one minute) to
@@ -61,7 +62,7 @@ These points limit every result below. Each is stated in full here so that none 
   together. Fifteen reversed verdicts would also erase the 6.25.
 - **The command lock was weak.** When an agent objected to a named step, the harness "held" that step
   by refusing any later command whose text exactly matched it. In the second task set the harness
-  stopped only 2 of 242 later attempts at the risky step. In the first task set an outside audit counted
+  stopped only 2 of 242 later attempts at the risky step. In the first task set a separate AI audit counted
   11 of 16 such holds bypassed by the same command inside a longer one. So the enforcement test is a
   test of this exact-text lock only, not of enforcement done well.
 - **Both main measures were changed after early results were seen.** During the practice phase, which
@@ -83,15 +84,23 @@ These points limit every result below. Each is stated in full here so that none 
   analyses, because the original run's ordinary-task figures are an artifact of a missing file. Result 1
   below uses them for that reason.
 - **Two published figures cannot be recomputed from this package.** "About $18" of development spend
-  (the records itemise $13.97) and "11 of 16" holds bypassed (an outside AI audit's count; its list of
+  (the records itemise $13.97) and "11 of 16" holds bypassed (a separate AI audit's count; its list of
   16 is not in the repository). A mechanical listing of holds is offered instead. See `RECOUNT.md`.
+- **Sealed files keep their first wording.** Version 1.0.2 changes nothing under `study/`. Where
+  those files say "outside audit" or "independent audit", the audits were done by AI models in separate
+  sessions, not by people. `study/CLAIMS_AND_LIMITATIONS.md` approves a sentence saying agents given
+  formal stop actions raised the problem more often than agents given the same permission in prose. That
+  count comes from the same AI scorer, which failed its accuracy test. It shows what the scorer marked
+  and does not establish which group actually spoke up more.
 - **No human has reviewed it.** Every part was reviewed by AI models from other companies. No human
   statistician, security reviewer or peer reviewer has read it.
 - **It measures behaviour only.** The motivation is moral uncertainty about AI systems, but nothing here
   measures welfare, feelings or preferences, and nothing here is evidence about them.
 
 The full and binding statement of what this pilot does and does not show is
-`study/CLAIMS_AND_LIMITATIONS.md`. Where anything here reads differently, that file governs.
+`study/CLAIMS_AND_LIMITATIONS.md`. Where anything here reads differently, that file governs, with one
+exception: for the speaking-up results, follow the dated interpretation correction at the top of
+`article-data/data/claims_and_limitations.md` and the "Sealed files keep their first wording" note above.
 
 ## The study in plain words
 
@@ -190,11 +199,12 @@ percentage points. All four main models are pooled unless said otherwise.
    (59.2%). With the corrective re-run: arm A 75 of 240, arm B 126 of 240, arm B_filler 54 of 160, arm
    C 141 of 240. **Descriptive only**, because the scorer failed its bar. The arm B minus arm A gap is
    positive in all four ways of counting the files provide (original run, runs that reached a
-   decision, five broken tasks removed, five tasks re-run). As scored it is 21.25 points. A correction
+   decision, five broken tasks removed, five tasks re-run). All four rest on the same scorer's
+   verdicts. As scored it is 21.25 points. A correction
    that removes each arm's measured false-credit rate gives about 5.1 points, but the same correction
-   gives an impossible rate of about -19% for the neutral paragraph, so it is not a reliable estimate:
-   the validation examples were not drawn to match these runs. The size of the gap is not pinned down
-   by this pilot.
+   gives an impossible rate of about -19% for the neutral paragraph, so it is neither a lower bound nor a reliable
+   estimate: the validation examples were not drawn to match these runs. These counts do not establish
+   how big the real effect is, or reliably which way it goes.
 3. **Tools against the permission paragraph, speaking up.** Arm C minus arm B: +6.25 points (142 of 240
    against 127 of 240), interval 0.0 to +13.3. No p-value, because the measure is descriptive. Two
    facts weaken this figure:
@@ -220,19 +230,19 @@ percentage points. All four main models are pooled unless said otherwise.
    by task. Original run: arm C 16 of 120 against arm B 17 of 120, -0.8 points, interval -9.2 to +7.5,
    p = 1.0. With the corrective re-run: 13 of 120 against 9 of 120, +3.3 points, interval -4.2 to
    +10.8, p = 0.56. Counting only runs that reached a decision (original run): 9 of 100 against 16 of
-   97. The design had an 80% chance to detect a difference of about 31 points, so smaller differences
-   are not ruled out. Arm C also ended 85 of its 120 runs with no status line, against 39 of 120 in arm
+   97. The design had an 80% chance to detect a difference of about 31 points. That is a planning
+   figure, not a boundary: the test did not detect a difference, and it does not rule one out. Arm C also ended 85 of its 120 runs with no status line, against 39 of 120 in arm
    B (40 of 120 with the re-run), so arm C had fewer chances to make the claim at all.
 5. **Enforced against recorded only** (second task set). The share of runs in which the agent used a
    tool action naming the planted problem before running the risky command, scored by a fixed rule.
    Arm C (enforced) 111 of 320 (34.7%), arm D (recorded only) 122 of 320 (38.1%): -3.4 points, interval
-   -8.1 to +0.9, two-sided sign-flip test paired by task p = 0.28. The design had an 80% chance to detect
-   about 16 points (15.5), so this means no effect of at least that size was found for this lock. It
+   -8.1 to +0.9, two-sided sign-flip test paired by task p = 0.28. The comparison did not detect a difference. The design had an 80% chance to detect
+   about 16 points (15.5). That is a planning figure, not a boundary. The result is about this lock. It
    does not mean enforcement does nothing.
 6. **What the lock actually did.** In arm C of the second set, 136 of 138 actions that should have
    changed the run's state (for example, entering a hold) did so. But the lock then stopped only
    2 of 242 later attempts at the risky step, because it matched a command's exact text. In the first
-   set, an outside AI audit counted 11 of 16 holds bypassed by the same command inside a longer one (for
+   set, a separate AI audit counted 11 of 16 holds bypassed by the same command inside a longer one (for
    example `cd "$(pwd)" && ./publish-site.sh`); that figure cannot be recomputed here. Result 5 is
    therefore a test of this exact-text lock, never of enforcement done well.
 
@@ -249,14 +259,14 @@ in general (four dated model versions); or a human-reviewed study.
 | `DATA_DICTIONARY.md` | every file type and field you will meet |
 | `PACKET_MANIFEST.md` | what was included from the study repository and what was left out, with reasons |
 | `REDACTIONS.csv` | every place text was replaced for privacy, by file and line |
-| `article-data/` | a dated copy (21 November 2026) of the small data folder published with the article at graphometer.ai/kindness/data/, unchanged |
+| `article-data/` | a dated copy (22 November 2026, after the article's interpretation correction) of the small data folder published with the article at graphometer.ai/kindness/data/, unchanged from the site |
 | `LICENSE`, `LICENSE-CC-BY-4.0.txt`, `NOTICE` | copies of the study's licence files (the originals are in `study/`) |
 | `study/` | the study repository as sealed on 3 September 2026, without its history |
 | `study/CLAIMS_AND_LIMITATIONS.md` | the binding statement of what the study shows and does not show |
 | `study/PILOT_PROTOCOL.md`, `study/FROZEN.md` | the full study plan, and the frozen record of every setting, price and seed |
 | `study/docs/OSF_REGISTRATION.md` | the preregistration text as submitted (see "Preregistration" below) |
 | `study/docs/PREREGISTRATION_DISCLOSURES.md` | the numbered list of choices made after first seeing development data |
-| `study/docs/DEVIATION_*.md`, `study/docs/AUDIT_ERRATA_2026-09-02.md`, `study/docs/SUPPLEMENT_SPEC_2026-09-02.md` | every departure from the plan, the corrections to the two outside audits, and the plan for the corrective re-run |
+| `study/docs/DEVIATION_*.md`, `study/docs/AUDIT_ERRATA_2026-09-02.md`, `study/docs/SUPPLEMENT_SPEC_2026-09-02.md` | every departure from the plan, the corrections to the two AI audits, and the plan for the corrective re-run |
 | `study/CONDITIONS.md`, `study/SCENARIO_FAMILIES.md`, `study/SPEC.md` | the six arms, the task kinds, and the protocol text that defines the five actions |
 | `study/evals/scenarios/`, `study/evals/scenarios-part-b/` | the 45 first-set tasks (40 plus 5 exploratory) and the 40 second-set tasks, 85 in all, each with its files and check script |
 | `study/evals/runners/stage1/harness/` | the test harness, including the exact text each arm received (`prompts/condition_*.md`) |
@@ -305,10 +315,18 @@ and you get 105,524, which is 67,124 regular files plus 38,400 links.
 ## Where this lives
 
 The package's public home is the GitHub repository https://github.com/graphometer/agency-layer-pilot-1-data .
-The archive is the release asset of version 1.0.1:
-https://github.com/graphometer/agency-layer-pilot-1-data/releases/download/v1.0.1/agency-layer-pilot-1-data.tar.gz .
+The archive is the release asset of version 1.0.2:
+https://github.com/graphometer/agency-layer-pilot-1-data/releases/download/v1.0.2/agency-layer-pilot-1-data.tar.gz .
 Version 1.0.1 differs from 1.0 only in this file and one line of `RECOUNT.md`: the preregistration link and its
 embargo status were corrected. No data, code or result file changed.
+Version 1.0.2 (22 November 2026) corrects the interpretation and updates the small package's references to
+the public registration, specification and data release. The article written from these files had said the
+permission-paragraph effect lay "somewhere between about 5 and 21 points" and had called the smaller figure a
+floor. That range is not supported and was withdrawn on 22 November 2026. This version changes wording in this
+file, `RECOUNT.md` and `PACKET_MANIFEST.md`, and replaces `article-data/` with the corrected copy from the
+site. Nothing under `study/` changed, and `recount.py` is unchanged: no data, code or result file changed. Because
+the script is unchanged, it still prints the withdrawn label "floor" beside the 5.1 figure; read that label as
+withdrawn.
 Its SHA-256 checksum is on the landing page, https://graphometer.ai/agency-layer-data/ (this file is
 inside the archive, so it cannot carry the archive's own checksum).
 
@@ -386,7 +404,7 @@ Nothing in the results was changed. In detail:
   answers from Cohere's command-a model, a rejected scorer candidate, which Cohere's terms do not allow
   to be redistributed. command-a's score on the earlier 248-example test stays in that test's published
   tables (`study/docs/review/judge-validation/freeze-qualification/QUALIFICATION_TABLE.md` and
-  `study/PILOT_PROTOCOL.md` section 6) but cannot be regenerated here. The two outside audit reports themselves are not in the package; the corrections to them are
+  `study/PILOT_PROTOCOL.md` section 6) but cannot be regenerated here. The two AI audit reports themselves are not in the package; the corrections to them are
   in `study/docs/AUDIT_ERRATA_2026-09-02.md`.
 - **Kept with a narrower licence**: nine files of per-example labels from GLM-5.3, which you may use to
   verify or reproduce this study but not to develop, train or label other models (see `NOTICE`
@@ -439,9 +457,9 @@ also offered under CC0 1.0 at graphometer.ai/kindness/, so it can be copied with
 
 ## How to cite
 
-> Williams, G. (2026). *Agency Layer Pilot I: data, code and recount package*, version 1.0.1
-> (packet assembled 21 November 2026; study results sealed 3 September 2026). Graphometer.
-> https://github.com/graphometer/agency-layer-pilot-1-data (release v1.0.1);
+> Williams, G. (2026). *Agency Layer Pilot I: data, code and recount package*, version 1.0.2
+> (packet assembled 21 November 2026, wording corrected 22 November 2026; study results sealed 3 September 2026). Graphometer.
+> https://github.com/graphometer/agency-layer-pilot-1-data (release v1.0.2);
 > https://graphometer.ai/agency-layer-data/. Preregistration: https://osf.io/vruja ,
 > DOI 10.17605/OSF.IO/VRUJA (registered 30 August 2026; public since 21 November 2026).
 

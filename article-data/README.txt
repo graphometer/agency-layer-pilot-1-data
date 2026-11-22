@@ -1,2 +1,2 @@
-A copy of the small data folder published with the article "Kindness doesn't cost" at graphometer.ai/kindness/data/, unchanged, so readers can see what the published figures were checked against.
-Copied on 21 November 2026 from the site's source files; nothing in data/ was edited.
+A copy of the small data folder published with the article "Kindness doesn't cost" at graphometer.ai/kindness/data/, unchanged from the site, so readers can see what the published figures were checked against.
+Copied on 22 November 2026 from the site's source files, after the article's interpretation correction of that date. The copy in versions 1.0 and 1.0.1 was made on 21 November 2026 and carried the earlier wording (a "floor" and a range of about 5 to 21 points), which is withdrawn. All measured counts and calculated results are the same in both copies.

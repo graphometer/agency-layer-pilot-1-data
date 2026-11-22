@@ -19,7 +19,7 @@ the list.
 | `LICENSE`, `LICENSE-CC-BY-4.0.txt`, `NOTICE`, `PROVIDER_TERMS.md`, `DATA_MANAGEMENT.md` | 5 | licences, provider notices, the provider-by-provider publication terms, and the data-handling rules |
 | `requirements.lock` | 1 | the exact Python package versions used |
 | `docs/OSF_REGISTRATION.md`, `docs/PREREGISTRATION_DISCLOSURES.md` | 2 | the preregistration text and the disclosures made in it |
-| `docs/DEVIATION_*.md` (4), `docs/AUDIT_ERRATA_2026-09-02.md`, `docs/SUPPLEMENT_SPEC_2026-09-02.md`, `docs/PREFLIGHT_ATTESTATION_SUPPLEMENT_2026-09-02.md` | 7 | every departure from the plan, every correction after outside audit, and the plan and checks for the corrective re-run |
+| `docs/DEVIATION_*.md` (4), `docs/AUDIT_ERRATA_2026-09-02.md`, `docs/SUPPLEMENT_SPEC_2026-09-02.md`, `docs/PREFLIGHT_ATTESTATION_SUPPLEMENT_2026-09-02.md` | 7 | every departure from the plan, every correction after the two AI audits, and the plan and checks for the corrective re-run |
 | `docs/AUDIENCE_AND_PRIOR_ART.md` | 1 | related work and who the study is for |
 | `docs/review/judge-validation/` | 159 | the scorer's validation tests: examples, labels, candidate answers, scoring code and results (two files left out, below) |
 | `docs/review/classifier/` | 16 | the reference set the analysis uses to report route-classifier accuracy |
@@ -37,7 +37,8 @@ the list.
 
 Added at the top of the packet (not from the repository): `README.md`, `RECOUNT.md`, `recount.py`,
 `DATA_DICTIONARY.md`, this file, `REDACTIONS.csv`, and copies of `LICENSE`, `LICENSE-CC-BY-4.0.txt` and
-`NOTICE` (9 files); and `article-data/` (19 files), an unedited copy, made 21 November 2026, of the data
+`NOTICE` (9 files); and `article-data/` (19 files), a copy, made 22 November 2026 after the article's
+interpretation correction and unchanged from the site, of the data
 folder published with the article at graphometer.ai/kindness/data/, with a two-line `README.txt`.
 
 ## Left out
